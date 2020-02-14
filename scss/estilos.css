@@ -1,0 +1,90 @@
+.botones-inicio {
+  width: 14rem;
+  height: 6rem;
+  color: white;
+  background: turquoise;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  margin-left: 0px auto;
+}
+
+.botones-inicio-ultimo {
+  width: 14rem;
+  height: 12rem;
+  color: white;
+  background: turquoise;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-left: 0px auto;
+}
+
+.btn-contacto {
+  color: white;
+  background: turquoise;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+
+.tarjetas-inicio {
+  width: 29rem;
+  height: 3rem;
+}
+
+.titulos-fotos-inicio {
+  background: yellow;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.seccion2-fotos {
+  background: lightgray;
+  padding: 4rem;
+}
+
+.imgsQuienessomos {
+  width: 20rem;
+  margin-right: 25px;
+}
+
+.seccion-contacto {
+  padding-top: 110px;
+}
+
+.lisContacto {
+  list-style: none;
+  font-size: 20px;
+  color: black;
+}
+
+.imgs-redessociales {
+  background-color: white !important;
+  color: turquoise;
+}
+
+textarea {
+  border-radius: 10px;
+}
+
+.inputs-contacto {
+  width: 26.5rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+#clientes {
+  background-color: turquoise;
+  padding: 15px;
+  margin-top: 40px;
+  height: 35px;
+}
+
+.owl-images {
+  margin-top: 18px;
+}
+/*# sourceMappingURL=estilos.css.map */
