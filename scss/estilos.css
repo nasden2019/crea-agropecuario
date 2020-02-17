@@ -52,6 +52,10 @@
   margin-right: 25px;
 }
 
+.titulo-contacto {
+  text-transform: uppercase;
+}
+
 .seccion-contacto {
   padding-top: 110px;
 }
@@ -63,8 +67,11 @@
 }
 
 .imgs-redessociales {
-  background-color: white !important;
-  color: turquoise;
+  background-color: turquoise !important;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 8px;
 }
 
 textarea {
