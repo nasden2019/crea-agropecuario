@@ -54,6 +54,7 @@
 
 .titulo-contacto {
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .seccion-contacto {
@@ -72,6 +73,8 @@
   border-radius: 50%;
   padding: 10px;
   margin-right: 8px;
+  width: 45px;
+  height: 45px;
 }
 
 textarea {
