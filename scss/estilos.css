@@ -61,12 +61,6 @@
   padding-top: 110px;
 }
 
-.lisContacto {
-  list-style: none;
-  font-size: 20px;
-  color: black;
-}
-
 .imgs-redessociales {
   background-color: turquoise !important;
   color: white;
@@ -78,12 +72,6 @@
 }
 
 textarea {
-  border-radius: 10px;
-}
-
-.inputs-contacto {
-  width: 26.5rem;
-  height: 3rem;
   border-radius: 10px;
 }
 
