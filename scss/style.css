@@ -10725,8 +10725,8 @@ header .search-form .form-control {
 }
 
 .feature-1 {
-  /* padding: 30px; */
-  /* background: #f8f9fa; */
+  padding: 30px;
+  background: #f8f9fa;
   min-height: calc(50% - 15px);
   top: 0;
   margin-bottom: 30px !important;
