@@ -1,15 +1,21 @@
+#clientes {
+  background-color: #49B6AF !important;
+  padding: 15px;
+  margin-top: 40px;
+  height: 35px;
+}
+
+.owl-images {
+  margin-top: 18px;
+}
+
 .titulo-contacto {
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .seccion-contacto {
   padding-top: 110px;
-}
-
-.lisContacto {
-  list-style: none;
-  font-size: 20px;
-  color: black;
 }
 
 .imgs-redessociales {
@@ -18,15 +24,11 @@
   border-radius: 50%;
   padding: 10px;
   margin-right: 8px;
+  width: 45px;
+  height: 45px;
 }
 
 textarea {
-  border-radius: 10px;
-}
-
-.inputs-contacto {
-  width: 26.5rem;
-  height: 3rem;
   border-radius: 10px;
 }
 
@@ -81,16 +83,5 @@ textarea {
 .imgsQuienessomos {
   width: 20rem;
   margin-right: 25px;
-}
-
-#clientes {
-  background-color: #49B6AF !important;
-  padding: 15px;
-  margin-top: 40px;
-  height: 35px;
-}
-
-.owl-images {
-  margin-top: 18px;
 }
 /*# sourceMappingURL=estilos.css.map */

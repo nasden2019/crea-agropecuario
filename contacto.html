@@ -53,18 +53,21 @@
     </header>
     <!-- END header -->
 
+
+    
+
     <!-- PARA CAMBIAR EL ORDER ENTRE MOBILE y DESKTOP:
     -ponerle col-lg-12 para q reconozca el sistema de grilla
     -el orden en q queremos q aparezca: order-2 por ej
     -order-md-1 (a partir de md q su order sea 1)
     -->
-    <div class="row">
-        <section class="seccion-contacto col-lg-12 border-bottom order-2 order-md-1">
+    <!-- <div class="row"> -->
+        <section class="seccion-contacto border-bottom order-xs-1 order-md-1">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 mb-5">
                         <div class="row justify-content-right">
-                            <div class="col-md-8 mx-auto contact-form-contact-info">
+                            <div class="col-md-12 mx-auto contact-form-contact-info">
                                 <h3 class="titulo-contacto">Contactate con nosotros</h3>
                                 <p class="">
                                     <!-- <span class="ion-ios-location icon mr-5"></span>  ICONO como fontawesome-->
@@ -85,10 +88,10 @@
                                 <p class="d-flex">
                                     <h4>Redes sociales</h4>
                                     <ul class="list-unstyled footer-link d-flex footer-social">
-                                        <li><a href="#" class="imgs-redessociales fa fa-twitter fa-3x"></a></li>
-                                        <li><a href="#" class="imgs-redessociales fa fa-facebook fa-3x"></a></li>
-                                        <li><a href="#" class="imgs-redessociales fa fa-linkedin fa-3x"></a></li>
-                                        <li><a href="#" class="imgs-redessociales fa fa-instagram fa-3x"></a></li>
+                                        <li><a href="#" class="imgs-redessociales fa fa-twitter fa-2x"></a></li>
+                                        <li><a href="#" class="imgs-redessociales fa fa-facebook fa-2x"></a></li>
+                                        <li><a href="#" class="imgs-redessociales fa fa-linkedin fa-2x"></a></li>
+                                        <li><a href="#" class="imgs-redessociales fa fa-instagram fa-2x"></a></li>
                                     </ul>
                                 </p>
                             </div>
@@ -122,7 +125,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 offset-md-3 form-group text-center">
-                                    <input type="submit" value="Enviar" class="btn px-3 py-3 btn-contacto">
+                                    <input type="submit" value="Enviar" class="btn px-2 py-2 btn-contacto">
                                 </div>
                             </div>
                         </form>
@@ -132,44 +135,44 @@
         </section>
 
 
-        <!-- MARGIN-BOTTOM (entre mapa y footer) -->
-        <div class="col-lg-12 my-sm-5 order-1 order-md-1">
-            <div class="container">
-                <div class="d-sm-block">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9561206291614!2d-58.3863360841747!3d-34.60527106508841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac59a3b5d8b%3A0x832e3cd0410cf49!2sCREA!5e0!3m2!1sen!2sar!4v1581427234587!5m2!1sen!2sar"
-                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <section class="my-sm-5 order-md-2 order-xs-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                            <div class="d-sm-block">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9561206291614!2d-58.3863360841747!3d-34.60527106508841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac59a3b5d8b%3A0x832e3cd0410cf49!2sCREA!5e0!3m2!1sen!2sar!4v1581427234587!5m2!1sen!2sar"
+                                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                            </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- </div>
-  </div>
-  </div> -->
+            <!-- MARGIN-BOTTOM (entre mapa y footer) -->
+        </section>
 
 
     <!-- FOOTER -->
     <footer id="clientes mt-sm-5" style="height: 100%;">
         <!-- <h2 class="text-center font-weight-bold pb-5 mt-sm-3">CLIENTES</h2> -->
         <!-- owl carrousel -->
+        <div class="container-fluid">
+            <div class="owl-carousel owl-theme">
+                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle" style="width: 80px;" />
+                </div>
+                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle" style="width: 80px;" />
+                </div>
+                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle" style="width: 80px;" />
+                </div>
+                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle" style="width: 80px;" />
+                </div>
+                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle" style="width: 80px;" />
+                </div>
+                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle" style="width: 80px;" />
+                </div>
+                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle" style="width: 80px;" />
+                </div>
 
-        <div class="owl-carousel owl-theme">
-            <div><img src="images/slider-footer1.png" alt="" class="owl-images rounded-circle" style="width: 80px;" />
             </div>
-            <div><img src="images/slider-footer2.png" alt="" class="owl-images rounded-circle" style="width: 80px;" />
-            </div>
-            <div><img src="images/slider-footer3.png" alt="" class="owl-images rounded-circle" style="width: 80px;" />
-            </div>
-            <div><img src="images/slider-footer4.png" alt="" class="owl-images rounded-circle" style="width: 80px;" />
-            </div>
-            <div><img src="images/slider-footer1.png" alt="" class="owl-images rounded-circle" style="width: 80px;" />
-            </div>
-            <div><img src="images/slider-footer2.png" alt="" class="owl-images rounded-circle" style="width: 80px;" />
-            </div>
-            <div><img src="images/slider-footer3.png" alt="" class="owl-images rounded-circle" style="width: 80px;" />
-            </div>
-
         </div>
     </footer>
 
