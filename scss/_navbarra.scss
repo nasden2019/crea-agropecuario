@@ -1,3 +1,14 @@
-.navbar {
-    background: $colorNavbar !important;
+header {
+    .navbar {
+        background: $navbarColor !important;
+
+        // padding-bottom: 20px;
+        .nav-item {
+            .nav-link {
+
+                color: black;
+            }
+        }
+    }
+
 }

@@ -75,6 +75,14 @@
   border-radius: 10px;
 }
 
+header .navbar {
+  background: white !important;
+}
+
+header .navbar .nav-item .nav-link {
+  color: black;
+}
+
 textarea {
   border-radius: 10px;
 }
