@@ -1,8 +1,40 @@
+.titulo-contacto {
+  text-transform: uppercase;
+}
+
+.seccion-contacto {
+  padding-top: 110px;
+}
+
+.lisContacto {
+  list-style: none;
+  font-size: 20px;
+  color: black;
+}
+
+.imgs-redessociales {
+  background-color: #49B6AF !important;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 8px;
+}
+
+textarea {
+  border-radius: 10px;
+}
+
+.inputs-contacto {
+  width: 26.5rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+
 .botones-inicio {
   width: 14rem;
   height: 6rem;
   color: white;
-  background: turquoise;
+  background: #49B6AF;
   text-transform: uppercase;
   font-size: 1rem;
   margin-top: 2rem;
@@ -15,7 +47,7 @@
   width: 14rem;
   height: 12rem;
   color: white;
-  background: turquoise;
+  background: #49B6AF;
   text-transform: uppercase;
   font-size: 1rem;
   margin-bottom: 1.5rem;
@@ -26,7 +58,7 @@
 
 .btn-contacto {
   color: white;
-  background: turquoise;
+  background: #49B6AF;
   font-size: 1.1rem;
   border-radius: 10px;
 }
@@ -44,7 +76,6 @@
 
 .seccion2-fotos {
   background: lightgray;
-  padding: 4rem;
 }
 
 .imgsQuienessomos {
@@ -52,40 +83,8 @@
   margin-right: 25px;
 }
 
-.titulo-contacto {
-  text-transform: uppercase;
-}
-
-.seccion-contacto {
-  padding-top: 110px;
-}
-
-.lisContacto {
-  list-style: none;
-  font-size: 20px;
-  color: black;
-}
-
-.imgs-redessociales {
-  background-color: turquoise !important;
-  color: white;
-  border-radius: 50%;
-  padding: 10px;
-  margin-right: 8px;
-}
-
-textarea {
-  border-radius: 10px;
-}
-
-.inputs-contacto {
-  width: 26.5rem;
-  height: 3rem;
-  border-radius: 10px;
-}
-
 #clientes {
-  background-color: turquoise;
+  background-color: #49B6AF !important;
   padding: 15px;
   margin-top: 40px;
   height: 35px;
