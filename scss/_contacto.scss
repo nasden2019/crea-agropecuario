@@ -1,23 +1,37 @@
-.titulo-contacto {
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
 .seccion-contacto {
     padding-top: 110px;
-}
 
+    .navbar {
+        background-color: $white !important;
+    }
 
-.imgs-redessociales {
-    background-color: $colorTurqueson !important;
-    color: white;
-    border-radius: 50%;
-    padding: 10px;
-    margin-right: 8px;
-    width: 45px;
-    height: 45px;
-}
+    .btn-contacto {
+        color: white;
+        background: $colorTurqueson;
+        font-size: 1.1rem;
+        border-radius: 10px;
 
-textarea {
-    border-radius: 10px;
+        &:hover {
+            background-color: darken($colorTurqueson, $amount: 8);
+        }
+    }
+
+    .titulo-contacto {
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    .imgs-redessociales {
+        background-color: $colorTurqueson;
+        color: white;
+        border-radius: 50%;
+        padding: 10px;
+        margin-right: 8px;
+        width: 45px;
+        height: 45px;
+
+        &:hover {
+            background-color: darken($color: $colorTurqueson, $amount: 8);
+        }
+    }
 }
