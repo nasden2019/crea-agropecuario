@@ -93,17 +93,22 @@ textarea {
 }
 
 .titulos-fotos-inicio {
-  background: yellow;
+  background: #FCD269;
+  color: black !important;
   padding: 10px;
   text-transform: uppercase;
 }
 
+.titulos-fotos-inicio a {
+  color: black;
+}
+
 .seccion2-fotos {
   background: lightgray;
+  padding: 40px 0;
 }
 
 .imgsQuienessomos {
   width: 20rem;
-  margin-right: 25px;
 }
 /*# sourceMappingURL=estilos.css.map */

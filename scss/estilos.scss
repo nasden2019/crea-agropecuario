@@ -5,6 +5,10 @@
 @import 'navbarra';
 
 // GENERALES
+// * {
+// 	overflow-x: hidden;
+// }
+
 textarea {
 	border-radius: 10px;
 }
@@ -19,22 +23,34 @@ textarea {
 }
 
 .titulos-fotos-inicio {
-	background: yellow;
+	background: #FCD269;
+	color: black !important;
 	padding: 10px;
 	text-transform: uppercase;
+
+	a {
+		color: black;
+	}
 }
 
 
 
-// ------- SOBRE NOSOTROS -------
+
+// ------- Seccion: SOBRE NOSOTROS -------
 
 .seccion2-fotos {
 	background: lightgray;
-
+	padding: 40px 0;
 }
 
 // (Quienes somos cards) 
 .imgsQuienessomos {
 	width: 20rem;
-	margin-right: 25px;
+	// margin-right: 25px;
 }
+
+// @media (max-width: 576px) {
+// 	.imgsQuienessomos {
+// 		width: 10rem;
+// 	}
+// }
