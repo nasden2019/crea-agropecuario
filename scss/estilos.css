@@ -42,6 +42,10 @@
   background-color: #3d9993;
 }
 
+.seccion-contacto .mapa {
+  margin-top: 4rem !important;
+}
+
 .botones-inicio {
   width: 14rem;
   height: 6rem;
