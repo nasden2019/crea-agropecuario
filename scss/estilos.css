@@ -113,6 +113,10 @@ textarea {
 }
 
 .imgsQuienessomos {
-  width: 20rem;
+  max-width: 100%;
+}
+
+.row-quienessomos {
+  padding: 0 !important;
 }
 /*# sourceMappingURL=estilos.css.map */

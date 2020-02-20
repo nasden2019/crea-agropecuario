@@ -45,8 +45,13 @@ textarea {
 
 // (Quienes somos cards) 
 .imgsQuienessomos {
-	width: 20rem;
+	max-width: 100%;
 	// margin-right: 25px;
+}
+
+// para Mobile (SECCION FOTOS)
+.row-quienessomos {
+	padding: 0 !important;
 }
 
 // @media (max-width: 576px) {
