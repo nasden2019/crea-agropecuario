@@ -33,21 +33,36 @@ textarea {
 	}
 }
 
-
-
+// .imagen {
+// 	background-image: url('images/img_3.jpg') no-repeat center/cover;
+// }
 
 // ------- Seccion: SOBRE NOSOTROS -------
+.seccion-quienesSomos {
+	* {
+		overflow-x: hidden;
+	}
 
-.seccion2-fotos {
-	background: lightgray;
-	padding: 40px 0;
+	.quienessomos-titulo {
+		margin-top: 2.5rem;
+	}
 }
 
-// (Quienes somos cards) 
+.seccion-parrafo {
+	margin: 3.5rem 0;
+	font-size: 1.2rem;
+
+	.seccion2-fotos {
+		background: lightgray;
+		padding: 40px 0;
+	}
+}
+
+// PONERLE 100% al WIDTH para q no se rompa en mobile: Y SEA RESPONSIVE
 .imgsQuienessomos {
 	max-width: 100%;
-	// margin-right: 25px;
 }
+
 
 // para Mobile (SECCION FOTOS)
 .row-quienessomos {

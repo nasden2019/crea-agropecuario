@@ -1341,11 +1341,11 @@ header {
 }
 
 .feature-1 {
-	padding: 30px;
-	background: $gray-100;
+	// padding: 30px;
+	// background: $gray-100;
 	min-height: calc(50% - 15px);
 	top: 0;
-	margin-bottom: 30px !important;
+	// margin-bottom: 30px !important;
 
 	@include media-breakpoint-down(md) {
 		display: block !important;

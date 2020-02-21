@@ -53,7 +53,7 @@
   background: #49B6AF;
   text-transform: uppercase;
   font-size: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
   border-radius: 10px;
   margin-left: 0px auto;
@@ -107,7 +107,20 @@ textarea {
   color: black;
 }
 
-.seccion2-fotos {
+.seccion-quienesSomos * {
+  overflow-x: hidden;
+}
+
+.seccion-quienesSomos .quienessomos-titulo {
+  margin-top: 2.5rem;
+}
+
+.seccion-parrafo {
+  margin: 3.5rem 0;
+  font-size: 1.2rem;
+}
+
+.seccion-parrafo .seccion2-fotos {
   background: lightgray;
   padding: 40px 0;
 }
