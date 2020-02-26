@@ -4,6 +4,10 @@
 @import 'botones';
 @import 'navbarra';
 
+// * {
+// 	overflow-x: hidden;
+// }
+
 // GENERALES
 // * {
 // 	overflow-x: hidden;
@@ -39,9 +43,9 @@ textarea {
 
 // ------- Seccion: SOBRE NOSOTROS -------
 .seccion-quienesSomos {
-	* {
-		overflow-x: hidden;
-	}
+	// * {
+	// 	overflow-x: hidden;
+	// }
 
 	.quienessomos-titulo {
 		margin-top: 2.5rem;
@@ -56,6 +60,7 @@ textarea {
 		background: lightgray;
 		padding: 40px 0;
 	}
+
 }
 
 // PONERLE 100% al WIDTH para q no se rompa en mobile: Y SEA RESPONSIVE
@@ -67,6 +72,31 @@ textarea {
 // para Mobile (SECCION FOTOS)
 .row-quienessomos {
 	padding: 0 !important;
+
+	h6 {
+		text-transform: uppercase;
+		margin-top: 15px;
+		font-size: 13px;
+		line-height: 5px;
+	}
+
+	span {
+		text-transform: uppercase;
+		font-size: 10px;
+	}
+
+	@media(min-width: 600px) {
+		h6 {
+			font-size: 25px;
+			color: grey;
+			margin-top: 15px;
+		}
+
+		span {
+			font-size: 17px;
+			color: grey;
+		}
+	}
 }
 
 // @media (max-width: 576px) {

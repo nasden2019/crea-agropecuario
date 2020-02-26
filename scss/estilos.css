@@ -12,6 +12,10 @@
   padding-top: 110px;
 }
 
+.seccion-contacto * {
+  overflow-x: hidden;
+}
+
 .seccion-contacto .btn-contacto {
   color: white;
   background: #49B6AF;
@@ -24,7 +28,7 @@
 }
 
 .seccion-contacto .titulo-contacto {
-  text-transform: uppercase;
+  margin-left: 12px;
   font-weight: 400;
 }
 
@@ -107,10 +111,6 @@ textarea {
   color: black;
 }
 
-.seccion-quienesSomos * {
-  overflow-x: hidden;
-}
-
 .seccion-quienesSomos .quienessomos-titulo {
   margin-top: 2.5rem;
 }
@@ -131,5 +131,29 @@ textarea {
 
 .row-quienessomos {
   padding: 0 !important;
+}
+
+.row-quienessomos h6 {
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-size: 13px;
+  line-height: 5px;
+}
+
+.row-quienessomos span {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+@media (min-width: 600px) {
+  .row-quienessomos h6 {
+    font-size: 25px;
+    color: grey;
+    margin-top: 15px;
+  }
+  .row-quienessomos span {
+    font-size: 17px;
+    color: grey;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
