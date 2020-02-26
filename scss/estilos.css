@@ -12,10 +12,6 @@
   padding-top: 110px;
 }
 
-.seccion-contacto * {
-  overflow-x: hidden;
-}
-
 .seccion-contacto .btn-contacto {
   color: white;
   background: #49B6AF;
