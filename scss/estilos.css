@@ -97,7 +97,7 @@ textarea {
 }
 
 .titulos-fotos-inicio {
-  background: #FCD269;
+  background: #fcd269;
   color: black !important;
   padding: 10px;
   text-transform: uppercase;
@@ -122,7 +122,7 @@ textarea {
 }
 
 .imgsQuienessomos {
-  max-width: 100%;
+  max-width: 110%;
 }
 
 .row-quienessomos {
@@ -143,12 +143,12 @@ textarea {
 
 @media (min-width: 600px) {
   .row-quienessomos h6 {
-    font-size: 25px;
+    font-size: 20px;
     color: grey;
     margin-top: 15px;
   }
   .row-quienessomos span {
-    font-size: 17px;
+    font-size: 12px;
     color: grey;
   }
 }

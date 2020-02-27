@@ -1,25 +1,23 @@
-@import 'variablesCrea';
-@import 'footer';
-@import 'contacto';
-@import 'botones';
-@import 'navbarra';
-
-// * {
-// 	overflow-x: hidden;
-// }
+@import "variablesCrea";
+@import "footer";
+@import "contacto";
+@import "botones";
+@import "navbarra";
 
 // GENERALES
 // * {
-// 	overflow-x: hidden;
+//   overflow-x: hidden;
+// }
+
+// .owl-images {
+// 	align-items: center;
 // }
 
 textarea {
 	border-radius: 10px;
 }
 
-
-
-// INICIO 
+// INICIO
 .tarjetas-inicio {
 	width: 29rem;
 	height: 3rem;
@@ -27,7 +25,7 @@ textarea {
 }
 
 .titulos-fotos-inicio {
-	background: #FCD269;
+	background: #fcd269;
 	color: black !important;
 	padding: 10px;
 	text-transform: uppercase;
@@ -43,9 +41,6 @@ textarea {
 
 // ------- Seccion: SOBRE NOSOTROS -------
 .seccion-quienesSomos {
-	// * {
-	// 	overflow-x: hidden;
-	// }
 
 	.quienessomos-titulo {
 		margin-top: 2.5rem;
@@ -60,14 +55,12 @@ textarea {
 		background: lightgray;
 		padding: 40px 0;
 	}
-
 }
 
 // PONERLE 100% al WIDTH para q no se rompa en mobile: Y SEA RESPONSIVE
 .imgsQuienessomos {
-	max-width: 100%;
+	max-width: 110%;
 }
-
 
 // para Mobile (SECCION FOTOS)
 .row-quienessomos {
@@ -85,15 +78,15 @@ textarea {
 		font-size: 9px;
 	}
 
-	@media(min-width: 600px) {
+	@media (min-width: 600px) {
 		h6 {
-			font-size: 25px;
+			font-size: 20px;
 			color: grey;
 			margin-top: 15px;
 		}
 
 		span {
-			font-size: 17px;
+			font-size: 12px;
 			color: grey;
 		}
 	}
