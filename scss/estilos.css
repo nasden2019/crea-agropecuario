@@ -87,6 +87,10 @@ header .navbar .nav-item .nav-link {
   color: black;
 }
 
+.owl-images {
+  text-align: center;
+}
+
 textarea {
   border-radius: 10px;
 }
