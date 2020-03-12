@@ -19,6 +19,7 @@ a {
 	transition: .3s all ease;
 	text-decoration: none;
 
+
 	&:hover {
 		text-decoration: none;
 	}
@@ -46,10 +47,12 @@ h5 {
 	}
 }
 
+// esta fue retocada! 
 .form-control {
 	box-shadow: none !important;
 	height: 50px;
 	border-width: 2px;
+	border-radius: 20px;
 }
 
 textarea.form-control {
@@ -109,11 +112,11 @@ textarea.form-control {
 
 /* Header */
 header {
-	position: absolute;
+	// position: absolute;
 	// top: 30px;
 	left: 0;
 	width: 100%;
-	z-index: 5;
+	// z-index: 5;
 
 	@include media-breakpoint-down(lg) {
 		top: 0;

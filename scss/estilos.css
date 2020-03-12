@@ -46,30 +46,24 @@
   margin-top: 4rem !important;
 }
 
-.botones-inicio {
+.botones {
   width: 14rem;
   height: 6rem;
   color: white;
   background: #49B6AF;
   text-transform: uppercase;
-  font-size: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.3rem;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   border-radius: 10px;
   margin-left: 0px auto;
 }
 
-.botones-inicio-ultimo {
-  width: 14rem;
+.botones.ultimo {
   height: 12rem;
-  color: white;
-  background: #49B6AF;
-  text-transform: uppercase;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  border-radius: 10px;
-  margin-top: 1rem;
-  margin-left: 0px auto;
 }
 
 .btn-contacto {
@@ -77,6 +71,7 @@
   background: #49B6AF;
   font-size: 1.1rem;
   border-radius: 10px;
+  text-transform: uppercase;
 }
 
 header .navbar {
@@ -85,6 +80,20 @@ header .navbar {
 
 header .navbar .nav-item .nav-link {
   color: black;
+}
+
+.titularTurquesa {
+  text-transform: uppercase;
+  color: #49B6AF;
+  font-weight: 400;
+}
+
+.p-trabajaconnosotros {
+  text-transform: uppercase;
+}
+
+label {
+  text-transform: uppercase;
 }
 
 .owl-images {

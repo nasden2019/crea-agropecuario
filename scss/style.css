@@ -9505,6 +9505,7 @@ h5 {
           box-shadow: none !important;
   height: 50px;
   border-width: 2px;
+  border-radius: 20px;
 }
 
 textarea.form-control {
@@ -9558,10 +9559,8 @@ textarea.form-control {
 
 /* Header */
 header {
-  position: absolute;
   left: 0;
   width: 100%;
-  z-index: 5;
 }
 
 @media (max-width: 1199.98px) {
