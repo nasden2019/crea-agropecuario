@@ -1,7 +1,8 @@
-.titularTurquesa {
+.mainTitular {
     text-transform: uppercase;
     color: $colorTurqueson;
     font-weight: 400;
+
 }
 
 // seccion trabaja con nosotros (parrafo)
@@ -9,6 +10,12 @@
     text-transform: uppercase;
 }
 
+// todos labels
 label {
     text-transform: uppercase;
+}
+
+//testimonials
+#testimonials {
+    background-color: lightgray;
 }

@@ -82,7 +82,7 @@ header .navbar .nav-item .nav-link {
   color: black;
 }
 
-.titularTurquesa {
+.mainTitular {
   text-transform: uppercase;
   color: #49B6AF;
   font-weight: 400;
@@ -94,6 +94,10 @@ header .navbar .nav-item .nav-link {
 
 label {
   text-transform: uppercase;
+}
+
+#testimonials {
+  background-color: lightgray;
 }
 
 .owl-images {
