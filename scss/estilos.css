@@ -114,6 +114,14 @@ label {
   font-size: 20px !important;
 }
 
+@media (max-width: 522px) {
+  .insta-feed {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
 .modales {
   background-color: lightgray;
   border-radius: 27px;

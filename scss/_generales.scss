@@ -24,3 +24,10 @@ label {
 .p-convocatorias {
     font-size: 20px !important;
 }
+
+// seccion referencias: orden mobile instagram y video
+@media(max-width: 522px) {
+    .insta-feed {
+        order: 2;
+    }
+}

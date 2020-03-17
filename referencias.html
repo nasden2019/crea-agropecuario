@@ -63,7 +63,7 @@
     <section class="mt-sm-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 mb-4">
+                <div class="col-12 col-md-6 mb-4 d-none">
                     <h3 class="mainTitular">| Noticias</h3>
                 </div>
             </div>
@@ -90,20 +90,20 @@
                 <div class="col-md-6 mt-2">
                     <h2 class="mb-sm-5 text-center">El video de la semana</h2>
                     <!-- VIDEO HERE-->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sitA91-zWm0" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    <iframe class="col-md-12" width="560" height="315" src="https://www.youtube.com/embed/sitA91-zWm0"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
 
-                <div class="col-md-6  mt-5">
+                <div class="col-md-6  mt-5 insta-feed">
                     <h2 class="mb-sm-5 text-center">A quién seguir?</h2>
-                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                    <div class="elfsight-app-0f5adf44-5d5c-4cc2-a1fd-eb8a3ff910d9"></div>
+                    <script src=" https://apps.elfsight.com/p/platform.js" defer></script>
+                    <div class="elfsight-app-0f5adf44-5d5c-4cc2-a1fd-eb8a3ff910d9" style="width: 100%;"></div>
                 </div>
                 <div class="col-md-6  mt-5">
                     <!-- VIDEO HERE-->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rOL80sMest0" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    <iframe class="col-md-12" width="560" height="315" src="https://www.youtube.com/embed/rOL80sMest0"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
             </div>
@@ -181,29 +181,6 @@
                 1200: {
                     dotsEach: 3,
                     items: 6
-                }
-            }
-            // }
-        });
-
-        $(".owl-carousel-secundarios").owlCarousel({
-            loop: true,
-            margin: 50,
-            nav: false,
-            autoplay: false,
-            autoplayTimeout: 2000,
-            responsive: {
-                0: {
-                    dotsEach: 2,
-                    items: 1
-                },
-                600: {
-                    dotsEach: 4,
-                    items: 3
-                },
-                1200: {
-                    dotsEach: 3,
-                    items: 4
                 }
             }
             // }
