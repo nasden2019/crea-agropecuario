@@ -66,6 +66,14 @@
   height: 12rem;
 }
 
+.botones.testeos {
+  background-color: #FCD269;
+  color: black;
+  width: 18rem;
+  height: 3.5rem;
+  font-size: 1rem;
+}
+
 .btn-contacto {
   color: white;
   background: #49B6AF;
@@ -96,6 +104,10 @@ header .navbar .nav-item .nav-link {
   text-transform: uppercase;
   color: #49B6AF;
   font-weight: 400;
+}
+
+.mainTitular.titularchiquito {
+  font-size: 20px;
 }
 
 .p-trabajaconnosotros {
