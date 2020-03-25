@@ -4,6 +4,8 @@
 <head>
     <title>CREA</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -29,10 +31,17 @@
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="scss/estilos.css">
 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+    </script>
 
 </head>
 
 <body>
+
 
     <header role="banner">
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -64,154 +73,240 @@
 
     <!-- END header -->
 
-    <div class="top-shadow"></div>
 
-    <section class="mt-sm-5">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <h3 class="mainTitular ml-md-5">| Testeos</h3>
-                </div>
+
+    <!-- SIDEBAR -->
+    <!-- METER LA PANTALLA ENTERA (antes de q termine el sidebar) DENTRO DEL SIDE BAR (MENOS EL NAVBAR Y EL FOOTER, PARA Q NO SE ROMPAN!)  -->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Testeos Generales</h3>
             </div>
+
+            <ul class="list-unstyled components">
+                <!-- <p>Dummy Heading</p> -->
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        Presencial
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Testeo artificial</a>
+                        </li>
+                        <li>
+                            <a href="#">Virtual</a>
+                        </li>
+                        <li>
+                            <a href="#">General</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- METER ACA!!!! LA PANTALLA ENTERA DENTRO DEL SIDE BAR (MENOS EL NAVBAR Y EL FOOTER, PARA Q NO SE ROMPAN!)  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info ml-sm-4">
+                        <i class="fas fa-align-left"></i>
+                        <span>Info extra</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- END SIDEBAR -->
+
+
+            <div class="top-shadow"></div>
+
+            <section class="mt-sm-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h3 class="mainTitular ml-md-5">| Testeo</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section ml-md-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- order-lg-1 para q en desktop se ponga en primer lugar-->
+                        <div class="col-md-4">
+                            <div class="">
+                                <img src="images/img_1.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-5 d-none d-md-block">
+                            <!-- text-center: para q ocupe el centro-->
+                            <div class="text-center">
+                                <iframe width="100%" height="443" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <!-- video en mobile-->
+                        <div class="col-md-5 d-md-none mt-4">
+                            <div class="">
+                                <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 text-center">
+
+                            <div>
+                                <a class="btn botones testeos" href="convocatorias.html">
+                                    Convocatorias
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="btn botones testeos text-black">
+                                    Sponsor
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="btn botones testeos" href="trabajaConNosotros.html">
+                                    Trabaja con <br>nosotros
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12">
+                            <div>
+                                <span class="mainTitular titularchiquito">| Institucionales</span>
+                                <h2 class="d-md-block d-none">Nueva herramienta para implementar en la empresa lechera
+                                </h2>
+                                <p class="p-convocatorias">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Aliquam
+                                    ipsum
+                                    minima nesciunt magni
+                                    reprehenderit ullam sunt? Reiciendis, quisquam consectetur quae eveniet rem minima
+                                    ipsam
+                                    molestiae aperiam, modi eveniet quam dolorem officia non reprehenderit ut? Pariatur
+                                    dictaam,
+                                    incidunt quo adipisci officiis minus voluptatum veritatis?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEGUNDA SECCION -->
+            <section class="section ml-md-5 mt-md-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- order-lg-1 para q en desktop se ponga en primer lugar-->
+                        <div class="col-md-4">
+                            <div class="">
+                                <img src="images/img_1.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-5 d-none d-md-block">
+                            <div class="text-center">
+                                <iframe width="100%" height="443" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <!-- video en mobile-->
+                        <div class="col-md-5 d-md-none mt-4">
+                            <div class="">
+                                <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 text-center">
+
+                            <div>
+                                <a class="btn botones testeos" href="convocatorias.html">
+                                    Convocatorias
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="btn botones testeos text-black">
+                                    Sponsor
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="btn botones testeos" href="trabajaConNosotros.html">
+                                    Trabaja con <br>nosotros
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12">
+                            <div>
+                                <span class="mainTitular titularchiquito">| Institucionales</span>
+                                <h2 class="d-md-block d-none">Nueva herramienta para implementar en la empresa lechera
+                                </h2>
+                                <p class="p-convocatorias">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Aliquam
+                                    ipsum
+                                    minima nesciunt magni
+                                    reprehenderit ullam sunt? Reiciendis, quisquam consectetur quae eveniet rem minima
+                                    ipsam
+                                    molestiae aperiam, modi eveniet quam dolorem officia non reprehenderit ut? Pariatur
+                                    dictaam,
+                                    incidunt quo adipisci officiis minus voluptatum veritatis?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
         </div>
-    </section>
-
-    <section class="section ml-md-5">
-        <div class="container-fluid">
-            <div class="row">
-                <!-- order-lg-1 para q en desktop se ponga en primer lugar-->
-                <div class="col-md-4">
-                    <div class="">
-                        <img src="images/img_1.jpg" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-5 d-none d-md-block">
-                    <!-- text-center: para q ocupe el centro-->
-                    <div class="text-center">
-                        <iframe width="100%" height="443" src="https://www.youtube.com/embed/ijs_p00fkdU"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <!-- video en mobile-->
-                <div class="col-md-5 d-md-none mt-4">
-                    <div class="">
-                        <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="col-md-2 text-center">
-
-                    <div>
-                        <a class="btn botones testeos" href="convocatorias.html">
-                            Convocatorias
-                        </a>
-                    </div>
-
-                    <div>
-                        <a class="btn botones testeos text-black">
-                            Sponsor
-                        </a>
-                    </div>
-
-                    <div>
-                        <a class="btn botones testeos" href="trabajaConNosotros.html">
-                            Trabaja con <br>nosotros
-                        </a>
-                    </div>
-
-                </div>
-                <div class="col-md-12">
-                    <div>
-                        <span class="mainTitular titularchiquito">| Institucionales</span>
-                        <h2 class="d-md-block d-none">Nueva herramienta para implementar en la empresa lechera</h2>
-                        <p class="p-convocatorias">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
-                            ipsum
-                            minima nesciunt magni
-                            reprehenderit ullam sunt? Reiciendis, quisquam consectetur quae eveniet rem minima ipsam
-                            molestiae aperiam, modi eveniet quam dolorem officia non reprehenderit ut? Pariatur dictaam,
-                            incidunt quo adipisci officiis minus voluptatum veritatis?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEGUNDA SECCION -->
-    <section class="section ml-md-5 mt-md-5">
-        <div class="container-fluid">
-            <div class="row">
-                <!-- order-lg-1 para q en desktop se ponga en primer lugar-->
-                <div class="col-md-4">
-                    <div class="">
-                        <img src="images/img_1.jpg" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-5 d-none d-md-block">
-                    <div class="text-center">
-                        <iframe width="100%" height="443" src="https://www.youtube.com/embed/ijs_p00fkdU"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <!-- video en mobile-->
-                <div class="col-md-5 d-md-none mt-4">
-                    <div class="">
-                        <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="col-md-2 text-center">
-
-                    <div>
-                        <a class="btn botones testeos" href="convocatorias.html">
-                            Convocatorias
-                        </a>
-                    </div>
-
-                    <div>
-                        <a class="btn botones testeos text-black">
-                            Sponsor
-                        </a>
-                    </div>
-
-                    <div>
-                        <a class="btn botones testeos" href="trabajaConNosotros.html">
-                            Trabaja con <br>nosotros
-                        </a>
-                    </div>
-
-                </div>
-                <div class="col-md-12">
-                    <div>
-                        <span class="mainTitular titularchiquito">| Institucionales</span>
-                        <h2 class="d-md-block d-none">Nueva herramienta para implementar en la empresa lechera</h2>
-                        <p class="p-convocatorias">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
-                            ipsum
-                            minima nesciunt magni
-                            reprehenderit ullam sunt? Reiciendis, quisquam consectetur quae eveniet rem minima ipsam
-                            molestiae aperiam, modi eveniet quam dolorem officia non reprehenderit ut? Pariatur dictaam,
-                            incidunt quo adipisci officiis minus voluptatum veritatis?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
+    </div>
 
     <!-- FOOTER -->
     <footer id="clientes" class="mt-sm-5" style="height: 100%;">
@@ -244,7 +339,24 @@
         </div>
     </footer>
 
+
+
     <!-- loader -->
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+
+    <script src="js/main.js"></script>
+
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle mx-auto class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
             <circle mx-auto class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
@@ -258,7 +370,6 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
 
-    <script src="js/main.js"></script>
 
     <script>
         $(".owl-carousel").owlCarousel({
@@ -287,7 +398,18 @@
                 }
             }
         });
+
+
+        // SIDEBAR
+        $(document).ready(function () {
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+        });
     </script>
+
 
 
 </body>

@@ -5,6 +5,7 @@
 @import "navbarra";
 @import "generales";
 @import 'modales';
+@import 'sidebar';
 
 // GENERALES
 // * {
@@ -50,7 +51,7 @@ textarea {
 }
 
 .seccion-parrafo {
-	margin: 3.5rem 0;
+	margin: 1.5rem 0;
 	font-size: 1.2rem;
 
 	.seccion2-fotos {
