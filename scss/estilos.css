@@ -140,9 +140,6 @@ label {
   text-align: left;
 }
 
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,7 +153,7 @@ label {
 #sidebar {
   min-width: 250px;
   max-width: 250px;
-  background: #7386D5;
+  background: #FCD269;
   color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -295,7 +292,7 @@ textarea {
 }
 
 .seccion-parrafo {
-  margin: 3.5rem 0;
+  margin: 1.5rem 0;
   font-size: 1.2rem;
 }
 
