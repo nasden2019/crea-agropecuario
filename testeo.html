@@ -79,7 +79,7 @@
     <!-- METER LA PANTALLA ENTERA (antes de q termine el sidebar) DENTRO DEL SIDE BAR (MENOS EL NAVBAR Y EL FOOTER, PARA Q NO SE ROMPAN!)  -->
     <div class="wrapper">
         <!-- Sidebar  -->
-        <nav id="sidebar">
+        <nav id="sidebar" style="display: none;">
             <div class="sidebar-header">
                 <h3>Testeos Generales</h3>
             </div>
@@ -136,6 +136,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
+                    <!-- boton id q metemos en JQUERY para hacer TOGGLE (hide and show) -->
                     <button type="button" id="sidebarCollapse" class="btn btn-info ml-sm-4">
                         <i class="fas fa-align-left"></i>
                         <span>Info extra</span>
@@ -402,10 +403,17 @@
 
         // SIDEBAR
 
+        // $(document).ready(function () {
+        //     $('#sidebar').hide();
+        //     $('#sidebarCollapse').on('click', function () {
+        //         $('#sidebar').toggleClass('active');
+        //     });
+        // });
+
         $(document).ready(function () {
             $('#sidebar').hide();
             $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
+                $('#sidebar').toggle();
             });
         });
     </script>
