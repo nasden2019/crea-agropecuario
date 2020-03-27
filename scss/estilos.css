@@ -305,6 +305,15 @@ textarea {
   max-width: 110%;
 }
 
+.modalCajasBlancas {
+  width: 22rem;
+}
+
+.modalCajasBlancas .fotosRedondas {
+  width: 83%;
+  margin: 20px 10px 0 10px;
+}
+
 .row-quienessomos {
   padding: 0 !important;
 }
