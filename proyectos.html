@@ -167,30 +167,6 @@
                 <div class="container-fluid">
                     <div class="row">
                         <!-- order-lg-1 para q en desktop se ponga en primer lugar-->
-                        <div class="col-md-4">
-                            <div class="">
-                                <img src="images/img_1.jpg" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-md-5 d-none d-md-block">
-                            <!-- text-center: para q ocupe el centro-->
-                            <div class="text-center">
-                                <iframe width="100%" height="443" src="https://www.youtube.com/embed/ijs_p00fkdU"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
-
-                        <!-- video en mobile-->
-                        <div class="col-md-5 d-md-none mt-4">
-                            <div class="">
-                                <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
 
                         <div class="col-md-2 text-center">
 
@@ -213,6 +189,35 @@
                             </div>
 
                         </div>
+
+
+                        <div class="col-md-5 d-none d-md-block">
+                            <!-- text-center: para q ocupe el centro-->
+                            <div class="text-center">
+                                <iframe width="100%" height="443" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <!-- video en mobile-->
+                        <div class="col-md-5 d-md-none mt-4">
+                            <div class="">
+                                <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <!-- img -->
+                        <div class="col-md-4">
+                            <div class="">
+                                <img src="images/img_1.jpg" class="img-fluid">
+                            </div>
+                        </div>
+
                         <div class="col-md-12">
                             <div>
                                 <span class="mainTitular titularchiquito">| Institucionales</span>
@@ -234,16 +239,36 @@
             </section>
 
             <!-- SEGUNDA SECCION -->
-            <section class="section ml-md-5 mt-md-5">
+            <section class="section ml-md-5">
                 <div class="container-fluid">
                     <div class="row">
                         <!-- order-lg-1 para q en desktop se ponga en primer lugar-->
-                        <div class="col-md-4">
-                            <div class="">
-                                <img src="images/img_1.jpg" class="img-fluid">
+
+                        <div class="col-md-2 text-center">
+
+                            <div>
+                                <a class="btn botones testeos" href="convocatorias.html">
+                                    Convocatorias
+                                </a>
                             </div>
+
+                            <div>
+                                <a class="btn botones testeos text-black">
+                                    Sponsor
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="btn botones testeos" href="trabajaConNosotros.html">
+                                    Trabaja con <br>nosotros
+                                </a>
+                            </div>
+
                         </div>
+
+
                         <div class="col-md-5 d-none d-md-block">
+                            <!-- text-center: para q ocupe el centro-->
                             <div class="text-center">
                                 <iframe width="100%" height="443" src="https://www.youtube.com/embed/ijs_p00fkdU"
                                     frameborder="0"
@@ -262,27 +287,13 @@
                             </div>
                         </div>
 
-                        <div class="col-md-2 text-center">
-
-                            <div>
-                                <a class="btn botones testeos" href="convocatorias.html">
-                                    Convocatorias
-                                </a>
+                        <!-- img -->
+                        <div class="col-md-4">
+                            <div class="">
+                                <img src="images/img_1.jpg" class="img-fluid">
                             </div>
-
-                            <div>
-                                <a class="btn botones testeos text-black" href="probar.html">
-                                    Probar
-                                </a>
-                            </div>
-
-                            <div>
-                                <a class="btn botones testeos" href="feedback.html">
-                                    Feedback
-                                </a>
-                            </div>
-
                         </div>
+
                         <div class="col-md-12">
                             <div>
                                 <span class="mainTitular titularchiquito">| Institucionales</span>
@@ -377,6 +388,7 @@
                 $('#sidebar').toggle();
             });
         });
+
         $(".owl-carousel").owlCarousel({
             loop: true,
             margin: 10,
