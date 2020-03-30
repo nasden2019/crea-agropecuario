@@ -7,7 +7,7 @@
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #FCD269;
+    background: #F8F9FA;
     color: #fff;
     transition: all 0.3s;
 }
@@ -18,12 +18,12 @@
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #F8F9FA;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #FCD269;
 }
 
 #sidebar ul p {
@@ -39,13 +39,13 @@
 
 #sidebar ul li a:hover {
     color: #7386D5;
-    background: #fff;
+    background: #FCD269;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #F8F9FA;
 }
 
 a[data-toggle="collapse"] {
