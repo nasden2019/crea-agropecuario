@@ -200,4 +200,4 @@ Template Name: proyectos
     </div>
 
     
-    <?php get_footer('2'); ?>
+<?php get_footer('2'); ?>

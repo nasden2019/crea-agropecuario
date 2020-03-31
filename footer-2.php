@@ -47,27 +47,23 @@
 
     <script src="js/main.js"></script>
 
-    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+   <!-- loader -->
+   <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle mx-auto class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
             <circle mx-auto class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
                 stroke="#f4b214" /></svg></div>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.2.1.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/popper.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/owl.carousel.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.waypoints.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.fancybox.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js"></script>
 
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js"></script>
 
     <script>
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggle();
-            });
-        });
-
         $(".owl-carousel").owlCarousel({
             loop: true,
             margin: 10,
@@ -94,7 +90,9 @@
                 }
             }
         });
-        // SIDEBAR
     </script>
+
+
 </body>
+
 </html>
