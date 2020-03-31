@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <div class="slider-item" style="background-image: url('images/hero_2.jpg'); <?php echo get_stylesheet_directory_uri(); ?>">
+        <div class="slider-item" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/hero_2.jpg');">
             <div class="container">
                 <div class="row slider-text align-items-center justify-content-center">
                     <div class="col-lg-7 text-center col-sm-12 element-animate">
