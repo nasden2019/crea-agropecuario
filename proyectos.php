@@ -121,7 +121,7 @@ Template Name: proyectos
                         <!-- img -->
                         <div class="col-md-6">
                             <div class="">
-                                <img src="images/img_1.jpg" class="img-fluid">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid">
                             </div>
                         </div>
 
@@ -173,7 +173,7 @@ Template Name: proyectos
                         <!-- img -->
                         <div class="col-md-6">
                             <div class="">
-                                <img src="images/img_1.jpg" class="img-fluid">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid">
                             </div>
                         </div>
 

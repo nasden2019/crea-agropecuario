@@ -4,25 +4,25 @@
         <!-- owl carrousel -->
         <div class="container">
             <div class="owl-carousel owl-theme">
-                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" />
                 </div>
-                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" />
                 </div>
-                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" />
                 </div>
-                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" />
                 </div>
-                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" />
                 </div>
-                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" />
                 </div>
-                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" />
                 </div>
             </div>
@@ -45,7 +45,7 @@
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
     </script>
 
-    <script src="js/main.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js"></script>
 
    <!-- loader -->
    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
