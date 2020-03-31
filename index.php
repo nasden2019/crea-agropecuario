@@ -5,7 +5,7 @@
 
     <!-- con d-none d-sm-block QUITAMOS ESTA SECTION DE MOBILE y d-sm-block la dejamos solo en desktop -->
     <section class="home-slider owl-carousel d-none d-sm-block">
-        <div class="slider-item" style="background-image: url('images/hero_1.jpg');">
+        <div class="slider-item" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/hero_1.jpg');">
             <div class="container-fluid">
                 <div class="row slider-text align-items-center justify-content-center">
                     <div class="col-lg-7 text-center col-sm-12 element-animate">
@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <div class="slider-item" style="background-image: url('images/hero_2.jpg'); <?php echo get_stylesheet_directory_uri(); ?>">
+        <div class="slider-item" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/hero_2.jpg');">
             <div class="container">
                 <div class="row slider-text align-items-center justify-content-center">
                     <div class="col-lg-7 text-center col-sm-12 element-animate">
@@ -85,7 +85,7 @@
 
                     <div class="feature-1 d-md-flex">
                         <div class="align-self-center">
-                            <img src="images/img_1.jpg" class="img-fluid">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid">
                             <p class="text-center titulos-fotos-inicio"><a href="trabajos.html">Trabajos</a></p>
                         </div>
                     </div>
