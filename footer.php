@@ -4,25 +4,25 @@
         <!-- owl carrousel -->
         <div class="container-fluid">
             <div class="owl-carousel owl-theme">
-                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" />
                 </div>
-                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" />
                 </div>
-                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" />
                 </div>
-                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" />
                 </div>
-                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" />
                 </div>
-                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" />
                 </div>
-                <div><img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" />
                 </div>
             </div>
