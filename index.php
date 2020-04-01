@@ -49,7 +49,7 @@
             <div class="row align-items-stretch">
                 <div class="col-lg-2 order-lg-3 d-none d-sm-block">
                     <div>
-                        <a class="btn botones text-white" href="convocatorias.html">
+                        <a class="btn botones text-white" href="<?php echo esc_url( home_url('/') ); ?>convocatorias">
                             Convocatorias
                         </a>
                     </div>
@@ -61,13 +61,13 @@
                     </div>
 
                     <div>
-                        <a class="btn botones" href="trabajaConNosotros.html">
+                        <a class="btn botones" href="<?php echo esc_url( home_url('/') ); ?>trabajaConNosotros">
                             Trabaja con <br>nosotros
                         </a>
                     </div>
 
                     <div>
-                        <a class="btn botones text-white" href="referencias.html">
+                        <a class="btn botones text-white" href="<?php echo esc_url( home_url('/') ); ?>referencias">
                             Referencias
                         </a>
                     </div>
@@ -86,14 +86,14 @@
                     <div class="feature-1 d-md-flex">
                         <div class="align-self-center">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid">
-                            <p class="text-center titulos-fotos-inicio"><a href="trabajos.html">Trabajos</a></p>
+                            <p class="text-center titulos-fotos-inicio"><a href="<?php echo esc_url( home_url('/') ); ?>trabajos">Trabajos</a></p>
                         </div>
                     </div>
 
                     <div class="feature-1 d-md-flex">
                         <div class="align-self-center">
-                            <img src="images/img_2.jpg" class="img-fluid">
-                            <p class="text-center titulos-fotos-inicio"><a href="testeoHome.html">Testeo</a></p>
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid">
+                            <p class="text-center titulos-fotos-inicio"><a href="<?php echo esc_url( home_url('/') ); ?>testeo-home">Testeo</a></p>
                         </div>
                     </div>
 
@@ -104,15 +104,15 @@
                     <div class="feature-1 d-md-flex">
                         <div class="align-self-center">
                             <!-- ICONO <span class="ion ion-alert-circle mx-autod display-4 text-primary"></span> -->
-                            <img src="images/img_3.jpg" class="img-fluid">
-                            <p class="text-center titulos-fotos-inicio"><a href="proyectos.html">Proyectos</a></p>
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_3.jpg" class="img-fluid">
+                            <p class="text-center titulos-fotos-inicio"><a href="<?php echo esc_url( home_url('/') ); ?>proyectos">Proyectos</a></p>
                         </div>
                     </div>
 
                     <div class="feature-1 d-md-flex">
                         <div class="align-self-center">
-                            <img src="images/img_3.jpg" class="img-fluid">
-                            <p class="text-center titulos-fotos-inicio"><a href="capacitacionhome.html">Capacitación</a>
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_3.jpg" class="img-fluid">
+                            <p class="text-center titulos-fotos-inicio"><a href="<?php echo esc_url( home_url('/') ); ?>capacitacion-home">Capacitación</a>
                             </p>
                         </div>
                     </div>

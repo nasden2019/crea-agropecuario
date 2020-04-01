@@ -39,7 +39,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand " href="index.html">
-                    <img src="images/logo.png" class="img-fluid" style="width: 14rem;">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" class="img-fluid" style="width: 14rem;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
                     aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,13 +49,13 @@
                 <div class="collapse navbar-collapse" id="navbarsExample05">
                     <ul class="navbar-nav pl-md-5 ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="<?php echo esc_url( home_url('/') ); ?>index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+                            <a class="nav-link" href="<?php echo esc_url( home_url('/') ); ?>sobre-nosotros">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contactanos</a>
+                            <a class="nav-link" href="<?php echo esc_url( home_url('/') ); ?>contacto">Contactanos</a>
                         </li>
                     </ul>
                 </div>

@@ -95,7 +95,7 @@ Template Name: testeos
         <div class="container">
             <div class="text-center">
                 <button type="button" class="btn btn-contacto px-4 py-3 ml-3">
-                    <a class="btn-contacto" href="testeo.html">VER
+                    <a class="btn-contacto" href="<?php echo esc_url( home_url('/') ); ?>testeo">VER
                         MAS</a></button>
             </div>
         </div>
