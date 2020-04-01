@@ -3,6 +3,7 @@
 Template Name: proyectos
 */
 ?>
+
 <?php get_header(); ?>
 
 <!-- SIDEBAR -->
