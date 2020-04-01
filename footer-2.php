@@ -61,9 +61,15 @@
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.fancybox.min.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js"></script>
 
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js"></script>
+    
 
     <script>
+
+$(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggle();
+            });
+        });
         $(".owl-carousel").owlCarousel({
             loop: true,
             margin: 10,
@@ -91,8 +97,5 @@
             }
         });
     </script>
-
-
 </body>
-
 </html>

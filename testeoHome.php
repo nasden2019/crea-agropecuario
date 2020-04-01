@@ -5,7 +5,7 @@ Template Name: testeo home
 */
 ?>
 
-<?php get_header(); ?>
+<?php get_header('2'); ?>
 
  <!-- METER ACA!!!! LA PANTALLA ENTERA DENTRO DEL SIDE BAR (MENOS EL NAVBAR Y EL FOOTER, PARA Q NO SE ROMPAN!)  -->
  <div id="content">
