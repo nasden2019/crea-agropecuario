@@ -20,4 +20,59 @@ function my_scripts() {
   }
   add_action( 'wp_enqueue_scripts', 'my_scripts' );
   
-  ?>
+
+
+  // SOPORTE IMAGENES DESTACADAS
+if ( function_exists( 'add_theme_support' ) ) {
+    add_theme_support( 'post-thumbnails' );
+ }
+
+
+ 
+  
+// action hook for custom type
+// function custom_css(){
+
+//     $args = array(
+//           'labels' => array(
+
+//                     'name' => 'images',
+//                     'singular_name' => 'image',
+//         ),
+
+//         // hierarchical replace the code above: it makes it look 
+//         // like pages in the admin
+//        'hierarchical' => true,
+//        'public' => true,
+//        'has_archive' => true,
+//        'menu_icon' => 'dashicons-images-alt2',
+//        'supports' => array('title', 'editor', 'thumbnail'),
+//     //    'rewrite' => array('slug' => 'images'),
+//     );
+      
+//     register_post_type('images', $args);
+// }
+//  add_action('init', 'custom_css');   
+ 
+
+ 
+//  function my_first_taxonomy() {
+       
+//     $args = array(
+        
+//               'labels' => array(     
+
+//                    'name' => 'vistas',
+//                    'singular_name' => 'vista',
+//     ),
+
+//                    'public' => true,
+//                    'hierarchical' => true,
+    
+//     );
+
+//              register_taxonomy('vistas', array('images'), $args);
+
+//  }
+//  add_action('init', 'my_first_taxonomy' );     
+?>
