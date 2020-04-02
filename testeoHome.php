@@ -5,7 +5,59 @@ Template Name: testeo home
 */
 ?>
 
-<?php get_header('2'); ?>
+<?php get_header(); ?>
+
+<!-- SIDEBAR -->
+    <!-- METER LA PANTALLA ENTERA (antes de q termine el sidebar) DENTRO DEL SIDE BAR (MENOS EL NAVBAR Y EL FOOTER, PARA Q NO SE ROMPAN!)  -->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" style="display: none">
+            <div class="sidebar-header">
+                <h3>Testeos Generales</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <!-- <p>Dummy Heading</p> -->
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        CATEGORIAS
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Categorias 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Categorias 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Categorias 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="text-white" href="#">SOBRE NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle 
+                        text-white">HERRAMIENTAS</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a class="text-white" href="#">Herramientas 1</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#">Herramientas 2</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#">Herramientas 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="text-white" href="#">CONTACTO</a>
+                </li>
+            </ul>
+
+        </nav>
 
  <!-- METER ACA!!!! LA PANTALLA ENTERA DENTRO DEL SIDE BAR (MENOS EL NAVBAR Y EL FOOTER, PARA Q NO SE ROMPAN!)  -->
  <div id="content">
@@ -141,5 +193,6 @@ Template Name: testeo home
     </div>
 </section>
 </div>
+                    </div>
 
 <?php get_footer('2'); ?>
