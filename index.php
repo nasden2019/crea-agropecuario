@@ -81,44 +81,34 @@
                     <!-- <div class="h-100"><div class="frame h-100"><div class="feature-img-bg h-100" style="background-image: url('images/about_1.jpg');"></div></div></div> -->
                 </div>
 
-                <div class="col-md-6 col-lg-5 feature-1-wrap d-md-flex flex-md-column order-lg-1">
-
-                    <div class="feature-1 d-md-flex">
-                        <div class="align-self-center">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid">
-                            <p class="text-center titulos-fotos-inicio"><a href="<?php echo esc_url( home_url('/') ); ?>trabajos">Trabajos</a></p>
-                        </div>
-                    </div>
-
-                    <div class="feature-1 d-md-flex">
-                        <div class="align-self-center">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid">
-                            <p class="text-center titulos-fotos-inicio"><a href="<?php echo esc_url( home_url('/') ); ?>testeo-home">Testeo</a></p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 col-lg-5 feature-1-wrap d-md-flex flex-md-column order-lg-1">
-
-                    <div class="feature-1 d-md-flex">
-                        <div class="align-self-center">
-                            <!-- ICONO <span class="ion ion-alert-circle mx-autod display-4 text-primary"></span> -->
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_3.jpg" class="img-fluid">
-                            <p class="text-center titulos-fotos-inicio"><a href="<?php echo esc_url( home_url('/') ); ?>proyectos">Proyectos</a></p>
-                        </div>
-                    </div>
-
-                    <div class="feature-1 d-md-flex">
-                        <div class="align-self-center">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_3.jpg" class="img-fluid">
-                            <p class="text-center titulos-fotos-inicio"><a href="<?php echo esc_url( home_url('/') ); ?>capacitacion-home">Capacitación</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                
+                   
+                <?php $args = array('post_type' => 'capacitaciones'); ?>
+                        <?php $loop = new WP_Query($args);
+                        $i = 1;
+                        if ( $loop->have_posts() ) :
+                            while ( $loop->have_posts() ) : $loop->the_post(); ?> 
+                                <?php if ($i % 2 !== 0) : 
+                                    echo '<div class="col-md-6 col-lg-5 feature-1-wrap d-md-flex flex-md-column order-lg-1">';
+                                 endif; ?>
+                                    <div class="feature-1 d-md-flex">
+                                        <div class="align-self-center">
+                                            <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid"> -->
+                                            <?php if ( get_field( 'imagen') ) { ?>
+                                                <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
+                                            <?php } ?>
+                                            <p class="text-center titulos-fotos-inicio"><a href="trabajos.html"><?php the_field( 'titulo' ); ?></a></p>
+                                        </div>
+                                    </div>
+                                    <?php if ($i % 2 == 0) :  
+                                        echo '</div>';
+                                     endif; 
+                                     $i++?>
+                            <?php endwhile;?>
+                        <?php endif;?>
+                    <?php wp_reset_postdata();?>
+              </div>
+          </div>
     </section>
 
   <?php get_footer(); ?>
