@@ -56,8 +56,7 @@ Template Name: sobrenosotros
                 <!-- offset-1: quita un rem de cada lado,-->
                 <div class="col-10 offset-1">
                     <div class="row">
-
-                    <?php $args = array('post_type' => 'sobre nosotros'); ?>
+                    <?php $args = array('post_type' => 'sobre_nosotros'); ?>
                     <?php $loop = new WP_Query($args);
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?> 
