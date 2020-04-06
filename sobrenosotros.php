@@ -92,9 +92,16 @@ Template Name: sobrenosotros
 
                 <div class="row justify-content-center mx-0  row-quienessomos">
 
-                    <!------- MOBILE: col-9 para q ocupe 9colums
-            (la hace mas grande) y m-auto en el medio -------->
-                    <div class="col-9 col-md-3 pr-md-5 mb-2" data-aos="fade-up" data-aos-delay="100">
+                <!-- CODIGO PARA WORDPRESS -->
+                 <?php $args = array('post_type' => 'index'); ?>
+                        <?php $loop = new WP_Query($args);
+                        $i = 1;
+                        if ( $loop->have_posts() ) :
+                            while ( $loop->have_posts() ) : $loop->the_post(); ?> 
+                                <?php if ($i % 2 !== 0) : 
+                                    echo
+                                      'col-9 col-md-3 pr-md-5 mb-2" data-aos="fade-up" data-aos-delay="100">';
+                endif; ?>
                         <button class="btn " data-toggle="modal" data-target="#Integrante8"
                             style="background-color: white;">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/person_3.jpg" alt="" class="circle rounded-circle imgsQuienessomos" />
