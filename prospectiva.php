@@ -30,7 +30,20 @@ Template name: prospectiva
                 <!-- offset-1: quita un rem de cada lado,-->
                 <div class="col-12">
                     <div class="row">
+                    <?php $args = array('post_type' => 'prospectiva'); ?>
+                    <?php $loop = new WP_Query($args);
+                   
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
                         <div class="col-md-4  mb-1">
+                        <?php the_field( 'video' ); ?>
+                            <iframe width="360" height="315" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <!-- <div class="col-md-4  mb-1">
                             <iframe width="360" height="315" src="https://www.youtube.com/embed/vlDzYIIOYmM"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -41,13 +54,10 @@ Template name: prospectiva
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                        </div>
-                        <div class="col-md-4  mb-1">
-                            <iframe width="360" height="315" src="https://www.youtube.com/embed/vlDzYIIOYmM"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
+                        </div> -->
+                        <?php $i++; endwhile;?>
+                        <?php endif;?>
+                        <?php wp_reset_postdata();?>
                     </div>
                 </div>
             </div>
@@ -65,24 +75,38 @@ Template name: prospectiva
             <div class="row">
                 <div class="col-10 offset-1">
                     <div class="row">
+
+                    <?php $args = array('post_type' => 'prospectiva_consulto'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
+
                         <div class="col-md-4  mb-1">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" />
+                            <?php if ( get_field( 'imagen') ) { ?>
+                             <img src="<?php the_field( 'imagen' ); ?>" />
+                                <?php } ?>
+                            <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
+                            <p class="text-center titulos-fotos-inicio">
+                                <a href="#">
+                                <?php the_field( 'titulo' ); ?>
+                                </a>
+                            </p>
+                        </div>
+                        <!-- <div class="col-md-4  mb-1">
+                            <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid" />
                             <p class="text-center titulos-fotos-inicio">
                                 <a href="#">Consultoria 1</a>
                             </p>
                         </div>
                         <div class="col-md-4  mb-1">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid" />
+                            <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid" />
                             <p class="text-center titulos-fotos-inicio">
                                 <a href="#">Consultoria 1</a>
                             </p>
-                        </div>
-                        <div class="col-md-4  mb-1">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid" />
-                            <p class="text-center titulos-fotos-inicio">
-                                <a href="#">Consultoria 1</a>
-                            </p>
-                        </div>
+                        </div> -->
+                        <?php endwhile;?>
+                        <?php endif;?>
+                       <?php wp_reset_postdata();?>
                     </div>
                 </div>
             </div>
@@ -99,8 +123,15 @@ Template name: prospectiva
             <div class="row">
                 <div class="col-10 offset-1">
                     <div class="row">
+                      <?php $args = array('post_type' => 'prospectiva_trabajos'); ?>
+                      <?php $loop = new WP_Query($args);
+                        if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
                         <div class="col-md-4  mb-1">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" />
+                        <?php if ( get_field( 'imagen') ) { ?>
+	                        <img src="<?php the_field( 'imagen' ); ?>" />
+                            <?php } ?> 
+                            <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
                             <p class="text-center titulos-fotos-inicio">
                                 <a href="#">Trabajo</a>
                             </p>
@@ -117,6 +148,9 @@ Template name: prospectiva
                                 <a href="#">Trabajo</a>
                             </p>
                         </div>
+                        <?php endwhile;?>
+                        <?php endif;?>
+                    <?php wp_reset_postdata();?>
                     </div>
                 </div>
             </div>
