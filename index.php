@@ -83,7 +83,7 @@
 
                 
                    
-                <?php $args = array('post_type' => 'home'); ?>
+                <?php $args = array('post_type' => 'index'); ?>
                         <?php $loop = new WP_Query($args);
                         $i = 1;
                         if ( $loop->have_posts() ) :

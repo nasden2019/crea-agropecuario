@@ -107,8 +107,8 @@ Template Name: sobrenosotros
                 <div class="col-6 col-md-3  mb-2 fotos-quienessomos-mobile" data-aos="fade-up" data-aos-delay="100">
                     <button class="btn " data-toggle="modal" data-target="#Integrante<?php echo $i; ?>"
                         style="background-color: white;">
-                        <?php if ( get_field( 'imagen') ) { ?>
-                            <img src="<?php the_field( 'imagen' ); ?>" class="circle rounded-circle imgsQuienessomos" />
+                        <?php if ( get_field( 'imagen_') ) { ?>
+                            <img src="<?php the_field( 'imagen_' ); ?>" class="circle rounded-circle imgsQuienessomos" />
                         <?php } ?>
                         <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/person_3.jpg" alt=""
                             class="circle rounded-circle imgsQuienessomos" /> -->
@@ -124,8 +124,8 @@ Template Name: sobrenosotros
                             <div class="modal-content">
                                 <div class="block-team-member-1 text-center rounded">
                                     <figure>
-                                    <?php if ( get_field( 'imagen') ) { ?>
-                                        <img src="<?php the_field( 'imagen' ); ?>" class="circle rounded-circle imgsQuienessomos" class="img-fluid rounded-circle"/>
+                                    <?php if ( get_field( 'imagen_') ) { ?>
+                                        <img src="<?php the_field( 'imagen_' ); ?>" class="circle rounded-circle imgsQuienessomos" class="img-fluid rounded-circle"/>
                                         <?php } ?>
                                         <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/person_3.jpg"
                                             alt="Image" class="img-fluid rounded-circle" /> -->
