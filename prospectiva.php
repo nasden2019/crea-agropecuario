@@ -83,7 +83,7 @@ Template name: prospectiva
 
                         <div class="col-md-4  mb-1">
                             <?php if ( get_field( 'imagen') ) { ?>
-                             <img src="<?php the_field( 'imagen' ); ?>" />
+                             <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"/>
                                 <?php } ?>
                             <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
                             <p class="text-center titulos-fotos-inicio">
@@ -129,25 +129,25 @@ Template name: prospectiva
                         while ( $loop->have_posts() ) : $loop->the_post(); ?> 
                         <div class="col-md-4  mb-1">
                         <?php if ( get_field( 'imagen') ) { ?>
-	                        <img src="<?php the_field( 'imagen' ); ?>" />
+	                        <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
                             <?php } ?> 
                             <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
                             <p class="text-center titulos-fotos-inicio">
                                 <a href="#">Trabajo</a>
                             </p>
                         </div>
-                        <div class="col-md-4  mb-1">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid" />
+                        <!-- <div class="col-md-4  mb-1">
+                            <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid" />
                             <p class="text-center titulos-fotos-inicio">
                                 <a href="#">Trabajo</a>
                             </p>
                         </div>
                         <div class="col-md-4  mb-1">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid" />
+                            <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid" />
                             <p class="text-center titulos-fotos-inicio">
                                 <a href="#">Trabajo</a>
                             </p>
-                        </div>
+                        </div> -->
                         <?php endwhile;?>
                         <?php endif;?>
                     <?php wp_reset_postdata();?>
