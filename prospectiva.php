@@ -133,7 +133,9 @@ Template name: prospectiva
                             <?php } ?> 
                             <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
                             <p class="text-center titulos-fotos-inicio">
-                                <a href="#">Trabajo</a>
+                                <a href="#">
+                                <?php the_field( 'titulo' ); ?>
+                                </a>
                             </p>
                         </div>
                         <!-- <div class="col-md-4  mb-1">
