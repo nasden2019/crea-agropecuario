@@ -64,14 +64,14 @@ Template Name: sobrenosotros
 
                         <div class="col-md-3  mb-1">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" />
-                            <p class="text-center titulos-fotos-inicio"><a href="<?php echo esc_url( home_url('/') ); ?>prospectiva">Prospectiva</a></p>
+                            <p class="text-center titul-fotos-inicio"><a href="<?php echo esc_url( home_url('/') ); ?>prospectiva">Prospectiva</a></p>
                         </div>
                         
 
                         <?php endwhile;?>
                         <?php endif;?>
                     <?php wp_reset_postdata();?>
-                    
+
                     </div>
                 </div>
             </div>
