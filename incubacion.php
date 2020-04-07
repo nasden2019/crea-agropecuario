@@ -47,13 +47,13 @@ Template Name: incubacion
         <div class="text-center">
           <h2 class="mb-sm-3">QUÉ INTENTAMOS HACER?</h2>
         </div>
-        <?php $args = array('post_type' => 'incubacion-seleccion'); ?>
+        <?php $args = array('post_type' => 'incubacion-que-hacemos'); ?>
                     <?php $loop = new WP_Query($args);
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?> 
-        <div>
+        <!-- <div> -->
           <p class="text-center p-convocatorias"><?php the_field( 'parrafo' ); ?></p>
-        </div>
+        <!-- </div> -->
 
         <div class="col-md-6  mt-md-4 text-center mx-auto">
         <?php if ( get_field( 'imagen') ) { ?>
@@ -62,7 +62,7 @@ Template Name: incubacion
           <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
         </div>
       </div>
-      
+
       <?php endwhile;?>
     <?php endif;?>
     <?php wp_reset_postdata();?>
@@ -77,6 +77,7 @@ Template Name: incubacion
         <div class="text-center">
           <h2 class="mb-sm-3">METODOLOGIA DE INCUBACIÓN</h2>
         </div>
+
         <div class="col-md-6  mt-md-4 text-center mx-auto">
         <?php if ( get_field( 'imagen') ) { ?>
 	        <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"  />
@@ -99,19 +100,28 @@ Template Name: incubacion
       <div class="col-10 offset-1">
         <div class="row">
           <div class="col-md-4  mb-1">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" />
+          <?php $args = array('post_type' => 'capacitaciones'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
+
+                    <?php if ( get_field( 'imagen') ) { ?>
+                      <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
+                    <?php } ?>
+            <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
             <p class="text-center titulos-fotos-inicio">
-              <a href="#">Aliado 1</a>
+              <a href="#"><?php the_field( 'titulo' ); ?></a>
             </p>
             <p class="text-center p-convocatorias">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-              quod dicta delectus nesciunt et deserunt, animi aliquid beatae
-              labore officiis hic facilis dolorum, doloremque tempore.
-              Delectus quaerat et quod saepe, cumque corporis nesciunt
+              <?php the_field( 'parrafo' ); ?>
             </p>
           </div>
-          <div class="col-md-4  mb-1">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid" />
+
+          <?php endwhile;?>
+                <?php endif;?>
+                    <?php wp_reset_postdata();?>
+          <!-- <div class="col-md-4  mb-1">
+            <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid" />
             <p class="text-center titulos-fotos-inicio">
               <a href="#">Aliado 2</a>
             </p>
@@ -123,7 +133,7 @@ Template Name: incubacion
             </p>
           </div>
           <div class="col-md-4  mb-1">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid" />
+            <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid" />
             <p class="text-center titulos-fotos-inicio">
               <a href="#">Aliado 3</a>
             </p>
@@ -133,7 +143,7 @@ Template Name: incubacion
               labore officiis hic facilis dolorum, doloremque tempore.
               Delectus quaerat et quod saepe, cumque corporis nesciunt
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
