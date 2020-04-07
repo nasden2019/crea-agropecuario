@@ -105,11 +105,11 @@ Template Name: incubacion
     <div class="row">
       <div class="col-10 offset-1">
         <div class="row">
-          <div class="col-md-4  mb-1">
           <?php $args = array('post_type' => 'incubacion_aliados'); ?>
                     <?php $loop = new WP_Query($args);
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?> 
+          <div class="col-md-4  mb-1">
 
                     <?php if ( get_field( 'imagen') ) { ?>
                       <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
