@@ -127,7 +127,7 @@ Template Name: proyectos
                         <div class="col-md-6">
                             <div class="">
                             <?php if ( get_field( 'imagen') ) { ?>
-                                <img src="<?php the_field( 'imagen' ); ?>" />
+                                <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"/>
                             <?php } ?>
                                 <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid"> -->
                             </div>
@@ -185,7 +185,7 @@ Template Name: proyectos
                         <div class="col-md-6">
                             <div class="">
                             <?php if ( get_field( 'imagen') ) { ?>
-                                <img src="<?php the_field( 'imagen' ); ?>" />
+                                <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"/>
                             <?php } ?>
                                 <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid"> -->
                             </div>
