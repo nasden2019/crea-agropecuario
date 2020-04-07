@@ -26,17 +26,7 @@ Template Name: incubacion
         <h2 class="mb-sm-5">PROCESO DE SELECCIÓN DE PROYECTOS</h2>
       </div>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quod
-        dicta delectus nesciunt et deserunt, animi aliquid beatae labore
-        officiis hic facilis dolorum, doloremque tempore. Delectus quaerat
-        et quod saepe, cumque corporis nesciunt laudantium ut quis nobis
-        architecto, veritatis incidunt repellendus autem tempore blanditiis
-        dolore quisquam culpa atque ipsam possimus, ipsum sed modi
-        perspiciatis. Atque tenetur incidunt commodi, omnis a repellat quo
-        quasi? Alias, est hic! Aliquam quasi, ducimus rerum harum soluta at
-        iusto sequi quis obcaecati dolorem beatae tenetur tempore amet
-        repellendus nobis modi animi. Beatae qui id eum, provident quidem
-        dolorem fuga earum tempore sed sit ab illum.
+      <?php the_field( 'parrafo' ); ?>
       </p>
     </div>
   </div>
