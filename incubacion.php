@@ -42,18 +42,14 @@ Template Name: incubacion
         </div>
         <div>
           <p class="text-center p-convocatorias">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-            quod dicta delectus nesciunt et deserunt, animi aliquid beatae
-            labore officiis hic facilis dolorum, doloremque tempore.
-            Delectus quaerat et quod saepe, cumque corporis nesciunt
-            laudantium ut quis nobis architecto, veritatis incidunt
-            repellendus autem tempore blanditiis dolore quisquam culpa atque
-            ipsam possimus, ipsum sed modi perspiciatis. Atque tenetur
-            incidunt commodi, omnis a repellat quo
+          <?php the_field( 'parrafo' ); ?>
           </p>
         </div>
         <div class="col-md-6  mt-md-4 text-center mx-auto">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" />
+        <?php if ( get_field( 'imagen') ) { ?>
+	        <img src="<?php the_field( 'imagen' ); ?>" />
+              <?php } ?>
+          <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
         </div>
       </div>
     </div>
