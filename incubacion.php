@@ -25,10 +25,17 @@ Template Name: incubacion
       <div class="text-center">
         <h2 class="mb-sm-5">PROCESO DE SELECCIÓN DE PROYECTOS</h2>
       </div>
+      <?php $args = array('post_type' => 'capacitacion'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
       <p>
       <?php the_field( 'parrafo' ); ?>
       </p>
     </div>
+    <?php endwhile;?>
+    <?php endif;?>
+    <?php wp_reset_postdata();?>
   </div>
 </section>
 
@@ -45,6 +52,7 @@ Template Name: incubacion
           <?php the_field( 'parrafo' ); ?>
           </p>
         </div>
+
         <div class="col-md-6  mt-md-4 text-center mx-auto">
         <?php if ( get_field( 'imagen') ) { ?>
 	        <img src="<?php the_field( 'imagen' ); ?>" />
