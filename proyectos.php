@@ -143,7 +143,7 @@ Template Name: proyectos
                                 </p>
                             </div>
                         </div>
-                        <?php $i++; endwhile;?>
+                        <?php endwhile;?>
                           <?php endif;?>
                             <?php wp_reset_postdata();?>
                     </div>

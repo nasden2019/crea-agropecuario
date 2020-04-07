@@ -32,7 +32,7 @@ Template name: prospectiva
                     <div class="row">
                     <?php $args = array('post_type' => 'prospectiva'); ?>
                     <?php $loop = new WP_Query($args);
-                   
+                    $i=1;
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
@@ -55,7 +55,7 @@ Template name: prospectiva
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                         </div> -->
-                        <?php endwhile;?>
+                        <?php $i++; endwhile;?>
                         <?php endif;?>
                         <?php wp_reset_postdata();?>
                     </div>
