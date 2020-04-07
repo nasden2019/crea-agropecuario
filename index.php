@@ -97,9 +97,7 @@
                                             <?php if ( get_field( 'imagen') ) { ?>
                                                 <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
                                             <?php } ?>
-                                            <!-- <p class="text-center titulos-fotos-inicio"><a href="trabajos">?php the_field 'titulo' ; ?></a></p> -->
-                                            <p class="text-center titulos-fotos-inicio"><a href="<?php echo esc_url( home_url('/') ); ?><?php the_field( 'titulo' ); ?>">
-                                <?php the_field( 'titulo' ); ?></a></p>
+                                            <p class="text-center titulos-fotos-inicio"><a href="trabajos"><?php the_field( 'titulo' ); ?></a></p>
                                         </div>
                                     </div>
                                     <?php if ($i % 2 == 0) :  

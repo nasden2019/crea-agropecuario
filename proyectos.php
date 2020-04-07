@@ -96,11 +96,14 @@ Template Name: proyectos
                     <div class="row">
 
 
-                        <!-- aca iban los botones de la izquierda -->
-
+                        <?php $args = array('post_type' => 'proyectos_categorias'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
 
                         <div class="col-md-6 d-none d-md-block">
-                            <!-- text-center: para q ocupe el centro-->
+                           
+                            <?php the_field( 'video' ); ?>
                             <div class="text-center">
                                 <iframe width="100%" height="405" src="https://www.youtube.com/embed/ijs_p00fkdU"
                                     frameborder="0"
@@ -111,6 +114,7 @@ Template Name: proyectos
 
                         <!-- video en mobile-->
                         <div class="col-md-5 d-md-none mt-4">
+                        <?php the_field( 'video' ); ?>
                             <div class="">
                                 <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
                                     frameborder="0"
@@ -122,26 +126,26 @@ Template Name: proyectos
                         <!-- img -->
                         <div class="col-md-6">
                             <div class="">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid">
+                            <?php if ( get_field( 'imagen') ) { ?>
+                                <img src="<?php the_field( 'imagen' ); ?>" />
+                            <?php } ?>
+                                <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid"> -->
                             </div>
                         </div>
 
                         <div class="col-md-12">
                             <div>
                                 <span class="mainTitular titularchiquito">| Categorias</span>
-                                <h2 class="d-md-block d-none">Nueva herramienta para implementar en la empresa lechera
+                                <h2 class="d-md-block d-none"><?php the_field( 'titulo' ); ?>
                                 </h2>
-                                <p class="p-convocatorias">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Aliquam
-                                    ipsum
-                                    minima nesciunt magni
-                                    reprehenderit ullam sunt? Reiciendis, quisquam consectetur quae eveniet rem minima
-                                    ipsam
-                                    molestiae aperiam, modi eveniet quam dolorem officia non reprehenderit ut? Pariatur
-                                    dictaam,
-                                    incidunt quo adipisci officiis minus voluptatum veritatis?</p>
+                                <p class="p-convocatorias">
+                                <?php the_field( 'parrafo' ); ?>
+                                </p>
                             </div>
                         </div>
+                        <?php endwhile;?>
+                          <?php endif;?>
+                            <?php wp_reset_postdata();?>
                     </div>
                 </div>
             </section>
