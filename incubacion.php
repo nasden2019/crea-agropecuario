@@ -25,7 +25,7 @@ Template Name: incubacion
       <div class="text-center">
         <h2 class="mb-sm-5">PROCESO DE SELECCIÓN DE PROYECTOS</h2>
       </div>
-      <?php $args = array('post_type' => 'capacitacion'); ?>
+      <?php $args = array('post_type' => 'incubacion-seleccion'); ?>
                     <?php $loop = new WP_Query($args);
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?> 
@@ -47,19 +47,25 @@ Template Name: incubacion
         <div class="text-center">
           <h2 class="mb-sm-3">QUÉ INTENTAMOS HACER?</h2>
         </div>
+        <?php $args = array('post_type' => 'incubacion-seleccion'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
         <div>
-          <p class="text-center p-convocatorias">
-          <?php the_field( 'parrafo' ); ?>
-          </p>
+          <p class="text-center p-convocatorias"><?php the_field( 'parrafo' ); ?></p>
         </div>
 
         <div class="col-md-6  mt-md-4 text-center mx-auto">
         <?php if ( get_field( 'imagen') ) { ?>
-	        <img src="<?php the_field( 'imagen' ); ?>" />
+	        <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"/>
               <?php } ?>
           <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
         </div>
       </div>
+      
+      <?php endwhile;?>
+    <?php endif;?>
+    <?php wp_reset_postdata();?>
     </div>
   </div>
 </section>
@@ -72,7 +78,10 @@ Template Name: incubacion
           <h2 class="mb-sm-3">METODOLOGIA DE INCUBACIÓN</h2>
         </div>
         <div class="col-md-6  mt-md-4 text-center mx-auto">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" />
+        <?php if ( get_field( 'imagen') ) { ?>
+	        <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"  />
+            <?php } ?>
+          <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
         </div>
       </div>
     </div>
