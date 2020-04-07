@@ -25,7 +25,7 @@ Template Name: incubacion
       <div class="text-center">
         <h2 class="mb-sm-5">PROCESO DE SELECCIÓN DE PROYECTOS</h2>
       </div>
-      <?php $args = array('post_type' => 'incubacion-seleccion'); ?>
+      <?php $args = array('post_type' => 'incubacion-crea'); ?>
                     <?php $loop = new WP_Query($args);
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?> 
