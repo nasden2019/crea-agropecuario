@@ -198,6 +198,9 @@ Template Name: proyectos
                                     incidunt quo adipisci officiis minus voluptatum veritatis?</p>
                             </div>
                         </div>
+                        <?php endwhile;?>
+                            <?php endif;?>
+                                <?php wp_reset_postdata();?>
                     </div>
                 </div>
             </section>
