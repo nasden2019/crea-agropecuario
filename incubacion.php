@@ -77,7 +77,10 @@ Template Name: incubacion
         <div class="text-center">
           <h2 class="mb-sm-3">METODOLOGIA DE INCUBACIÓN</h2>
         </div>
-
+        <?php $args = array('post_type' => 'incubacion-metodologia'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
         <div class="col-md-6  mt-md-4 text-center mx-auto">
         <?php if ( get_field( 'imagen') ) { ?>
 	        <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"  />
@@ -85,6 +88,9 @@ Template Name: incubacion
           <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
         </div>
       </div>
+      <?php endwhile;?>
+                <?php endif;?>
+                    <?php wp_reset_postdata();?>
     </div>
   </div>
 </section>
@@ -100,7 +106,7 @@ Template Name: incubacion
       <div class="col-10 offset-1">
         <div class="row">
           <div class="col-md-4  mb-1">
-          <?php $args = array('post_type' => 'capacitaciones'); ?>
+          <?php $args = array('post_type' => 'incubacion-aliados'); ?>
                     <?php $loop = new WP_Query($args);
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?> 
