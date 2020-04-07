@@ -55,7 +55,7 @@ Template name: prospectiva
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                         </div> -->
-                        <?php $i++; endwhile;?>
+                        <?php endwhile;?>
                         <?php endif;?>
                         <?php wp_reset_postdata();?>
                     </div>
