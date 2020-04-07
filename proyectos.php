@@ -105,10 +105,10 @@ Template Name: proyectos
                            
                             <?php the_field( 'video' ); ?>
                             <div class="text-center">
-                                <iframe width="100%" height="405" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                                <!-- <iframe width="100%" height="405" src="https://www.youtube.com/embed/ijs_p00fkdU"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                                    allowfullscreen></iframe> -->
                             </div>
                         </div>
 
@@ -116,10 +116,10 @@ Template Name: proyectos
                         <div class="col-md-5 d-md-none mt-4">
                         <?php the_field( 'video' ); ?>
                             <div class="">
-                                <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                                <!-- <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                                    allowfullscreen></iframe> -->
                             </div>
                         </div>
 
@@ -163,10 +163,10 @@ Template Name: proyectos
                         <div class="col-md-6 d-none d-md-block">
                         <?php the_field( 'video' ); ?>
                             <div class="text-center">
-                                <iframe width="100%" height="405" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                                <!-- <iframe width="100%" height="405" src="https://www.youtube.com/embed/ijs_p00fkdU"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                                    allowfullscreen></iframe> -->
                             </div>
                         </div>
 
@@ -174,10 +174,10 @@ Template Name: proyectos
                         <div class="col-md-5 d-md-none mt-4">
                           <?php the_field( 'video' ); ?>
                             <div class="">
-                                <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                                <!-- <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                                    allowfullscreen></iframe> -->
                             </div>
                         </div>
 
