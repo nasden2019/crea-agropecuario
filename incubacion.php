@@ -47,7 +47,7 @@ Template Name: incubacion
         <div class="text-center">
           <h2 class="mb-sm-3">QUÉ INTENTAMOS HACER?</h2>
         </div>
-        <?php $args = array('post_type' => 'incubacion-que-hacemos'); ?>
+        <?php $args = array('post_type' => 'incubacion_hacemos'); ?>
                     <?php $loop = new WP_Query($args);
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?> 
@@ -77,7 +77,7 @@ Template Name: incubacion
         <div class="text-center">
           <h2 class="mb-sm-3">METODOLOGIA DE INCUBACIÓN</h2>
         </div>
-        <?php $args = array('post_type' => 'incubacion-metodologia'); ?>
+        <?php $args = array('post_type' => 'incubacionmetodolog'); ?>
                     <?php $loop = new WP_Query($args);
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?> 
@@ -106,7 +106,7 @@ Template Name: incubacion
       <div class="col-10 offset-1">
         <div class="row">
           <div class="col-md-4  mb-1">
-          <?php $args = array('post_type' => 'incubacion-aliados'); ?>
+          <?php $args = array('post_type' => 'incubacion_aliados'); ?>
                     <?php $loop = new WP_Query($args);
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?> 
