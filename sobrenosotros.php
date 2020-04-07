@@ -68,8 +68,9 @@ Template Name: sobrenosotros
                         <?php } ?>
                         <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
                         <p class="text-center titulos-fotos-inicio"><a
-                                href="<?php echo esc_url( home_url('/') ); ?>prospectiva">
+                                href="<?php echo esc_url( home_url('/') ); ?><?php the_field( 'titulo' ); ?>">
                                 <?php the_field( 'titulo' ); ?></a></p>
+                                
                     </div>
 
 
