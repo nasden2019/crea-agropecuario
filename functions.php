@@ -101,10 +101,10 @@ if ( function_exists( 'add_theme_support' ) ) {
         40
     );
     add_menu_page(
-        'capactiacion',
-        'capactiacion',
+        'capacitacion',
+        'capacitacion',
         'read',
-        'capactiacion',
+        'capacitacion',
         '',
         'dashicons-admin-home',
         40
