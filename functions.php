@@ -105,4 +105,21 @@ if ( function_exists( 'add_theme_support' ) ) {
 
  add_action( 'admin_menu', 'frontpage_admin_menu' );
 
+ function testeo_admin_menu() {
+
+
+    add_menu_page(
+        'testeos',
+        'testeos',
+        'read',
+        'testeos',
+        '',
+        'dashicons-admin-home',
+        40
+    );
+
+ }
+
+ add_action( 'admin_menu', 'testeo_admin_menu' );
+
 ?>
