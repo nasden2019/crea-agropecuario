@@ -133,7 +133,7 @@ Template Name: testeo home
 
             <div class="col-md-12">
                 <div>
-                    <span class="mainTitular titularchiquito">| Categorias</span>
+                    <span class="mainTitular titularchiquito">| Categorías</span>
                     <h2 class="d-md-block d-none"><?php the_field( 'titulo' ); ?>
                     </h2>
                     <p class="p-convocatorias"><?php the_field( 'parrafo' ); ?></p>
