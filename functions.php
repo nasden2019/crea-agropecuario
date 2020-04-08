@@ -109,6 +109,24 @@ if ( function_exists( 'add_theme_support' ) ) {
         'dashicons-admin-home',
         40
     );
+    add_menu_page(
+        'trabajos',
+        'trabajos',
+        'read',
+        'trabajos',
+        '',
+        'dashicons-admin-home',
+        40
+    );
+    add_menu_page(
+        'proyectos',
+        'proyectos',
+        'read',
+        'proyectos',
+        '',
+        'dashicons-admin-home',
+        40
+    );
 
 
  }
