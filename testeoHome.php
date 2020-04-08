@@ -95,29 +95,38 @@ Template Name: testeo home
 <section class="section ml-md-5">
     <div class="container">
         <div class="row">
-            <!-- order-lg-1 para q en desktop se ponga en primer lugar-->
+        <?php $args = array('post_type' => 'testeo_categorias'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
+
             <div class="col-md-6">
                 <div class="">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid">
+                <?php if ( get_field( 'imagen') ) { ?>
+                    <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"/>
+                <?php } ?>
+                    <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid"> -->
                 </div>
             </div>
             <div class="col-md-6 d-none d-md-block">
                 <!-- text-center: para q ocupe el centro-->
                 <div class="text-center">
-                    <iframe width="100%" height="405" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                    <?php the_field( 'video' ); ?>
+                    <!-- <iframe width="100%" height="405" src="https://www.youtube.com/embed/ijs_p00fkdU"
                         frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        allowfullscreen></iframe> -->
                 </div>
             </div>
 
             <!-- video en mobile-->
             <div class="col-md-5 d-md-none mt-4">
                 <div class="">
-                    <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                <?php the_field( 'video' ); ?>
+                    <!-- <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
                         frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        allowfullscreen></iframe> -->
                 </div>
             </div>
 
@@ -125,19 +134,14 @@ Template Name: testeo home
             <div class="col-md-12">
                 <div>
                     <span class="mainTitular titularchiquito">| Categorias</span>
-                    <h2 class="d-md-block d-none">Nueva herramienta para implementar en la empresa lechera
+                    <h2 class="d-md-block d-none"><?php the_field( 'titulo' ); ?>
                     </h2>
-                    <p class="p-convocatorias">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Aliquam
-                        ipsum
-                        minima nesciunt magni
-                        reprehenderit ullam sunt? Reiciendis, quisquam consectetur quae eveniet rem minima
-                        ipsam
-                        molestiae aperiam, modi eveniet quam dolorem officia non reprehenderit ut? Pariatur
-                        dictaam,
-                        incidunt quo adipisci officiis minus voluptatum veritatis?</p>
+                    <p class="p-convocatorias"><?php the_field( 'parrafo' ); ?></p>
                 </div>
             </div>
+            <?php endwhile;?>
+              <?php endif;?>
+                <?php wp_reset_postdata();?>
         </div>
     </div>
 </section>
@@ -146,29 +150,38 @@ Template Name: testeo home
 <section class="section ml-md-5 mt-md-5">
     <div class="container">
         <div class="row">
-
+        <?php $args = array('post_type' => 'testeo_categorias2'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
             <div class="col-md-6">
                 <div class="">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid">
+                            <?php $imagen = get_field( 'imagen' ); ?>
+            <?php if ( $imagen ) { ?>
+                <img src="<?php echo $imagen['url']; ?>" alt="<?php echo $imagen['alt']; ?>" class="img-fluid"/>
+            <?php } ?>
+                    <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid"> -->
                 </div>
             </div>
 
             <div class="col-md-6 d-none d-md-block">
                 <div class="text-center">
-                    <iframe width="100%" height="405" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                <?php the_field( 'video' ); ?>
+                    <!-- <iframe width="100%" height="405" src="https://www.youtube.com/embed/ijs_p00fkdU"
                         frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        allowfullscreen></iframe> -->
                 </div>
             </div>
 
             <!-- video en mobile-->
             <div class="col-md-5 d-md-none mt-4">
                 <div class="">
-                    <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                <?php the_field( 'video' ); ?>
+                    <!-- <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
                         frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        allowfullscreen></iframe> -->
                 </div>
             </div>
 
@@ -176,19 +189,14 @@ Template Name: testeo home
             <div class="col-md-12">
                 <div>
                     <span class="mainTitular titularchiquito">| Herramientas</span>
-                    <h2 class="d-md-block d-none">Nueva herramienta para implementar en la empresa lechera
+                    <h2 class="d-md-block d-none"><?php the_field( 'titulo' ); ?>
                     </h2>
-                    <p class="p-convocatorias">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Aliquam
-                        ipsum
-                        minima nesciunt magni
-                        reprehenderit ullam sunt? Reiciendis, quisquam consectetur quae eveniet rem minima
-                        ipsam
-                        molestiae aperiam, modi eveniet quam dolorem officia non reprehenderit ut? Pariatur
-                        dictaam,
-                        incidunt quo adipisci officiis minus voluptatum veritatis?</p>
+                    <p class="p-convocatorias"><?php the_field( 'parrafo' ); ?></p>
                 </div>
             </div>
+            <?php endwhile;?>
+              <?php endif;?>
+                <?php wp_reset_postdata();?>
         </div>
     </div>
 </section>
