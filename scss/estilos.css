@@ -47,7 +47,7 @@
 }
 
 .botones {
-  width: 14rem;
+  width: 15.8rem;
   height: 6rem;
   color: white;
   background: #49B6AF;
@@ -153,7 +153,7 @@ label {
 #sidebar {
   min-width: 250px;
   max-width: 250px;
-  background: lightgray;
+  background: #F8F9FA;
   color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -165,7 +165,7 @@ label {
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #FCD269;
+  background: #F8F9FA;
 }
 
 #sidebar ul.components {
@@ -192,7 +192,7 @@ label {
 #sidebar ul li.active > a,
 a[aria-expanded="true"] {
   color: #fff;
-  background: #FCD269;
+  background: #F8F9FA;
 }
 
 a[data-toggle="collapse"] {
