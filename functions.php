@@ -75,4 +75,25 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 //  }
 //  add_action('init', 'my_first_taxonomy' );     
+
+/*
+* Adding a menu to contain the custom post types for frontpage
+*/
+
+ function frontpage_admin_menu() {
+
+    add_menu_page(
+        'Sobre nosotros',
+        'Sobre nosotros',
+        'read',
+        'sobre-nosotros',
+        '',
+        'dashicons-admin-home',
+        40
+    );
+
+ }
+
+ add_action( 'admin_menu', 'frontpage_admin_menu' );
+
 ?>
