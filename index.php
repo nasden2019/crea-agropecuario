@@ -48,32 +48,32 @@
             </div>
             <div class="row align-items-stretch">
                 <div class="col-lg-2 order-lg-3 d-none d-sm-block">
-                    <div>
-                        <a class="btn botones text-white" href="<?php echo esc_url( home_url('/') ); ?>convocatorias">
+                    <div class="btn botones d-flex align-items-center justify-content-center">
+                        <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>convocatorias">
                             Convocatorias
                         </a>
                     </div>
 
-                    <div>
-                        <a class="btn botones text-white">
+                    <div class="btn botones d-flex align-items-center justify-content-center">
+                        <a class="text-white">
                             Sponsor
                         </a>
                     </div>
 
-                    <div>
-                        <a class="btn botones" href="<?php echo esc_url( home_url('/') ); ?>trabajaConNosotros">
+                    <div class="btn botones d-flex align-items-center justify-content-center">
+                        <a class=" href="<?php echo esc_url( home_url('/') ); ?>trabajaConNosotros">
                             Trabaja con <br>nosotros
                         </a>
                     </div>
 
-                    <div>
-                        <a class="btn botones text-white" href="<?php echo esc_url( home_url('/') ); ?>referencias">
+                    <div class="btn botones d-flex align-items-center justify-content-center">
+                        <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>referencias">
                             Referencias
                         </a>
                     </div>
 
-                    <div>
-                        <a class="btn botones ultimo text-white">
+                    <div class="btn botones d-flex align-items-center justify-content-center">
+                        <a class="ultimo text-white">
                             <!-- <i class="far fa-calendar-alt"></i> -->
                             Agenda
                         </a>
