@@ -88,80 +88,39 @@ if ( function_exists( 'add_theme_support' ) ) {
         'read',
         'sobre-nosotros',
         '',
-        'dashicons-admin-home',  
+        'dashicons-admin-home',
+        40
+    );
+    add_menu_page(
+        'testeos',
+        'testeos',
+        'read',
+        'testeos',
+        '',
+        'dashicons-admin-home',
+        40
     );
 
  }
 
  add_action( 'admin_menu', 'frontpage_admin_menu' );
 
- function testeo_admin_menu() {
+//  function frontpage_admin_menu() {
 
 
-    add_menu_page(
-        'testeos',
-        'testeos',
-        'read',
-        'testeos',
-        '',
-        'dashicons-admin-home',
-        40
-    );
 
- }
+//     add_menu_page(
+//         'testeos',
+//         'testeos',
+//         'read',
+//         'testeos',
+//         '',
+//         'dashicons-admin-home',
+//         40
+//     );
 
- add_action( 'admin_menu', 'testeo_admin_menu' );
+//  }
 
- function trabajos_menu() {
+//  add_action( 'admin_menu', 'frontpage_admin_menu' );
 
-
-    add_menu_page(
-        'trabajos',
-        'trabajos',
-        'read',
-        'trabajos',
-        '',
-        'dashicons-admin-home',
-        40
-    );
-
- }
-
- add_action( 'admin_menu', 'trabajos_menu' );
-
- 
- function capacitacion_menu() {
-
-
-    add_menu_page(
-        'capacitacion',
-        'capacitacion',
-        'read',
-        'capacitacion',
-        '',
-        'dashicons-admin-home',
-        40
-    );
-
- }
-
- add_action( 'admin_menu', 'capacitacion_menu' );
-
- function proyectos_menu() {
-
-
-    add_menu_page(
-        'proyectos',
-        'proyectos',
-        'read',
-        'proyectos',
-        '',
-        'dashicons-admin-home',
-        40
-    );
-
- }
-
- add_action( 'admin_menu', 'proyectos_menu' );
-
-?>
+// ?>
