@@ -127,6 +127,24 @@ if ( function_exists( 'add_theme_support' ) ) {
         'dashicons-admin-home',
         40
     );
+    add_menu_page(
+        'incubacion',
+        'incubacion',
+        'read',
+        'incubacion',
+        '',
+        'dashicons-admin-home',
+        40
+    );
+    add_menu_page(
+        'prospectiva',
+        'prospectiva',
+        'read',
+        'prospectiva',
+        '',
+        'dashicons-admin-home',
+        40
+    );
 
 
  }
