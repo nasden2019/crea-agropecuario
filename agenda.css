@@ -154,14 +154,14 @@ th[colspan="7"] {
     font-size: 26px;
 }
 
-tr.calendar-header {}
+/* tr.calendar-header {} */
 
 tr.calendar-header .calendar-header-day {
     padding: 10px;
     text-align: center;
 }
 
-tr.calendar-body {}
+/* tr.calendar-body {} */
 
 tr.calendar-body .calendar-day {
     padding: 10px;
@@ -250,7 +250,7 @@ tr.calendar-body .calendar-day .day[disabled] {
     z-index: -1;
 }
 
-.calendar-events>.event-header {}
+/* .calendar-events>.event-header {} */
 
 .calendar-events>.event-header>p {
     font-size: 30px;
@@ -305,7 +305,7 @@ tr.calendar-body .calendar-day .day[disabled] {
     padding: 20px;
     width: 60px;
     height: 60px;
-    float: left;
+    /*aca habia otro float: left;*/
 }
 
 .event-container>.event-icon::before {
@@ -357,7 +357,7 @@ tr.calendar-body .calendar-day .day[disabled] {
 
 .event-indicator>.type-bullet {
     display: inline-block;
-    float: left;
+    /*aca habia un float: left */
     padding: 2px;
 }
 
