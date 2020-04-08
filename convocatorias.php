@@ -24,16 +24,20 @@ Template Name: convocatorias
         <div class="row">
             <div class="col-12">
                 <div class="row">
+                <?php $args = array('post_type' => 'convocatorias_home'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
                     <div class="col-md-6  mb-1 my-3 text-center">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid d-none d-md-block" />
+                    <?php if ( get_field( 'imagen') ) { ?>
+                        <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid d-none d-md-block"/>
+                    <?php } ?>
+                        <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid d-none d-md-block" /> -->
                         <p class="text-center titulos-fotos-inicio d-none d-md-block">
-                            <a href="#">Convocatorias 1</a>
+                            <a href="#"><?php the_field( 'titulo' ); ?></a>
                         </p>
                         <p class="text-center p-convocatorias" style="font-size: 20px;">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus praesentium laborum
-                            nisi fuga reprehenderit ipsum officiis eligendi inventore illum atque aliquid
-                            repudiandae, sunt voluptatem cupiditate, numquam perspiciatis ad? Debitis a ut quibusdam
-                            magnam amet nisi? Incidunt omnis tenetur sequi reiciendis?
+                        <?php the_field( 'parrafo' ); ?>
                         </p>
 
                         <button type="button" class="btn px-3 py-2 btn-contacto ml-3 ml-md-5" data-toggle="modal"
@@ -103,15 +107,15 @@ Template Name: convocatorias
                     </div>
 
                     <div class="col-md-6  mb-1 mt-2 text-center">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid d-none d-md-block" />
+                    <?php if ( get_field( 'imagen') ) { ?>
+                        <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid d-none d-md-block" />
+                    <?php } ?>
+                        <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid d-none d-md-block" /> -->
                         <p class="titulos-fotos-inicio d-none d-md-block">
-                            <a href="#">Convocatorias 2</a>
+                            <a href="#"><?php the_field( 'titulo' ); ?></a>
                         </p>
                         <p class="text-center mt-4" style="font-size: 20px;">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio deserunt saepe
-                            sint soluta cupiditate, corrupti molestiae hic nostrum consequatur enim dicta sit
-                            doloremque facere ex laudantium exercitationem est non officiis, eligendi incidunt
-                            doloribus accusantium, nihil fuga tenetur! Cumque, rerum nostrum.
+                        <?php the_field( 'parrafo' ); ?>
                         </p>
 
 
@@ -179,6 +183,9 @@ Template Name: convocatorias
                             </div>
                         </div>
                     </div>
+                    <?php endwhile;?>
+               <?php endif;?>
+                 <?php wp_reset_postdata();?>
                 </div>
             </div>
         </div>
