@@ -88,52 +88,7 @@ if ( function_exists( 'add_theme_support' ) ) {
         'read',
         'sobre-nosotros',
         '',
-        'dashicons-admin-home',
-        
-    );
-    add_menu_page(
-        'testeos',
-        'testeos',
-        'read',
-        'testeos',
-        '',
-        'dashicons-admin-home',
-    );
-    add_menu_page(
-        'testeos',
-        'testeos',
-        'read',
-        'testeos',
-        '',
-        'dashicons-admin-home',
-        
-    );
-    add_menu_page(
-        'trabajos',
-        'trabajos',
-        'read',
-        'trabajos',
-        '',
-        'dashicons-admin-home',
-        
-    );
-    add_menu_page(
-        'capacitacion',
-        'capacitacion',
-        'read',
-        'capacitacion',
-        '',
-        'dashicons-admin-home',
-        
-    );
-    add_menu_page(
-        'proyectos',
-        'proyectos',
-        'read',
-        'proyectos',
-        '',
-        'dashicons-admin-home',
-        
+        'dashicons-admin-home',  
     );
 
  }
