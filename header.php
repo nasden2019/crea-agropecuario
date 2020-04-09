@@ -39,7 +39,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand " href="index.html">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" class="img-fluid" style="width: 14rem;">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" class="img-fluid" style="width: 17rem;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
                     aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">

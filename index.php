@@ -62,13 +62,13 @@
 
                     <div class="btn botones d-flex align-items-center justify-content-center">
                         <a class=" href="<?php echo esc_url( home_url('/') ); ?>trabajaConNosotros">
-                            Trabaja con <br>nosotros
+                            Trabajar con <br>nosotros
                         </a>
                     </div>
 
                     <div class="btn botones d-flex align-items-center justify-content-center">
                         <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>referencias">
-                            Referencias
+                            Referencias <br>de interés
                         </a>
                     </div>
 
