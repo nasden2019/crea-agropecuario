@@ -26,7 +26,6 @@ Template Name: trabajos
                     <div class="row">
                     <?php $args = array('post_type' => 'trabajos_home'); ?>
                      <?php $loop = new WP_Query($args);
-                       $i=1;
                         if ( $loop->have_posts() ) :
                           while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
@@ -115,7 +114,7 @@ Template Name: trabajos
                                 </div>
                             </div>
                         </div>
-                        <?php $i++; endwhile;?>
+                        <?php endwhile;?>
                 <?php endif;?>
                 <?php wp_reset_postdata();?>
 
