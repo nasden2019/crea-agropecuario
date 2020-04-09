@@ -36,7 +36,8 @@ Template Name: testeos
 
                     <section class="seccion2-fotos mt-md-5">
                         <div class="container">
-                            <div class="text-center d-md-block d-none"><?php the_field( 'titulo_2do_parrafo' ); ?></h2>
+                            <div class="text-center d-md-block d-none">
+                                <h2><?php the_field( 'titulo_2do_parrafo' ); ?></h2>
                                 <p class="seccion-parrafo"></p><?php the_field( '2do_parrafo' ); ?></p>
                             </div>
                         </div>
@@ -45,8 +46,8 @@ Template Name: testeos
 
                     <section class="seccion2-fotos mt-md-5">
                         <div class="container">
-                            <div class="text-center d-md-block d-none"><?php the_field( 'titulo_3er_parrafo' ); ?>
-                                </h2>
+                            <div class="text-center d-md-block d-none">
+                                <h2><?php the_field( 'titulo_3er_parrafo' ); ?></h2>
                                 <p class="seccion-parrafo"><?php the_field( '3er_parrafo' ); ?></p>
                             </div>
                         </div>
