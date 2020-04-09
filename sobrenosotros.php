@@ -123,11 +123,11 @@ Template Name: sobrenosotros
                     <div class="modal fade" id="Integrante<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="Integrante<?php echo $i; ?>"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
+                            <div class="modal-content modalCajasBlancas">
                                 <div class="block-team-member-1 text-center rounded">
                                     <figure>
                                     <?php if ( get_field( 'imagen') ) { ?>
-                                        <img src="<?php the_field( 'imagen' ); ?>" class="circle rounded-circle imgsQuienessomos" class="img-fluid rounded-circle"/>
+                                        <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid rounded-circle fotosRedondas"/>
                                         <?php } ?>
                                         <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/person_3.jpg"
                                             alt="Image" class="img-fluid rounded-circle" /> -->
