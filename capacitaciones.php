@@ -119,20 +119,20 @@ Template name: capacitacion
                             <div class="row">
                                 <div class="col-md-6  mb-1">
                                     <!-- <img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
-                                    <?php if ( get_field( '2-imagen_1') ) { ?>
-                                        <img src="<?php the_field( '2-imagen_1' ); ?>" class="img-fluid" />
+                                    <?php if ( get_field( '2-_imagen_1') ) { ?>
+                                        <img src="<?php the_field( '2-_imagen_1' ); ?>" class="img-fluid" />
                                     <?php } ?>
                                     <p class="text-center titulos-fotos-inicio">
-                                        <a href="#"><?php the_field( '2-titulo_imagen_1' ); ?></a>
+                                        <a href="#"><?php the_field( '2-_titulo_imagen_1' ); ?></a>
                                     </p>
                                 </div>
                                 <div class="col-md-6  mb-1">
                                     <!-- <img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid" /> -->
-                                    <?php if ( get_field( '2-imagen_2') ) { ?>
-                                        <img src="<?php the_field( '2-imagen_2' ); ?>" class="img-fluid" />
+                                    <?php if ( get_field( '2-_imagen_2') ) { ?>
+                                        <img src="<?php the_field( '2-_imagen_2' ); ?>" class="img-fluid" />
                                     <?php } ?>
                                     <p class="text-center titulos-fotos-inicio">
-                                        <a href="#"><?php the_field( '2-titulo_imagen_2' ); ?></a>
+                                        <a href="#"><?php the_field( '2-_titulo_imagen_2' ); ?></a>
                                     </p>
                                 </div>
                             </div>
@@ -181,29 +181,29 @@ Template name: capacitacion
                             <div class="row">
                                 <div class="col-md-4  mb-1">
                                     <!-- <img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
-                                    <?php if ( get_field( '3-imagen_1') ) { ?>
-                                        <img src="<?php the_field( '3-imagen_1' ); ?>" class="img-fluid" />
+                                    <?php if ( get_field( '3-_imagen_1') ) { ?>
+                                        <img src="<?php the_field( '3-_imagen_1' ); ?>" class="img-fluid" />
                                     <?php } ?>
                                     <p class="text-center titulos-fotos-inicio">
-                                        <a href="#"><?php the_field( '3-titulo_imagen_1' ); ?></a>
+                                        <a href="#"><?php the_field( '3-_titulo_imagen_1' ); ?></a>
                                     </p>
                                 </div>
                                 <div class="col-md-4  mb-1">
                                     <!-- <img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid" /> -->
-                                    <?php if ( get_field( '2-imagen_1') ) { ?>
-                                        <img src="<?php the_field( '2-imagen_1' ); ?>" class="img-fluid" />
+                                    <?php if ( get_field( '3-_imagen_1') ) { ?>
+                                        <img src="<?php the_field( '3-_imagen_1' ); ?>" class="img-fluid" />
                                     <?php } ?>
                                     <p class="text-center titulos-fotos-inicio">
-                                        <a href="#"><?php the_field( '2-titulo_imagen_1' ); ?></a>
+                                        <a href="#"><?php the_field( '3-_titulo_imagen_1' ); ?></a>
                                     </p>
                                 </div>
                                 <div class="col-md-4  mb-1">
                                     <!-- <img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/img_2.jpg" class="img-fluid" /> -->
-                                    <?php if ( get_field( '3-imagen_3') ) { ?>
-                                        <img src="<?php the_field( '3-imagen_3' ); ?>" class="img-fluid" />
+                                    <?php if ( get_field( '3-_imagen_3') ) { ?>
+                                        <img src="<?php the_field( '3-_imagen_3' ); ?>" class="img-fluid" />
                                     <?php } ?>
                                     <p class="text-center titulos-fotos-inicio">
-                                        <a href="#"><?php the_field( '3-titulo_imagen_3' ); ?></a>
+                                        <a href="#"><?php the_field( '3-_titulo_imagen_3' ); ?></a>
                                     </p>
                                 </div>
                             </div>
