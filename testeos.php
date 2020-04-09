@@ -38,7 +38,7 @@ Template Name: testeos
                         <div class="container">
                             <div class="text-center d-md-block d-none">
                                 <h2><?php the_field( 'titulo_2do_parrafo' ); ?></h2>
-                                <p class="seccion-parrafo"></p><?php the_field( '2do_parrafo' ); ?></p>
+                                <p class="seccion-parrafo"><?php the_field( '2do_parrafo' ); ?></p>
                             </div>
                         </div>
                     </section>
