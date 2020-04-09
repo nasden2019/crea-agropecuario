@@ -46,7 +46,7 @@
             <div class="row mb-5">
 
             </div>
-            <div class="row align-items-stretch">
+            <div class="row justify-content-center">
                 <div class="col-md-2 d-none d-sm-block order-lg-3">
                     <div class="btn botones d-flex align-items-center justify-content-center">
                         <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>convocatorias">
