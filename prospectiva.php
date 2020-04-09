@@ -39,18 +39,6 @@ Template name: prospectiva
                         <div class="col-md-4  mb-1">
                             <?php the_field( 'video' ); ?>
                         </div>
-                        <!-- <div class="col-md-4  mb-1">
-                            <iframe width="360" height="315" src="https://www.youtube.com/embed/vlDzYIIOYmM"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="col-md-4  mb-1">
-                            <iframe width="360" height="315" src="https://www.youtube.com/embed/vlDzYIIOYmM"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div> -->
                         <?php $i++; endwhile;?>
                         <?php endif;?>
                         <?php wp_reset_postdata();?>
