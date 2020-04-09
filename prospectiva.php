@@ -37,11 +37,7 @@ Template name: prospectiva
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
                         <div class="col-md-4  mb-1">
-                        <?php the_field( 'video' ); ?>
-                            <!-- <iframe width="360" height="315" src="https://www.youtube.com/embed/vlDzYIIOYmM"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe> -->
+                            <?php the_field( 'video' ); ?>
                         </div>
                         <!-- <div class="col-md-4  mb-1">
                             <iframe width="360" height="315" src="https://www.youtube.com/embed/vlDzYIIOYmM"
