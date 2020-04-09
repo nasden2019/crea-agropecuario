@@ -42,12 +42,12 @@
 
 
     <section class="section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row mb-5">
 
             </div>
             <div class="row align-items-stretch">
-                <div class="col-lg-2 order-lg-3 d-none d-sm-block">
+                <div class="col-md-2 d-none d-sm-block">
                     <div class="btn botones d-flex align-items-center justify-content-center">
                         <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>convocatorias">
                             Convocatorias
@@ -89,7 +89,7 @@
                         if ( $loop->have_posts() ) :
                             while ( $loop->have_posts() ) : $loop->the_post(); ?> 
                                 <?php if ($i % 2 !== 0) : 
-                                    echo '<div class="col-md-6 col-lg-5 feature-1-wrap d-md-flex flex-md-column order-lg-1">';
+                                    echo '<div class="col-md-4 feature-1-wrap d-md-flex flex-md-column order-lg-1">';
                                  endif; ?>
                                     <div class="feature-1 d-md-flex">
                                         <div class="align-self-center">
