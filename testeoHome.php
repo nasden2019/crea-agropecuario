@@ -66,7 +66,7 @@ Template Name: testeo home
     <div class="container">
 
         <button type="button" id="sidebarCollapse" class="btn btn-contacto ml-sm-4">
-            <i class="fas fa-search-left"></i>
+            <i class="fas fa-search"></i>
             <span>Buscar Proyectos</span>
         </button>
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
