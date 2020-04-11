@@ -1,14 +1,3 @@
-/* convocatorias-modal-si y no */
-#asesorSiInputs {
-  display: none;
-}
-
-#asesorNoInputs {
-  display: none;
-}
-
-/*--- fin inputs de convocatorias--- */
-
 #clientes {
   background-color: #49B6AF !important;
   padding: 15px;
@@ -64,8 +53,8 @@
   background: #49B6AF;
   text-transform: uppercase;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-size: 1.3rem;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
@@ -140,8 +129,8 @@ label {
 @media (max-width: 522px) {
   .insta-feed {
     -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
@@ -157,14 +146,14 @@ label {
   display: flex;
   width: 100%;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 #sidebar {
   min-width: 250px;
   max-width: 250px;
-  background: #F8F9FA;
+  background: #49B6AF;
   color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -176,7 +165,7 @@ label {
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #F8F9FA;
+  background: #49B6AF;
 }
 
 #sidebar ul.components {
@@ -200,7 +189,7 @@ label {
   background: #FCD269;
 }
 
-#sidebar ul li.active>a,
+#sidebar ul li.active > a,
 a[aria-expanded="true"] {
   color: #fff;
   background: #F8F9FA;
@@ -216,7 +205,7 @@ a[data-toggle="collapse"] {
   top: 50%;
   right: 20px;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 ul ul a {
@@ -266,14 +255,16 @@ a.article:hover {
   #sidebar {
     margin-left: -250px;
   }
-
   #sidebar.active {
     margin-left: 0;
   }
-
   #sidebarCollapse span {
     display: none;
   }
+}
+
+#sidebar {
+  background: #49B6AF;
 }
 
 .owl-images {
@@ -349,11 +340,9 @@ textarea {
     color: grey;
     margin-top: 15px;
   }
-
   .row-quienessomos span {
     font-size: 12px;
     color: grey;
   }
 }
-
 /*# sourceMappingURL=estilos.css.map */

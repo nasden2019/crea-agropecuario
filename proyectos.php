@@ -10,7 +10,7 @@ Template Name: proyectos
     <!-- METER LA PANTALLA ENTERA (antes de q termine el sidebar) DENTRO DEL SIDE BAR (MENOS EL NAVBAR Y EL FOOTER, PARA Q NO SE ROMPAN!)  -->
     <div class="wrapper">
         <!-- Sidebar  -->
-        <nav id="sidebar" style="display: none" class="navbar-light bg-light">
+        <nav id="sidebar" style="display: none">
             <div class="sidebar-header">
                 <h3>Testeos Generales</h3>
             </div>

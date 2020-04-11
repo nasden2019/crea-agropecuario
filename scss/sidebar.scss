@@ -7,7 +7,7 @@
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #F8F9FA;
+    background: $colorTurqueson;
     color: #fff;
     transition: all 0.3s;
 }
@@ -18,7 +18,7 @@
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #F8F9FA;
+    background: $colorTurqueson;
 }
 
 #sidebar ul.components {
