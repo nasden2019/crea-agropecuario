@@ -11,7 +11,7 @@ Template Name: proyectos
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar" style="display: none; background: turquoise;">
-            <div class="sidebar-header">
+            <div class="sidebar-header" style="background: turquoise;">
                 <h3>Testeos Generales</h3>
             </div>
 
