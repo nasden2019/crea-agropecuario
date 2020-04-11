@@ -65,8 +65,8 @@ Template Name: proyectos
                 <div class="container">
 
                     <button type="button" id="sidebarCollapse" class="btn btn-contacto">
-                        <i class="fas fa-align-left"></i>
-                        <span>Info extra</span>
+                        <i class="fas fa-search-left"></i>
+                        <span>Buscar Proyectos</span>
                     </button>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -84,7 +84,7 @@ Template Name: proyectos
             <section class="mt-sm-5">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 mb-md-5">
                             <h3 class="mainTitular">| Proyectos</h3>
                         </div>
                     </div>
