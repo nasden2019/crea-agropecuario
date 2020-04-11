@@ -11,7 +11,7 @@ Template Name: testeo home
     <!-- METER LA PANTALLA ENTERA (antes de q termine el sidebar) DENTRO DEL SIDE BAR (MENOS EL NAVBAR Y EL FOOTER, PARA Q NO SE ROMPAN!)  -->
     <div class="wrapper">
         <!-- Sidebar  -->
-        <nav id="sidebar" style="display: none">
+        <nav id="sidebar" style="display: none; background: turquoise;">
             <div class="sidebar-header">
                 <h3>Testeos Generales</h3>
             </div>
