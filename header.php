@@ -57,12 +57,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo esc_url( home_url('/') ); ?>contacto">Contactanos</a>
                         </li>
+                        </ul>
                         <?php
-if ( function_exists('yoast_breadcrumb') ) {
-  yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-}
-?>
-                    </ul>
+                        if ( function_exists('yoast_breadcrumb') ) {
+                        yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+                        }
+                        ?>
                 </div>
             </div>
         </nav>
