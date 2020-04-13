@@ -20,41 +20,81 @@ Template Name: referencias
 
 
     <!-- IMAGENES -->
-    <section class="seccion2-fotos">
+     <section class="seccion2-fotos">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-
+                <div class="col-md-12">
                     <h2 class="mb-sm-5 text-center">Noticias de la semana</h2>
+                    <div class="row">
 
-                    <!-- dentro del col-md-6, q ocupen toda la columna con el col-md-12-->
-                    <iframe frameborder=0 height=250 width=550 class="col-md-12"
-                        src="https://twitframe.com/show?url=https%3A%2F%2Ftwitter.com%2Fjack%2Fstatus%2F20"></iframe>
-                    <iframe frameborder=0 height=250 width=550 class="col-md-12"
-                        src="https://twitframe.com/show?url=https%3A%2F%2Ftwitter.com%2Fjack%2Fstatus%2F20"></iframe>
+                        <div class="col-md-6">
+                        <?php if ( get_field( 'imagen') ) { ?>
+                            <img src="<?php the_field( 'imagen' ); ?>" />
+                        <?php } ?>
+                            <!-- <iframe frameborder=0 height=250 width=550 class="col-md-12"
+                                src="https://twitframe.com/show?url=https%3A%2F%2Ftwitter.com%2Fjack%2Fstatus%2F20"></iframe> -->
+                        </div>
+                        <div class="col-md-6">
+                            <iframe frameborder=0 height=250 width=550 class="col-md-12"
+                                src="https://twitframe.com/show?url=https%3A%2F%2Ftwitter.com%2Fjack%2Fstatus%2F20"></iframe>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-md-6 mt-2">
-                    <h2 class="mb-sm-5 text-center">El video de la semana</h2>
-                    <!-- VIDEO HERE-->
-                    <iframe class="col-md-12" width="560" height="315" src="https://www.youtube.com/embed/sitA91-zWm0"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                <div class="col-md-12 mt-2">
+                    <h2 class="mb-sm-5 text-center">Videos de la semana</h2>
+                    <div class="row">
+                    <?php the_field( 'video' ); ?>
+                        <!-- <iframe class="col-md-6" width="560" height="315"
+                            src="https://www.youtube.com/embed/sitA91-zWm0" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> -->
+                        <iframe class="col-md-6" width="560" height="315"
+                            src="https://www.youtube.com/embed/sitA91-zWm0" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
 
-                <div class="col-md-6  mt-5 insta-feed">
+                <div class="col-md-12  mt-5 insta-feed">
                     <h2 class="mb-sm-5 text-center">A quién seguir?</h2>
-                    <script src=" https://apps.elfsight.com/p/platform.js" defer></script>
-                    <div class="elfsight-app-0f5adf44-5d5c-4cc2-a1fd-eb8a3ff910d9" style="width: 100%;"></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <script src=" https://apps.elfsight.com/p/platform.js" defer></script>
+                            <div class="elfsight-app-0f5adf44-5d5c-4cc2-a1fd-eb8a3ff910d9" style="width: 100%;"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <script src=" https://apps.elfsight.com/p/platform.js" defer></script>
+                            <div class="elfsight-app-0f5adf44-5d5c-4cc2-a1fd-eb8a3ff910d9" style="width: 100%;"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6  mt-5">
-                    <!-- VIDEO HERE-->
-                    <iframe class="col-md-12" width="560" height="315" src="https://www.youtube.com/embed/rOL80sMest0"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+
+
+                <div class="col-md-12">
+                    <h2 class="mb-sm-5 mt-md-3 text-center">WEBS </h2>
+                    <div class="row">
+                        <div class="col-md-6  mb-1">
+                        <?php $imagen = get_field( 'imagen' ); ?>
+<?php if ( $imagen ) { ?>
+	<img src="<?php echo $imagen['url']; ?>" alt="<?php echo $imagen['alt']; ?>" />
+<?php } ?>
+                            <!-- <img src="images/img_1.jpg" class="img-fluid" /> -->
+                            <p class="text-center titulos-fotos-inicio">
+                                <a href="https://syloper.com">WEB1</a>
+                            </p>
+                        </div>
+                        <div class="col-md-6  mb-1">
+                            <img src="images/img_2.jpg" class="img-fluid" />
+                            <p class="text-center titulos-fotos-inicio">
+                                <a href="https://google.com">WEB2</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
-    </section>
+    </section> 
 
     <?php get_footer(); ?>

@@ -110,6 +110,14 @@ header .navbar .nav-item .nav-link {
   font-size: 20px;
 }
 
+#asesorSiInputs {
+  display: none;
+}
+
+#asesorNoInputs {
+  display: none;
+}
+
 .p-trabajaconnosotros {
   text-transform: uppercase;
 }
