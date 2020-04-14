@@ -33,12 +33,12 @@ Template Name: trabajos
                     endif; ?>
 
                                 <?php if($i <= 2 ) :
-                                echo '<div class="col-sm-6">
-                                    <?php if ( get_field( "imagen") ) { ?>
-                                        <img src="<?php the_field( "imagen" ); ?>" class="img-fluid" data-toggle="modal"
+                                    echo '<div class="col-sm-6">';
+                                    if ( get_field( "imagen") ) { ?>
+                                        <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" data-toggle="modal"
                                         data-target="#exampleModal" data-whatever="@getbootstrap"  />
-                                    <?php } ?>
-                                    <p class="text-center titulos-fotos-inicio" data-toggle="modal" data-target="#exampleModal"
+                                    <?php }; 
+                                    echo'<p class="text-center titulos-fotos-inicio" data-toggle="modal" data-target="#exampleModal"
                                         data-whatever="@getbootstrap">
                                         <a><?php the_field( "titulo" ); ?></a>
                                     </p>
