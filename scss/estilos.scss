@@ -114,6 +114,14 @@ textarea {
 		height: 315px!important;
 	}
 }
+@media (max-width: 600px) {
+	.col-video {
+		iframe {
+			width: 315px!important;
+			height: 315px!important;
+		}
+	}
+}
 // @media (max-width: 576px) {
 // 	.imgsQuienessomos {
 // 		width: 10rem;

@@ -356,4 +356,11 @@ textarea {
   width: 360px !important;
   height: 315px !important;
 }
+
+@media (max-width: 600px) {
+  .col-video iframe {
+    width: 315px !important;
+    height: 315px !important;
+  }
+}
 /*# sourceMappingURL=estilos.css.map */
