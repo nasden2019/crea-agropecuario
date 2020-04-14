@@ -36,7 +36,7 @@ Template name: prospectiva
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-                        <div class="col-md-4  mb-1">
+                        <div class="col-md-4  mb-1 col-video ">
                             <?php the_field( 'video' ); ?>
                         </div>
                         <?php $i++; endwhile;?>
