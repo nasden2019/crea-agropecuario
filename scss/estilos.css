@@ -92,6 +92,14 @@
   background: grey;
 }
 
+@media (max-width: 600px) {
+  .botones {
+    width: 100% !important;
+    height: auto;
+    font-size: 0.85rem;
+  }
+}
+
 header .navbar {
   background: white !important;
 }
@@ -376,6 +384,7 @@ textarea {
   .botones {
     width: 100% !important;
     height: auto;
+    font-size: 0.85rem;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
