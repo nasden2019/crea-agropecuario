@@ -90,14 +90,14 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="btn botones mx-auto my-2 d-flex align-items-center justify-content-center">
+                            <div class="btn botones mx-auto mx-md-0 my-2 d-flex align-items-center justify-content-center">
                                 <a class="text-white">
                                     Sponsor
                                 </a>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="btn botones mx-auto my-2 d-flex align-items-center justify-content-center">
+                            <div class="btn botones mx-auto mx-md-0 my-2 d-flex align-items-center justify-content-center">
                                 <a class="ultimo text-white" href="<?php echo esc_url( home_url('/') ); ?>agenda">
                                     <!-- <i class="far fa-calendar-alt"></i> -->
                                     Agenda
@@ -105,14 +105,14 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="btn botones mx-auto my-2 d-flex align-items-center justify-content-center">
+                            <div class="btn botones mx-auto mx-md-0 my-2 d-flex align-items-center justify-content-center">
                                 <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>trabajaConNosotros">
                                     Trabajar con <br>nosotros
                                 </a>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="btn botones mx-auto my-2 d-flex align-items-center justify-content-center">
+                            <div class="btn botones mx-auto mx-md-0 my-2 d-flex align-items-center justify-content-center">
                                 <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>referencias">
                                     Referencias <br>de interés
                                 </a>
