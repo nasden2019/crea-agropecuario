@@ -82,8 +82,8 @@
                 </div>
                 <div class="col-lg-none col-12 d-sm-block order-lg-3">
                     <div class="row">
-                        <div class="12 mx-auto">
-                            <div class="btn botones d-flex align-items-center justify-content-center mt-md-0">
+                        <div class="col-12 mx-auto">
+                            <div class="btn botones d-flex align-items-center justify-content-center mt-md-0 mx-auto pb-3">
                                 <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>convocatorias">
                                     Convocatorias
                                 </a>
@@ -111,7 +111,7 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="btn botones d-flex align-items-center justify-content-center mx-auto pb-3">
+                            <div class="btn botones d-flex align-items-center justify-content-center">
                                 <a class="ultimo text-white" href="<?php echo esc_url( home_url('/') ); ?>agenda">
                                     <!-- <i class="far fa-calendar-alt"></i> -->
                                     Agenda
