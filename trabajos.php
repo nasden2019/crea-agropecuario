@@ -34,11 +34,13 @@ Template Name: trabajos
 
                                 <?php if($i <= 2 ) :
                                 echo '<div class="col-sm-6">
-                                    <img src="images/about_2.jpg" class="img-fluid" data-toggle="modal"
-                                        data-target="#exampleModal" data-whatever="@getbootstrap" />
+                                    <?php if ( get_field( "imagen") ) { ?>
+                                        <img src="<?php the_field( "imagen" ); ?>" class="img-fluid" data-toggle="modal"
+                                        data-target="#exampleModal" data-whatever="@getbootstrap"  />
+                                    <?php } ?>
                                     <p class="text-center titulos-fotos-inicio" data-toggle="modal" data-target="#exampleModal"
                                         data-whatever="@getbootstrap">
-                                        <a>Trabajo 1</a>
+                                        <a><?php the_field( "titulo" ); ?></a>
                                     </p>
 
                                     <!-- MODAL -->
@@ -126,13 +128,16 @@ Template Name: trabajos
                                 endif; 
                                 
                                 if ( $i < 5 && $i > 2 ) :
-                            
                                 echo '<div class="col-6">
-                                    <img src="images/about_1.jpg" class="img-fluid" data-toggle="modal"
+                                    <?php if ( get_field( "imagen") ) { ?>
+                                        <img src="<?php the_field( "imagen" ); ?>" class="img-fluid" data-toggle="modal"
+                                        data-target="#exampleModal" data-whatever="@getbootstrap"  />
+                                    <?php } ?>
+                                    //<img src="images/about_1.jpg" class="img-fluid" data-toggle="modal"
                                         data-target="#exampleModal" data-whatever="@getbootstrap" />
                                     <p class="text-center titulos-fotos-inicio" data-toggle="modal" data-target="#exampleModal"
                                         data-whatever="@getbootstrap">
-                                        <a>Trabajo 3</a>
+                                        <a><?php the_field( "titulo" ); ?></a>
                                     </p>
 
                                     <!-- MODAL -->
@@ -216,13 +221,15 @@ Template Name: trabajos
 
                                 endif;
                                 
-                                if ($i < 7 && $i > 5) :
+                                if ($i < 7 && $i > 4) :
                                 echo '<div class="col-6 mt-md-1">
-                                    <img src="images/about_1.jpg" class="img-fluid" data-toggle="modal"
-                                        data-target="#exampleModal" data-whatever="@getbootstrap" />
+                                    <?php if ( get_field( "imagen") ) { ?>
+                                        <img src="<?php the_field( "imagen" ); ?>" class="img-fluid" data-toggle="modal"
+                                        data-target="#exampleModal" data-whatever="@getbootstrap"  />
+                                    <?php } ?>
                                     <p class="text-center titulos-fotos-inicio" data-toggle="modal" data-target="#exampleModal"
                                         data-whatever="@getbootstrap">
-                                        <a>Trabajo 5</a>
+                                        <a><?php the_field( "titulo" ); ?></a>
                                     </p>
 
                                     <!-- MODAL -->
