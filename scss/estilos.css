@@ -373,5 +373,9 @@ textarea {
     width: 315px !important;
     height: 315px !important;
   }
+  .botones {
+    width: 100% !important;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
