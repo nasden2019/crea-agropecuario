@@ -77,7 +77,7 @@ Template Name: convocatorias
                                                     class="col-form-label ml-md-3 ml-2">Teléfono</label>
                                                 <input type="text" class="form-control" id="recipient-name">
                                             </div>
-                                            <div class="form-group text-center">
+                                            <!-- <div class="form-group text-center">
                                                 <label for="recipient-name" class="col-form-label">Es asesor de
                                                     Crea?</label>
                                                 <div>
@@ -92,7 +92,82 @@ Template Name: convocatorias
                                                     <button class="btn" style="width: 50px">SI</button>
                                                     <button class="btn" style="width: 50px">NO</button>
                                                 </div>
-                                            </div>
+                                            </div> -->
+                                            <div class="form-group text-center">
+                          <label for="recipient-name" class="col-form-label">Es asesor de Crea?</label>
+
+                          <!--inputs -->
+                          <div class="text-center mb-md-2">
+                            <button class="btn" name="asesorSi" id="asesorSi" style="width: 50px;">
+                              SI
+                            </button>
+
+                            <div id="asesorSiInputs" class="text-center">
+                              Crea: <input type="text" name="asesorSiInputs" id="" />
+                              <br>
+                              Zona:
+                              <input type="text" name="asesorSiInputs" id="" />
+                            </div>
+                          </div>
+
+                          <div class="text-center">
+                            <button class="btn" style="width: 50px;" name="asesorNo" id="asesorNo">
+                              NO
+                            </button>
+
+                            <div id="asesorNoInputs" class="text-center">
+                              Estudiante:
+                              <input type="text" name="" id="" class="text-center" />
+                              <br>
+                              Asesor:
+                              <input type=" text" name="" id="" />
+                              <br>
+                              Productor:
+                              <input type="text" name="" id="" />
+                            </div>
+                          </div>
+
+                        </div>
+                        <!-- fin inputs asesor-->
+
+                        <!-- inputs productor -->
+                        <div class="form-group text-center">
+                          <label for="recipient-name" class="col-form-label">Es productor de Crea?</label>
+
+                          <!--inputs -->
+                          <div class="text-center mb-md-2">
+                            <button class="btn" name="asesorSi" id="productorSi" style="width: 50px;">
+                              SI
+                            </button>
+
+                            <div id="productorSiInputs" class="text-center">
+                              Crea: <input type="text" name="productorSiInputs" id="" />
+                              <br>
+                              Zona:
+                              <input type="text" name="productorSiInputs" id="" />
+                            </div>
+                          </div>
+
+                          <div class="text-center">
+                            <button class="btn" style="width: 50px;" name="" id="productorNo">
+                              NO
+                            </button>
+
+                            <div id="productorNoInputs" class="text-center">
+                              Estudiante:
+                              <input type="text" name="" id="productorNoInputs" class="" />
+                              <br>
+                              Asesor:
+                              <input type=" text" name="" id="productorNoInputs" />
+                              <br>
+                              Productor:
+                              <input type="text" name="" id="productorNoInputs" />
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+                    <!-- fin inputs productor -->
 
                                         </form>
                                     </div>

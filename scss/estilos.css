@@ -118,6 +118,14 @@ header .navbar .nav-item .nav-link {
   display: none;
 }
 
+#productorSiInputs {
+  display: none;
+}
+
+#productorNoInputs {
+  display: none;
+}
+
 .p-trabajaconnosotros {
   text-transform: uppercase;
 }
