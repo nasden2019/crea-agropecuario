@@ -30,7 +30,7 @@ Template name: prospectiva
                 <!-- offset-1: quita un rem de cada lado,-->
                 <div class="col-12">
                     <div class="row">
-                    <?php $args = array('post_type' => 'prospectiva'); ?>
+                    <?php $args = array('post_type' => 'propsectiva'); ?>
                     <?php $loop = new WP_Query($args);
                     $i=1;
                     if ( $loop->have_posts() ) :
