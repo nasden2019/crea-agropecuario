@@ -32,7 +32,7 @@ Template Name: trabajos
                             <div class="row">';
                     endif; ?>
 
-                                <?php if($i < 3 ) :
+                                <?php if($i <= 2 ) :
                                 echo '<div class="col-sm-6">
                                     <img src="images/about_2.jpg" class="img-fluid" data-toggle="modal"
                                         data-target="#exampleModal" data-whatever="@getbootstrap" />
@@ -115,7 +115,7 @@ Template Name: trabajos
                                     </div>
                                 </div>';
                                 endif; 
-                                if ($i == 3) :
+                                if ($i == 2) :
                                 
                             echo'</div>
                         </div>
@@ -125,7 +125,7 @@ Template Name: trabajos
                             <div class="row">';
                                 endif; 
                                 
-                                if ( $i < 5) :
+                                if ( $i < 5 && $i > 2 ) :
                             
                                 echo '<div class="col-6">
                                     <img src="images/about_1.jpg" class="img-fluid" data-toggle="modal"
@@ -216,7 +216,7 @@ Template Name: trabajos
 
                                 endif;
                                 
-                                if ($i < 7) :
+                                if ($i < 7 && $i > 5) :
                                 echo '<div class="col-6 mt-md-1">
                                     <img src="images/about_1.jpg" class="img-fluid" data-toggle="modal"
                                         data-target="#exampleModal" data-whatever="@getbootstrap" />
