@@ -26,9 +26,12 @@ Template Name: trabajos
                 <?php $loop = new WP_Query($args); ?>
                 <? $i=1;
                 if ( $loop->have_posts() ) :
-                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                    while ( $loop->have_posts() ) : $loop->the_post(); 
+                    if ($i == 1) {?>                        
                         <div class="col-sm-8 mt-md-3">
                             <div class="row">
+                    <?php } ?>
+
                                 <?php if($i <3 ) { ?>
                                 <div class="col-sm-6">
                                     <img src="images/about_2.jpg" class="img-fluid" data-toggle="modal"
