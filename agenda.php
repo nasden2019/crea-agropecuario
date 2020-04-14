@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html>
+<?php
+/*
+Template name: agenda
+*/
+?>
 
-<head>
+<?php get_header(); ?>
 
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="agenda.css">
+<link rel="stylesheet" type="text/css" href="agenda.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
@@ -128,6 +126,3 @@
         });
         // $("#evoCalendar").evoCalendar('addCalendarEvent', [...]);
     </script>
-</body>
-
-</html>
