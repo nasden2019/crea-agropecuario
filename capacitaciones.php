@@ -35,7 +35,7 @@ Template name: capacitacion
             </section>
 
             <!-- IMAGENES -->
-            <section class="seccion2-fotos">
+            <section class="seccion2-fotos mb-md-4">
                 <div class="container">
                     <div class="text-center">
                         <h2 class="mb-sm-5"><?php the_field( 'titulo_1er_seccion' ); ?></h2>
@@ -80,35 +80,45 @@ Template name: capacitacion
 
 
             <!-- PRIMER TESTIMONIAL  -->
-            <section class="my-5" style="background-color: lightgrey; height: 200px;">
-                <div class="container">
-                    <div class="owl-carousel owl-theme secundario">
-                        <!--  -->
-                        <div class="btn-play-wrap mx-auto" style="margin-top: 37px;">
-                            <a href="https://vimeo.com/59256790" data-fancybox data-ratio="2"
-                                class="btn-play owl-images rounded-circle mx-auto"><span class="ion ion-ios-play"></span></a>
+            <section class="carousel">
+        <div class="container">
+            <h3 class="text-center">TESTIMONIOS</h3>
+            <div class="row justify-content-center">
+                <!-- indicators -->
+                <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                        </li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner justify-content-center">
+                        <div class="carousel-item active">
+                            <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
-                        <!--  -->
-                        <div class="btn-play-wrap mx-auto" style="margin-top: 37px;">
-                            <a href="https://vimeo.com/59256790" data-fancybox data-ratio="2"
-                                class="btn-play owl-images rounded-circle mx-auto"><span class="ion ion-ios-play"></span></a>
+                        <div class="carousel-item">
+                            <iframe id="" width="550" height="450" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
-                        <!--  -->
-                        <div class="btn-play-wrap mx-auto" style="margin-top: 37px;">
-                            <a href="https://vimeo.com/59256790" data-fancybox data-ratio="2"
-                                class="btn-play owl-images rounded-circle mx-auto"><span class="ion ion-ios-play"></span></a>
-                        </div>
-                        <!--  -->
-                        <div class="btn-play-wrap mx-auto" style="margin-top: 37px;">
-                            <a href="https://vimeo.com/59256790" data-fancybox data-ratio="2"
-                                class="btn-play owl-images rounded-circle mx-auto"><span class="ion ion-ios-play"></span></a>
+                        <div class="carousel-item">
+                            <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
             <!-- segunda seccion -->
-            <section class="seccion2-fotos">
+            <section class="seccion2-fotos mb-md-4">
                 <div class="container">
                     <div class="text-center">
                         <h2 class="mb-sm-5"><?php the_field( 'titulo_2da_seccion' ); ?></h2>
@@ -142,36 +152,47 @@ Template name: capacitacion
             </section>
 
             <!-- SEGUNDO TESTIMONIAL -->
-            <section class="my-5" style="background-color: lightgrey; height: 200px;">
-                <div class="container">
-                    <div class="owl-carousel owl-theme secundario">
-                        <!--  -->
-                        <div class="btn-play-wrap mx-auto" style="margin-top: 37px;">
-                            <a href="https://vimeo.com/59256790" data-fancybox data-ratio="2"
-                                class="btn-play owl-images rounded-circle mx-auto"><span class="ion ion-ios-play"></span></a>
+            <section class="carousel">
+        <div class="container">
+            <h3 class="text-center">TESTIMONIOS</h3>
+            <div class="row justify-content-center">
+                <!-- indicators -->
+                <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                        </li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner justify-content-center">
+                        <div class="carousel-item active">
+                            <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
-                        <!--  -->
-                        <div class="btn-play-wrap mx-auto" style="margin-top: 37px;">
-                            <a href="https://vimeo.com/59256790" data-fancybox data-ratio="2"
-                                class="btn-play owl-images rounded-circle mx-auto"><span class="ion ion-ios-play"></span></a>
+                        <div class="carousel-item">
+                            <iframe id="" width="550" height="450" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
-                        <!--  -->
-                        <div class="btn-play-wrap mx-auto" style="margin-top: 37px;">
-                            <a href="https://vimeo.com/59256790" data-fancybox data-ratio="2"
-                                class="btn-play owl-images rounded-circle mx-auto"><span class="ion ion-ios-play"></span></a>
-                        </div>
-                        <!--  -->
-                        <div class="btn-play-wrap mx-auto" style="margin-top: 37px;">
-                            <a href="https://vimeo.com/59256790" data-fancybox data-ratio="2"
-                                class="btn-play owl-images rounded-circle mx-auto"><span class="ion ion-ios-play"></span></a>
+                        <div class="carousel-item">
+                            <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
             <!-- TERCERA SECCION -->
-            <section class="seccion2-fotos">
+            <section class="seccion2-fotos mb-md-4">
                 <div class="container">
+
                     <div class="text-center">
                         <h2 class="mb-sm-5"><?php the_field( 'titulo_3era_seccion' ); ?></h2>
                     </div>
@@ -214,32 +235,42 @@ Template name: capacitacion
 
             <!-- TERCER TESTIMONIAL -->
 
-            <section class="my-5" style="background-color: lightgrey; height: 200px;">
-                <div class="container">
-                    <div class="owl-carousel owl-theme secundario">
-                        <!--  -->
-                        <div class="btn-play-wrap mx-auto" style="margin-top: 37px;">
-                            <a href="https://vimeo.com/59256790" data-fancybox data-ratio="2"
-                                class="btn-play owl-images rounded-circle mx-auto"><span class="ion ion-ios-play"></span></a>
+            <section class="carousel">
+        <div class="container">
+            <h3 class="text-center">TESTIMONIOS</h3>
+            <div class="row justify-content-center">
+                <!-- indicators -->
+                <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                        </li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner justify-content-center">
+                        <div class="carousel-item active">
+                            <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
-                        <!--  -->
-                        <div class="btn-play-wrap mx-auto" style="margin-top: 37px;">
-                            <a href="https://vimeo.com/59256790" data-fancybox data-ratio="2"
-                                class="btn-play owl-images rounded-circle mx-auto"><span class="ion ion-ios-play"></span></a>
+                        <div class="carousel-item">
+                            <iframe id="" width="550" height="450" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
-                        <!--  -->
-                        <div class="btn-play-wrap mx-auto" style="margin-top: 37px;">
-                            <a href="https://vimeo.com/59256790" data-fancybox data-ratio="2"
-                                class="btn-play owl-images rounded-circle mx-auto"><span class="ion ion-ios-play"></span></a>
-                        </div>
-                        <!--  -->
-                        <div class="btn-play-wrap mx-auto" style="margin-top: 37px;">
-                            <a href="https://vimeo.com/59256790" data-fancybox data-ratio="2"
-                                class="btn-play owl-images rounded-circle mx-auto"><span class="ion ion-ios-play"></span></a>
+                        <div class="carousel-item">
+                            <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
             <?php endwhile;?>
         <?php endif;?>
     <?php wp_reset_postdata();?>
