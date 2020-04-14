@@ -116,6 +116,7 @@ textarea {
 }
 @media (max-width: 600px) {
 	.col-video {
+		text-align: center;
 		iframe {
 			width: 315px!important;
 			height: 315px!important;
