@@ -111,7 +111,7 @@
                             </div>
                         </div>
                         <div class="col-12 mx-auto">
-                            <div class="btn botones d-flex align-items-center justify-content-center">
+                            <div class="btn botones d-flex align-items-center justify-content-center mx-auto pb-3">
                                 <a class="ultimo text-white" href="<?php echo esc_url( home_url('/') ); ?>agenda">
                                     <!-- <i class="far fa-calendar-alt"></i> -->
                                     Agenda
