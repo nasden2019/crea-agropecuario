@@ -73,7 +73,7 @@
                     </div>
 
                     <div class="btn botones d-flex align-items-center justify-content-center">
-                        <a class="ultimo text-white">
+                        <a class="ultimo text-white" href="<?php echo esc_url( home_url('/') ); ?>agenda">>
                             <!-- <i class="far fa-calendar-alt"></i> -->
                             Agenda
                         </a>
