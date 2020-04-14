@@ -124,5 +124,7 @@ Template name: agenda
                 console.log('onAddEvent!')
             }
         });
-        // $("#evoCalendar").evoCalendar('addCalendarEvent', [...]);
+        // $("#evoCalendar").evoCalendar('addCalendarEvent', [...];
     </script>
+
+<?php get_footer(); ?>
