@@ -112,7 +112,7 @@ Template Name: trabajos
                                     </div>
                                 </div>
                                 <?php } 
-                                if ($i = 3) { ?>
+                                if ($i == 3) { ?>
                                 
                             </div>
                         </div>
@@ -207,7 +207,7 @@ Template Name: trabajos
                                 </div>
                                 <?php } 
                                 
-                                if ($i = 5) { ?>
+                                if ($i == 5) { ?>
 
                             </div>
 
@@ -300,7 +300,7 @@ Template Name: trabajos
                                 </div>
                                 <?php } 
                                 
-                                if ($i=6) { ?>
+                                if ($i == 6) { ?>
                             </div>
                         </div>
                                 <?php } ?>
