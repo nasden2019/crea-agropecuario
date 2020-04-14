@@ -353,4 +353,9 @@ textarea {
     color: grey;
   }
 }
+
+.col-video iframe {
+  width: 360px;
+  height: 315px;
+}
 /*# sourceMappingURL=estilos.css.map */
