@@ -83,35 +83,35 @@
                 <div class="col-lg-none col-12 d-sm-block order-lg-3">
                     <div class="row">
                         <div class="col-12 mx-auto">
-                            <div class="btn botones d-flex align-items-center justify-content-center mt-md-0 mx-auto pb-3">
+                            <div class="btn botones mx-auto my-2 d-flex align-items-center justify-content-center mt-md-0 mx-auto pb-3">
                                 <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>convocatorias">
                                     Convocatorias
                                 </a>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="btn botones d-flex align-items-center justify-content-center">
+                            <div class="btn botones mx-auto my-2 d-flex align-items-center justify-content-center">
                                 <a class="text-white">
                                     Sponsor
                                 </a>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="btn botones d-flex align-items-center justify-content-center">
+                            <div class="btn botones mx-auto my-2 d-flex align-items-center justify-content-center">
                                 <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>trabajaConNosotros">
                                     Trabajar con <br>nosotros
                                 </a>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="btn botones d-flex align-items-center justify-content-center">
+                            <div class="btn botones mx-auto my-2 d-flex align-items-center justify-content-center">
                                 <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>referencias">
                                     Referencias <br>de interés
                                 </a>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="btn botones d-flex align-items-center justify-content-center">
+                            <div class="btn botones mx-auto my-2 d-flex align-items-center justify-content-center">
                                 <a class="ultimo text-white" href="<?php echo esc_url( home_url('/') ); ?>agenda">
                                     <!-- <i class="far fa-calendar-alt"></i> -->
                                     Agenda
