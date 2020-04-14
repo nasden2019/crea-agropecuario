@@ -27,13 +27,13 @@ Template Name: trabajos
                 <? $i=1;
                 if ( $loop->have_posts() ) :
                     while ( $loop->have_posts() ) : $loop->the_post(); 
-                    if ($i == 1) {?>                        
-                        <div class="col-sm-8 mt-md-3">
-                            <div class="row">
-                    <?php } ?>
+                    if ($i == 1) :                      
+                        echo '<div class="col-sm-8 mt-md-3">
+                            <div class="row">';
+                    endif; ?>
 
-                                <?php if($i <3 ) { ?>
-                                <div class="col-sm-6">
+                                <?php if($i < 3 ) :
+                                echo '<div class="col-sm-6">
                                     <img src="images/about_2.jpg" class="img-fluid" data-toggle="modal"
                                         data-target="#exampleModal" data-whatever="@getbootstrap" />
                                     <p class="text-center titulos-fotos-inicio" data-toggle="modal" data-target="#exampleModal"
@@ -113,21 +113,21 @@ Template Name: trabajos
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <?php } 
-                                if ($i == 3) { ?>
+                                </div>';
+                                endif; 
+                                if ($i == 3) :
                                 
-                            </div>
+                            echo'</div>
                         </div>
 
                         <!-- segunda columna: primer foto chiquita-->
                         <div class="col-sm-4 mt-4 mt-md-3">
-                            <div class="row">
-                                <?php } 
+                            <div class="row">';
+                                endif; 
                                 
-                                if ( $i < 5) { ?>
+                                if ( $i < 5) :
                             
-                                <div class="col-6">
+                                echo '<div class="col-6">
                                     <img src="images/about_1.jpg" class="img-fluid" data-toggle="modal"
                                         data-target="#exampleModal" data-whatever="@getbootstrap" />
                                     <p class="text-center titulos-fotos-inicio" data-toggle="modal" data-target="#exampleModal"
@@ -207,20 +207,17 @@ Template Name: trabajos
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <?php } 
+                                </div>';
+                                endif;                                 
+                                if ($i == 5) :
+
+                            echo '</div>
+                            <div class="row">';
+
+                                endif;
                                 
-                                if ($i == 5) { ?>
-
-                            </div>
-
-                            <!-- cuarta foto -->
-                            <div class="row">
-
-                                <?php } 
-                                
-                                if ($i < 7) { ?>
-                                <div class="col-6 mt-md-1">
+                                if ($i < 7) :
+                                echo '<div class="col-6 mt-md-1">
                                     <img src="images/about_1.jpg" class="img-fluid" data-toggle="modal"
                                         data-target="#exampleModal" data-whatever="@getbootstrap" />
                                     <p class="text-center titulos-fotos-inicio" data-toggle="modal" data-target="#exampleModal"
@@ -300,13 +297,13 @@ Template Name: trabajos
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <?php } 
+                                </div>';
+                                endif;
                                 
-                                if ($i == 6) { ?>
-                            </div>
-                        </div>
-                                <?php } ?>
+                                if ($i == 6) :
+                            echo '</div>
+                        </div>';
+                                endif; ?>
                     <?php $i++; endwhile;?>                                        
                 <?php endif;?>
                 <?php wp_reset_postdata();?>                    
