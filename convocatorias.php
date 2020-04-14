@@ -179,7 +179,7 @@ Template Name: convocatorias
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
 
                    
                     <?php endwhile;?>
