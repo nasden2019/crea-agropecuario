@@ -79,14 +79,29 @@ Template Name: referencias
                 <div class="col-md-12  mt-5 insta-feed">
                     <h2 class="mb-sm-5 text-center">A quién seguir?</h2>
                     <div class="row">
+                    <?php $args = array('post_type' => 'refer_aquien_seguir'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
+
                         <div class="col-md-6">
-                            <script src=" https://apps.elfsight.com/p/platform.js" defer></script>
-                            <div class="elfsight-app-0f5adf44-5d5c-4cc2-a1fd-eb8a3ff910d9" style="width: 100%;"></div>
+                        <?php if ( get_field( 'imagen') ) { ?>
+                                <img src="<?php the_field( 'imagen' ); ?>" />
+                            <?php } ?>
+                            <!-- <script src=" https://apps.elfsight.com/p/platform.js" defer></script>
+                            <div class="elfsight-app-0f5adf44-5d5c-4cc2-a1fd-eb8a3ff910d9" style="width: 100%;"></div> -->
                         </div>
+                        
                         <div class="col-md-6">
-                            <script src=" https://apps.elfsight.com/p/platform.js" defer></script>
-                            <div class="elfsight-app-0f5adf44-5d5c-4cc2-a1fd-eb8a3ff910d9" style="width: 100%;"></div>
+                        <?php if ( get_field( 'imagen') ) { ?>
+                                <img src="<?php the_field( 'imagen' ); ?>" />
+                            <?php } ?>
+                            <!-- <script src=" https://apps.elfsight.com/p/platform.js" defer></script>
+                            <div class="elfsight-app-0f5adf44-5d5c-4cc2-a1fd-eb8a3ff910d9" style="width: 100%;"></div> -->
                         </div>
+                        <?php endwhile;?>
+                             <?php endif;?>
+                               <?php wp_reset_postdata();?> 
                     </div>
                 </div>
 
