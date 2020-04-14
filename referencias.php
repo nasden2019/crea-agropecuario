@@ -107,8 +107,8 @@ Template Name: referencias
 
 
                 <div class="col-md-12 mt-md-5">
-                    <div class="row">
                     <h2 class="mb-sm-5 text-center">Webs</h2>
+                    <div class="row">
                     <?php $args = array('post_type' => 'refer_webs'); ?>
                     <?php $loop = new WP_Query($args);
                     if ( $loop->have_posts() ) :
