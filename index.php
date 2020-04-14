@@ -47,7 +47,7 @@
 
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-2 d-none d-sm-block order-lg-3">
+                <div class="col-lg-2 d-none d-lg-block order-lg-3">
                     <div class="btn botones d-flex align-items-center justify-content-center mt-md-0">
                         <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>convocatorias">
                             Convocatorias
