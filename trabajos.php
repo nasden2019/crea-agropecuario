@@ -31,7 +31,7 @@ Template Name: trabajos
                        $i=1;
                         if ( $loop->have_posts() ) :
                           while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                                    <?php if($i <= 2) { ?>
+                                    <?php if($i < 3) { ?>
 
                                     <div class="col-sm-6">
                                         <?php if ( get_field( 'imagen') ) { ?>
