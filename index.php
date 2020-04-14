@@ -47,7 +47,7 @@
 
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-2 d-none d-sm-block order-lg-3">
+                <div class="col-lg-2 d-none d-sm-block order-lg-3">
                     <div class="btn botones d-flex align-items-center justify-content-center mt-md-0">
                         <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>convocatorias">
                             Convocatorias
@@ -80,7 +80,7 @@
                     </div>
                     <!-- <div class="h-100"><div class="frame h-100"><div class="feature-img-bg h-100" style="background-image: url('images/about_1.jpg');"></div></div></div> -->
                 </div>
-                <div class="col-md-none col-12 d-sm-block order-lg-3">
+                <div class="col-lg-none col-12 d-sm-block order-lg-3">
                     <div class="row">
                         <div class="col-6">
                             <div class="btn botones d-flex align-items-center justify-content-center mt-md-0">
