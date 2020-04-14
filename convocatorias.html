@@ -129,7 +129,7 @@
                           <label for="recipient-name" class="col-form-label">Es asesor de Crea?</label>
 
                           <!--inputs -->
-                          <div class="d-flex">
+                          <div class="text-center mb-md-2">
                             <button class="btn" name="asesorSi" id="asesorSi" style="width: 50px;">
                               SI
                             </button>
@@ -142,14 +142,14 @@
                             </div>
                           </div>
 
-                          <div>
+                          <div class="text-center">
                             <button class="btn" style="width: 50px;" name="asesorNo" id="asesorNo">
                               NO
                             </button>
 
                             <div id="asesorNoInputs" class="text-center">
                               Estudiante:
-                              <input type="text" name="" id="" />
+                              <input type="text" name="" id="" class="text-center" />
                               <br>
                               Asesor:
                               <input type=" text" name="" id="" />
@@ -164,31 +164,56 @@
 
                         <!-- inputs productor -->
                         <div class="form-group text-center">
-                          <label for="recipient-name" class="col-form-label">Es Productor?</label>
-                          <div>
-                            <button class="btn" style="width: 50px;">
+                          <label for="recipient-name" class="col-form-label">Es productor de Crea?</label>
+
+                          <!--inputs -->
+                          <div class="text-center mb-md-2">
+                            <button class="btn" name="asesorSi" id="productorSi" style="width: 50px;">
                               SI
                             </button>
-                            <button class="btn" style="width: 50px;">
+
+                            <div id="productorSiInputs" class="text-center">
+                              Crea: <input type="text" name="productorSiInputs" id="" />
+                              <br>
+                              Zona:
+                              <input type="text" name="productorSiInputs" id="" />
+                            </div>
+                          </div>
+
+                          <div class="text-center">
+                            <button class="btn" style="width: 50px;" name="" id="productorNo">
                               NO
                             </button>
+
+                            <div id="productorNoInputs" class="text-center">
+                              Estudiante:
+                              <input type="text" name="" id="productorNoInputs" class="" />
+                              <br>
+                              Asesor:
+                              <input type=" text" name="" id="productorNoInputs" />
+                              <br>
+                              Productor:
+                              <input type="text" name="" id="productorNoInputs" />
+                            </div>
                           </div>
+
                         </div>
-                        <!-- fin inputs productor -->
-                      </form>
                     </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-cerrar" data-dismiss="modal">
-                        Cerrar
-                      </button>
-                      <button type="button" class="btn btn-contacto">
-                        Enviar
-                      </button>
-                    </div>
+                    <!-- fin inputs productor -->
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-cerrar" data-dismiss="modal">
+                      Cerrar
+                    </button>
+                    <button type="button" class="btn btn-contacto">
+                      Enviar
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
+
 
             <div class="col-md-6 mb-1 mt-3 text-center">
               <img src="images/img_2.jpg" class="img-fluid d-none d-md-block" />
@@ -277,6 +302,7 @@
         </div>
       </div>
     </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
@@ -342,6 +368,16 @@
         $("#asesorNoInputs").toggle();
         // $("#asesorSiInputs").hide();
       });
+
+      $('#productorSi').click(function (e) {
+        e.preventDefault();
+        $('#productorSiInputs').toggle();
+      })
+
+      $('#productorNo').click(function (e) {
+        e.preventDefault();
+        $('#productorNoInputs').toggle();
+      })
     });
 
     $(".owl-carousel").owlCarousel({
