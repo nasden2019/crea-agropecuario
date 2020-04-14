@@ -36,9 +36,12 @@ Template Name: referencias
                             <img src="<?php the_field( 'imagen' ); ?>" />
                         <?php } ?>
                         </div>
-                        <!-- <div class="col-md-6">
-                            <iframe frameborder=0 height=250 width=550 class="col-md-12"
-                                src="https://twitframe.com/show?url=https%3A%2F%2Ftwitter.com%2Fjack%2Fstatus%2F20"></iframe> -->
+                         <div class="col-md-6">
+                         <?php if ( get_field( 'imagen') ) { ?>
+                            <img src="<?php the_field( 'imagen' ); ?>" />
+                        <?php } ?>
+                            <!-- <iframe frameborder=0 height=250 width=550 class="col-md-12"
+                                src="https://twitframe.com/show?url=https%3A%2F%2Ftwitter.com%2Fjack%2Fstatus%2F20"></iframe> --> 
                                 <?php endwhile;?>
                                  <?php endif;?>
                                    <?php wp_reset_postdata();?>
