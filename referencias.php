@@ -52,6 +52,10 @@ Template Name: referencias
                 <div class="col-md-12 mt-2">
                     <h2 class="mb-sm-5 text-center">Los videos de la semana</h2>
                     <div class="row">
+                    <?php $args = array('post_type' => 'refer_videos'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
                     <div class="col-md-6">
                     <?php the_field( 'video' ); ?>
                         <!-- <iframe width="560" height="315"
@@ -65,7 +69,10 @@ Template Name: referencias
                             src="https://www.youtube.com/embed/sitA91-zWm0" frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe> -->
-                        </div>   
+                        </div>  
+                        <?php endwhile;?>
+                             <?php endif;?>
+                               <?php wp_reset_postdata();?> 
                     </div>
                 </div>
 
