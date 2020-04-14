@@ -161,7 +161,6 @@ label {
 #sidebar {
   min-width: 250px;
   max-width: 250px;
-  background: #49B6AF;
   color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -173,7 +172,6 @@ label {
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #49B6AF;
 }
 
 #sidebar ul.components {
@@ -355,7 +353,7 @@ textarea {
 }
 
 .col-video iframe {
-  width: 360px;
-  height: 315px;
+  width: 360px !important;
+  height: 315px !important;
 }
 /*# sourceMappingURL=estilos.css.map */
