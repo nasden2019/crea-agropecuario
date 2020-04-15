@@ -60,11 +60,18 @@
                         </ul>
                 </div>
             </div>
-                        <?php
+                        
+        </nav>
+
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+            <?php
                         if ( function_exists('yoast_breadcrumb') ) {
                         yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
                         }
                         ?>
-        </nav>
-
-    </header>
+            </div>
+        </div>
+    </div>
