@@ -14,7 +14,7 @@ Template Name: testeos
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <h3 class="mainTitular">| Testeos <?php post_type_archive_title();?></h3>
+                    <h3 class="mainTitular">| Testeos</h3>
                 </div>
             </div>
         </div>
