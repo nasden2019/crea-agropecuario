@@ -36,6 +36,9 @@
     padding: 10px;
     font-size: 1.1em;
     display: block;
+    &:active {
+        color: #3e827d;
+    }
 }
 
 #sidebar ul li a:hover {
