@@ -79,11 +79,15 @@ Template name: capacitacion
             </section>
 
 
-            <!-- PRIMER TESTIMONIAL  -->
-            <section class="carousel">
+            <!-- VIDEO TESTIMONIALS -->
+   <section class="carousel mt-md-4">
         <div class="container">
-            <h3 class="text-center">TESTIMONIOS</h3>
+            <h2 class="text-center">Testimonios</h2>
             <div class="row justify-content-center">
+            <?php $args = array('post_type' => 'testimonios'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
                 <!-- indicators -->
                 <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -94,25 +98,31 @@ Template name: capacitacion
                     </ol>
                     <div class="carousel-inner justify-content-center">
                         <div class="carousel-item active">
-                            <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
+                        <?php the_field( 'video' ); ?>
+                            <!-- <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen></iframe> -->
                         </div>
                         <div class="carousel-item">
-                            <iframe id="" width="550" height="450" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                        <?php the_field( 'video' ); ?>
+                            <!-- <iframe id="" width="550" height="450" src="https://www.youtube.com/embed/vlDzYIIOYmM"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen></iframe> -->
                         </div>
                         <div class="carousel-item">
-                            <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
+                        <?php the_field( 'video' ); ?>
+                            <!-- <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen></iframe> -->
                         </div>
                     </div>
                 </div>
+                <?php endwhile;?>
+                        <?php endif;?>
+                    <?php wp_reset_postdata();?>
             </div>
         </div>
     </section>
@@ -151,11 +161,15 @@ Template name: capacitacion
                 </div>
             </section>
 
-            <!-- SEGUNDO TESTIMONIAL -->
-            <section class="carousel">
+          <!-- VIDEO TESTIMONIALS -->
+   <section class="carousel mt-md-4">
         <div class="container">
-            <h3 class="text-center">TESTIMONIOS</h3>
+            <h2 class="text-center">Testimonios</h2>
             <div class="row justify-content-center">
+            <?php $args = array('post_type' => 'testimonios'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
                 <!-- indicators -->
                 <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -166,25 +180,31 @@ Template name: capacitacion
                     </ol>
                     <div class="carousel-inner justify-content-center">
                         <div class="carousel-item active">
-                            <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
+                        <?php the_field( 'video' ); ?>
+                            <!-- <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen></iframe> -->
                         </div>
                         <div class="carousel-item">
-                            <iframe id="" width="550" height="450" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                        <?php the_field( 'video' ); ?>
+                            <!-- <iframe id="" width="550" height="450" src="https://www.youtube.com/embed/vlDzYIIOYmM"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen></iframe> -->
                         </div>
                         <div class="carousel-item">
-                            <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
+                        <?php the_field( 'video' ); ?>
+                            <!-- <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen></iframe> -->
                         </div>
                     </div>
                 </div>
+                <?php endwhile;?>
+                        <?php endif;?>
+                    <?php wp_reset_postdata();?>
             </div>
         </div>
     </section>
@@ -233,12 +253,15 @@ Template name: capacitacion
                 </div>
             </section>
 
-            <!-- TERCER TESTIMONIAL -->
-
-            <section class="carousel">
+         <!-- VIDEO TESTIMONIALS -->
+   <section class="carousel mt-md-4">
         <div class="container">
-            <h3 class="text-center">TESTIMONIOS</h3>
+            <h2 class="text-center">Testimonios</h2>
             <div class="row justify-content-center">
+            <?php $args = array('post_type' => 'testimonios'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
                 <!-- indicators -->
                 <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -249,25 +272,31 @@ Template name: capacitacion
                     </ol>
                     <div class="carousel-inner justify-content-center">
                         <div class="carousel-item active">
-                            <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
+                        <?php the_field( 'video' ); ?>
+                            <!-- <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen></iframe> -->
                         </div>
                         <div class="carousel-item">
-                            <iframe id="" width="550" height="450" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                        <?php the_field( 'video' ); ?>
+                            <!-- <iframe id="" width="550" height="450" src="https://www.youtube.com/embed/vlDzYIIOYmM"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen></iframe> -->
                         </div>
                         <div class="carousel-item">
-                            <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
+                        <?php the_field( 'video' ); ?>
+                            <!-- <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen></iframe> -->
                         </div>
                     </div>
                 </div>
+                <?php endwhile;?>
+                        <?php endif;?>
+                    <?php wp_reset_postdata();?>
             </div>
         </div>
     </section>
