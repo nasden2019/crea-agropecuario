@@ -147,7 +147,8 @@ label {
 }
 
 .p-convocatorias {
-  font-size: 20px !important;
+  font-size: 18px !important;
+  text-align: justify;
 }
 
 @media (max-width: 522px) {
@@ -204,15 +205,15 @@ label {
   padding: 10px;
   font-size: 1.1em;
   display: block;
+  color: #3e827d !important;
 }
 
 #sidebar ul li a:active {
-  color: #3e827d;
+  color: #3e827d !important;
 }
 
-#sidebar ul li a:hover {
-  color: #7386D5;
-  background: #FCD269;
+#sidebar ul li a:visited, #sidebar ul li a:active, #sidebar ul li a:focus {
+  color: #3e827d !important;
 }
 
 #sidebar ul li.active > a,
