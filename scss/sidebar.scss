@@ -41,9 +41,8 @@
     }
 }
 
-#sidebar ul li a:hover {
-    color: #7386D5;
-    background: #FCD269;
+#sidebar ul li a:visited, #sidebar ul li a:active {
+    color: #3e827d!important;
 }
 
 #sidebar ul li.active>a,
