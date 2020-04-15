@@ -38,6 +38,7 @@
   padding: 10px;
   font-size: 1.1em;
   display: block;
+  color: #3e827d !important;
 }
 
 #sidebar ul li a:active {
