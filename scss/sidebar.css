@@ -40,6 +40,10 @@
   display: block;
 }
 
+#sidebar ul li a:active {
+  color: #3e827d;
+}
+
 #sidebar ul li a:hover {
   color: #7386D5;
   background: #FCD269;
