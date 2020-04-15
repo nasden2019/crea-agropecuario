@@ -80,7 +80,7 @@
                     </div>
                     <!-- <div class="h-100"><div class="frame h-100"><div class="feature-img-bg h-100" style="background-image: url('images/about_1.jpg');"></div></div></div> -->
                 </div>
-                <div class="col-lg-none col-12 d-sm-block order-lg-3">
+                <div class="d-lg-none col-12 order-lg-3">
                     <div class="row">
                         <div class="col-12 mx-auto">
                             <div class="btn botones mx-auto my-2 d-flex align-items-center justify-content-center mt-md-0 mx-auto pb-3">
