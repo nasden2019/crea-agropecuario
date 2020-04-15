@@ -41,7 +41,7 @@
 }
 
 #sidebar ul li a:active {
-  color: #3e827d;
+  color: #3e827d !important;
 }
 
 #sidebar ul li a:hover {
