@@ -38,7 +38,7 @@
     <header role="banner">
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand " href="index.html">
+                <a class="navbar-brand " href="<?php echo esc_url( home_url('/') ); ?>">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" class="img-fluid" style="width: 17rem;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
@@ -49,7 +49,7 @@
                 <div class="collapse navbar-collapse" id="navbarsExample05">
                     <ul class="navbar-nav pl-md-5 ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo esc_url( home_url('/') ); ?>index">Home</a>
+                            <a class="nav-link" href="<?php echo esc_url( home_url('/') ); ?>">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo esc_url( home_url('/') ); ?>sobre-nosotros">Sobre Nosotros</a>
