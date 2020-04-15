@@ -44,7 +44,7 @@
   color: #3e827d !important;
 }
 
-#sidebar ul li a:visited, #sidebar ul li a:active {
+#sidebar ul li a:visited, #sidebar ul li a:active, #sidebar ul li a:focus {
   color: #3e827d !important;
 }
 
