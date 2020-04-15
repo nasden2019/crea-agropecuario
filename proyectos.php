@@ -191,10 +191,10 @@ Template Name: proyectos
                             </div>
                         </div>
 
-                        <div class="col-md-12">
+                        <div class="col-md-10">
                             <div>
                                 <span class="mainTitular titularchiquito">| Herramientas</span>
-                                <h2 class="d-md-block d-none"><?php the_field( 'titulo' ); ?>
+                                <h2 class="d-md-block d-none h3"><?php the_field( 'titulo' ); ?>
                                 </h2>
                                 <p class="p-convocatorias">
                                 <?php the_field( 'parrafo' ); ?>
