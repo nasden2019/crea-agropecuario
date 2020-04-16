@@ -93,7 +93,7 @@ Template Name: proyectos
         <?php $args = array('post_type' => 'proyectos_categorias',
                             'tax_query' => array(
                                 array (
-                                    'taxonomy' => 'categotia_2',
+                                    'taxonomy' => 'categoria_2',
                                     'field' => 'slug',
                                     'terms' => 'tet5',
                                 )
