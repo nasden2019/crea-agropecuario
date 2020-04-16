@@ -97,7 +97,7 @@ Template Name: proyectos
             $args = array('post_type' => 'proyectos_categorias',
                             'tax_query' => array(
                                 array (
-                                    'taxonomy' => 'proyectos_categorias',
+                                    'taxonomy' => 'categorias',
                                     'field' => 'slug',
                                     'terms' => $url,
                                 )
