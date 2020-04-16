@@ -81,6 +81,23 @@ if ( function_exists( 'add_theme_support' ) ) {
 */
 
  function frontpage_admin_menu() {
+    add_menu_page(
+        'Home',
+        'Home',
+        'read',
+        'Home',
+        '',
+        'dashicons-admin-home',
+        40
+    );
+    add_submenu_page(
+        'Home',
+        'prueba',
+        'prueba',
+        '',
+        'prueba',
+        '');
+
 
     add_menu_page(
         'Sobre nosotros',
