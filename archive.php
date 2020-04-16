@@ -99,7 +99,7 @@ Template Name: proyectos
                                 array (
                                     'taxonomy' => 'categorias',
                                     'field' => 'slug',
-                                    'terms' => '$url',
+                                    'terms' => $url,
                                 )
                             ),
                          ); ?>
