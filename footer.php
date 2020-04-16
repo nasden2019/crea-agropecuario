@@ -9,7 +9,7 @@
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>  
                 <div>
-                <?php if ( get_field( 'imagen') ) { ?>
+                <?php if ( get_field( 'imagen1') ) { ?>
                     <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;"/>
                 <?php } ?>
