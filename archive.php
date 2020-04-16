@@ -18,7 +18,7 @@ Template Name: proyectos
         <ul class="list-unstyled components">
             <!-- <p>Dummy Heading</p> -->
             <li>
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <a href="#homeSubmenu" data-toggle="col           lapse" aria-expanded="false" class="dropdown-toggle">
                     CATEGORIAS
                 </a>
                 <?php
@@ -93,12 +93,13 @@ Template Name: proyectos
         </section>
         <?php 
             $url= $_SERVER["REQUEST_URI"];
+            $url= basename($url);
             $args = array('post_type' => 'proyectos_categorias',
                             'tax_query' => array(
                                 array (
                                     'taxonomy' => 'categorias',
                                     'field' => 'slug',
-                                    'terms' => 'cat-1',
+                                    'terms' => '$url',
                                 )
                             ),
                          ); ?>
