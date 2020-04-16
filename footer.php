@@ -17,42 +17,27 @@
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen2') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+                
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen3') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+               
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen4') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+              
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen5') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+                
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen6') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+                
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
