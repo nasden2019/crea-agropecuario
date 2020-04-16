@@ -21,16 +21,17 @@ Template Name: proyectos
                 <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                     CATEGORIAS
                 </a>
+                <?php
+                //listado de taxonomias
+                $taxonomy = 'categorias';
+                $tax_terms = get_terms($taxonomy);
+                ?>
                 <ul class="collapse list-unstyled" id="homeSubmenu">
-                    <li>
-                        <a href="#">Categorias 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Categorias 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Categorias 3</a>
-                    </li>
+                    <?php
+                        foreach ($tax_terms as $tax_term) {
+                        echo '<li>'.$tax_term->name.'</li>';
+                        }
+                    ?>
                 </ul>
             </li>
             <li>
