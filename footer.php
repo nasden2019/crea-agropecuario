@@ -4,10 +4,12 @@
         <!-- owl carrousel -->
         <div class="container-fluid">
             <div class="owl-carousel owl-theme">
+            
             <?php $args = array('post_type' => 'footer'); ?>
-                    <?php $loop = new WP_Query($args);
+                <?php $loop = new WP_Query($args);
+                $i=1;
                     if ( $loop->have_posts() ) :
-                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?>
                 <div>
                 <?php if ( get_field( 'imagen') ) { ?>
                     <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
@@ -17,50 +19,33 @@
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+               
+               
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+               
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+               
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+               
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+               
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+             
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
