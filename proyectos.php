@@ -29,7 +29,7 @@ Template Name: proyectos
                 <ul class="collapse list-unstyled" id="homeSubmenu">
                     <?php
                         foreach ($tax_terms as $tax_term) {
-                        echo '<li>'.$tax_term->name.'</li>';
+                        echo '<li><a href="'  . esc_attr(get_term_link($tax_term, $taxonomy)) . '">'.$tax_term->name.'</a></li>';
                         }
                     ?>
                 </ul>
