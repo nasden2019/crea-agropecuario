@@ -74,56 +74,56 @@ Template Name: testeos
                             </div>
                         </div>
                     </section>
-
-<!-- VIDEO TESTIMONIALS -->
-<section class="carousel mt-md-4">
-        <div class="container">
-            <h2 class="text-center">Testimonios</h2>
-            <div class="row justify-content-center">
-            <?php $args = array('post_type' => 'testimonios'); ?>
-                    <?php $loop = new WP_Query($args);
-                    if ( $loop->have_posts() ) :
-                        while ( $loop->have_posts() ) : $loop->the_post(); ?> 
-                <!-- indicators -->
-                <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-                        </li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner justify-content-center">
-                        <div class="carousel-item active">
-                        <?php the_field( 'video' ); ?>
-                            <!-- <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe> -->
-                        </div>
-                        <div class="carousel-item">
-                        <?php the_field( 'video' ); ?>
-                            <!-- <iframe id="" width="550" height="450" src="https://www.youtube.com/embed/vlDzYIIOYmM"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe> -->
-                        </div>
-                        <div class="carousel-item">
-                        <?php the_field( 'video' ); ?>
-                            <!-- <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe> -->
-                        </div>
-                    </div>
-                </div>
-                <?php endwhile;?>
-                        <?php endif;?>
-                    <?php wp_reset_postdata();?>
-            </div>
-        </div>
-    </section>
-                <?php endwhile;?>
+                    <?php endwhile;?>
             <?php endif;?>
         <?php wp_reset_postdata();?>
+
+        <!-- VIDEO TESTIMONIALS -->
+        <section class="carousel mt-md-4">
+                <div class="container">
+                    <h2 class="text-center">Testimonios</h2>
+                    <div class="row justify-content-center">
+                    <?php $args = array('post_type' => 'testimonios'); ?>
+                            <?php $loop = new WP_Query($args);
+                            if ( $loop->have_posts() ) :
+                                while ( $loop->have_posts() ) : $loop->the_post(); ?> 
+                        <!-- indicators -->
+                        <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                                </li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner justify-content-center">
+                                <div class="carousel-item active">
+                                <?php the_field( 'video' ); ?>
+                                    <!-- <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe> -->
+                                </div>
+                                <div class="carousel-item">
+                                <?php the_field( 'video' ); ?>
+                                    <!-- <iframe id="" width="550" height="450" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe> -->
+                                </div>
+                                <div class="carousel-item">
+                                <?php the_field( 'video' ); ?>
+                                    <!-- <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe> -->
+                                </div>
+                            </div>
+                        </div>
+                        <?php endwhile;?>
+                                <?php endif;?>
+                            <?php wp_reset_postdata();?>
+                    </div>
+                </div>
+        </section>
 
     <?php get_footer(); ?>
