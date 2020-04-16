@@ -17,53 +17,31 @@
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+                
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+               
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+              
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+                
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
                 <div>
-                <?php if ( get_field( 'imagen') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
+                
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
                         style="width: 80px;" /> -->
                 </div>
-                <div>
-                <?php if ( get_field( 'imagen') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;"/>
-                <?php } ?>
-                    <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;" /> -->
-                </div>
+               
                 <?php endwhile;?>
                 <?php endif;?>
                 <?php wp_reset_postdata();?>
