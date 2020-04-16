@@ -18,7 +18,7 @@ Template Name: proyectos
         <ul class="list-unstyled components">
             <!-- <p>Dummy Heading</p> -->
             <li>
-                <a href="#homeSubmenu" data-toggle="col           lapse" aria-expanded="false" class="dropdown-toggle">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                     CATEGORIAS
                 </a>
                 <?php
