@@ -91,15 +91,7 @@ Template Name: proyectos
                 </div>
             </div>
         </section>
-        <?php $args = array('post_type' => 'proyectos_categorias',
-                            'tax_query' => array(
-                                array (
-                                    'taxonomy' => 'categorias',
-                                    'field' => 'slug',
-                                    'terms' => 'cat-1',
-                                )
-                            ),
-                         ); ?>
+        <?php $args = array('post_type' => 'proyectos_categorias'); ?>
         <?php $loop = new WP_Query($args);
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
