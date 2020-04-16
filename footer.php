@@ -60,7 +60,7 @@
                         style="width: 80px;" /> -->
                 </div>
                
-                <?php endwhile;?>
+                <?php $i++; endwhile;?>
                 <?php endif;?>
                 <?php wp_reset_postdata();?>
             </div>
