@@ -69,9 +69,10 @@ Template Name: sobrenosotros
                         <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
                         <!-- el ?php the_field 'titulo' ; ?> es el link para q nos lleve-->
                         <p class="text-center titulos-fotos-inicio"><a
-                                href="<?php echo esc_url( home_url('/') ); ?><?php the_field( 'nombreurl' ); ?>
-                                <?php the_field( 'titulo' ); ?>"></a></p>
+                                href="<?php echo esc_url( home_url('/') ); ?><?php the_field( 'nombreurl' ); ?>">
+                                <?php the_field( 'titulo' ); ?></a></p>
                                 
+                               
                     </div>
 
 
