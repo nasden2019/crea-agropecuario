@@ -91,7 +91,9 @@ Template Name: proyectos
                 </div>
             </div>
         </section>
-        <?php $args = array('post_type' => 'proyectos_categorias',
+        <?php 
+            $url= $_SERVER["REQUEST_URI"];
+            $args = array('post_type' => 'proyectos_categorias',
                             'tax_query' => array(
                                 array (
                                     'taxonomy' => 'categorias',
@@ -141,7 +143,7 @@ Template Name: proyectos
 
                     <div class="col-md-10">
                         <div>
-                            <span class="mainTitular titularchiquito">| Categorias</span>
+                            <span class="mainTitular titularchiquito">| Categorias <?php echo $url; ?></span>
                             <h2 class="d-md-block d-none h3 font-weight-bold"><?php the_field( 'titulo' ); ?>
                             </h2>
                             <p class="p-convocatorias">
