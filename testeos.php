@@ -97,21 +97,21 @@ Template Name: testeos
                             </ol>
                             <div class="carousel-inner justify-content-center">
                                 <div class="carousel-item active">
-                                <?php the_field( 'video' ); ?>
+                                <?php the_field( 'video1' ); ?>
                                     <!-- <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
                                         frameborder="0"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe> -->
                                 </div>
                                 <div class="carousel-item">
-                                <?php the_field( 'video' ); ?>
+                                <?php the_field( 'video2' ); ?>
                                     <!-- <iframe id="" width="550" height="450" src="https://www.youtube.com/embed/vlDzYIIOYmM"
                                         frameborder="0"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe> -->
                                 </div>
                                 <div class="carousel-item">
-                                <?php the_field( 'video' ); ?>
+                                <?php the_field( 'video3' ); ?>
                                     <!-- <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
                                         frameborder="0"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
