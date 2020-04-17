@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: proyectos-actuales
+Template Name: proyectos
 */
 ?>
 
