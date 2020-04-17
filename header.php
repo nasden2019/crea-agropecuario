@@ -49,7 +49,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarsExample05">
-                    <ul class="navbar-nav pl-md-5 ml-auto">
+                    <ul class="navbar-nav pl-md-4 ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo esc_url( home_url('/') ); ?>">Home</a>
                         </li>
@@ -66,14 +66,7 @@
             </div>
 
         </nav>
-        <!-- <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                ?php
-                        if ( function_exists('yoast_breadcrumb') ) {
-                        yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-                        }
-                        ?>
-                        </li> -->
+       
 
     </header>
 
