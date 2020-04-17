@@ -10,8 +10,7 @@
 ?>
 <h2 class=”comment-title”>
 <?php
-printf(
-esc_html( _nx( ‘One Comment’, ‘%1$s comments’, get_comments_number(), ‘comments title’, ‘blogginglovetheme’) ),
+(( _nx( ‘One Comment’, ‘%1$s comments’, get_comments_number(), ‘comments title’, ‘blogginglovetheme’) ),
 number_format_i18n( get_comments_number() )
 );
 ?>

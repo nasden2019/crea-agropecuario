@@ -327,3 +327,5 @@ Template name: capacitacion
 <?php wp_reset_postdata();?>
 
 <?php get_footer(); ?>
+
+<?php comments_template(); ?>
