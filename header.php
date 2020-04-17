@@ -59,19 +59,25 @@
                         </li>
                         </ul>
                 </div>
+                <?php
+                        if ( function_exists('yoast_breadcrumb') ) {
+                        yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+                        }
+                        ?>
+            </div>
             </div>
                         
         </nav>
 
     </header>
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <div class="row justify-content-end">
             <div class="col-11 p-0">
-            <?php
+            ?php
                         if ( function_exists('yoast_breadcrumb') ) {
                         yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
                         }
                         ?>
             </div>
         </div>
-    </div>
+    </div> -->
