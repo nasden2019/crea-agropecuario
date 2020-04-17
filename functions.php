@@ -149,6 +149,6 @@ if ( function_exists( 'add_theme_support' ) ) {
 //  }
 
 //  add_action( 'admin_menu', 'frontpage_admin_menu' );
-
-
+ if (comments_open() || get_comments_number())  : comments_template();
+endif;
 // ?>
