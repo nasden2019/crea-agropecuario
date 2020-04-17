@@ -77,7 +77,7 @@
 
     </header>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row ">
             <div class="col-md-12 ml-md-5">
                 <div class="row">
