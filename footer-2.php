@@ -2,32 +2,68 @@
 <footer id="clientes" class="mt-sm-5" style="height: 100%;">
         <!-- <h2 class="text-center font-weight-bold pb-5 mt-sm-3">CLIENTES</h2> -->
         <!-- owl carrousel -->
-        <div class="container">
+        <div class="container-fluid">
             <div class="owl-carousel owl-theme">
-                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;" />
+            <?php $args = array('post_type' => 'footer'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?>  
+                <div>
+                <?php if ( get_field( 'imagen1') ) { ?>
+                    <img src="<?php the_field( 'imagen1' ); ?>" class="owl-images rounded-circle mx-auto"
+                        style="width: 80px;"/>
+                <?php } ?>
+                    <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                        style="width: 80px;" /> -->
                 </div>
-                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;" />
+                <div>
+                <?php if ( get_field( 'imagen2') ) { ?>
+                    <img src="<?php the_field( 'imagen2' ); ?>" class="owl-images rounded-circle mx-auto"
+                        style="width: 80px;"/>
+                <?php } ?>
+                    <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                        style="width: 80px;" /> -->
                 </div>
-                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;" />
+                <div>
+                <?php if ( get_field( 'imagen3') ) { ?>
+                    <img src="<?php the_field( 'imagen3' ); ?>" class="owl-images rounded-circle mx-auto"
+                        style="width: 80px;"/>
+                <?php } ?>
+                    <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                        style="width: 80px;" /> -->
                 </div>
-                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;" />
+                <div>
+                <?php if ( get_field( 'imagen4') ) { ?>
+                    <img src="<?php the_field( 'imagen4' ); ?>" class="owl-images rounded-circle mx-auto"
+                        style="width: 80px;"/>
+                <?php } ?>
+                    <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                        style="width: 80px;" /> -->
                 </div>
-                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;" />
+                <div>
+                <?php if ( get_field( 'imagen5') ) { ?>
+                    <img src="<?php the_field( 'imagen5' ); ?>" class="owl-images rounded-circle mx-auto"
+                        style="width: 80px;"/>
+                <?php } ?>
+                    <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                        style="width: 80px;" /> -->
                 </div>
-                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;" />
+                <div>
+                <?php if ( get_field( 'imagen6') ) { ?>
+                    <img src="<?php the_field( 'imagen6' ); ?>" class="owl-images rounded-circle mx-auto"
+                        style="width: 80px;"/>
+                <?php } ?>
+                    <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
+                        style="width: 80px;" /> -->
                 </div>
-                <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
-                        style="width: 80px;" />
-                </div>
+               
+                <?php endwhile;?>
+                <?php endif;?>
+                <?php wp_reset_postdata();?>
             </div>
         </div>
     </footer>
+
 
 
 

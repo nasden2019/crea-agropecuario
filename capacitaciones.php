@@ -42,6 +42,10 @@ Template name: capacitacion
                     </div>
 
                     <div class="row">
+                    <?php $args1 = array('post_type' => 'capacitacion_sn'); ?>
+                        <?php $loop1 = new WP_Query($args1);
+                                if ( $loop1->have_posts() ) :
+                                    while ( $loop1->have_posts() ) : $loop1->the_post(); ?>
                         <!-- offset-1: quita un rem de cada lado,-->
                         <div class="col-10 offset-1">
                             <div class="row">
@@ -74,6 +78,9 @@ Template name: capacitacion
                                 </div>
                             </div>
                         </div>
+                        <?php endwhile;?>
+                        <?php endif;?>
+                        <?php wp_reset_postdata();?>
                     </div>
                 </div>
             </section>
@@ -137,6 +144,10 @@ Template name: capacitacion
                     <div class="row">
                         <div class="col-10 offset-1">
                             <div class="row">
+                    <?php $args1 = array('post_type' => 'capacitacion_sn'); ?>
+                        <?php $loop1 = new WP_Query($args1);
+                                if ( $loop1->have_posts() ) :
+                                    while ( $loop1->have_posts() ) : $loop1->the_post(); ?>
                                 <div class="col-md-6  mb-1">
                                     <!-- <img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
                                     <?php if ( get_field( '2-_imagen_1') ) { ?>
@@ -157,6 +168,9 @@ Template name: capacitacion
                                 </div>
                             </div>
                         </div>
+                        <?php endwhile;?>
+                        <?php endif;?>
+                        <?php wp_reset_postdata();?>
                     </div>
                 </div>
             </section>
@@ -218,6 +232,10 @@ Template name: capacitacion
                     </div>
 
                     <div class="row">
+                    <?php $args1 = array('post_type' => 'capacitacion_sn'); ?>
+                        <?php $loop1 = new WP_Query($args1);
+                                if ( $loop1->have_posts() ) :
+                                    while ( $loop1->have_posts() ) : $loop1->the_post(); ?>
                         <div class="col-10 offset-1">
                             <div class="row">
                                 <div class="col-md-4  mb-1">
@@ -249,6 +267,9 @@ Template name: capacitacion
                                 </div>
                             </div>
                         </div>
+                        <?php endwhile;?>
+                        <?php endif;?>
+                        <?php wp_reset_postdata();?>
                     </div>
                 </div>
             </section>
