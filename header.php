@@ -65,7 +65,7 @@
 
     </header>
     <div class="container-fluid">
-        <div class="row justify-content-center">
+        <div class="row justify-content-end">
             <div class="col-11 p-0">
             <?php
                         if ( function_exists('yoast_breadcrumb') ) {
