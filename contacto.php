@@ -114,3 +114,5 @@ Template name: contacto
     </section>
 
     <?php get_footer(); ?>
+
+    <?php comments_template(); ?>
