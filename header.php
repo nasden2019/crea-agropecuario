@@ -17,12 +17,13 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700" rel="stylesheet">
 
     <?php wp_head(); ?>
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/animate.css" >
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/animate.css">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/owl.carousel.min.css">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/jquery.fancybox.min.css">
 
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/fonts/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="<?php echo get_stylesheet_directory_uri(); ?>/fonts/fontawesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/owl-carousel/owl.carousel.css" />
 
@@ -39,7 +40,8 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand " href="<?php echo esc_url( home_url('/') ); ?>">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" class="img-fluid" style="width: 17rem;">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" class="img-fluid"
+                        style="width: 17rem;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
                     aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,18 +54,19 @@
                             <a class="nav-link" href="<?php echo esc_url( home_url('/') ); ?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo esc_url( home_url('/') ); ?>sobre-nosotros">Sobre Nosotros</a>
+                            <a class="nav-link" href="<?php echo esc_url( home_url('/') ); ?>sobre-nosotros">Sobre
+                                Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo esc_url( home_url('/') ); ?>contacto">Contactanos</a>
                         </li>
-                        </ul>
+                    </ul>
                 </div>
-                
+
             </div>
-                        
+
         </nav>
-              <!-- <ul class="navbar-nav ml-auto">
+        <!-- <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
                 ?php
                         if ( function_exists('yoast_breadcrumb') ) {
@@ -71,17 +74,25 @@
                         }
                         ?>
                         </li> -->
-          
+
     </header>
 
     <div class="container">
-        <div class="d-flex ">
-            
-            <?php
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <?php
                         if ( function_exists('yoast_breadcrumb') ) {
                         yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
                         }
                         ?>
-           
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
