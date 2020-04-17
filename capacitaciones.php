@@ -142,12 +142,12 @@ Template name: capacitacion
                     </div>
 
                     <div class="row">
+                        <div class="col-10 offset-1">
+                            <div class="row">
                     <?php $args1 = array('post_type' => 'capacitacion_sn'); ?>
                         <?php $loop1 = new WP_Query($args1);
                                 if ( $loop1->have_posts() ) :
                                     while ( $loop1->have_posts() ) : $loop1->the_post(); ?>
-                        <div class="col-10 offset-1">
-                            <div class="row">
                                 <div class="col-md-6  mb-1">
                                     <!-- <img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid" /> -->
                                     <?php if ( get_field( '2-_imagen_1') ) { ?>
