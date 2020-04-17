@@ -61,14 +61,13 @@
                 </div>
                 
             </div>
+                        
+        </nav>
                 <?php
                         if ( function_exists('yoast_breadcrumb') ) {
                         yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
                         }
                         ?>
-            </div>
-                        
-        </nav>
 
     </header>
     <!-- <div class="container-fluid">
