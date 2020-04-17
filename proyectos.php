@@ -12,7 +12,7 @@ Template Name: proyectos
     <!-- Sidebar  -->
     <nav id="sidebar" style="display: none;">
         <div class="sidebar-header">
-            <h3>Testeos Generales</h3>
+            <h3>CATEGORIAS</h3>
         </div>
 
         <ul class="list-unstyled components">
@@ -33,27 +33,6 @@ Template Name: proyectos
                         }
                     ?>
                 </ul>
-            </li>
-            <li>
-                <a class="text-white" href="#">SOBRE NOSOTROS</a>
-            </li>
-            <li>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle 
-                        text-white">HERRAMIENTAS</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
-                    <li>
-                        <a class="text-white" href="#">Herramientas 1</a>
-                    </li>
-                    <li>
-                        <a class="text-white" href="#">Herramientas 2</a>
-                    </li>
-                    <li>
-                        <a class="text-white" href="#">Herramientas 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a class="text-white" href="#">CONTACTO</a>
             </li>
         </ul>
 
