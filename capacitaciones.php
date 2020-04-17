@@ -42,7 +42,7 @@ Template name: capacitacion
                     </div>
 
                     <div class="row">
-                    <?php $args1 = array('post_type' => 'testimonios'); ?>
+                    <?php $args1 = array('post_type' => 'capacitacion_sn'); ?>
                         <?php $loop1 = new WP_Query($args1);
                                 if ( $loop1->have_posts() ) :
                                     while ( $loop1->have_posts() ) : $loop1->the_post(); ?>
