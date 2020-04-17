@@ -14,28 +14,18 @@ Template Name: proyectos
         <div class="sidebar-header">
             <h3>CATEGORIAS</h3>
         </div>
-
-        <ul class="list-unstyled components">
-            <!-- <p>Dummy Heading</p> -->
-            <li>
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                    CATEGORIAS
-                </a>
+            <?php
+            //listado de taxonomias
+            $taxonomy = 'categorias';
+            $tax_terms = get_terms($taxonomy);
+            ?>
+            <ul class="list-unstyled components">
                 <?php
-                //listado de taxonomias
-                $taxonomy = 'categorias';
-                $tax_terms = get_terms($taxonomy);
+                    foreach ($tax_terms as $tax_term) {
+                    echo '<li><a href="'  . esc_attr(get_term_link($tax_term, $taxonomy)) . '">'.$tax_term->name.'</a></li>';
+                    }
                 ?>
-                <ul class="collapse list-unstyled" id="homeSubmenu">
-                    <?php
-                        foreach ($tax_terms as $tax_term) {
-                        echo '<li><a href="'  . esc_attr(get_term_link($tax_term, $taxonomy)) . '">'.$tax_term->name.'</a></li>';
-                        }
-                    ?>
-                </ul>
-            </li>
-        </ul>
-
+            </ul>
     </nav>
 
     <!-- METER ACA!!!! LA PANTALLA ENTERA DENTRO DEL SIDE BAR (MENOS EL NAVBAR Y EL FOOTER, PARA Q NO SE ROMPAN!)  -->
