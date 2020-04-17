@@ -63,24 +63,25 @@
             </div>
                         
         </nav>
-              <ul class="navbar-nav ml-auto">
+              <!-- <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                <?php
+                ?php
                         if ( function_exists('yoast_breadcrumb') ) {
                         yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
                         }
                         ?>
-                        </li>
-              </div>
+                        </li> -->
+          
     </header>
-    <!-- <div class="container-fluid">
-        <div class="row justify-content-end">
-            <div class="col-11 p-0">
-            ?php
+    
+    <div class="container">
+        <div class="d-flex">
+            <div class="align-self-end">
+            <?php
                         if ( function_exists('yoast_breadcrumb') ) {
                         yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
                         }
                         ?>
             </div>
         </div>
-    </div> -->
+    </div>
