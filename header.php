@@ -63,12 +63,14 @@
             </div>
                         
         </nav>
-              <div class="navbar-nav ml-auto">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
                 <?php
                         if ( function_exists('yoast_breadcrumb') ) {
                         yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
                         }
                         ?>
+                        </li>
               </div>
     </header>
     <!-- <div class="container-fluid">
