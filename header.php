@@ -73,15 +73,15 @@
                         </li> -->
           
     </header>
-    
+
     <div class="container">
-        <div class="d-flex">
-            <div class="align-self-end">
+        <div class="d-flex ">
+            
             <?php
                         if ( function_exists('yoast_breadcrumb') ) {
                         yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
                         }
                         ?>
-            </div>
+           
         </div>
     </div>
