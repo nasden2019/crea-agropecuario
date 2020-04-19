@@ -180,6 +180,7 @@ Template Name: convocatorias
     </div>
 </section>
 
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.2.1.min.js"></script>
 <script>
      $(document).ready(function () {
       $("#asesorSi").click(function (e) {
