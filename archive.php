@@ -17,7 +17,9 @@ Template Name: proyectos
         </div>
             <?php
             //listado de taxonomias
-            $taxonomy = 'categorias';
+            $url= $_SERVER["REQUEST_URI"];
+            $url = dirname($url);
+            $taxonomy = basename($url);;
             $tax_terms = get_terms($taxonomy);
             ?>
             <ul class="list-unstyled components">
@@ -64,8 +66,15 @@ Template Name: proyectos
         <?php 
             $url= $_SERVER["REQUEST_URI"];
             $categoria= basename($url);
-            echo dirname($url); 
-            $args = array('post_type' => 'proyectos_categorias',
+            $url = dirname($url); 
+            $taxonomia= basename($url);
+            if ($taxonomia == 'categorias') {
+                $post_type = 'proyectos_categorias';
+            }
+            else {
+                $post_type = 'proyectos_historicos';
+            }
+            $args = array('post_type' => $post_type,
                             'tax_query' => array(
                                 array (
                                     'taxonomy' => 'categorias',
