@@ -73,7 +73,7 @@
     <div class="container-fluid">
         <div class="row ">
             <div class="col-md-12">
-                <div class="row">
+                <div class="row justify-content-end">
                     <div class="col-md-3">
                     </div>
                     <div class="col-md-3"></div>
