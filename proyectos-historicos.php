@@ -16,7 +16,7 @@ Template Name: proyectos-historicos
         </div>
             <?php
             //listado de taxonomias
-            $taxonomy = 'categorias';
+            $taxonomy = 'categorias_historicas';
             $tax_terms = get_terms($taxonomy);
             ?>
             <ul class="list-unstyled components">
