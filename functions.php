@@ -114,7 +114,7 @@ if ( function_exists( 'add_theme_support' ) ) {
         'read',
         'incubacion(S-N)',
         '',
-        'dashicons-admin-S-N',
+        'dashicons-admin-home',
         40
     );
     add_menu_page(
