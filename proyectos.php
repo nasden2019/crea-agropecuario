@@ -52,11 +52,6 @@ Template Name: proyectos
                 </button>
             </div>
         </nav>
-        <div class="collapse" id="collapseExample">
-          <div class="card card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-          </div>
-        </div>
 
         <!-- END SIDEBAR -->
 
@@ -80,49 +75,63 @@ Template Name: proyectos
         <section class="section mb-md-5">
             <div class="container">
                 <div class="row">
+                    <div class="col-10">
+                      <div class="row">
+                        
+                      
+                        <div class="col-md-6 d-none d-md-block">
 
-                    <div class="col-md-6 d-none d-md-block">
-
-                        <?php the_field( 'video' ); ?>
-                        <div class="text-center">
-                            <!-- <iframe width="100%" height="405" src="https://www.youtube.com/embed/ijs_p00fkdU"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe> -->
+                          <?php the_field( 'video' ); ?>
+                          <div class="text-center">
+                              <!-- <iframe width="100%" height="405" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                                      frameborder="0"
+                                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                      allowfullscreen></iframe> -->
+                          </div>
                         </div>
+
+                        <!-- video en mobile-->
+                        <div class="col-md-5 d-md-none mt-4">
+                          <?php the_field( 'video' ); ?>
+                          <div class="">
+                              <!-- <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
+                                      frameborder="0"
+                                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                      allowfullscreen></iframe> -->
+                          </div>
+                        </div>
+
+                        <!-- img -->
+                        <div class="col-md-6">
+                          <div class="">
+                              <?php if ( get_field( 'imagen') ) { ?>
+                              <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
+                              <?php } ?>
+                              <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid"> -->
+                          </div>
+                        </div>
+
+                        <div class="col-md-10">
+                          <div>
+                              <span class="mainTitular titularchiquito">| Categorias</span>
+                              <h2 class="d-md-block d-none h3 font-weight-bold"><?php the_field( 'titulo' ); ?>
+                              </h2>
+                              <p class="p-convocatorias">
+                                  <?php the_field( 'parrafo' ); ?>
+                              </p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="col-2">
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                      </div>
                     </div>
 
-                    <!-- video en mobile-->
-                    <div class="col-md-5 d-md-none mt-4">
-                        <?php the_field( 'video' ); ?>
-                        <div class="">
-                            <!-- <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe> -->
-                        </div>
-                    </div>
-
-                    <!-- img -->
-                    <div class="col-md-6">
-                        <div class="">
-                            <?php if ( get_field( 'imagen') ) { ?>
-                            <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
-                            <?php } ?>
-                            <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid"> -->
-                        </div>
-                    </div>
-
-                    <div class="col-md-10">
-                        <div>
-                            <span class="mainTitular titularchiquito">| Categorias</span>
-                            <h2 class="d-md-block d-none h3 font-weight-bold"><?php the_field( 'titulo' ); ?>
-                            </h2>
-                            <p class="p-convocatorias">
-                                <?php the_field( 'parrafo' ); ?>
-                            </p>
-                        </div>
-                    </div>
 
                 </div>
             </div>
