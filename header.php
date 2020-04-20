@@ -38,7 +38,7 @@
 
     <header role="banner">
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand " href="<?php echo esc_url( home_url('/') ); ?>">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" class="img-fluid"
                         style="width: 17rem;">
