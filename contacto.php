@@ -115,7 +115,7 @@ Template name: contacto
 
     <?php get_footer(); ?>
 
-    <?php comments_template(); ?>
+    <!-- ?php comments_template(); ?> -->
     
     <section class="section border-bottom">
       <div class="container">
