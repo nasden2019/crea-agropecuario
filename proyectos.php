@@ -127,14 +127,12 @@ Template Name: proyectos
                     </div>
                     <div class="col-2 p-0">
                       <div class="collapse" id="collapseExample<?php echo $i; ?>">
-                        <div class="card card-body">
-                          <ul>
-                            <span><a href="">Conocer el proyecto</a></span>
-                            <span><a href="">Incubario</a></span>
-                            <span><a href="">Mentorearlo</a></span>
-                            <span><a href="">Probar la tecnología</a></span>
-                            <span><a href="">Evaluar la posibilidad de invertir</a></span>
-                          </ul>
+                        <div class="card card-body">                          
+                            <span><a href="">Conocer el proyecto</a></span><br>
+                            <span><a href="">Incubario</a></span><br>
+                            <span><a href="">Mentorearlo</a></span><br>
+                            <span><a href="">Probar la tecnología</a></span><br>
+                            <span><a href="">Evaluar la posibilidad de invertir</a></span>                          
                         </div>
                       </div>
                     </div>
