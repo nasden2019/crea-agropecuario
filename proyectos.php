@@ -42,7 +42,7 @@ Template Name: proyectos
                     <a href="<?php echo esc_url( home_url('/') ); ?>proyectos"><button class="btn active" >Actual</button></a>
                     <a href="<?php echo esc_url( home_url('/') ); ?>proyectos-historicos"><button class="btn">Historico</button></a>
                 </div>                
-                <button type="button" id="sidebar1Collapse" class="btn btn-contacto">
+                <button type="button" id="sidebarCollapse" class="btn btn-contacto">
                     <i class="fas fa-search-left"></i>
                     <span>Buscar Proyectos</span>
                 </button>
@@ -56,7 +56,7 @@ Template Name: proyectos
 
         <!-- END SIDEBAR -->
             <!-- Sidebar  -->
-    <nav id="sidebar1" style="display: none;">
+    <nav id="sidebar" style="display: none;">
         <div class="sidebar-header">
             <h3>CATEGORIAS</h3>
         </div>
