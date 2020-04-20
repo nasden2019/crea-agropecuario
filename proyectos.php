@@ -41,10 +41,7 @@ Template Name: proyectos
                 <div class="text-center">
                     <a href="<?php echo esc_url( home_url('/') ); ?>proyectos"><button class="btn active" >Actual</button></a>
                     <a href="<?php echo esc_url( home_url('/') ); ?>proyectos-historicos"><button class="btn">Historico</button></a>
-                </div>
-                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Link with href
-                </a>
+                </div>                
                 <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -70,6 +67,7 @@ Template Name: proyectos
         </section>
         <?php $args = array('post_type' => 'proyectos_categorias'); ?>
         <?php $loop = new WP_Query($args);
+              $i = 1;
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
         <section class="section mb-md-5">
@@ -119,13 +117,16 @@ Template Name: proyectos
                               <p class="p-convocatorias">
                                   <?php the_field( 'parrafo' ); ?>
                               </p>
+                              <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample<?php echo $i; ?>" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Ver más
+                              </a>
                           </div>
                         </div>
                       </div>
                       
                     </div>
                     <div class="col-2">
-                      <div class="collapse" id="collapseExample">
+                      <div class="collapse" id="collapseExample<?php echo $i; ?>">
                         <div class="card card-body">
                           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                         </div>
@@ -136,6 +137,7 @@ Template Name: proyectos
                 </div>
             </div>
         </section>
+        <?php $i++;?>
         <?php endwhile;?>
         <?php endif;?>
         <?php wp_reset_postdata();?>
