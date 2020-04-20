@@ -128,7 +128,13 @@ Template Name: proyectos
                     <div class="col-2">
                       <div class="collapse" id="collapseExample<?php echo $i; ?>">
                         <div class="card card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                          <ul>
+                            <li><a href="">Conocer el proyecto</a></li>
+                            <li><a href="">Incubario</a></li>
+                            <li><a href="">Mentorearlo</a></li>
+                            <li><a href="">Probar la tecnología</a></li>
+                            <li><a href="">Evaluar la posibilidad de invertir</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
