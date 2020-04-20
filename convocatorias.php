@@ -264,7 +264,7 @@ Template Name: convocatorias
                   <input
                     type="submit"
                     value="Enviar Mensaje"
-                    class="boton btn btn-primary px-3 py-3"
+                    class="boton btn btn-contacto px-3 py-3"
                   />
                 </div>
               </div>
