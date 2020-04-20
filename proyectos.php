@@ -39,7 +39,7 @@ Template Name: proyectos
                     <span>Buscar Proyectos</span>
                 </button>
                 <div class="text-center">
-                    <a href="<?php echo esc_url( home_url('/') ); ?>proyectos"><button class="btn" >Actual</button></a>
+                    <a href="<?php echo esc_url( home_url('/') ); ?>proyectos"><button class="btn active" >Actual</button></a>
                     <a href="<?php echo esc_url( home_url('/') ); ?>proyectos-historicos"><button class="btn">Historico</button></a>
                 </div>
                 <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"

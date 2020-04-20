@@ -19,6 +19,10 @@
   @include hover-focus {
     text-decoration: none;
   }
+  &.active {
+    background: #49b6af;
+    color: white;
+  }
 
   &:focus,
   &.focus {

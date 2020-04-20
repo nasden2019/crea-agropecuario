@@ -18,9 +18,15 @@ Template Name: proyectos
             <?php
             //listado de taxonomias
             $url= $_SERVER["REQUEST_URI"];
-            $url = dirname($url);
-            $taxonomy = basename($url);;
-            $tax_terms = get_terms($taxonomy);
+            $categoria= basename($url);
+            $url = dirname($url); 
+            $taxonomia= basename($url);
+            if ($taxonomia == 'categorias') {
+                $post_type = 'proyectos_categorias';
+            }
+            else {
+                $post_type = 'proyectos_historicos';
+            }
             ?>
             <ul class="list-unstyled components">
                 <?php
@@ -42,8 +48,8 @@ Template Name: proyectos
                     <span>Buscar Proyectos</span>
                 </button>
                 <div class="text-center">
-                    <a href="<?php echo esc_url( home_url('/') ); ?>proyectos"><button class="btn" >Actual</button></a>
-                    <a href="<?php echo esc_url( home_url('/') ); ?>proyectos-historicos"><button class="btn">Historico</button></a>
+                    <a href="<?php echo esc_url( home_url('/') ); ?>proyectos"><button class="btn<?php if ($taxonomia == 'categorias') { echo 'active'; }?>" >Actual</button></a>
+                    <a href="<?php echo esc_url( home_url('/') ); ?>proyectos-historicos"><button class="btn <?php if ($taxonomia == 'categorias_historicas') { echo 'active'; }?>">Historico</button></a>
                 </div>
                 <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -68,16 +74,6 @@ Template Name: proyectos
             </div>
         </section>
         <?php 
-            $url= $_SERVER["REQUEST_URI"];
-            $categoria= basename($url);
-            $url = dirname($url); 
-            $taxonomia= basename($url);
-            if ($taxonomia == 'categorias') {
-                $post_type = 'proyectos_categorias';
-            }
-            else {
-                $post_type = 'proyectos_historicos';
-            }
             $args = array('post_type' => $post_type,
                             'tax_query' => array(
                                 array (
