@@ -64,9 +64,7 @@ Template Name: proyectos
         <?php 
             $url= $_SERVER["REQUEST_URI"];
             $categoria= basename($url);
-            $url = explode('/', $url);
-            array_pop($url);
-            echo implode('/', $url); 
+            echo dirname($url); 
             $args = array('post_type' => 'proyectos_categorias',
                             'tax_query' => array(
                                 array (
