@@ -41,11 +41,7 @@ Template Name: proyectos
                 <div class="text-center">
                     <a href="<?php echo esc_url( home_url('/') ); ?>proyectos"><button class="btn active" >Actual</button></a>
                     <a href="<?php echo esc_url( home_url('/') ); ?>proyectos-historicos"><button class="btn">Historico</button></a>
-                </div>                
-                <button type="button" id="sidebarCollapse" class="btn btn-contacto">
-                    <i class="fas fa-search-left"></i>
-                    <span>Buscar Proyectos</span>
-                </button>
+                </div>
                 <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -55,24 +51,6 @@ Template Name: proyectos
         </nav>
 
         <!-- END SIDEBAR -->
-            <!-- Sidebar  -->
-    <nav id="sidebar" style="display: none;">
-        <div class="sidebar-header">
-            <h3>CATEGORIAS</h3>
-        </div>
-            <?php
-            //listado de taxonomias
-            $taxonomy = 'categorias';
-            $tax_terms = get_terms($taxonomy);
-            ?>
-            <ul class="list-unstyled components">
-                <?php
-                    foreach ($tax_terms as $tax_term) {
-                    echo '<li><a href="'  . esc_attr(get_term_link($tax_term, $taxonomy)) . '">'.$tax_term->name.'</a></li>';
-                    }
-                ?>
-            </ul>
-    </nav>
 
 
         <div class="top-shadow"></div>
