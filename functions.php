@@ -109,10 +109,19 @@ if ( function_exists( 'add_theme_support' ) ) {
         40
     );
     add_menu_page(
-        'incubacion',
-        'incubacion',
+        'incubacion(S-N)',
+        'incubacion(S-N)',
         'read',
-        'incubacion',
+        'incubacion(S-N)',
+        '',
+        'dashicons-admin-S-N',
+        40
+    );
+    add_menu_page(
+        'referencias(home)',
+        'referencias(home)',
+        'read',
+        'referencias(home)',
         '',
         'dashicons-admin-home',
         40
