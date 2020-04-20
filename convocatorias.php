@@ -263,7 +263,7 @@ Template Name: convocatorias
                 <div class="col-md-6 form-group">
                   <input
                     type="submit"
-                    value="Enviar Mensaje"
+                    value="Enviar"
                     class="boton btn btn-contacto px-3 py-3"
                   />
                 </div>

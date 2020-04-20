@@ -364,8 +364,8 @@ Template Name: trabajos
                 <div class="col-md-6 form-group">
                   <input
                     type="submit"
-                    value="Enviar Mensaje"
-                    class="boton btn btn-primary px-3 py-3"
+                    value="Enviar"
+                    class="boton btn btn-contacto px-3 py-3"
                   />
                 </div>
               </div>
