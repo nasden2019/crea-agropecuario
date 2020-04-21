@@ -129,7 +129,7 @@ Template Name: referencias
                             <img src="?php the_field( 'imagen' ); ?>" class="img-fluid"/>
                         ?php } ?> -->
             <!-- <img src="images/img_1.jpg" class="img-fluid" /> -->
-            <p class="text-center titulos-fotos-inicio">
+            <!-- <p class="text-center titulos-fotos-inicio"> -->
               <!-- ?php the_field( 'titulo' ); ?> -->
               <!-- <a href="https://syloper.com">WEB1</a> -->
             </p>
@@ -146,7 +146,7 @@ Template Name: referencias
             <img src="?php the_field( 'imagen' ); ?>" class="img-fluid" />
             ?php } ?> -->
             <!-- <img src="images/img_1.jpg" class="img-fluid" /> -->
-            <p class="text-center titulos-fotos-inicio">
+            <!-- <p class="text-center titulos-fotos-inicio"> -->
               <!-- ?php the_field( 'titulo' ); ?> -->
               <!-- <a href="https://google.com">WEB2</a> -->
             </p>
