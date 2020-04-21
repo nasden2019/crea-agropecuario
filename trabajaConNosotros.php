@@ -67,6 +67,10 @@ Template Name: trabaja con nosotros
         </div>
 
         <!-- VIDEO -->
+        <?php $args = array('post_type' => 'trabajaconnosotros'); ?>
+          <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?>
         <div class="col-md-5 d-none d-sm-block text-center ml-md-4">
         <?php the_field( 'video' ); ?>
           <!-- <iframe width="560" height="560" src="https://www.youtube.com/embed/ULPpT-tix5M" frameborder="0"
@@ -75,6 +79,9 @@ Template Name: trabaja con nosotros
         <!-- <div class="col-md-6 d-none d-sm-block">
           <img src="?php echo get_stylesheet_directory_uri(); ?>/images/about_1.jpg" class="img-fluid ml-md-4" />
         </div> -->
+        <?php endwhile;?>
+          <?php endif;?>
+          <?php wp_reset_postdata();?>
       </div>
     </div>
   </section>
