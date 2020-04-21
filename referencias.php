@@ -168,7 +168,7 @@ Template Name: referencias
 
 <section class="section border-bottom">
   <div class="container">
-    <h2 class="my-md-4">Dejanos un comentario:</h2>
+    <h2 class="my-4">Dejanos un comentario:</h2>
     <div class="row">
       <div class="col-md-6 mb-5 order-2">
         <form action="#" method="post">
