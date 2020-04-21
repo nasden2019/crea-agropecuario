@@ -128,11 +128,16 @@ Template Name: proyectos
                     <div class="col-2 p-0">
                       <div class="collapse" id="collapseExample<?php echo $i; ?>">
                         <div class="card card-body">                          
-                            <span><a href="">Conocer el proyecto</a></span>
-                            <span><a href="">Incubario</a></span>
-                            <span><a href="">Mentorearlo</a></span>
-                            <span><a href="">Probar la tecnología</a></span>
-                            <span><a href="">Evaluar la posibilidad de invertir</a></span>                          
+                        <?php
+                          //listado de taxonomias
+                          $taxonomy = 'registros';
+                          $tax_terms = get_terms($taxonomy);
+                          ?>
+                          <?php
+                              foreach ($tax_terms as $tax_term) {
+                              echo '<span><a href="'  . esc_attr(get_term_link($tax_term, $taxonomy)) . '">'.$tax_term->name.'</a></span>';
+                              }
+                          ?>
                         </div>
                       </div>
                     </div>
