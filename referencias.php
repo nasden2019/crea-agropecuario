@@ -131,17 +131,31 @@ Template Name: referencias
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-          <div class="col-md-6  mb-1">
+          <div class="col-md-6  mb-1 text-center">
              <?php if ( get_field( 'imagen') ) { ?>
                             <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"/>
                         <?php } ?> 
              <!-- AGREGAR LINK -->
+             <button type="button" class="btn btn-contacto">
+                                Visitar
+                            </button>
+
+             <div class="col-md-6">
+                  <input
+                    type="submit"
+                    value="Enviar"
+                    class="boton btn btn-contacto px-3 py-3"
+                  />
+                </div>
           </div>
-           <div class="col-md-6  mb-1"> 
+           <div class="col-md-6  mb-1 text-center"> 
              <?php if ( get_field( 'imagen') ) { ?>
             <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
             <?php } ?> 
             <!-- AGREGAR LINK -->
+            <button type="button" class="btn btn-contacto">
+                                Visitar
+                            </button>
             <!-- <p class="text-center titulos-fotos-inicio"> -->
               <!-- ?php the_field( 'titulo' ); ?> -->
               <!-- <a href="https://google.com">WEB2</a> -->
