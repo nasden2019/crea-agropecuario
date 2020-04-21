@@ -1,6 +1,6 @@
 <?php
 /*
-Category Template: categorias_historicas
+Category Template: categorias
 */
 ?>
 
