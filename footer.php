@@ -10,7 +10,7 @@
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>  
                 <div>
                 <?php if ( get_field( 'imagen1') ) { ?>
-                    <img src="<?php the_field( 'imagen1' ); ?>" class="owl-images rounded-circle mx-auto"
+                    <img src="<?php the_field( 'imagen1' ); ?>" class="owl-images mx-auto"
                         style="width: 80px;"/>
                 <?php } ?>
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
@@ -18,7 +18,7 @@
                 </div>
                 <div>
                 <?php if ( get_field( 'imagen2') ) { ?>
-                    <img src="<?php the_field( 'imagen2' ); ?>" class="owl-images rounded-circle mx-auto"
+                    <img src="<?php the_field( 'imagen2' ); ?>" class="owl-images mx-auto"
                         style="width: 80px;"/>
                 <?php } ?>
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
@@ -26,7 +26,7 @@
                 </div>
                 <div>
                 <?php if ( get_field( 'imagen3') ) { ?>
-                    <img src="<?php the_field( 'imagen3' ); ?>" class="owl-images rounded-circle mx-auto"
+                    <img src="<?php the_field( 'imagen3' ); ?>" class="owl-images mx-auto"
                         style="width: 80px;"/>
                 <?php } ?>
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
@@ -34,7 +34,7 @@
                 </div>
                 <div>
                 <?php if ( get_field( 'imagen4') ) { ?>
-                    <img src="<?php the_field( 'imagen4' ); ?>" class="owl-images rounded-circle mx-auto"
+                    <img src="<?php the_field( 'imagen4' ); ?>" class="owl-images mx-auto"
                         style="width: 80px;"/>
                 <?php } ?>
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
@@ -42,7 +42,7 @@
                 </div>
                 <div>
                 <?php if ( get_field( 'imagen5') ) { ?>
-                    <img src="<?php the_field( 'imagen5' ); ?>" class="owl-images rounded-circle mx-auto"
+                    <img src="<?php the_field( 'imagen5' ); ?>" class="owl-images mx-auto"
                         style="width: 80px;"/>
                 <?php } ?>
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"
@@ -50,7 +50,7 @@
                 </div>
                 <div>
                 <?php if ( get_field( 'imagen6') ) { ?>
-                    <img src="<?php the_field( 'imagen6' ); ?>" class="owl-images rounded-circle mx-auto"
+                    <img src="<?php the_field( 'imagen6' ); ?>" class="owl-images mx-auto"
                         style="width: 80px;"/>
                 <?php } ?>
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" alt="" class="owl-images rounded-circle mx-auto"

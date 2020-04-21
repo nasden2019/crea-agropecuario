@@ -66,11 +66,106 @@ Template Name: trabaja con nosotros
           </div>
         </div>
 
-        <div class="col-md-6 d-none d-sm-block">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/about_1.jpg" class="img-fluid ml-md-4" />
+        <!-- VIDEO -->
+        <?php $args = array('post_type' => 'trabajaconnosotros'); ?>
+          <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+        <div class="col-md-5 d-none d-sm-block text-center ml-md-4">
+        <?php the_field( 'video' ); ?>
+          <!-- <iframe width="560" height="560" src="https://www.youtube.com/embed/ULPpT-tix5M" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         </div>
+        <!-- <div class="col-md-6 d-none d-sm-block">
+          <img src="?php echo get_stylesheet_directory_uri(); ?>/images/about_1.jpg" class="img-fluid ml-md-4" />
+        </div> -->
+        <?php endwhile;?>
+          <?php endif;?>
+          <?php wp_reset_postdata();?>
       </div>
     </div>
   </section>
 
+
   <?php get_footer(); ?>
+
+<section class="section border-bottom">
+  <div class="container">
+    <h2 class="my-md-4">Dejanos un comentario:</h2>
+    <div class="row">
+      <div class="col-md-6 mb-5 order-2">
+        <form action="#" method="post">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" class="form-control" />
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="phone">Teléfono</label>
+              <input type="text" id="tel" class="form-control" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <label for="message">Comentarios</label>
+              <textarea name="message" id="mensaje" class="form-control" cols="20" rows="5"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="submit" value="Enviar" class="boton btn btn-contacto px-3 py-3" />
+            </div>
+          </div>
+
+          <!-- feedback del usuario-->
+          <span class="saludo"></span>
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <span class="span1"></span>
+            </div>
+            <div class="col-md-6 form-group">
+              <span class="span2"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <span class="span3"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <span class="span4"></span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(document).ready(function () {
+    var boton = $(".boton");
+    var nombre = $("#nombre");
+    var tel = $("#tel");
+    var email = $("#email");
+    var comentarios = $("#mensaje");
+
+    boton.on("click", function (e) {
+      e.preventDefault();
+      var saludo = $("<h2>Gracias!</h2>").append(".saludo");
+      $(".span1").html(nombre.val());
+      $(".span2").html(tel.val());
+      $(".span3").html(email.val());
+      $(".span4").html(comentarios.val());
+    });
+  });
+</script>

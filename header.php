@@ -70,15 +70,15 @@
 
     </header>
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row ">
             <div class="col-md-12">
-                <div class="row justify-content-end">
+                <div class="row">
                     <div class="col-md-3">
                     </div>
                     <div class="col-md-3"></div>
                     <div class="col-md-3"></div>
-                    <div class="col-md-3 align-self-end">
+                    <div class="col-md-3">
                         <?php
                         if ( function_exists('yoast_breadcrumb') ) {
                         yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
