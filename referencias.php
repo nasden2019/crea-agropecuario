@@ -19,7 +19,7 @@ Template Name: referencias
 
 
 
-<!-- IMAGENES -->
+<!-- TWITTERS -->
 <section class="seccion2-fotos">
   <div class="container">
     <div class="row">
@@ -66,7 +66,7 @@ Template Name: referencias
         </div>
       </div>
 
-      <div class="col-md-12 mt-2">
+      <div class="col-md-12 mt-2 order-3">
         <h2 class="mb-sm-5 text-center">Los videos de la semana</h2>
         <div class="row">
           <?php $args = array('post_type' => 'refer_videos'); ?>
@@ -93,7 +93,7 @@ Template Name: referencias
         </div>
       </div>
 
-      <div class="col-md-12  mt-5 insta-feed">
+      <div class="col-md-12  mt-5 insta-feed order-4">
         <h2 class="mb-sm-5 text-center">A quién seguir?</h2>
         <div class="row">
           <?php $args = array('post_type' => 'refer_aquien_seguir'); ?>
@@ -123,7 +123,7 @@ Template Name: referencias
       </div>
 
 
-      <div class="col-md-12 mt-md-5">
+      <div class="col-md-12 mt-md-5 order-2">
         <h2 class="mb-sm-5 text-center">Webs</h2>
         <div class="row">
           <?php $args = array('post_type' => 'refer_webs'); ?>
@@ -132,37 +132,16 @@ Template Name: referencias
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
           <div class="col-md-6  mb-1">
-            <blockquote class="twitter-tweet">
-              <p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a
-                  href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a
-                  href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a
-                  href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a
-                  href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior
-              (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5,
-                2014</a>
-            </blockquote>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <!-- ?php if ( get_field( 'imagen') ) { ?>
+             <?php if ( get_field( 'imagen') ) { ?>
                             <img src="?php the_field( 'imagen' ); ?>" class="img-fluid"/>
-                        ?php } ?> -->
-            <!-- <img src="images/img_1.jpg" class="img-fluid" /> -->
-            <!-- <p class="text-center titulos-fotos-inicio"> -->
-              <!-- ?php the_field( 'titulo' ); ?> -->
-              <!-- <a href="https://syloper.com">WEB1</a> -->
-            </p>
+                        <?php } ?> 
+             <!-- AGREGAR LINK -->
           </div>
-          <div class="col-md-6  mb-1">
-            <blockquote class="twitter-tweet">
-              <p lang="es" dir="ltr">El cirujano que operó a Kim Jong Un, ahora. <a
-                  href="https://t.co/YhMJOwVZyY">pic.twitter.com/YhMJOwVZyY</a></p>&mdash; Víctor Barreto (@victorbar67)
-              <a href="https://twitter.com/victorbar67/status/1252463571906199553?ref_src=twsrc%5Etfw">April 21,
-                2020</a>
-            </blockquote>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <!-- ?php if ( get_field( 'imagen') ) { ?>
-            <img src="?php the_field( 'imagen' ); ?>" class="img-fluid" />
-            ?php } ?> -->
-            <!-- <img src="images/img_1.jpg" class="img-fluid" /> -->
+           <div class="col-md-6  mb-1"> 
+             <?php if ( get_field( 'imagen') ) { ?>
+            <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
+            <?php } ?> 
+            <!-- AGREGAR LINK -->
             <!-- <p class="text-center titulos-fotos-inicio"> -->
               <!-- ?php the_field( 'titulo' ); ?> -->
               <!-- <a href="https://google.com">WEB2</a> -->
