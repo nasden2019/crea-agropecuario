@@ -66,7 +66,7 @@ Template Name: referencias
         </div>
       </div>
 
-      <div class="d-block-12 d-none mt-2 order-3 col-12">
+      <div class="d-md-block d-none mt-2 order-3 col-12">
         <h2 class="mb-sm-5 text-center">Los videos de la semana</h2>
         <div class="row">
           <?php $args = array('post_type' => 'refer_videos'); ?>
@@ -94,7 +94,7 @@ Template Name: referencias
       </div>
 
 
-      <div class="d-block-12 d-none mt-5 insta-feed order-4">
+      <div class="d-md-block d-none mt-5 insta-feed order-4">
         <h2 class="mb-sm-5 text-center">A quién seguir?</h2>
         <div class="row">
           <?php $args = array('post_type' => 'refer_aquien_seguir'); ?>
