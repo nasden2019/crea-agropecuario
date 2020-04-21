@@ -410,7 +410,7 @@ Template name: capacitacion
 
         boton.on("click", function (e) {
           e.preventDefault();
-          var saludo = $("<h2>Gracias!</h2>").append(".saludo");
+          $("<h2>Gracias por tu mensaje!</h2>").appendTo(".saludo");
           $(".span1").html(nombre.val());
           $(".span2").html(tel.val());
           $(".span3").html(email.val());
