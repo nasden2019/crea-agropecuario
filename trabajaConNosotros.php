@@ -66,9 +66,14 @@ Template Name: trabaja con nosotros
           </div>
         </div>
 
-        <div class="col-md-6 d-none d-sm-block">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/about_1.jpg" class="img-fluid ml-md-4" />
+        <!-- VIDEO -->
+        <div class="col-md-5 d-none d-sm-block text-center ml-md-4">
+          <iframe width="560" height="560" src="https://www.youtube.com/embed/ULPpT-tix5M" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        <!-- <div class="col-md-6 d-none d-sm-block">
+          <img src="?php echo get_stylesheet_directory_uri(); ?>/images/about_1.jpg" class="img-fluid ml-md-4" />
+        </div> -->
       </div>
     </div>
   </section>
