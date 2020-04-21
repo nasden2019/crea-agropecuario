@@ -61,7 +61,7 @@
                     </div>
 
                     <div class="btn botones d-flex align-items-center justify-content-center">
-                        <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>trabajaconnosotros">
+                        <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>trabaja-con-nosotros">
                             Trabajar con <br>nosotros
                         </a>
                     </div>
