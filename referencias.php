@@ -136,24 +136,16 @@ Template Name: referencias
                             <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"/>
                         <?php } ?> 
              <!-- AGREGAR LINK -->
-             <button type="button" class="btn btn-contacto">
+             <button type="button" class="btn btn-contacto mt-md-3">
                                 Visitar
                             </button>
-
-             <div class="col-md-6">
-                  <input
-                    type="submit"
-                    value="Enviar"
-                    class="boton btn btn-contacto px-3 py-3"
-                  />
-                </div>
           </div>
            <div class="col-md-6  mb-1 text-center"> 
              <?php if ( get_field( 'imagen') ) { ?>
             <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
             <?php } ?> 
             <!-- AGREGAR LINK -->
-            <button type="button" class="btn btn-contacto">
+            <button type="button" class="btn btn-contacto mt-md-3">
                                 Visitar
                             </button>
             <!-- <p class="text-center titulos-fotos-inicio"> -->
