@@ -130,12 +130,12 @@ Template Name: proyectos
                         <div class="card card-body">                          
                         <?php
                           //listado de taxonomias
-                          $taxonomy = 'registros';
-                          $tax_terms = get_terms($taxonomy);
+                          $taxonomia = 'registro';
+                          $tax_terms = get_terms($taxonomia);
                           ?>
                           <?php
                               foreach ($tax_terms as $tax_term) {
-                              echo '<span><a href="'  . esc_attr(get_term_link($tax_term, $taxonomy)) . '">'.$tax_term->name.'</a></span>';
+                              echo '<span><a href="'  . esc_attr(get_term_link($tax_term, $taxonomia)) . '">'.$tax_term->name.'</a></span>';
                               }
                           ?>
                         </div>
