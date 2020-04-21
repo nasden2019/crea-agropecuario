@@ -73,14 +73,14 @@ Template Name: referencias
           <?php $loop = new WP_Query($args);
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
-          <div class="col-md-6">
+          <div class="col-md-6 text-center">
             <?php the_field( 'video' ); ?>
             <!-- <iframe width="560" height="315"
                             src="https://www.youtube.com/embed/sitA91-zWm0" frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe> -->
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 text-center">
             <?php the_field( 'video' ); ?>
             <!-- <iframe class="col-md-6" width="560" height="315"
                             src="https://www.youtube.com/embed/sitA91-zWm0" frameborder="0"
