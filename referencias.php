@@ -133,7 +133,7 @@ Template Name: referencias
 
           <div class="col-md-6  mb-1">
              <?php if ( get_field( 'imagen') ) { ?>
-                            <img src="?php the_field( 'imagen' ); ?>" class="img-fluid"/>
+                            <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"/>
                         <?php } ?> 
              <!-- AGREGAR LINK -->
           </div>
