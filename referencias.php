@@ -103,7 +103,7 @@ Template Name: referencias
 
           <div class="col-md-6">
           <?php if ( get_field( 'imagen') ) { ?>
-                <img src="<?php the_field( 'imagen' ); ?>" />
+                <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
             <?php } ?>
             <!-- <script src=" https://apps.elfsight.com/p/platform.js" defer></script>
                             <div class="elfsight-app-0f5adf44-5d5c-4cc2-a1fd-eb8a3ff910d9" style="width: 100%;"></div> -->
@@ -111,7 +111,7 @@ Template Name: referencias
 
           <div class="col-md-6">
           <?php if ( get_field( 'imagen') ) { ?>
-                <img src="<?php the_field( 'imagen' ); ?>" />
+                <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"/>
             <?php } ?>
             <!-- <script src=" https://apps.elfsight.com/p/platform.js" defer></script>
                             <div class="elfsight-app-0f5adf44-5d5c-4cc2-a1fd-eb8a3ff910d9" style="width: 100%;"></div> -->
