@@ -124,7 +124,7 @@ Template Name: referencias
       </div>
 
 
-      <div class="col-md-12 mt-md-5 order-2">
+      <div class="col-md-12 mt-5 order-2">
         <h2 class="mb-sm-5 text-center">Webs</h2>
         <div class="row">
           <?php $args = array('post_type' => 'refer_webs'); ?>
