@@ -67,7 +67,7 @@ Template Name: trabaja con nosotros
         </div>
 
         <!-- VIDEO -->
-        <?php $args = array('post_type' => 'trabaja-con-nosotros'); ?>
+        <?php $args = array('post_type' => 'trabajaconnosotros'); ?>
           <?php $loop = new WP_Query($args);
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
