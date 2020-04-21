@@ -66,7 +66,7 @@ Template Name: referencias
         </div>
       </div>
 
-      <div class="col-md-12 mt-2 order-3 col-12">
+      <div class="d-block-12 d-none mt-2 order-3 col-12">
         <h2 class="mb-sm-5 text-center">Los videos de la semana</h2>
         <div class="row">
           <?php $args = array('post_type' => 'refer_videos'); ?>
@@ -92,35 +92,6 @@ Template Name: referencias
           <?php wp_reset_postdata();?>
         </div>
       </div>
-
-      <!-- videos en mobile --> 
-      <div class="d-block-none col-12 mt-2 order-3">
-        <h2 class="mb-sm-5 text-center">Los videos de la semana</h2>
-        <div class="row">
-          <?php $args = array('post_type' => 'refer_videos'); ?>
-          <?php $loop = new WP_Query($args);
-                    if ( $loop->have_posts() ) :
-                        while ( $loop->have_posts() ) : $loop->the_post(); ?>
-          <div class="col-10 text-center">
-            <?php the_field( 'video' ); ?>
-            <!-- <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/sitA91-zWm0" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe> -->
-          </div>
-          <div class="col-10 text-center">
-            <?php the_field( 'video' ); ?>
-            <!-- <iframe class="col-md-6" width="560" height="315"
-                            src="https://www.youtube.com/embed/sitA91-zWm0" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe> -->
-          </div>
-          <?php endwhile;?>
-          <?php endif;?>
-          <?php wp_reset_postdata();?>
-        </div>
-      </div>
- <!-- fin videos en mobile --> 
 
 
       <div class="col-md-12  mt-5 insta-feed order-4">
