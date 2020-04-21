@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: proyectos
+Category Template: categorias_historicas
 */
 ?>
 
