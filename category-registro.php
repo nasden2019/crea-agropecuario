@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: registro
+* Category Template: registro
 */
 ?>
 <?php get_header(); ?>
