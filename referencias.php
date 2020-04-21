@@ -94,7 +94,7 @@ Template Name: referencias
       </div>
 
 
-      <div class="col-md-12  mt-5 insta-feed order-4">
+      <div class="d-block-12 d-none mt-5 insta-feed order-4">
         <h2 class="mb-sm-5 text-center">A quién seguir?</h2>
         <div class="row">
           <?php $args = array('post_type' => 'refer_aquien_seguir'); ?>
@@ -132,21 +132,21 @@ Template Name: referencias
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-          <div class="col-md-6  mb-1 text-center">
+          <div class="col-md-6  mb-3 text-center">
              <?php if ( get_field( 'imagen') ) { ?>
                             <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"/>
                         <?php } ?> 
              <!-- AGREGAR LINK -->
-             <button type="button" class="btn btn-contacto mt-md-3">
+             <button type="button" class="btn btn-contacto mt-3">
                                 Visitar
                             </button>
           </div>
-           <div class="col-md-6  mb-1 text-center"> 
+           <div class="col-md-6  mb-3 text-center"> 
              <?php if ( get_field( 'imagen') ) { ?>
             <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
             <?php } ?> 
             <!-- AGREGAR LINK -->
-            <button type="button" class="btn btn-contacto mt-md-3">
+            <button type="button" class="btn btn-contacto mt-3">
                                 Visitar
                             </button>
             <!-- <p class="text-center titulos-fotos-inicio"> -->
