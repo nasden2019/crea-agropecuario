@@ -233,11 +233,11 @@ Template Name: proyectos
         var i = "<?php //echo $i ?>";    
         console.log('i = ');
         console.log(i);
-          for (var j = 0; j < i; j++){
-            $('#collapseExample'+ $j).on('click', function () {
+        for (var j = 0; j < i; j++) (function(j){ 
+          $('#collapseExample'+ $j).on('click', function () {
               $('#collapse'+ $j).toggle();            
           });
-        }
+        })(i);
       });
     </script>
     <!-- <script>
