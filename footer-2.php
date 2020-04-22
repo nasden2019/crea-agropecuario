@@ -108,6 +108,7 @@
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggle();
             });
+            <?php $i= 1; ?>
             var i = "<?php echo $i ?>";    
             console.log('i = ');
             console.log(i);
