@@ -91,17 +91,31 @@
 //         }
 //     });
 // });
-jQuery(function(){
-            jQuery("input[name=customRadioInline1]").change(function(){
-
-            if ($(this).val() == "no") {
-            jQuery("#select").slideDown()
+$(document).ready(function(){ 
+    $("input[name$='customRadioInline1']").click(function() {
+        // var test = $(this).val();
+        // $("div.desc").hide();
+        // $("#"+test).show();
+        console.log("funca");        
+        if ($(this).val() == "no") {
+            jQuery("#select").show()
             }
-            else {
-            jQuery("#select").slideUp();
-            }                                                             
-       });
-    });
+        else {
+            jQuery("#select").hide();
+        }  
+    }); 
+});
+// jQuery(function(){
+//             jQuery("input[name=customRadioInline1]").change(function(){
+
+//             if ($(this).val() == "no") {
+//             jQuery("#select").slideDown()
+//             }
+//             else {
+//             jQuery("#select").slideUp();
+//             }                                                             
+//        });
+//     });
 </script>
 
 
