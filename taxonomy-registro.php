@@ -81,6 +81,7 @@
 <script>
 if(document.getElementById('customRadioInline2').checked) {
     if(document.getElementById('customRadioInline4').checked) {
+        console.log("esta funcionando");
         $(".form-group").add(".d-block");
         $(".form-group").remove(".d-none");
     }
