@@ -81,6 +81,7 @@
 <script>
 $(document).ready(function(){
     console.log("funca");
+}
 // $("#select").css("display","none");
 //     $("input[type=radio]").click(function(){
 
@@ -95,7 +96,7 @@ $(document).ready(function(){
 	
 // 	});	
 	
-});
+// });
 //     $(document).ready(function() {
 //     $('input:radio[name=customRadioInline1]').change(function() {
 //         if (this.value == 'no') {
