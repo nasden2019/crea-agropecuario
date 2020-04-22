@@ -1,6 +1,6 @@
 <?php
 /*
-Taxonomy Template: categorias_historicas
+Taxonomy Template: categorias
 */
 ?>
 

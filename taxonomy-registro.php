@@ -40,8 +40,8 @@
                             <input type="radio" id="customRadioInline4" name="customRadioInline2" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline4">No.</label>
                         </div>
-                        <div class="form-group d-none">
-                            <select class="custom-select" required>
+                        <div class="form-group">
+                            <select class="custom-select" required id="select">
                                 <option value="">Asesor</option>
                                 <option value="1">Productor</option>
                                 <option value="2">Estudiante</option>
@@ -81,16 +81,27 @@
 <script>
     $(document).ready(function() {
     $('input:radio[name=customRadioInline1]').change(function() {
-        if (this.value == 'si') {
+        if (this.value == 'no') {
             $(".form-group").add(".d-block");
             $(".form-group").remove(".d-none");
         }
-        else if (this.value == 'no') {
+        else if (this.value == 'si') {
             $(".form-group").add(".d-none");
             $(".form-group").remove(".d-block");
         }
     });
 });
+// jQuery(function(){
+//             jQuery("input[name=customRadioInline1]").change(function(){
+
+//             if ($(this).val() == "no") {
+//             jQuery("#properties").slideDown()
+//             }
+//             else {
+//             jQuery("#properties").slideUp();
+//             }                                                            
+//        });
+//     });
 </script>
 
 
