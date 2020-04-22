@@ -95,7 +95,8 @@ jQuery(function(){
             jQuery("input[name=customRadioInline1]").change(function(){
 
             if ($(this).val() == "no") {
-            jQuery("#select").slideDown()
+            // jQuery("#select").slideDown()
+            console.log("funca");
             }                                                        
        });
     });
