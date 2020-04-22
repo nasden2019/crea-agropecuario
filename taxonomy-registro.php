@@ -33,15 +33,15 @@
                     <div class="col-md-10 mb-3">
                         <label for="validationDefault02">¿Es productor CREA?</label>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                            <input type="radio" id="customRadioInline3" name="customRadioInline2" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline3">Si.</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                            <input type="radio" id="customRadioInline4" name="customRadioInline2" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline4">No.</label>
                         </div>
+                    <button class="btn btn-block">Enviar</button>                         
                     </div>
-                    <button>Enviar</button>                         
                 </div>
                 <!-- <div class="form-row">
                     <div class="col-md-10 mb-3">
