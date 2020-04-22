@@ -156,7 +156,7 @@ Template Name: proyectos
 
 <?php get_footer('2'); ?>
 
-<section class="section border-bottom">
+<!-- <section class="section border-bottom">
       <div class="container">
         <h2 class="my-md-4">Dejanos un comentario:</h2>
         <div class="row">
@@ -245,4 +245,5 @@ Template Name: proyectos
           $(".span4").html(comentarios.val());
         });
       });
-    </script>
+    </script> -->
+
