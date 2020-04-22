@@ -78,7 +78,7 @@
                     </div>
                     <div class="col-md-3"></div>
                     <div class="col-md-3"></div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" style="text-align: right">
                         <?php
                         if ( function_exists('yoast_breadcrumb') ) {
                         yoast_breadcrumb( '<p id="breadcrumbs" style="text-align: right">','</p>' );
