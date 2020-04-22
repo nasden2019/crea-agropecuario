@@ -229,14 +229,14 @@ Template Name: proyectos
     </section>
     <script>
       $(document).ready(function () {
-        var i = "<?php echo $i ?>";    
-        console.log('i = ');
-        console.log(i);
-          for (var j = 0; j < i; j++){
-            $('#collapseExample'+ $j).on('click', function () {
-              $('#collapseExample'+ $j).toggle();            
+        // var i = "<?php echo $i ?>";    
+        // console.log('i = ');
+        // console.log(i);
+          // for (var j = 0; j < i; j++){
+            $('#collapseExample1').on('click', function () {
+              $('#collapseExample1').toggle();            
           });
-        }
+        // }
       });
     </script>
 
