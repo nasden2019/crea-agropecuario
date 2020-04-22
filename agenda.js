@@ -561,6 +561,7 @@
     $.fn.evoCalendar = function () {
         var _ = this,
             opt = arguments[0],
+            // agrega al resto
             args = Array.prototype.slice.call(arguments, 1),
             l = _.length,
             i,
