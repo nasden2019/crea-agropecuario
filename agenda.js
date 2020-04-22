@@ -557,6 +557,7 @@
         return new Date(d) && !isNaN(new Date(d).getTime());
     }
 
+    // evo calendar !
     $.fn.evoCalendar = function () {
         var _ = this,
             opt = arguments[0],
