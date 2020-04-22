@@ -245,7 +245,7 @@ Template Name: testeo home
 
               <!-- feedback usuario-->
               <span class="saludo"></span>
-              <div class="row">
+              <div class="row my-4">
                 <div class="col-md-4 form-group">
                   <span class="span1"></span>
                 </div>
