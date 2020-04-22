@@ -242,8 +242,8 @@ Template Name: proyectos
     </script> -->
     <script>
     $(document).ready(function () {
-            $('#collapseExample').on('click', function () {
-                $('#collapseExample').toggle();
+            $('#collapseExample1').on('click', function () {
+                $('#collapseExample1').toggle();
             });
         });
     </script>
