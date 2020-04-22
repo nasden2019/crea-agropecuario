@@ -110,7 +110,17 @@
     </script>
     <script>
         $(document).ready(function(){
-            console.log("funca");
+            $("#select").css("display","none");
+            $("input[type=radio]").click(function(){
+                if($("#customRadioInline2").is(':checked') && $("#customRadioInline4").is(':checked'))
+                {				
+                        $("#select").css("display","block");
+                }
+                else
+                {
+                        $("#select").css("display","none");
+                }            
+            });	
         });
     </script>
 
