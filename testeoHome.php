@@ -209,7 +209,7 @@ Template Name: testeo home
       <div class="container">
         <!-- <h2 class="my-md-4">Dejanos un comentario:</h2> -->
         <div class="row">
-          <div class="col-md-9 mb-5 order-2">
+          <div class="col-md-9 my-5 order-2">
             <form action="#" method="post">
               <div class="row">
                 <div class="col-md-4 form-group">
@@ -238,7 +238,7 @@ Template Name: testeo home
                   <input
                     type="submit"
                     value="Enviar Mensaje"
-                    class="boton btn btn-primary px-3 py-3"
+                    class="boton btn btn-contacto px-3 py-3"
                   />
                 </div>
               </div>
