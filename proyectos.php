@@ -228,25 +228,34 @@ Template Name: proyectos
       </div>
     </section>
     <!-- solucion cierre collapse -->
-    <script>
+    <!-- <script>
       $(document).ready(function () {
         var i = "<?php //echo $i ?>";    
         console.log('i = ');
         console.log(i);
-        for (var j = 0; j < i; j++) (function(j){ 
-          $('#collapseExample'+ $j).on('click', function () {
-              $('#collapse'+ $j).toggle();            
+          for (var j = 0; j < i; j++){
+            $('#collapseExample'+ $j).on('click', function () {
+              $('#collapseExample'+ $j).toggle();            
           });
-        })(i);
+        }
       });
-    </script>
-    <!-- <script>
+    </script> -->
+    <script>
     $(document).ready(function () {
             $('#collapseExample1').on('click', function () {
                 $('#collapse1').toggle();
             });
+            $('#collapseExample2').on('click', function () {
+                $('#collapse2').toggle();
+            });
+            $('#collapseExample3').on('click', function () {
+                $('#collapse3').toggle();
+            });
+            $('#collapseExample4').on('click', function () {
+                $('#collapse4').toggle();
+            });
         });
-    </script> -->
+    </script>
     <script>
       $(document).ready(function () {
         var boton = $(".boton");
