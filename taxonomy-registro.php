@@ -22,11 +22,11 @@
                     <div class="col-md-10 mb-3">
                         <label for="validationDefault02">¿Es asesor CREA?</label>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                            <input type="radio" id="customRadioInline1" name="customRadioInline1" value="si" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline1">Si.</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                            <input type="radio" id="customRadioInline2" name="customRadioInline1" value="no" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline2">No.</label>
                         </div>
                     </div>
@@ -79,35 +79,18 @@
     </div>
 </div>
 <script>
-  $(document).ready(function () {
-    $('#customRadioInline2').on('click', function () {
-        console.log("esta funcionando");
-        if(document.getElementById('customRadioInline2').checked) {
-            if(document.getElementById('customRadioInline4').checked) {
-                $(".form-group").add(".d-block");
-                $(".form-group").remove(".d-none");
-            }
-            else {
-                $(".form-group").add(".d-none");
-                $(".form-group").remove(".d-block");
-            }
+    $(document).ready(function() {
+    $('input:radio[name=customRadioInline1]').change(function() {
+        if (this.value == 'si') {
+            $(".form-group").add(".d-block");
+            $(".form-group").remove(".d-none");
+        }
+        else if (this.value == 'no') {
+            $(".form-group").add(".d-none");
+            $(".form-group").remove(".d-block");
         }
     });
-    });
-    $('#customRadioInline4').on('click', function () {
-        $(".form-group").add(".d-block");
-        if(document.getElementById('customRadioInline2').checked) {
-            if(document.getElementById('customRadioInline4').checked) {
-                console.log("esta funcionando");
-                $(".form-group").remove(".d-none");
-            }
-            else {
-                $(".form-group").add(".d-none");
-                $(".form-group").remove(".d-block");
-            }
-        }
-    });
-    });
+});
 </script>
 
 
