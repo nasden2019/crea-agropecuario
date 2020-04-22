@@ -92,16 +92,16 @@
 //     });
 // });
 $(document).ready(function(){ 
-    $("input[name$='customRadioInline1']").click(function() {
+    $("input[name$='customRadioInline1']").on( "change", function() {
         // var test = $(this).val();
         // $("div.desc").hide();
         // $("#"+test).show();
         console.log("funca");        
         if ($(this).val() == "no") {
-            jQuery("#select").show()
+            $("#select").show()
             }
         else {
-            jQuery("#select").hide();
+            $("#select").hide();
         }  
     }); 
 });
