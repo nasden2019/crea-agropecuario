@@ -7,7 +7,8 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <form>
+            [contact-form-7 id="437" title="Formulario de contacto 1"]
+            <!-- <form>
                 <div class="form-row">
                     <div class="col-md-10 mb-3">
                         <label for="validationDefault01">Mail</label>
@@ -51,80 +52,10 @@
                     <button class="btn btn-block">Enviar</button>                         
                     </div>
                 </div>
-                <!-- <div class="form-row">
-                    <div class="col-md-10 mb-3">
-                        <label for="validationDefault03">City</label>
-                        <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
-                    </div>
-                    <div class="col-md-10 mb-3">
-                        <label for="validationDefault04">State</label>
-                        <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
-                    </div>
-                    <div class="col-md-10 mb-3">
-                        <label for="validationDefault05">Zip</label>
-                        <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                        <label class="form-check-label" for="invalidCheck2">
-                            Agree to terms and conditions
-                        </label>
-                    </div>
-                </div>
-                <button class="btn btn-primary" type="submit">Submit form</button> -->
-            </form>
+            </form> -->
         </div>
     </div>
 </div>
-
-<!-- // $("#select").css("display","none");
-//     $("input[type=radio]").click(function(){
-
-//         if($("#customRadioInline2").is(':checked') && $("#customRadioInline4").is(':checked'))
-//         {				
-//                 $("#select").css("display","block");
-//         }
-//         else
-//         {
-//                 $("#select").css("display","none");
-//         }
-	
-// 	});	
-	
-// });
-//     $(document).ready(function() {
-//     $('input:radio[name=customRadioInline1]').change(function() {
-//         if (this.value == 'no') {
-//             $(".form-group").add(".d-block");
-//             $(".form-group").remove(".d-none");
-//         }
-//         else if (this.value == 'si') {
-//             $(".form-group").add(".d-none");
-//             $(".form-group").remove(".d-block");
-//         }
-//     });
-// });
-// $(document).ready(function(){
-//     $("#customRadioInline2").change(function(){
-//         if($("#customRadioInline2").is(':checked')) {
-//             console.log("funca");        
-//         });
-//     }
-// });
-// jQuery(function(){
-//             jQuery("input[name=customRadioInline1]").change(function(){
-
-//             if ($(this).val() == "no") {
-//             jQuery("#select").slideDown()
-//             }
-//             else {
-//             jQuery("#select").slideUp();
-//             }                                                             
-//        });
-//     });
-// </script> -->
 
 
 
