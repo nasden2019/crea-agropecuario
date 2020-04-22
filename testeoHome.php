@@ -236,7 +236,7 @@ Template Name: testeo home
                     id="mensaje"
                     class="form-control"
                     cols="20"
-                    rows="5"
+                    rows="4"
                   ></textarea>
                 </div>
               </div>
