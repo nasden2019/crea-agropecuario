@@ -92,7 +92,7 @@
 //     });
 // });
 $(document).ready(function(){ 
-    $("input[name$='customRadioInline1']").on( "change", function() {
+    $("input[id$='customRadioInline2']").on( "change", function() {
         // var test = $(this).val();
         // $("div.desc").hide();
         // $("#"+test).show();
