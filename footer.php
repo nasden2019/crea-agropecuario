@@ -108,6 +108,11 @@
             }
         });
     </script>
+    <script>
+        $(document).ready(function(){
+            console.log("funca");
+        });
+    </script>
 
 
 </body>
