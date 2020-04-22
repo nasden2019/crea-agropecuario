@@ -92,17 +92,8 @@
 //     });
 // });
 $(document).ready(function(){ 
-    $("input[id$='customRadioInline2']").on( "change", function() {
-        // var test = $(this).val();
-        // $("div.desc").hide();
-        // $("#"+test).show();
+    if($("#customRadioInline2").is(':checked')) {
         console.log("funca");        
-        if ($(this).val() == "no") {
-            $("#select").show()
-            }
-        else {
-            $("#select").hide();
-        }  
     }); 
 });
 // jQuery(function(){
