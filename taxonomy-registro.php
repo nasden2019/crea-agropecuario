@@ -80,20 +80,20 @@
 </div>
 <script>
 $(document).ready(function(){
-$("#select").css("display","none");
-    $("input[type=radio]").click(function(){
+    console.log("funca");
+// $("#select").css("display","none");
+//     $("input[type=radio]").click(function(){
+
+//         if($("#customRadioInline2").is(':checked') && $("#customRadioInline4").is(':checked'))
+//         {				
+//                 $("#select").css("display","block");
+//         }
+//         else
+//         {
+//                 $("#select").css("display","none");
+//         }
 	
-	
-				if($("#customRadioInline2").is(':checked') && $("#customRadioInline4").is(':checked'))
-				{				
-						$("#select").css("display","block");
-				}
-				else
-				{
-						$("#select").css("display","none");
-				}
-	
-	});	
+// 	});	
 	
 });
 //     $(document).ready(function() {
