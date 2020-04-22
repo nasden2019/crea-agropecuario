@@ -1,6 +1,6 @@
 <?php
 /*
-* Category Template: registro
+* Taxonomy Template: registro
 */
 ?>
 <?php get_header(); ?>
