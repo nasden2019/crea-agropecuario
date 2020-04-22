@@ -237,7 +237,7 @@ Template Name: testeo home
                 <div class="col-md-4 mt-5 form-group">
                   <input
                     type="submit"
-                    value="Enviar Mensaje"
+                    value="Enviar"
                     class="boton btn btn-contacto px-3 py-3"
                   />
                 </div>
