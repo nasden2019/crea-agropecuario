@@ -79,23 +79,26 @@
     </div>
 </div>
 <script>
-//     $(document).ready(function() {
-//     $('input:radio[name=customRadioInline1]').change(function() {
-//         if (this.value == 'no') {
-//             $(".form-group").add(".d-block");
-//             $(".form-group").remove(".d-none");
-//         }
-//         else if (this.value == 'si') {
-//             $(".form-group").add(".d-none");
-//             $(".form-group").remove(".d-block");
-//         }
-//     });
-// });
-$(document).ready(function(){ 
-    if($("#customRadioInline2").is(':checked')) {
+    $(document).ready(function() {
+    $('input:radio[name=customRadioInline1]').change(function() {
+        if($("#customRadioInline2").is(':checked')) {
         console.log("funca");        
     }); 
+        if (this.value == 'no') {
+            $(".form-group").add(".d-block");
+            $(".form-group").remove(".d-none");
+        }
+        else if (this.value == 'si') {
+            $(".form-group").add(".d-none");
+            $(".form-group").remove(".d-block");
+        }
+    });
 });
+// $(document).onchange(function(){ 
+//     if($("#customRadioInline2").is(':checked')) {
+//         console.log("funca");        
+//     }); 
+// });
 // jQuery(function(){
 //             jQuery("input[name=customRadioInline1]").change(function(){
 
