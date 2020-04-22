@@ -81,7 +81,8 @@
 <script>
 $(document).ready(function(){
     console.log("funca");
-}
+});
+</script>
 // $("#select").css("display","none");
 //     $("input[type=radio]").click(function(){
 
@@ -127,7 +128,7 @@ $(document).ready(function(){
 //             }                                                             
 //        });
 //     });
-</script>
+// </script>
 
 
 
