@@ -108,6 +108,7 @@
                 $('#sidebar').toggle();
             });
             var i = <?php echo json_encode($i); ?>;
+            console.log('i = ');
             console.log(i);
         });
         $(".owl-carousel").owlCarousel({
