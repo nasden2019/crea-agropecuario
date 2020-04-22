@@ -79,29 +79,26 @@
     </div>
 </div>
 <script>
-    $(document).ready(function() {
-    $('input:radio[name=customRadioInline1]').change(function() {
-        if (this.value == 'no') {
-            $(".form-group").add(".d-block");
-            $(".form-group").remove(".d-none");
-        }
-        else if (this.value == 'si') {
-            $(".form-group").add(".d-none");
-            $(".form-group").remove(".d-block");
-        }
-    });
-});
-// jQuery(function(){
-//             jQuery("input[name=customRadioInline1]").change(function(){
-
-//             if ($(this).val() == "no") {
-//             jQuery("#properties").slideDown()
-//             }
-//             else {
-//             jQuery("#properties").slideUp();
-//             }                                                            
-//        });
+//     $(document).ready(function() {
+//     $('input:radio[name=customRadioInline1]').change(function() {
+//         if (this.value == 'no') {
+//             $(".form-group").add(".d-block");
+//             $(".form-group").remove(".d-none");
+//         }
+//         else if (this.value == 'si') {
+//             $(".form-group").add(".d-none");
+//             $(".form-group").remove(".d-block");
+//         }
 //     });
+// });
+jQuery(function(){
+            jQuery("input[name=customRadioInline1]").change(function(){
+
+            if ($(this).val() == "no") {
+            jQuery("#select").slideDown()
+            }                                                        
+       });
+    });
 </script>
 
 
