@@ -156,7 +156,7 @@ Template Name: proyectos
 
 <?php get_footer('2'); ?>
 
-<!-- <section class="section border-bottom">
+<section class="section border-bottom">
       <div class="container">
         <h2 class="my-md-4">Dejanos un comentario:</h2>
         <div class="row">
@@ -201,7 +201,7 @@ Template Name: proyectos
                 </div>
               </div>
 
-              <!-- feedback del usuario-->
+              <!-- feedback del usuario -->
               <span class="saludo"></span>
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -227,6 +227,15 @@ Template Name: proyectos
         </div>
       </div>
     </section>
+    <script>
+        // $(document).ready(function () {
+        //     $('#sidebarCollapse').on('click', function () {
+        //         $('#sidebar').toggle();
+        //     });
+            var i = "<?php echo $i ?>";    
+            console.log('i = ');
+            console.log(i);
+    </script>
 
     <script>
       $(document).ready(function () {
