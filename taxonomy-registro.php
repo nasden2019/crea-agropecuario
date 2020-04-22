@@ -95,9 +95,11 @@ jQuery(function(){
             jQuery("input[name=customRadioInline1]").change(function(){
 
             if ($(this).val() == "no") {
-            // jQuery("#select").slideDown()
-            console.log("funca");
-            }                                                        
+            jQuery("#select").slideDown()
+            }
+            else {
+            jQuery("#select").slideUp();
+            }                                                             
        });
     });
 </script>
