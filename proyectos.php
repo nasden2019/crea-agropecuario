@@ -228,15 +228,16 @@ Template Name: proyectos
       </div>
     </section>
     <script>
-      var i = "<?php echo $i ?>";    
-      console.log('i = ');
-      console.log(i);
-      for (var j = 0; j < i; j++){
       $(document).ready(function () {
-        $('#collapseExample'+ $j).on('click', function () {
-            $('#collapseExample'+ $j).toggle();
-        });
-      }
+        var i = "<?php echo $i ?>";    
+        console.log('i = ');
+        console.log(i);
+          for (var j = 0; j < i; j++){
+            $('#collapseExample'+ $j).on('click', function () {
+              $('#collapseExample'+ $j).toggle();            
+          });
+        }
+      });
     </script>
 
     <script>
