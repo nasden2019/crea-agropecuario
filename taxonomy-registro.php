@@ -79,6 +79,23 @@
     </div>
 </div>
 <script>
+$(document).ready(function(){
+$("#select").css("display","none");
+    $("input[type=radio]").click(function(){
+	
+	
+				if($("#customRadioInline2").is(':checked') && $("#customRadioInline4").is(':checked'))
+				{				
+						$("#select").css("display","block");
+				}
+				else
+				{
+						$("#select").css("display","none");
+				}
+	
+	});	
+	
+});
 //     $(document).ready(function() {
 //     $('input:radio[name=customRadioInline1]').change(function() {
 //         if (this.value == 'no') {
@@ -91,13 +108,13 @@
 //         }
 //     });
 // });
-$(document).ready(function(){
-    $("#customRadioInline2").change(function(){
-        if($("#customRadioInline2").is(':checked')) {
-            console.log("funca");        
-        });
-    }
-});
+// $(document).ready(function(){
+//     $("#customRadioInline2").change(function(){
+//         if($("#customRadioInline2").is(':checked')) {
+//             console.log("funca");        
+//         });
+//     }
+// });
 // jQuery(function(){
 //             jQuery("input[name=customRadioInline1]").change(function(){
 
