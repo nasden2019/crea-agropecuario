@@ -40,6 +40,14 @@
                             <input type="radio" id="customRadioInline4" name="customRadioInline2" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline4">No.</label>
                         </div>
+                        <div class="form-group d-none">
+                            <select class="custom-select" required>
+                                <option value="">Asesor</option>
+                                <option value="1">Productor</option>
+                                <option value="2">Estudiante</option>
+                            </select>
+                            <div class="invalid-feedback">Example invalid custom select feedback</div>
+                        </div>
                     <button class="btn btn-block">Enviar</button>                         
                     </div>
                 </div>
@@ -70,7 +78,18 @@
         </div>
     </div>
 </div>
-
+<script>
+if(document.getElementById('customRadioInline2').checked) {
+    if(document.getElementById('customRadioInline4').checked) {
+        $(".form-group").add(".d-block");
+        $(".form-group").remove(".d-none");
+    }
+    else {
+        $(".form-group").add(".d-none");
+        $(".form-group").remove(".d-block");
+    }
+}
+</script>
 
 
 
