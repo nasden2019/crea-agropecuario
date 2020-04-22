@@ -81,9 +81,9 @@
 <script>
   $(document).ready(function () {
     $('#customRadioInline2').on('click', function () {
+        console.log("esta funcionando");
         if(document.getElementById('customRadioInline2').checked) {
             if(document.getElementById('customRadioInline4').checked) {
-                console.log("esta funcionando");
                 $(".form-group").add(".d-block");
                 $(".form-group").remove(".d-none");
             }
@@ -95,10 +95,10 @@
     });
     });
     $('#customRadioInline4').on('click', function () {
+        $(".form-group").add(".d-block");
         if(document.getElementById('customRadioInline2').checked) {
             if(document.getElementById('customRadioInline4').checked) {
                 console.log("esta funcionando");
-                $(".form-group").add(".d-block");
                 $(".form-group").remove(".d-none");
             }
             else {
