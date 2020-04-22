@@ -83,7 +83,7 @@ $(document).ready(function(){
     console.log("funca");
 });
 </script>
-// $("#select").css("display","none");
+<!-- // $("#select").css("display","none");
 //     $("input[type=radio]").click(function(){
 
 //         if($("#customRadioInline2").is(':checked') && $("#customRadioInline4").is(':checked'))
@@ -128,7 +128,7 @@ $(document).ready(function(){
 //             }                                                             
 //        });
 //     });
-// </script>
+// </script> -->
 
 
 
