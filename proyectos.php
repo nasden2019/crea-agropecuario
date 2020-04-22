@@ -126,7 +126,7 @@ Template Name: proyectos
                       
                     </div>
                     <div class="col-2 p-0">
-                      <div class="collapse" id="collapseExample<?php echo $i; ?>">
+                      <div class="collapse" id="collapse<?php echo $i; ?>">
                         <div class="card card-body">                          
                         <?php
                           //listado de taxonomias
@@ -243,7 +243,16 @@ Template Name: proyectos
     <script>
     $(document).ready(function () {
             $('#collapseExample1').on('click', function () {
-                $('#collapseExample1').toggle();
+                $('#collapse1').toggle();
+            });
+            $('#collapseExample2').on('click', function () {
+                $('#collapse2').toggle();
+            });
+            $('#collapseExample3').on('click', function () {
+                $('#collapse3').toggle();
+            });
+            $('#collapseExample4').on('click', function () {
+                $('#collapse4').toggle();
             });
         });
     </script>
