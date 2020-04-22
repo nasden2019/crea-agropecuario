@@ -1,8 +1,8 @@
-<?php
+<!-- ?php
 /*
 Taxonomy Template: proyectos_historicos
 */
-?>
+?> -->
 
 <?php get_header(); ?>
 
