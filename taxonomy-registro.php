@@ -7,7 +7,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            [contact-form-7 id="437" title="Formulario de contacto 1"]
+            <?php echo do_shortcode('[contact-form-7 id="437" title="Formulario de contacto 1"]'); ?>
             <!-- <form>
                 <div class="form-row">
                     <div class="col-md-10 mb-3">
