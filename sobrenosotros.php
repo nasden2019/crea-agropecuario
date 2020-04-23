@@ -183,28 +183,23 @@ Template Name: sobrenosotros
 
 <section class="section border-bottom">
       <div class="container">
-        <h2 class="my-md-4">Dejanos un comentario:</h2>
+        <!-- <h2 class="my-md-4">Dejanos un comentario:</h2> -->
         <div class="row">
-          <div class="col-md-6 mb-5 order-2">
+          <div class="col-md-9 my-5 order-2">
             <form action="#" method="post">
               <div class="row">
                 <div class="col-md-4 form-group">
                   <label for="nombre">Nombre</label>
                   <input type="text" id="nombre" class="form-control" />
                 </div>
-                <div class="col-md-4 form-group">
+                <div class="col-md-3 form-group">
                   <label for="phone">Teléfono</label>
                   <input type="text" id="tel" class="form-control" />
                 </div>
-              </div>
-
-              <div class="row">
                 <div class="col-md-4 form-group">
                   <label for="email">Email</label>
                   <input type="email" id="email" class="form-control" />
                 </div>
-              </div>
-              <div class="row">
                 <div class="col-md-8 form-group">
                   <label for="message">Comentarios</label>
                   <textarea
@@ -212,12 +207,10 @@ Template Name: sobrenosotros
                     id="mensaje"
                     class="form-control"
                     cols="20"
-                    rows="5"
+                    rows="4"
                   ></textarea>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-5 form-group">
+                <div class="col-md-4 mt-5 form-group">
                   <input
                     type="submit"
                     value="Enviar"
@@ -226,24 +219,20 @@ Template Name: sobrenosotros
                 </div>
               </div>
 
-              <!-- feedback del usuario-->
+              <!-- feedback usuario-->
               <span class="saludo"></span>
-              <div class="row">
+              <div class="row my-4">
                 <div class="col-md-4 form-group">
                   <span class="span1"></span>
                 </div>
-                <div class="col-md-4 form-group">
+                <div class="col-md-3 form-group">
                   <span class="span2"></span>
                 </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-8 form-group">
+                <div class="col-md-4 form-group">
                   <span class="span3"></span>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 form-group">
+
+                <div class="col-md-8 form-group">
                   <span class="span4"></span>
                 </div>
               </div>

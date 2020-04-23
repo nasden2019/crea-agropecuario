@@ -326,8 +326,6 @@ Template name: capacitacion
 <?php endif;?>
 <?php wp_reset_postdata();?>
 
-<?php get_footer(); ?>
-
 <section class="section border-bottom">
       <div class="container">
         <h2 class="my-md-4">Dejanos un comentario:</h2>
@@ -399,6 +397,10 @@ Template name: capacitacion
         </div>
       </div>
     </section>
+
+<?php get_footer(); ?>
+
+
 
     <script>
       $(document).ready(function () {
