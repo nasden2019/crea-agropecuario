@@ -110,12 +110,9 @@
     </script>
     <script>
         $(document).ready(function(){
-            var recipient = $("input[name=recipient-email]").text();
+            var recipient = $("input[name=recipient-email]").value();
             console.log("email" + recipient);
-            $("input[name=email-806]").html( recipient );
-
-
-
+            $("input[name=email-806]").val( $("input[name=recipient-email]").val());
         });
     
     </script>
