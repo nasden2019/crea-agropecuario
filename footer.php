@@ -113,7 +113,9 @@
         $categoria= basename($url);
         $url = dirname($url); 
         $taxonomia= basename($url);
-        echo $categoria;
+        echo $categoria; ?>
+        <br>
+        <?php
         echo $url;
     ?>
     <script>
