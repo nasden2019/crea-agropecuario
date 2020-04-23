@@ -118,9 +118,13 @@
         $(document).ready(function(){
             var categoria = "<?php echo $taxonomia ?>";
             console.log("cat " + categoria);
-            var recipient = $("input[name=recipient-email]").val();
-            console.log("email" + recipient);
-            $("input[name=email-806]").val( $("input[name=recipient-email]").val());
+            if (categroia == 'evaluar-la-posibilidad-de-invertir' || categroia ==  'conocer-el-proyecto')
+                var recipient = $("input[name=recipient-email]").val();
+                console.log("email" + recipient);
+                $("input[name=email-806]").val( $("input[name=recipient-email]").val());
+            } else if( categroia == 'incubarlo' || categroia ==  'mentorearlo' || categroia ==  'probar-la-tecnologia'){
+                $("input[name=email-806]").val( 'ginopq@gmail.com' );
+            }
         });
     
     </script>
