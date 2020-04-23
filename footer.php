@@ -119,7 +119,7 @@
             var categoria = window.location.href;
             categoria = dirname(categoria);
             var categoria = basename(categoria);
-            alert(categoria);
+            console.log(categoria);
 
             console.log("cat " + categoria);
             if (categoria == 'evaluar-la-posibilidad-de-invertir' || categoria ==  'conocer-el-proyecto')
