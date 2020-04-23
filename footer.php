@@ -110,6 +110,18 @@
     </script>
     <script>
         $(document).ready(function(){
+            var recipient = $("input[name=recipient-email]").text();
+            console.log("email" + recipient);
+            $("input[name=email-806]").html( recipient );
+
+
+
+        });
+    
+    </script>
+    <script>
+        //script para logica checkbox en registro
+        $(document).ready(function(){
             $("#select").css("display","none");
             $("input[type=radio]").click(function(){
                 if($("#customRadioInline2").is(':checked') && $("#customRadioInline4").is(':checked'))
