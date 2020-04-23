@@ -87,7 +87,7 @@ Template Name: trabaja con nosotros
   </section>
 
 
-  <section class="section">
+  <!-- <section class="section">
       <div class="container">
         <h2 class="my-md-5">Dejanos un comentario:</h2>
         <div class="row">
@@ -146,7 +146,7 @@ Template Name: trabaja con nosotros
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
   <?php get_footer(); ?>
