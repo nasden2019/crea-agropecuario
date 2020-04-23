@@ -7,7 +7,19 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <?php echo do_shortcode('[contact-form-7 id="437" title="Formulario de contacto 1"]'); ?>
+            <?php
+                $the_slug = $_GET['name'];
+                $args = array(
+                'name'        => $the_slug,
+                'post_type'   => 'proyectos_categorias',
+                'post_status' => 'publish',
+                'numberposts' => 1
+                );
+                $my_posts = get_posts($args);
+                if( $my_posts ) :
+                echo do_shortcode('[contact-form-7 id="437" title="Formulario de contacto 1"]');
+                endif;
+            ?>
             <!-- <form>
                 <div class="form-row">
                     <div class="col-md-10 mb-3">
