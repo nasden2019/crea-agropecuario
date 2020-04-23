@@ -117,16 +117,16 @@
 
         $(document).ready(function(){
             var categoria = window.location.href;
-            categoria = path.dirname(categotia);
-            var categoria = url.substring(url.lastIndexOf('/')+1);
-            alert(filename);
+            categoria = dirname(categoria);
+            var categoria = basename(categoria);
+            alert(categoria);
 
             console.log("cat " + categoria);
-            if (categroia == 'evaluar-la-posibilidad-de-invertir' || categroia ==  'conocer-el-proyecto')
+            if (categoria == 'evaluar-la-posibilidad-de-invertir' || categoria ==  'conocer-el-proyecto')
                 var recipient = $("input[name=recipient-email]").val();
                 console.log("email" + recipient);
                 $("input[name=email-806]").val( $("input[name=recipient-email]").val());
-            } else if( categroia == 'incubarlo' || categroia ==  'mentorearlo' || categroia ==  'probar-la-tecnologia'){
+            } else if( categoria == 'incubarlo' || categoria ==  'mentorearlo' || categoria ==  'probar-la-tecnologia'){
                 $("input[name=email-806]").val( 'ginopq@gmail.com' );
             }
         });
