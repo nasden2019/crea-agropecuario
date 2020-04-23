@@ -108,27 +108,22 @@
             }
         });
     </script>
-    <?php 
-        $url= $_SERVER["REQUEST_URI"];
-        $url = dirname($url); 
-        $taxonomia= basename($url);
-        echo $taxonomia; ?>
     <script>
         $(document).ready(function(){
             console.log("asd");
-            // var categoria = window.location.href;
-            // categoria = categoria.match(/.*\//);
-            // categoria = categoria.replace(/.*\//, '');;
-            // console.log(categoria);
+            var categoria = window.location.href;
+            categoria = categoria.match(/.*\//);
+            categoria = categoria.replace(/.*\//, '');;
+            console.log(categoria);
 
-            // console.log("cat " + categoria);
-            // if (categoria == 'evaluar-la-posibilidad-de-invertir' || categoria ==  'conocer-el-proyecto')
-            //     var recipient = $("input[name=recipient-email]").val();
-            //     console.log("email" + recipient);
-            //     $("input[name=email-806]").val( $("input[name=recipient-email]").val());
-            // } else if( categoria == 'incubarlo' || categoria ==  'mentorearlo' || categoria ==  'probar-la-tecnologia'){
-            //     $("input[name=email-806]").val( 'ginopq@gmail.com' );
-            // }
+            console.log("cat " + categoria);
+            if (categoria == 'evaluar-la-posibilidad-de-invertir' || categoria ==  'conocer-el-proyecto')
+                var recipient = $("input[name=recipient-email]").val();
+                console.log("email" + recipient);
+                $("input[name=email-806]").val( $("input[name=recipient-email]").val());
+            } else if( categoria == 'incubarlo' || categoria ==  'mentorearlo' || categoria ==  'probar-la-tecnologia'){
+                $("input[name=email-806]").val( 'ginopq@gmail.com' );
+            }
         });
     
     </script>
