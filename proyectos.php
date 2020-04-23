@@ -135,17 +135,12 @@ Template Name: proyectos
                           ?>
                           <?php
                               foreach ($tax_terms as $tax_term) {
-                              echo '<span><a href="'  . esc_attr(get_term_link($tax_term, $taxonomia)) . '/1">'.$tax_term->name.'</a></span>';
+                              echo '<span><a href="'  . esc_attr(get_term_link($tax_term, $taxonomia)) . '?'.$i.'">'.$tax_term->name.'</a></span>';
                               }
                           ?>
                         </div>
                       </div>
                     </div>
-                    <div class="col-10">
-                      <?php echo do_shortcode('[contact-form-7 id="437" title="Formulario de contacto 1"]'); ?>
-                    </div>
-
-
                 </div>
             </div>
         </section>
