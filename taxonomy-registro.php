@@ -71,6 +71,13 @@
         </div>
     </div>
 </div>
+<style>
+    .btn-registro {
+		background: #49b6af;
+		color: white;
+		padding: 8px 40px;
+	}
+</style>
 
 
 
