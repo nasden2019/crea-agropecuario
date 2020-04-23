@@ -89,7 +89,7 @@ Template Name: trabaja con nosotros
 
   <section class="section">
       <div class="container">
-        <h2 class="my-md-4">Dejanos un comentario:</h2>
+        <h2 class="my-md-5">Dejanos un comentario:</h2>
         <div class="row">
           <div class="col-md-12 order-2">
             <form action="#" method="post">
