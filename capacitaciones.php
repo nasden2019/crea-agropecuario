@@ -326,7 +326,7 @@ Template name: capacitacion
 <?php endif;?>
 <?php wp_reset_postdata();?>
 
-<section class="section border-bottom">
+<section class="section">
       <div class="container">
         <h2 class="my-md-4">Dejanos un comentario:</h2>
         <div class="row">
