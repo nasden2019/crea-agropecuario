@@ -230,7 +230,8 @@ Template name: capacitacion
                 <div class="container">
 
                     <div class="text-center">
-                        <h2 class="mb-sm-5">Capacitación de Estudiantes secundarios (Programa de Robótica con escuelas)</h2>
+                        <h2 class="mb-sm-5">Capacitación de Estudiantes secundarios <br>
+                        (Programa de Robótica con escuelas)</h2>
                         <!-- ?php the_field( 'titulo_3era_seccion' ); ?> -->
                     </div>
 
