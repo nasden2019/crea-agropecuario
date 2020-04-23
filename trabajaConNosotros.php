@@ -87,9 +87,9 @@ Template Name: trabaja con nosotros
   </section>
 
 
-  <section class="section border-bottom">
+  <section class="section">
       <div class="container">
-        <!-- <h2 class="my-md-4">Dejanos un comentario:</h2> -->
+        <h2 class="my-md-4">Dejanos un comentario:</h2>
         <div class="row">
           <div class="col-md-12 order-2">
             <form action="#" method="post">
@@ -148,7 +148,7 @@ Template Name: trabaja con nosotros
       </div>
     </section>
 
-    
+
   <?php get_footer(); ?>
 
 
