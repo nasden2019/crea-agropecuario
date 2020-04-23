@@ -117,8 +117,8 @@
 
         $(document).ready(function(){
             var categoria = window.location.href;
-            categoria = dirname(categoria);
-            var categoria = basename(categoria);
+            categoria = categoria.match(/.*\//);
+            categoria = categoria.replace(/.*\//, '');;
             console.log(categoria);
 
             console.log("cat " + categoria);
