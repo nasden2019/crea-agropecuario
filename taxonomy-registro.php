@@ -8,6 +8,7 @@
     <div class="row">
         <div class="col">
             <?php
+                echo $_GET;
                 $the_slug = $_GET['name'];
                 $args = array(
                 'name'        => $the_slug,
