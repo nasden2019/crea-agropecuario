@@ -110,14 +110,9 @@
     </script>
     <?php 
         $url= $_SERVER["REQUEST_URI"];
-        $categoria= basename($url);
         $url = dirname($url); 
         $taxonomia= basename($url);
-        echo $categoria; ?>
-        <br>
-        <?php
-        echo $url;
-    ?>
+        echo $taxonomia; ?>
     <script>
 
         $(document).ready(function(){
