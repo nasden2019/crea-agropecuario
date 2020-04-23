@@ -78,7 +78,9 @@
 		padding: 8px 40px;
 	}
 </style>
-
+<script>
+    console.log("asd");
+</script>
 
 
 <?php get_footer(); ?>
