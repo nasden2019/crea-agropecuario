@@ -108,7 +108,16 @@
             }
         });
     </script>
+    <?php 
+        $url= $_SERVER["REQUEST_URI"];
+        $categoria= basename($url);
+        $url = dirname($url); 
+        $taxonomia= basename($url);
+        echo $categoria;
+        echo $url;
+    ?>
     <script>
+
         $(document).ready(function(){
             var recipient = $("input[name=recipient-email]").val();
             console.log("email" + recipient);
