@@ -116,7 +116,11 @@
     <script>
 
         $(document).ready(function(){
-            var categoria = "<?php echo $taxonomia ?>";
+            var categoria = window.location.href;
+            categoria = path.dirname(categotia);
+            var categoria = url.substring(url.lastIndexOf('/')+1);
+            alert(filename);
+
             console.log("cat " + categoria);
             if (categroia == 'evaluar-la-posibilidad-de-invertir' || categroia ==  'conocer-el-proyecto')
                 var recipient = $("input[name=recipient-email]").val();
