@@ -75,6 +75,12 @@ textarea.form-control {
 			border-color: lighten(theme-color('primary'), 10%);
 			background: lighten(theme-color('primary'), 10%);
 		}
+	
+	}
+	.btn-registro {
+		background: #49b6af;
+		color: white;
+		padding: 8px 40px;
 	}
 
 	&.btn-sm {

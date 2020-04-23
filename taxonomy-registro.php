@@ -7,7 +7,22 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <?php echo do_shortcode('[contact-form-7 id="437" title="Formulario de contacto 1"]'); ?>
+            <?php
+                $the_slug = $_GET['link'];
+                $args = array(
+                'name'        => $the_slug,
+                'post_type'   => 'proyectos_categorias',
+                'post_status' => 'publish',
+                'numberposts' => 1
+                );
+                $loop = new WP_Query($args);
+                if ( $loop->have_posts() ) :
+                    while ( $loop->have_posts() ) : $loop->the_post();
+                        echo do_shortcode('[contact-form-7 id="437" title="Formulario de contacto 1"]');
+                
+                    endwhile;?>
+                <?php endif;?>
+                <?php wp_reset_postdata();?>
             <!-- <form>
                 <div class="form-row">
                     <div class="col-md-10 mb-3">
@@ -56,7 +71,16 @@
         </div>
     </div>
 </div>
-
+<style>
+    .btn-registro {
+		background: #49b6af;
+		color: white;
+		padding: 8px 40px;
+	}
+</style>
+<script>
+    console.log("asd");
+</script>
 
 
 <?php get_footer(); ?>

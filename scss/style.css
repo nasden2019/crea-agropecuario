@@ -9533,6 +9533,12 @@ textarea.form-control {
   background: #ff7e31;
 }
 
+.btn .btn-registro {
+  background: #49b6af;
+  color: white;
+  padding: 8px 40px;
+}
+
 .btn.btn-sm, .btn-group-sm > .btn {
   font-size: 12px;
 }

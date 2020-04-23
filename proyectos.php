@@ -133,16 +133,18 @@ Template Name: proyectos
                           $taxonomia = 'registro';
                           $tax_terms = get_terms($taxonomia);
                           ?>
+                          <?php 
+                            global $post;
+                            $post_slug=$post->post_name;
+                          ?>
                           <?php
                               foreach ($tax_terms as $tax_term) {
-                              echo '<span><a href="'  . esc_attr(get_term_link($tax_term, $taxonomia)) . '">'.$tax_term->name.'</a></span>';
+                              echo '<span><a href="'  . esc_attr(get_term_link($tax_term, $taxonomia)) . '?link='. $post_slug .'">'.$tax_term->name.'</a></span>';
                               }
                           ?>
                         </div>
                       </div>
                     </div>
-
-
                 </div>
             </div>
         </section>
