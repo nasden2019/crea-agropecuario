@@ -16,11 +16,14 @@
                 'post_status' => 'publish',
                 'numberposts' => 1
                 );
-                $my_posts = get_posts($args);
-                if( $my_posts ) :
-                echo do_shortcode('[contact-form-7 id="437" title="Formulario de contacto 1"]');
-                endif;
-            ?>
+                $loop = new WP_Query($args);
+                if ( $loop->have_posts() ) :
+                    while ( $loop->have_posts() ) : $loop->the_post();
+                        echo do_shortcode('[contact-form-7 id="437" title="Formulario de contacto 1"]');
+                
+                    endwhile;?>
+                <?php endif;?>
+                <?php wp_reset_postdata();?>
             <!-- <form>
                 <div class="form-row">
                     <div class="col-md-10 mb-3">
