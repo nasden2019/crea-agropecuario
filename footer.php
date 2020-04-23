@@ -117,7 +117,7 @@
 
         $(document).ready(function(){
             var categoria = "<?php echo $taxonomia ?>";
-            console.log("cat" + categorias);
+            console.log("cat " + categoria);
             var recipient = $("input[name=recipient-email]").val();
             console.log("email" + recipient);
             $("input[name=email-806]").val( $("input[name=recipient-email]").val());
