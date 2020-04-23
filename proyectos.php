@@ -135,7 +135,7 @@ Template Name: proyectos
                           ?>
                           <?php
                               foreach ($tax_terms as $tax_term) {
-                              echo '<span><a href="'  . esc_attr(get_term_link($tax_term, $taxonomia)) . '/1">'.$tax_term->name.'</a></span>';
+                              echo '<span><a href="'  . esc_attr(get_term_link($tax_term, $taxonomia)) . '">'.$tax_term->name.'</a></span>';
                               }
                           ?>
                         </div>
