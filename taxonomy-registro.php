@@ -8,8 +8,8 @@
     <div class="row">
         <div class="col">
             <?php
-                echo $_GET;
-                $the_slug = $_GET['name'];
+                echo $_GET['link'];
+                $the_slug = $_GET['link'];
                 $args = array(
                 'name'        => $the_slug,
                 'post_type'   => 'proyectos_categorias',
