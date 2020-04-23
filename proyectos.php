@@ -117,7 +117,7 @@ Template Name: proyectos
                               <p class="p-convocatorias">
                                   <?php the_field( 'parrafo' ); ?>
                               </p>
-                              <a class="btn btn-primary" data-toggle="collapse" id="collapseExample<?php echo $i; ?>" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              <a class="btn btn-primary collapseExample" data-toggle="collapse" id="collapseExample-<?php echo $i; ?>" role="button" aria-expanded="false" aria-controls="collapseExample">
                                 Ver más
                               </a>
                           </div>
@@ -242,18 +242,14 @@ Template Name: proyectos
     </script> -->
     <script>
     $(document).ready(function () {
-            $('#collapseExample1').on('click', function () {
-                $('#collapse1').toggle();
-            });
-            $('#collapseExample2').on('click', function () {
-                $('#collapse2').toggle();
-            });
-            $('#collapseExample3').on('click', function () {
-                $('#collapse3').toggle();
-            });
-            $('#collapseExample4').on('click', function () {
-                $('#collapse4').toggle();
-            });
+            // var cantCollapse = "<?php //echo $i; ?>";
+            $(".collapseExample").each(function(i,e){
+              $(e).on('click', function(){
+                var idElemento = $(e).attr("id");
+                var numCollapse = idElemento.split("-").pop();
+                $('#collapse'+ numCollapse ).toggle();
+              })
+            })
         });
     </script>
     <script>
