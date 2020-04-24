@@ -147,6 +147,21 @@
         });
     </script>
 
+    <script>
+     $(document).ready(function(){
+            console.log("asd");
+            var categoria = window.location.href;
+            // categoria = categoria.substring(0, categoria.lastIndexOf('/'));
+            categoria = basename(categoria);
+            console.log("asd 2" + categoria);
+            $("input[name=seccion]").val( categoria );
+            $("input[name=email-263]").val( $("#email-registro").val());
+     });
+     function basename(path) {
+          return path.split('/').reverse()[0];
+      }
+    </script>
+
 
 </body>
 

@@ -22,7 +22,7 @@
             var categoria = window.location.href;
             // categoria = categoria.substring(0, categoria.lastIndexOf('/'));
             categoria = basename(categoria);
-            console.log(categoria);
+            console.log("asd 1" + categoria);
             $("input[name=seccion]").val( categoria );
             $("input[name=email-263]").val( $("#email-registro").val());
      });
