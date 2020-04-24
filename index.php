@@ -55,8 +55,8 @@
                     </div>
 
                     <div class="btn botones d-flex align-items-center justify-content-center">
-                        <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>capacitacionHome">
-                            Capacitación
+                        <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>Sponsor">
+                            Sponsor
                         </a>
                     </div>
 
