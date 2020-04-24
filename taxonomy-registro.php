@@ -13,7 +13,7 @@
                                 array (
                                     'taxonomy' => 'email',
                                     'field' => 'slug',
-                                    'terms' => 'crea-email',
+                                    'terms' => 'email-crea',
                                 )
                             ),
                          ); 
