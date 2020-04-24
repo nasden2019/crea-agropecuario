@@ -9,18 +9,18 @@ Template name: agenda
 
 
    
-    <div class="container">
+<div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
+                    <div class="col-md-11 mb-5 text-center">
+                        <h2>Calendario Crea</h2>
+                        <iframe
+                            src="https://calendar.google.com/calendar/embed?src=gnp4oirdq97es7ibh252asalc0%40group.calendar.google.com&ctz=Europe%2FMadrid"
+                            style="border: 0" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
+                    </div>
 
-                    <div class="col-md-10 my-5 text-center"> 
-                       <h2>Calendario Crea</h2>
-                       <iframe
-                           src="https://calendar.google.com/calendar/embed?src=gnp4oirdq97es7ibh252asalc0%40group.calendar.google.com&ctz=Europe%2FMadrid"
-                           style="border: 0" width="80%" height="700" frameborder="0" scrolling="no"></iframe>
-                   </div>
-                   <div class="col-md-1 my-5 text-center my-auto">
+                    <div class="col-md-1 my-5 text-center my-auto">
                         <button class="btn botones" data-toggle="modal" data-target="#exampleModal"
                             data-whatever="@getbootstrap">Asignar<br> Evento</button>
                     </div>
