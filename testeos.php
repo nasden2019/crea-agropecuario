@@ -81,7 +81,6 @@ Template Name: testeos
         <!-- VIDEO TESTIMONIALS -->
         <section class="carousel mt-md-4">
                 <div class="container">
-                    <h2 class="text-center">Testimonios</h2>
                     <div class="row justify-content-center">
                     <?php $args = array('post_type' => 'testimonios'); ?>
                             <?php $loop = new WP_Query($args);
