@@ -50,7 +50,7 @@ Template name: agenda
                                     <form>
                                         <div class="form-group">
                                             <label for="recipient-name" class="col-form-label ml-md-3 ml-2">Agregar
-                                                Titulo</label>
+                                                Título</label>
                                             <input type="text" class="form-control" id="recipient-name" />
                                         </div>
                                         <div class="form-group">
