@@ -1,7 +1,7 @@
 
 <?php
 /*
-Template name: agenda
+Template name: agendacrea
 */
 ?>
 
@@ -13,7 +13,7 @@ Template name: agenda
         <div>
             <iframe
                 src="https://calendar.google.com/calendar/embed?src=gnp4oirdq97es7ibh252asalc0%40group.calendar.google.com&ctz=Europe%2FMadrid"
-                style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+                style="border: 0" width="80%" height="700" frameborder="0" scrolling="no"></iframe>
         </div>
     </body>
 
