@@ -148,6 +148,7 @@
     </script>
 
     <script>
+    //  Script Para comentarios
      $(document).ready(function(){
             var coment = window.location.href;
             // categoria = categoria.substring(0, categoria.lastIndexOf('/'));
