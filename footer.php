@@ -155,7 +155,7 @@
             categoria = basename(categoria);
             console.log("asd 2" + categoria);
             $("input[name=seccion]").val( categoria );
-            $("input[name=email-263]").val( $("#email-registro").val());
+            $("input[name=email-262]").val( $("#email-registro").val());
      });
      function basename(path) {
           return path.split('/').reverse()[0];
