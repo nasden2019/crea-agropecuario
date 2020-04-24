@@ -8,19 +8,11 @@
     <div class="row">
         <div class="col">
         <?php 
-            $args = array('post_type' => 'email',
-                            'tax_query' => array(
-                                array (
-                                    'taxonomy' => 'email',
-                                    'field' => 'slug',
-                                    'terms' => 'email-crea',
-                                )
-                            ),
-                         ); 
+                $args = array('post_type' => 'email');
                 $loop = new WP_Query($args);
                 if ( $loop->have_posts() ) :
                     while ( $loop->have_posts() ) : $loop->the_post();?>
-                    <input type="email"  value="<?php the_field( 'email' ); ?>">
+                    <input type="email" class="d-none" id="email-registro" value="<?php the_field( 'email' ); ?>">
 
                     <?php 
                     endwhile;

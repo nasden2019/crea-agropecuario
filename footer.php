@@ -122,7 +122,7 @@
                 console.log("email" + recipient);
                 $("input[name=email-806]").val( $("input[name=recipient-email]").val());
             } else if( categoria === "incubarlo" || categoria ===  "mentorearlo" || categoria ===  "probar-la-tecnologia"){
-                $("input[name=email-806]").val( "ginopq@gmail.com" );
+                $("input[name=email-806]").val( $("#email-registro").val());
             }
         });
         function basename(path) {
