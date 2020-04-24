@@ -153,7 +153,7 @@
             // categoria = categoria.substring(0, categoria.lastIndexOf('/'));
             coment = basename(coment);
             console.log("asd 2" + coment);
-            $("#seccion").val( categoria );
+            $("#seccion").val( coment );
             $("input[name=email-262z]").val( $("#email-registro").val());
      });
      function basename(path) {
