@@ -112,7 +112,7 @@
         $(document).ready(function(){
             console.log("asd");
             var categoria = window.location.href;
-            categoria = categoria..substring(0, loc.lastIndexOf('/'));
+            categoria = categoria.substring(0, loc.lastIndexOf('/'));
             categoria = basename(categoria);
             console.log(categoria);
 
