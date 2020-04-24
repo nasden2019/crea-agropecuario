@@ -139,7 +139,9 @@ Template Name: trabaja con nosotros
         </div>
     </section>
 
-
+    <section class="section">
+        <?php get_footer('comentarios'); ?>
+    </section>
 <?php get_footer(); ?>
 
 
