@@ -1,4 +1,4 @@
-<section class="section">
+
       <div class="container">
         <h2 class="my-md-5">Dejanos un comentario:</h2>
         <div class="row">
@@ -7,10 +7,3 @@
           </div>
         </div>
       </div>
-    </section>
-    <style>
-      textarea {
-        width: 540px;
-        height: 88px;
-      }
-    </style>

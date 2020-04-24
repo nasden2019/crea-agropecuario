@@ -126,8 +126,9 @@ Template Name: testeos
         </section>
 
 
-
-    <?php get_footer('comentarios'); ?>
+    <section class="section">
+        <?php get_footer('comentarios'); ?>
+    </section>
     <?php get_footer(); ?>
 
 
