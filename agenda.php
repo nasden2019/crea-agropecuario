@@ -13,6 +13,10 @@ Template name: agenda
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
+                <?php $args = array('post_type' => 'agendacrea'); ?>
+                    <?php $loop = new WP_Query($args);
+                    if ( $loop->have_posts() ) :
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?>
                     <div class="col-md-11 mb-5 text-center">
                         <h2>Calendario Crea</h2>
                         <iframe
@@ -80,6 +84,9 @@ Template name: agenda
                             </div>
                         </div>
                     </div>
+                    <?php endwhile;?>
+                    <?php endif;?>
+                    <?php wp_reset_postdata();?>
                 </div>
             </div>
         </div>
