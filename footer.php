@@ -109,8 +109,8 @@
         });
     </script>
     <script>
+        // Logica envio registro
         $(document).ready(function(){
-            console.log("asd");
             var categoria = window.location.href;
             categoria = categoria.substring(0, categoria.lastIndexOf('/'));
             categoria = basename(categoria);
@@ -149,13 +149,12 @@
 
     <script>
      $(document).ready(function(){
-            console.log("asd");
-            var categoria = window.location.href;
+            var coment = window.location.href;
             // categoria = categoria.substring(0, categoria.lastIndexOf('/'));
-            categoria = basename(categoria);
-            console.log("asd 2" + categoria);
-            $("input[name=seccion]").val( categoria );
-            $("input[name=email-262]").val( $("#email-registro").val());
+            coment = basename(coment);
+            console.log("asd 2" + coment);
+            $("#seccion").val( categoria );
+            $("input[name=email-262z]").val( $("#email-registro").val());
      });
      function basename(path) {
           return path.split('/').reverse()[0];
