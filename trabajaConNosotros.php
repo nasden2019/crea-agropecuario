@@ -88,6 +88,7 @@ Template Name: trabaja con nosotros
 
 
 <section class="section">
+<<<<<<< HEAD
         <div class="container">
             <button class="comentar my-md-5 btn btn-contacto">Dejar<br>comentario</button>
             <div class="row">
@@ -138,6 +139,10 @@ Template Name: trabaja con nosotros
             </div>
         </div>
     </section>
+=======
+    <?php get_footer('comentarios'); ?>
+</section>
+>>>>>>> 0a8817ef0c9c835badb50c8b9bed45bbfb4a49af
 
 
 <?php get_footer(); ?>

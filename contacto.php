@@ -62,36 +62,7 @@ Template name: contacto
         </div>
         <!-- d-none d-sm-block para q no se vea en mobile -->
         <div class="col-md-6 mb-5 d-none d-sm-block">
-          <form action="#" method="post">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <label for="name" class="sr-only">Nombre y Apellido</label>
-                <input type="text" id="name" class="form-control" placeholder="Nombre y Apellido">
-              </div>
-              <div class="col-md-6 form-group">
-                <label for="phone" class="sr-only">Teléfono</label>
-                <input type="text" id="phone" class="form-control" placeholder="Teléfono">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 form-group">
-                <label for="email" class="sr-only">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="Email">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 form-group">
-                <label for="message" class="sr-only">Mensaje</label>
-                <textarea name="message" id="message" class="form-control " cols="30" rows="8"
-                  placeholder="Mensaje"></textarea>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 offset-md-3 form-group text-center">
-                <input type="submit" value="Enviar" class="btn px-3 py-2 btn-contacto">
-              </div>
-            </div>
-          </form>
+          <?php echo do_shortcode('[contact-form-7 id="469" title="comentarios"]'); ?>
         </div>
       </div>
     </div>
@@ -119,54 +90,7 @@ Template name: contacto
 </div>
 
 <section class="section">
-  <div class="container">
-    <h2 class="my-md-5">Dejanos un comentario:</h2>
-    <div class="row">
-      <div class="col-md-12 order-2">
-        <form action="#" method="post">
-          <div class="row">
-            <div class="col-md-2 form-group">
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" class="form-control" />
-            </div>
-            <div class="col-md-2 form-group">
-              <label for="phone">Teléfono</label>
-              <input type="text" id="tel" class="form-control" />
-            </div>
-            <div class="col-md-2 form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" class="form-control" />
-            </div>
-            <div class="col-md-6 form-group">
-              <label for="message">Comentarios</label>
-              <textarea name="message" id="mensaje" class="form-control" cols="14" rows="3"></textarea>
-            </div>
-            <div class="col-md-4 form-group">
-              <input type="submit" value="Enviar" class="boton btn btn-contacto px-3" />
-            </div>
-          </div>
-
-          <!-- feedback usuario-->
-          <span class="saludo"></span>
-          <div class="row my-4">
-            <div class="col-md-2 form-group">
-              <span class="span1"></span>
-            </div>
-            <div class="col-md-2 form-group">
-              <span class="span2"></span>
-            </div>
-            <div class="col-md-2 form-group">
-              <span class="span3"></span>
-            </div>
-
-            <div class="col-md-6 form-group">
-              <span class="span4"></span>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
+    <?php get_footer('comentarios'); ?>
 </section>
 
 
