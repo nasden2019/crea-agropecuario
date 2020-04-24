@@ -57,12 +57,12 @@ Template Name: trabaja con nosotros
           <p class="my-md-4 p-trabajaconnosotros">
             CONTANOS EN 1 MINUTO POR QUÉ QUERÉS TRABAJAR CON NOSOTROS
           </p>
-          <div class="d-flex">
+          <div class="">
             <input type="file" id="myFile" name="filename2" />
-            <button type="submit" value="Enviar" class="btn  btn-contacto d-sm-block d-block">
-              Enviar
-            </button>
           </div>
+          <button type="submit" value="Enviar" class="btn  btn-contacto d-sm-block mt-4 d-block">
+            Enviar
+          </button>
         </div>
       </div>
 
