@@ -112,8 +112,8 @@
         $(document).ready(function(){
             console.log("asd");
             var categoria = window.location.href;
-            categoria = categoria.match(/.*\//);
-            categoria = categoria.replace(/.*\//, '');;
+            categoria = categoria.substring(0, categoria.lastIndexOf('/'));
+            categoria = basename(categoria);
             console.log(categoria);
 
             console.log("cat " + categoria);
@@ -125,6 +125,9 @@
                 $("input[name=email-806]").val( "ginopq@gmail.com" );
             }
         });
+        function basename(path) {
+            return path.split('/').reverse()[0];
+        }
     
     </script>
     <script>
