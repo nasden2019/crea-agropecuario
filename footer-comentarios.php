@@ -7,3 +7,10 @@
           </div>
         </div>
       </div>
+
+    <style>
+      textarea {
+        width: 540px!important;
+        height: 88px!important;
+      }
+    </style>
