@@ -17,10 +17,12 @@
                 );
                 $loop = new WP_Query($args);
                 if ( $loop->have_posts() ) :
-                    while ( $loop->have_posts() ) : $loop->the_post();
-                endwhile;?>
+                    while ( $loop->have_posts() ) : $loop->the_post();?>
                     <input type="email"  value="<?php the_field( 'email' ); ?>">
-                <?php endif;?>
+
+                    <?php 
+                    endwhile;
+                endif;?>
                 <?php wp_reset_postdata();?>
 
             <?php
