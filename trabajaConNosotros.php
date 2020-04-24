@@ -59,7 +59,7 @@ Template Name: trabaja con nosotros
           </p>
           <div class="d-flex">
             <input type="file" id="myFile" name="filename2" />
-            <button type="submit" value="Enviar" class="btn  btn-contacto d-sm-none d-block">
+            <button type="submit" value="Enviar" class="btn  btn-contacto d-sm-block d-block">
               Enviar
             </button>
           </div>
