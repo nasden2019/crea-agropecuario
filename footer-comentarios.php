@@ -7,6 +7,19 @@
           </div>
         </div>
       </div>
+    <script>
+     $(document).ready(function(){
+            console.log("asd");
+            var categoria = window.location.href;
+            // categoria = categoria.substring(0, categoria.lastIndexOf('/'));
+            categoria = basename(categoria);
+            console.log(categoria);
+     });
+     function basename(path) {
+          return path.split('/').reverse()[0];
+      }
+    </script>
+
 
     <style>
       textarea {
