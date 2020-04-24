@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/owl-carousel/owl.carousel.css" />
 
     <!-- Theme Style -->
+    <link rel="stylesheet" href="/<?php echo get_stylesheet_directory_uri(); ?>calendar.css">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/scss/style.css">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/scss/estilos.css">
 

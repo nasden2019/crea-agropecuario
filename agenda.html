@@ -1,132 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <title>CREA</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700" rel="stylesheet" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="agenda.css">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css" />
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css" />
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="scss/style.css" />
+    <link rel="stylesheet" href="scss/estilos.css" />
 </head>
-<style>
-    main {
-        padding: 20px;
-        max-width: 1366px;
-        width: 100%;
-        margin: 10 auto;
-    }
-
-    h1 {
-        color: #755eb5;
-    }
-
-    h1 span {
-        color: #616161;
-    }
-
-    hr {
-        margin-bottom: 20px;
-    }
-
-    @media only screen and (max-width: 425px) {
-        main {
-            padding: 10px;
-        }
-    }
-</style>
 
 <body>
-    <main>
-        <h1>Calendario Crea</h1>
-        <hr />
-        <div id="evoCalendar"></div>
-    </main>
+    <header role="banner">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container">
+                <a class="navbar-brand " href="index.html">
+                    <img src="images/logo.png" class="img-fluid" style="width: 14rem;" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                    aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous">
-    </script>
-    <script src="agenda.js"></script>
+                <div class="collapse navbar-collapse" id="navbarsExample05">
+                    <ul class="navbar-nav pl-md-5 ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- END header -->
+
+    <body>
+        <div class="my-5">
+            <iframe
+                src="https://calendar.google.com/calendar/embed?src=gnp4oirdq97es7ibh252asalc0%40group.calendar.google.com&ctz=Europe%2FMadrid"
+                style="border: 0" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </body>
+
+
+    <!-- FOOTER -->
+    <footer id="clientes" class="mt-sm-5" style="height: 100%;">
+        <!-- <h2 class="text-center font-weight-bold pb-5 mt-sm-3">CLIENTES</h2> -->
+        <!-- owl carrousel -->
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                <div>
+                    <img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto" style="width: 80px;" />
+                </div>
+                <div>
+                    <img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto" style="width: 80px;" />
+                </div>
+                <div>
+                    <img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto" style="width: 80px;" />
+                </div>
+                <div>
+                    <img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto" style="width: 80px;" />
+                </div>
+                <div>
+                    <img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto" style="width: 80px;" />
+                </div>
+                <div>
+                    <img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto" style="width: 80px;" />
+                </div>
+                <div>
+                    <img src="images/logo2.png" alt="" class="owl-images rounded-circle mx-auto" style="width: 80px;" />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#f4b214" />
+        </svg>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/main.js"></script>
+
     <script>
-        $('#evoCalendar').evoCalendar({
-            todayHighlight: true,
-            sidebarToggler: true,
-            eventListToggler: true,
-            eventDisplayDefault: false,
-            canAddEvent: true,
-            calendarEvents: [{
-                    name: "New Year",
-                    date: "Wed Jan 01 2020 00:00:00 GMT-0800 (Pacific Standard Time)",
-                    type: "holiday",
-                    everyYear: true
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 50,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            responsive: {
+                0: {
+                    dotsEach: 2,
+                    items: 1
                 },
-                {
-                    name: "Valentine's Day",
-                    date: "Fri Feb 14 2020 00:00:00 GMT-0800 (Pacific Standard Time)",
-                    type: "holiday",
-                    everyYear: true
+                600: {
+                    dotsEach: 4,
+                    items: 3
                 },
-                {
-                    name: "Patient #1",
-                    date: "February/3/2020",
-                    type: "event"
-                },
-                {
-                    name: "Patient #3",
-                    date: "February/3/2020",
-                    type: "event"
-                },
-                {
-                    name: "Patient #4",
-                    date: "February/3/2020",
-                    type: "event"
-                },
-                {
-                    name: "Holiday #3",
-                    date: "February/3/2020",
-                    type: "holiday"
-                },
-                {
-                    name: "Birthday #2",
-                    date: "February/3/2020",
-                    type: "birthday"
-                },
-                {
-                    name: "Author's Birthday",
-                    date: "February/15/2020",
-                    type: "birthday",
-                    everyYear: true
-                },
-                {
-                    name: "Holiday #4",
-                    date: "February/15/2020",
-                    type: "event"
-                },
-                {
-                    name: "Patient #2",
-                    date: "February/8/2020",
-                    type: "event"
-                },
-                {
-                    name: "Leap day",
-                    date: "February/29/2020",
-                    type: "holiday",
-                    everyYear: true
+                1200: {
+                    dotsEach: 3,
+                    items: 6
                 }
-            ],
-            // disabledDate: ["02/17/2020", "02/21/2020"],
-            onSelectDate: function () {
-                console.log('onSelectDate!')
-            },
-            onAddEvent: function () {
-                console.log('onAddEvent!')
             }
+            // }
         });
-        // $("#evoCalendar").evoCalendar('addCalendarEvent', [...]);
     </script>
 </body>
 

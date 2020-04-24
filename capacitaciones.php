@@ -38,7 +38,8 @@ Template name: capacitacion
             <section class="seccion2-fotos mb-md-4">
                 <div class="container">
                     <div class="text-center">
-                        <h2 class="mb-sm-5"><?php the_field( 'titulo_1er_seccion' ); ?></h2>
+                        <h2 class="mb-sm-5">Capacitación de Asesores/Productores</h2>
+                        <!-- ?php the_field( 'titulo_1er_seccion' ); ?> -->
                     </div>
 
                     <div class="row">
@@ -138,7 +139,8 @@ Template name: capacitacion
             <section class="seccion2-fotos mb-md-4">
                 <div class="container">
                     <div class="text-center">
-                        <h2 class="mb-sm-5"><?php the_field( 'titulo_2da_seccion' ); ?></h2>
+                        <h2 class="mb-sm-5">Capacitaciones de Asesores/Productores</h2>
+                        <!-- ?php the_field( 'titulo_2da_seccion' ); ?> -->
                     </div>
 
                     <div class="row">
@@ -228,7 +230,9 @@ Template name: capacitacion
                 <div class="container">
 
                     <div class="text-center">
-                        <h2 class="mb-sm-5"><?php the_field( 'titulo_3era_seccion' ); ?></h2>
+                        <h2 class="mb-sm-5">Capacitación de Estudiantes secundarios <br>
+                        (Programa de Robótica con escuelas)</h2>
+                        <!-- ?php the_field( 'titulo_3era_seccion' ); ?> -->
                     </div>
 
                     <div class="row">
