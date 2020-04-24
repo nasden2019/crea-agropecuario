@@ -7,6 +7,22 @@
 <div class="container">
     <div class="row">
         <div class="col">
+        <?php
+                
+                $args = array(
+                'name'        => 'email-crea',
+                'post_type'   => 'registros',
+                'post_status' => 'publish',
+                'numberposts' => 1
+                );
+                $loop = new WP_Query($args);
+                if ( $loop->have_posts() ) :
+                    while ( $loop->have_posts() ) : $loop->the_post();
+                endwhile;?>
+                    <input type="email"  value="<?php the_field( 'email' ); ?>">
+                <?php endif;?>
+                <?php wp_reset_postdata();?>
+
             <?php
                 $the_slug = $_GET['link'];
                 $args = array(
