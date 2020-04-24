@@ -9,14 +9,14 @@ Template name: agenda
 
 
 
-    <body>
-        <div>
+    
+        <div class="my-5 text-center">
             <h2>Calendario Crea</h2>
             <iframe
                 src="https://calendar.google.com/calendar/embed?src=gnp4oirdq97es7ibh252asalc0%40group.calendar.google.com&ctz=Europe%2FMadrid"
                 style="border: 0" width="80%" height="700" frameborder="0" scrolling="no"></iframe>
         </div>
-    </body>
+ 
 
 
 
