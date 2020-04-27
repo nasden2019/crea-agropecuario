@@ -35,8 +35,7 @@ Template Name: trabajos
                                 <?php if($i <= 2 ) :
                                     echo '<div class="col-sm-6">';
                                     if ( get_field( "imagen") ) { ?>
-                                        <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" data-toggle="modal"
-                                        data-target="#exampleModal" data-whatever="@getbootstrap"  />
+                                        <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"  />
                                     <?php }; 
                                     echo'<p class="text-center titulos-fotos-inicio" data-toggle="modal" data-target="#exampleModal"
                                         data-whatever="@getbootstrap">
@@ -132,8 +131,7 @@ Template Name: trabajos
                                 if ( $i < 5 && $i > 2 ) :
                                     echo '<div class="col-6">';
                                     if ( get_field( "imagen") ) { ?>
-                                        <img src="<?php the_field( "imagen" ); ?>" class="img-fluid" data-toggle="modal"
-                                        data-target="#exampleModal" data-whatever="@getbootstrap"  />
+                                        <img src="<?php the_field( "imagen" ); ?>" class="img-fluid" />
                                     <?php };
                                     echo '<p class="text-center titulos-fotos-inicio" data-toggle="modal" data-target="#exampleModal"
                                         data-whatever="@getbootstrap">
@@ -226,8 +224,7 @@ Template Name: trabajos
                                 if ($i < 7 && $i > 4) :
                                 echo '<div class="col-6 mt-md-1">';
                                 if ( get_field( "imagen") ) { ?>
-                                        <img src="<?php the_field( "imagen" ); ?>" class="img-fluid" data-toggle="modal"
-                                        data-target="#exampleModal" data-whatever="@getbootstrap"  />
+                                        <img src="<?php the_field( "imagen" ); ?>" class="img-fluid"   />
                                     <?php }; 
                                     echo'<p class="text-center titulos-fotos-inicio" data-toggle="modal" data-target="#exampleModal"
                                         data-whatever="@getbootstrap">
