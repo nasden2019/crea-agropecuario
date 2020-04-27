@@ -26,7 +26,7 @@ Template Name: capacitacion home
         <div class="row">
             <div class="col-12">
                 <div class="row">
-                    <?php $args = array('post_type' => 'capacita_home'); ?>
+                    <?php $args = array('post_type' => 'capacitahome'); ?>
                     <?php $loop = new WP_Query($args);
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
