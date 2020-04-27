@@ -12,14 +12,12 @@ Template Name: capacitacion home
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
-                <h3 class="mainTitular">| Capacitación</h3>
+                <h3 class="mainTitular">| Convocatorias</h3>
             </div>
         </div>
     </div>
 </section>
 
-
- 
 
 <section class="seccion2-fotos my-md-5">
     <div class="container">
@@ -184,66 +182,13 @@ Template Name: capacitacion home
 
 
 <section class="section">
-        <div class="container">
-            <button class="comentar my-md-5 btn btn-contacto">Dejar<br>comentario</button>
-            <div class="row">
-                <div class="col-md-12 order-2">
-                    <form action="#" method="post" class="formulario">
-                        <div class="row">
-                            <div class="col-md-2 form-group">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" id="nombre" class="form-control" />
-                            </div>
-                            <div class="col-md-2 form-group">
-                                <label for="phone">Teléfono</label>
-                                <input type="text" id="tel" class="form-control" />
-                            </div>
-                            <div class="col-md-2 form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" class="form-control" />
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label for="message">Comentarios</label>
-                                <textarea name="message" id="mensaje" class="form-control" cols="14" rows="3"
-                                    maxLength="140"></textarea>
-                                Quedan <span id="numeros">140</span> caracteres
-                            </div>
-                            <div class="col-md-4 form-group">
-                                <input type="submit" value="Enviar" class="boton btn btn-contacto px-3" />
-                            </div>
-                        </div>
-
-                        <!-- feedback usuario-->
-                        <span class="saludo"></span>
-                        <div class="row my-4">
-                            <div class="col-md-2 form-group">
-                                <span class="span1"></span>
-                            </div>
-                            <div class="col-md-2 form-group">
-                                <span class="span2"></span>
-                            </div>
-                            <div class="col-md-2 form-group">
-                                <span class="span3"></span>
-                            </div>
-
-                            <div class="col-md-6 form-group">
-                                <span class="span4"></span>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>  
-
-
     <?php get_footer('comentarios'); ?>
+</section>
 
-
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.2.1.min.js"></script>
-    <script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.2.1.min.js"></script>
+<script>
      $(document).ready(function () {
-        $("#asesorSi").click(function (e) {
+      $("#asesorSi").click(function (e) {
         e.preventDefault();
         $("#asesorSiInputs").toggle();
         // $("#asesorNoInputs").hide();
@@ -265,33 +210,23 @@ Template Name: capacitacion home
         $('#productorNoInputs').toggle();
       })
 
-            // para q se abra el form
-            $(".comentar").click(function (e) {
-                e.preventDefault();
-                $(".formulario").toggle();
-            });
+      var boton = $(".boton");
+        var nombre = $("#nombre");
+        var tel = $("#tel");
+        var email = $("#email");
+        var comentarios = $("#mensaje");
 
-            // para q imprima datos en pantalla
-            var boton = $(".boton");
-            var nombre = $("#nombre");
-            var tel = $("#tel");
-            var email = $("#email");
-            var comentarios = $("#mensaje");
-
-            boton.on("click", function (e) {
-                e.preventDefault();
-                var saludo = $("<h2>Gracias!</h2>").append(".saludo");
-                $(".span1").html(nombre.val());
-                $(".span2").html(tel.val());
-                $(".span3").html(email.val());
-                $(".span4").html(comentarios.val());
-            });
-
-            // limitar caracteres en comentario
-            var maxCaracteres = 140;
-            $("#mensaje").keyup(function () {
-                var maxLength = maxCaracteres - $(this).val().length;
-                $("#numeros").text(maxLength);
-            });
+        boton.on("click", function (e) {
+          e.preventDefault();
+          $("<h2>Gracias por tu mensaje!</h2>").appendTo(".saludo");
+          $(".span1").html(nombre.val());
+          $(".span2").html(tel.val());
+          $(".span3").html(email.val());
+          $(".span4").html(comentarios.val());
         });
-    </script>
+    });
+</script>
+
+<?php get_footer(); ?>
+
+
