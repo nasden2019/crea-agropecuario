@@ -43,7 +43,7 @@ Template Name: trabajos
                                         <a>'; 
                                     the_field( "titulo" ); 
                                     echo '</a>
-                                    </p>
+                                    </p>' ?>
 
                                     <!-- MODAL -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-label
@@ -140,7 +140,7 @@ Template Name: trabajos
                                         <a>';
                                     the_field( "titulo" );
                                     echo'</a>
-                                    </p>
+                                    </p> ' ?>
 
                                     <!-- MODAL -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-label
@@ -218,7 +218,8 @@ Template Name: trabajos
                                 endif;                                 
                                 if ($i == 5) :
 
-                            echo '</div>
+                            echo '
+                            </div>
                             <div class="row">';
 
                                 endif;

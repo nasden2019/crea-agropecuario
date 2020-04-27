@@ -114,12 +114,12 @@
             var categoria = window.location.href;
             categoria = categoria.substring(0, categoria.lastIndexOf('/'));
             categoria = basename(categoria);
-            console.log(categoria);
+            // console.log(categoria);
 
-            console.log("cat " + categoria);
+            // console.log("cat " + categoria);
             if (categoria === "evaluar-la-posibilidad-de-invertir" || categoria ===  "conocer-el-proyecto"){
                 var recipient = $("input[name=recipient-email]").val();
-                console.log("email" + recipient);
+                // console.log("email" + recipient);
                 $("input[name=email-806]").val( $("input[name=recipient-email]").val());
             } else if( categoria === "incubarlo" || categoria ===  "mentorearlo" || categoria ===  "probar-la-tecnologia"){
                 $("input[name=email-806]").val( $("#email-registro").val());
