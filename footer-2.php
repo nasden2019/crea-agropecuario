@@ -136,5 +136,51 @@
             }
         });
     </script>
+    <script>
+        $(document).ready(function () {
+            // para q se abra el form
+            $(".comentar").click(function (e) {
+                e.preventDefault();
+                $(".formulario").toggle();
+            });
+
+            // para q imprima datos en pantalla
+            var boton = $(".boton");
+            var nombre = $("#nombre");
+            var tel = $("#tel");
+            var email = $("#email");
+            var comentarios = $("#mensaje");
+
+            boton.on("click", function (e) {
+                e.preventDefault();
+                var saludo = $("<h2>Gracias!</h2>").append(".saludo");
+                $(".span1").html(nombre.val());
+                $(".span2").html(tel.val());
+                $(".span3").html(email.val());
+                $(".span4").html(comentarios.val());
+            });
+
+            // limitar caracteres en comentario
+            var maxCaracteres = 140;
+            $("#mensaje").keyup(function () {
+                var maxLength = maxCaracteres - $(this).val().length;
+                $("#numeros").text(maxLength);
+            });
+        });
+    </script>
+    <script>
+    //  Script Para comentarios
+     $(document).ready(function(){
+            var coment = window.location.href;
+            // categoria = categoria.substring(0, categoria.lastIndexOf('/'));
+            // coment = basename(coment);
+            console.log("asd 2" + coment);
+            $("#seccion").val( coment );
+            $("input[name=email-262]").val( $("#email-registro").val());
+     });
+     function basename(path) {
+          return path.split('/').reverse()[0];
+      }
+    </script>
 </body>
 </html>

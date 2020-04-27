@@ -181,7 +181,7 @@ Template Name: sobrenosotros
 
 
 <section class="section">
-    <?php get_footer('comentarios2'); ?>
+    <?php get_footer('comentarios'); ?>
 </section>
 
 
