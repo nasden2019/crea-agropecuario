@@ -1,6 +1,6 @@
 
       <div class="container">
-        <h2 class="my-md-5">Dejanos un comentario:</h2>
+        <button class="comentar my-md-5 btn btn-contacto">Dejar<br>comentario</button>
         <div class="row">
           <div class="col-md-12 order-2">
               <?php 
