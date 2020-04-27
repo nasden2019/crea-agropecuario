@@ -181,7 +181,7 @@ Template Name: sobrenosotros
 
 
 <section class="section">
-    <?php get_footer('comentarios'); ?>
+    <?php get_footer('comentarios2'); ?>
 </section>
 
 
@@ -189,21 +189,39 @@ Template Name: sobrenosotros
 
 
 
-    <script>
-      $(document).ready(function () {
-        var boton = $(".boton");
-        var nombre = $("#nombre");
-        var tel = $("#tel");
-        var email = $("#email");
-        var comentarios = $("#mensaje");
 
-        boton.on("click", function (e) {
-          e.preventDefault();
-          $("<h2>Gracias por tu mensaje!</h2>").appendTo(".saludo");
-          $(".span1").html(nombre.val());
-          $(".span2").html(tel.val());
-          $(".span3").html(email.val());
-          $(".span4").html(comentarios.val());
+
+
+
+<script>
+        $(document).ready(function () {
+            // para q se abra el form
+            $(".comentar").click(function (e) {
+                e.preventDefault();
+                $(".formulario").toggle();
+            });
+
+            // para q imprima datos en pantalla
+            var boton = $(".boton");
+            var nombre = $("#nombre");
+            var tel = $("#tel");
+            var email = $("#email");
+            var comentarios = $("#mensaje");
+
+            boton.on("click", function (e) {
+                e.preventDefault();
+                var saludo = $("<h2>Gracias!</h2>").append(".saludo");
+                $(".span1").html(nombre.val());
+                $(".span2").html(tel.val());
+                $(".span3").html(email.val());
+                $(".span4").html(comentarios.val());
+            });
+
+            // limitar caracteres en comentario
+            var maxCaracteres = 140;
+            $("#mensaje").keyup(function () {
+                var maxLength = maxCaracteres - $(this).val().length;
+                $("#numeros").text(maxLength);
+            });
         });
-      });
     </script>
