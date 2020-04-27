@@ -47,40 +47,14 @@ Template name: agenda
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="recipient-name" class="col-form-label ml-md-3 ml-2">Agregar
-                                                Título</label>
-                                            <input type="text" class="form-control" id="recipient-name" />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="recipient-name"
-                                                class="col-form-label ml-md-3 ml-2">Fecha</label>
-                                            <input type="text" class="form-control" id="recipient-name" />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="recipient-name" class="col-form-label ml-md-3 ml-2">Hora</label>
-                                            <input type="text" class="form-control" id="recipient-name" />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="recipient-name" class="col-form-label ml-md-3 ml-2">Link</label>
-                                            <input type="text" class="form-control" id="recipient-name" />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="recipient-name"
-                                                class="col-form-label ml-md-3 ml-2">Institución</label>
-                                            <input type="text" class="form-control" id="recipient-name" />
-                                        </div>
-                                    </form>
+                                <?php echo do_shortcode('[contact-form-7 id="484" title="agenda"]'); ?>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-cerrar" data-dismiss="modal">
+                                <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-cerrar" data-dismiss="modal">
                                         Cerrar
                                     </button>
-                                    <button type="button" class="btn btn-contacto">
-                                        Enviar
-                                    </button>
-                                </div>
+                                    <input type="submit" value="Enviar" class="wpcf7-form-control wpcf7-submit btn btn-contacto">
+                                </div> -->
                             </div>
                         </div>
                     </div>
