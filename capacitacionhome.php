@@ -240,9 +240,31 @@ Template Name: capacitacion home
     <?php get_footer('comentarios'); ?>
 
 
-
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.2.1.min.js"></script>
     <script>
      $(document).ready(function () {
+        $("#asesorSi").click(function (e) {
+        e.preventDefault();
+        $("#asesorSiInputs").toggle();
+        // $("#asesorNoInputs").hide();
+      });
+
+      $("#asesorNo").click(function (e) {
+        e.preventDefault();
+        $("#asesorNoInputs").toggle();
+        // $("#asesorSiInputs").hide();
+      });
+
+      $('#productorSi').click(function (e) {
+        e.preventDefault();
+        $('#productorSiInputs').toggle();
+      })
+
+      $('#productorNo').click(function (e) {
+        e.preventDefault();
+        $('#productorNoInputs').toggle();
+      })
+
             // para q se abra el form
             $(".comentar").click(function (e) {
                 e.preventDefault();
