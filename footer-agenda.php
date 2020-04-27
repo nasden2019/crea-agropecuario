@@ -49,6 +49,11 @@
 
         app.init();
     </script>
+    <script>
+        $(document).ready(function(){
+            $("input[name=email-904]").val( $("#email-registro").val());
+        });
+    </script>
 
 
 </body>
