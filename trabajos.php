@@ -43,7 +43,7 @@ Template Name: trabajos
                                         <a>'; 
                                     the_field( "titulo" ); 
                                     echo '</a>
-                                    </p>' ?>
+                                    </p>
 
                                     <!-- MODAL -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-label
@@ -140,7 +140,7 @@ Template Name: trabajos
                                         <a>';
                                     the_field( "titulo" );
                                     echo'</a>
-                                    </p> ' ?>
+                                    </p>
 
                                     <!-- MODAL -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-label
@@ -218,8 +218,7 @@ Template Name: trabajos
                                 endif;                                 
                                 if ($i == 5) :
 
-                            echo '
-                            </div>
+                            echo '</div>
                             <div class="row">';
 
                                 endif;
@@ -324,30 +323,4 @@ Template Name: trabajos
         </div>
     </section>
 
-
-    <section class="section">
-        <?php get_footer('comentarios'); ?>
-    </section>
-
     <?php get_footer(); ?>
-
-
-
-    <script>
-      $(document).ready(function () {
-        var boton = $(".boton");
-        var nombre = $("#nombre");
-        var tel = $("#tel");
-        var email = $("#email");
-        var comentarios = $("#mensaje");
-
-        boton.on("click", function (e) {
-          e.preventDefault();
-          var saludo = $("<h2>Gracias!</h2>").append(".saludo");
-          $(".span1").html(nombre.val());
-          $(".span2").html(tel.val());
-          $(".span3").html(email.val());
-          $(".span4").html(comentarios.val());
-        });
-      });
-    </script>
