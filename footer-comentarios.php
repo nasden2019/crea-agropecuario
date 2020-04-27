@@ -12,7 +12,7 @@
                     endwhile;
                 endif;?>
                 <?php wp_reset_postdata();?>
-            <?php echo do_shortcode('[contact-form-7 id="469" title="comentarios" html_class="formulario"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="469" title="comentarios" html_class="formulario" class="formulario"]'); ?>
           </div>
         </div>
       </div>
