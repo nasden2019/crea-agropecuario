@@ -280,7 +280,7 @@ Template name: capacitacion
 
             <!-- VIDEO TESTIMONIALS -->
             <section class="carousel mt-md-4">
-                <div class="container">
+                <div class="container">ª
                     <h2 class="text-center">Testimonios</h2>
                     <div class="row justify-content-center">
                         <?php $args1 = array('post_type' => 'testimonios'); ?>
