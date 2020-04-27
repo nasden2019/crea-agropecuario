@@ -13,7 +13,7 @@ Template Name: trabajos
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <h3 class="mainTitular ml-md-5 ml-3 mb-4">| Trabajos</h3>
+                    <h3 class="mainTitular ml-md-5 mb-4">| Trabajos</h3>
                 </div>
             </div>
         </div>
