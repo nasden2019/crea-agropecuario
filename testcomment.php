@@ -1,3 +1,5 @@
+<?php get_header(); ?>
+
 <section class="section">
         <div class="container">
             <button class="comentar my-md-5 btn btn-contacto">Dejar<br>comentario</button>
@@ -60,6 +62,8 @@
     <script src="js/main.js"></script>
 
     <script src="js/main.js"></script>
+
+    <?php get_footer(); ?>
 
     <script>
         $(document).ready(function () {
