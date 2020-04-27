@@ -11,52 +11,22 @@ Template Name: testeo home
     <!-- METER LA PANTALLA ENTERA (antes de q termine el sidebar) DENTRO DEL SIDE BAR (MENOS EL NAVBAR Y EL FOOTER, PARA Q NO SE ROMPAN!)  -->
     <div class="wrapper">
         <!-- Sidebar  -->
-        <nav id="sidebar" style="display: none; background: turquoise;">
-            <div class="sidebar-header" style="background: turquoise;">
-                <h3>Testeos Generales</h3>
+        <nav id="sidebar" style="display: none;">
+            <div class="sidebar-header">
+                <h3>CATEGORIAS</h3>
             </div>
-
+            <?php
+            //listado de taxonomias
+            $taxonomy = 'categorias';
+            $tax_terms = get_terms($taxonomy);
+            ?>
             <ul class="list-unstyled components">
-                <!-- <p>Dummy Heading</p> -->
-                <li>
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        CATEGORIAS
-                    </a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Categorias 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Categorias 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Categorias 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="text-white" href="#">SOBRE NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle 
-                        text-white">HERRAMIENTAS</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a class="text-white" href="#">Herramientas 1</a>
-                        </li>
-                        <li>
-                            <a class="text-white" href="#">Herramientas 2</a>
-                        </li>
-                        <li>
-                            <a class="text-white" href="#">Herramientas 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="text-white" href="#">CONTACTO</a>
-                </li>
+                <?php
+                    foreach ($tax_terms as $tax_term) {
+                    echo '<li><a href="'  . esc_attr(get_term_link($tax_term, $taxonomy)) . '">'.$tax_term->name.'</a></li>';
+                    }
+                ?>
             </ul>
-
         </nav>
 
  <!-- METER ACA!!!! LA PANTALLA ENTERA DENTRO DEL SIDE BAR (MENOS EL NAVBAR Y EL FOOTER, PARA Q NO SE ROMPAN!)  -->

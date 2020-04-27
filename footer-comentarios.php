@@ -12,24 +12,10 @@
                     endwhile;
                 endif;?>
                 <?php wp_reset_postdata();?>
-            <?php echo do_shortcode('[contact-form-7 id="469" title="comentarios"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="469" title="comentarios" html_class="formulario" class="formulario"]'); ?>
           </div>
         </div>
       </div>
-    <script>
-     $(document).ready(function(){
-            console.log("asd");
-            var categoria = window.location.href;
-            // categoria = categoria.substring(0, categoria.lastIndexOf('/'));
-            categoria = basename(categoria);
-            console.log("asd 1" + categoria);
-            $("input[name=seccion]").val( categoria );
-            $("input[name=email-263]").val( $("#email-registro").val());
-     });
-     function basename(path) {
-          return path.split('/').reverse()[0];
-      }
-    </script>
 
 
     <style>

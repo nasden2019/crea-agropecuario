@@ -344,7 +344,7 @@ Template name: capacitacion
             // para q se abra el form
             $(".comentar").click(function (e) {
                 e.preventDefault();
-                $(".formulario").toggle();
+                $("#wpcf7-f469-o1").toggle();
             });
 
             // para q imprima datos en pantalla
