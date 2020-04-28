@@ -145,8 +145,8 @@ Template Name: testeo home
             </div>
 
             <!-- video en mobile-->
-            <div class="col-md-5 d-md-none mt-4">
-                <div class="">
+            <div class="col-md-3 d-md-none mt-4">
+                <div class="text-center">
                 <?php the_field( 'video' ); ?>
                     <!-- <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
                         frameborder="0"
