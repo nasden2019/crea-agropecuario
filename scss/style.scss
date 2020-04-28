@@ -1422,3 +1422,8 @@ header {
 		}
 	}
 }
+@media (max-width: 768px) {
+	.wp-pagenavi {
+		display: none;
+	}
+}
