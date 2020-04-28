@@ -50,7 +50,7 @@ Template Name: sobrenosotros
 <section class="seccion2-fotos" stye="background: #dcdcdc4f;">
     <div class="container-fluid">
         <div class="text-center">
-            <h2 class="mb-sm-5">QUÉ HACEMOS?</h2>
+            <h3 class="mb-sm-5">QUÉ HACEMOS?</h3>
         </div>
 
         <div class="row">
