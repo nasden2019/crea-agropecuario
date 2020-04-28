@@ -77,7 +77,7 @@ Template Name: proyectos
                       <div class="row">
                         
                       
-                        <div class="col-md-6 d-md-none">
+                        <div class="col-md-6">
 
                           <?php the_field( 'video' ); ?>
                           <div class="text-center">
@@ -89,7 +89,7 @@ Template Name: proyectos
                         </div>
 
                         <!-- video en mobile-->
-                        <div class="col-md-5 d-md-none mt-4">
+                        <div class="col-md-5 mt-4">
                           <?php the_field( 'video' ); ?>
                           <div class="">
                               <!-- <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
