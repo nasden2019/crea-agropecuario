@@ -10812,4 +10812,10 @@ header .search-form .form-control {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+  .wp-pagenavi {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

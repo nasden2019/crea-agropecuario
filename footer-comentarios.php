@@ -1,6 +1,11 @@
 
       <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-4">        
         <button class="comentar my-md-5 btn btn-contacto">Dejar<br>comentario</button>
+        </div>
+      </div>
+
         <div class="row">
           <div class="col-md-12 order-2">
               <?php 
