@@ -309,6 +309,8 @@ textarea {
 .tarjetas-inicio {
   width: 29rem;
   height: 3rem;
+  margin-top: 4rem;
+  font-size: 1.6rem;
 }
 
 .titulos-fotos-inicio {
