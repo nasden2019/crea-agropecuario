@@ -77,7 +77,7 @@ Template Name: proyectos
                       <div class="row">
                         
                       
-                        <div class="col-md-6 d-none d-md-block">
+                        <div class="col-md-6 d-md-none">
 
                           <?php the_field( 'video' ); ?>
                           <div class="text-center">
@@ -100,7 +100,7 @@ Template Name: proyectos
                         </div>
 
                         <!-- img -->
-                        <div class="col-md-6 d-md-block d-none">
+                        <div class="col-md-6 d-md-block">
                           <div class="">
                               <?php if ( get_field( 'imagen') ) { ?>
                               <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
