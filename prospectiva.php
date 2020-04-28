@@ -23,7 +23,7 @@ Template name: prospectiva
     <section class="seccion2-fotos">
         <div class="container">
             <div class="text-center">
-                <h2 class="mt-sm-5 mb-md-4 d-none d-md-block">TRABAJOS DE PROSPECTIVA</h2>
+                <h2 class="mt-sm-5 mb-md-4 d-md-block">TRABAJOS DE PROSPECTIVA</h2>
             </div>
 
             <div class="row">
