@@ -121,9 +121,9 @@ Template name: contacto
   <button class="btn botones" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Dejanos<br>un comentario</button>
 </div> -->
 
-<section class="section">
-    <?php get_footer('comentarios'); ?>
-</section>
+<!-- <section class="section">
+    ?php get_footer('comentarios'); ?>
+</section> -->
 
 
 <!-- ?php get_footer(); ?> -->
