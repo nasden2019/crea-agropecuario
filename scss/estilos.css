@@ -81,9 +81,9 @@
 .btn-contacto {
   color: white;
   background: #49B6AF;
-  font-size: 1.1rem;
+  font-size: 13px;
   border-radius: 10px;
-  text-transform: uppercase;
+  letter-spacing: .1em;
 }
 
 .btn-cerrar {
