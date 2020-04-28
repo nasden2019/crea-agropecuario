@@ -77,7 +77,7 @@ Template Name: proyectos
                       <div class="row">
                         
                       
-                        <div class="col-md-6">
+                        <div class="col-md-6 d-none d-md-block">
 
                           <?php the_field( 'video' ); ?>
                           <div class="text-center">
@@ -89,7 +89,7 @@ Template Name: proyectos
                         </div>
 
                         <!-- video en mobile-->
-                        <div class="col-md-5 mt-4">
+                        <div class="col-md-5 d-md-none mt-4">
                           <?php the_field( 'video' ); ?>
                           <div class="">
                               <!-- <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
@@ -100,7 +100,7 @@ Template Name: proyectos
                         </div>
 
                         <!-- img -->
-                        <div class="col-md-6 d-md-block">
+                        <div class="col-md-6">
                           <div class="">
                               <?php if ( get_field( 'imagen') ) { ?>
                               <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
@@ -114,7 +114,7 @@ Template Name: proyectos
                               <span class="mainTitular titularchiquito">| Categorias</span>
                               <h2 class="d-md-block d-none h3 font-weight-bold"><?php the_field( 'titulo' ); ?>
                               </h2>
-                              <p class="p-convocatorias d-md-block d-none">
+                              <p class="p-convocatorias">
                                   <?php the_field( 'parrafo' ); ?>
                               </p>
                               <a class="btn btn-primary collapseExample" data-toggle="collapse" id="collapseExample-<?php echo $i; ?>" role="button" aria-expanded="false" aria-controls="collapseExample">
