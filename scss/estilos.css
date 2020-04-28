@@ -34,12 +34,16 @@
   border-radius: 50%;
   padding: 10px;
   margin-right: 8px;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
 }
 
 .seccion-contacto .imgs-redessociales:hover {
   background-color: #3d9993;
+}
+
+.seccion-contacto .fa-2x {
+  font-size: 1.2em !important;
 }
 
 .seccion-contacto .mapa {

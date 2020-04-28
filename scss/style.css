@@ -9510,6 +9510,12 @@ h5 {
   outline: none;
 }
 
+.proyectos {
+  color: #fff !important;
+  background-color: #fcd36c !important;
+  border-color: #56555529 !important;
+}
+
 .form-control {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -10096,7 +10102,7 @@ header .search-form .form-control {
 
 .contact-form-contact-info p {
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   color: #000;
 }

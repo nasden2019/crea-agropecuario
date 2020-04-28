@@ -34,12 +34,15 @@
         border-radius: 50%;
         padding: 10px;
         margin-right: 8px;
-        width: 45px;
-        height: 45px;
+        width: 35px;
+        height: 35px;
 
         &:hover {
             background-color: darken($color: $colorTurqueson, $amount: 8);
         }
+    }
+    .fa-2x {
+        font-size: 1.2em!important;
     }
 
     .mapa {

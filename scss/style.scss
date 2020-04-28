@@ -46,7 +46,11 @@ h5 {
 		outline: none;
 	}
 }
-
+.proyectos {
+	color: #fff!important;
+    background-color: #fcd36c!important;
+    border-color: #56555529!important;
+}
 // esta fue retocada! 
 .form-control {
 	box-shadow: none !important;
@@ -686,10 +690,10 @@ header {
 	// padding: 2em 0;
 }
 
-.contact-form-contact-info {
+.contact-form-contact-info { 
 	p {
 		margin-bottom: 30px;
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 1.5;
 		color: $black;
 

@@ -1,5 +1,5 @@
     <!-- FOOTER -->
-    <footer id="clientes" class="mt-sm-5" style="height: 100%;">
+    <footer id="clientes" class="m-0" style="height: 100%;">
         <!-- <h2 class="text-center font-weight-bold pb-5 mt-sm-3">CLIENTES</h2> -->
         <!-- owl carrousel -->
         <div class="container-fluid">
