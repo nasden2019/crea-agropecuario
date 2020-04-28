@@ -35,7 +35,7 @@ Template Name: proyectos
             <div class="container">
 
                 <button type="button" id="sidebarCollapse" class="btn btn-contacto">
-                    <!-- <i class="fas fa-search-left"></i> -->
+                    <i class="fas fa-search-left"></i>
                     <span>Buscar Proyectos</span>
                 </button>
                 <div class="text-center">
