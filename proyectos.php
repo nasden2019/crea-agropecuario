@@ -42,11 +42,11 @@ Template Name: proyectos
                     <a href="<?php echo esc_url( home_url('/') ); ?>proyectos"><button class="btn active" >Actual</button></a>
                     <a href="<?php echo esc_url( home_url('/') ); ?>proyectos-historicos"><button class="btn">Historico</button></a>
                 </div>                
-                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <i class="fas fa-align-justify"></i>
-                </button>
+                </button> -->
             </div>
         </nav>
 
@@ -112,9 +112,9 @@ Template Name: proyectos
                         <div class="col-md-10">
                           <div>
                               <span class="mainTitular titularchiquito">| Categorias</span>
-                              <h2 class="d-md-block d-none h3 font-weight-bold"><?php the_field( 'titulo' ); ?>
+                              <h2 class="d-md-block d-none h3 font-weight-bold text-center"><?php the_field( 'titulo' ); ?>
                               </h2>
-                              <p class="p-convocatorias">
+                              <p class="p-convocatorias text-center">
                                   <?php the_field( 'parrafo' ); ?>
                               </p>
                               <a class="btn btn-primary collapseExample" data-toggle="collapse" id="collapseExample-<?php echo $i; ?>" role="button" aria-expanded="false" aria-controls="collapseExample">
