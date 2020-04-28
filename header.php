@@ -52,10 +52,10 @@
                 <div class="collapse navbar-collapse" id="navbarsExample05">
                     <ul class="navbar-nav pl-md-4 ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo esc_url( home_url('/') ); ?>">Home</a>
+                            <a class="nav-link mr-md-5" href="<?php echo esc_url( home_url('/') ); ?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo esc_url( home_url('/') ); ?>sobre-nosotros">Sobre
+                            <a class="nav-link mr-md-5" href="<?php echo esc_url( home_url('/') ); ?>sobre-nosotros">Sobre
                                 Nosotros</a>
                         </li>
                         <li class="nav-item">
