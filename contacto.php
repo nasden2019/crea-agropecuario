@@ -117,9 +117,9 @@ Template name: contacto
 </section>
 
 
-<div class="col-md-1 my-5 text-center my-auto">
+<!-- <div class="col-md-1 my-5 text-center my-auto">
   <button class="btn botones" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Dejanos<br>un comentario</button>
-</div>
+</div> -->
 
 <section class="section">
     <?php get_footer('comentarios'); ?>
