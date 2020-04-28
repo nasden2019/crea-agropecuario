@@ -9510,6 +9510,12 @@ h5 {
   outline: none;
 }
 
+.poyectos {
+  color: #fff !important;
+  background-color: #fcd36c !important;
+  border-color: #56555529 !important;
+}
+
 .form-control {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;

@@ -47,7 +47,7 @@ Template Name: sobrenosotros
 </section>
 
 <!-- IMAGENES -->
-<section class="seccion2-fotos">
+<section class="seccion2-fotos" stye="background: #dcdcdc4f;">
     <div class="container-fluid">
         <div class="text-center">
             <h2 class="mb-sm-5">QUÉ HACEMOS?</h2>

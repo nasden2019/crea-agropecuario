@@ -117,7 +117,7 @@ Template Name: proyectos
                               <p class="p-convocatorias">
                                   <?php the_field( 'parrafo' ); ?>
                               </p>
-                              <a class="btn btn-primary collapseExample" data-toggle="collapse" id="collapseExample-<?php echo $i; ?>" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              <a class="btn btn-primary proyectos collapseExample" data-toggle="collapse" id="collapseExample-<?php echo $i; ?>" role="button" aria-expanded="false" aria-controls="collapseExample">
                                 Ver más
                               </a>
                           </div>
