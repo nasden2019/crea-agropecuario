@@ -61,6 +61,14 @@ Template name: contacto
           </div>
         </div>
         <!-- d-none d-sm-block para q no se vea en mobile -->
+        <?php 
+        $args = array('post_type' => 'email');
+        $loop = new WP_Query($args);
+        if ( $loop->have_posts() ) :
+            while ( $loop->have_posts() ) : $loop->the_post();?>
+            <input type="email" class="" id="email-registro" value="<?php the_field( 'email' ); ?>">                    <?php 
+            endwhile;
+        endif;?>
         <div class="col-md-6 mb-5 d-none d-sm-block">
           <?php echo do_shortcode('[contact-form-7 id="485" title="Contactanos"]'); ?>
         </div>

@@ -146,7 +146,13 @@
             });	
         });
     </script>
+    <!--Script para contactanos  -->
+    <script>
+        $(document).ready(function(){
+            $("input[name=email-971]").val( $("#email-registro").val());
 
+        });
+    </script>
     <script>
     //  Script Para comentarios
      $(document).ready(function(){
