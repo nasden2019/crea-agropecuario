@@ -80,7 +80,7 @@ Template Name: proyectos
                         <div class="col-md-6 d-none d-md-block">
 
                           <?php the_field( 'video' ); ?>
-                          <div class="text-center">
+                          <div class="text-center proyectosItems">
                               <!-- <iframe width="100%" height="405" src="https://www.youtube.com/embed/ijs_p00fkdU"
                                       frameborder="0"
                                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -89,7 +89,7 @@ Template Name: proyectos
                         </div>
 
                         <!-- video en mobile-->
-                        <div class="col-md-5 d-md-none mt-4">
+                        <div class="col-md-5 mt-4 proyectosItems">
                           <?php the_field( 'video' ); ?>
                           <div class="">
                               <!-- <iframe width="100%" height="330" src="https://www.youtube.com/embed/ijs_p00fkdU"
@@ -100,7 +100,7 @@ Template Name: proyectos
                         </div>
 
                         <!-- img -->
-                        <div class="col-md-6">
+                        <div class="col-md-6 proyectosItems">
                           <div class="">
                               <?php if ( get_field( 'imagen') ) { ?>
                               <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />

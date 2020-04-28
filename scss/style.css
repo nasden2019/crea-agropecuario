@@ -2496,7 +2496,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .section textarea {
   width: 540px;
-  height: 88px;
+  height: 88px !important;
 }
 
 .btn {
