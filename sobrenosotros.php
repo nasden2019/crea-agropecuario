@@ -14,12 +14,12 @@ Template Name: sobrenosotros
     <h2 class="bg-secondary">| MISION Y VISION</h2>
   </div> -->
 
-<section class="mx-sm-5">
+<section class="home-slider owl-carousel d-sm-block">
     <div class="slider-item"
         style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/hero_1.jpg');">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row slider-text align-items-center justify-content-center">
-                <div class="col-lg-7 text-center col-sm-12 element-animate"></div>
+                <div class=" text-center col-sm-12 element-animate"></div>
             </div>
         </div>
     </div>
