@@ -62,37 +62,8 @@ Template name: contacto
         </div>
         <!-- d-none d-sm-block para q no se vea en mobile -->
         <div class="col-md-6 mb-5 d-none d-sm-block">
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <label for="name" class="sr-only">Nombre y Apellido</label>
-                                    <input type="text" id="name" class="form-control" placeholder="Nombre y Apellido">
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <label for="phone" class="sr-only">Teléfono</label>
-                                    <input type="text" id="phone" class="form-control" placeholder="Teléfono">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12 form-group">
-                                    <label for="email" class="sr-only">Email</label>
-                                    <input type="email" id="email" class="form-control" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12 form-group">
-                                    <label for="message" class="sr-only">Mensaje</label>
-                                    <textarea name="message" id="message" class="form-control " cols="30" rows="8"
-                                        placeholder="Mensaje"></textarea>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 offset-md-3 form-group text-center">
-                                    <input type="submit" value="Enviar" class="btn px-3 py-2 btn-contacto">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+          <?php echo do_shortcode('[contact-form-7 id="485" title="Contactanos"]'); ?>
+        </div>
         <!-- <div class="col-md-6 mb-5 d-none d-sm-block">
           ?php echo do_shortcode('[contact-form-7 id="469" title="comentarios"]'); ?>
         </div> -->
