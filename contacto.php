@@ -69,7 +69,7 @@ Template name: contacto
             <input type="email" class="d-none" id="email-registro" value="<?php the_field( 'email' ); ?>">                    <?php 
             endwhile;
         endif;?>
-        <div class="col-md-6 mb-5 d-none d-sm-block">
+        <div class="col-md-6 mb-5 d-sm-block">
           <?php echo do_shortcode('[contact-form-7 id="485" title="Contactanos"]'); ?>
         </div>
         <!-- <div class="col-md-6 mb-5 d-none d-sm-block">
