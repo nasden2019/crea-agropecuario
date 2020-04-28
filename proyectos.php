@@ -100,7 +100,7 @@ Template Name: proyectos
                         </div>
 
                         <!-- img -->
-                        <div class="col-md-6">
+                        <div class="col-md-6 d-md-block d-none">
                           <div class="">
                               <?php if ( get_field( 'imagen') ) { ?>
                               <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
@@ -112,9 +112,9 @@ Template Name: proyectos
                         <div class="col-md-10">
                           <div>
                               <span class="mainTitular titularchiquito">| Categorias</span>
-                              <h2 class="d-md-block d-none h3 font-weight-bold text-center"><?php the_field( 'titulo' ); ?>
+                              <h2 class="d-md-block d-none h3 font-weight-bold"><?php the_field( 'titulo' ); ?>
                               </h2>
-                              <p class="p-convocatorias text-center">
+                              <p class="p-convocatorias d-md-block d-none">
                                   <?php the_field( 'parrafo' ); ?>
                               </p>
                               <a class="btn btn-primary collapseExample" data-toggle="collapse" id="collapseExample-<?php echo $i; ?>" role="button" aria-expanded="false" aria-controls="collapseExample">
