@@ -1,8 +1,8 @@
 
-      <div class="container">
+      <div class="container-fluid">
       <div class="row justify-content-center" style="background: #7c7c7c45;">
         <div class="col-4 text-center">        
-        <button class="comentar my-md-3 btn btn-contacto"  style=" width: 75%;">Dejar<br>comentario</button>
+        <button class="comentar my-md-3 btn btn-contacto"  style="width: 75%!important;">Dejar<br>comentario</button>
         </div>
       </div>
 
