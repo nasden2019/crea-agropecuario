@@ -97,7 +97,7 @@ Template name: capacitacion
                                 if ( $loop1->have_posts() ) :
                                     while ( $loop1->have_posts() ) : $loop1->the_post(); ?>
                         <!-- indicators -->
-                        <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
                                 </li>
@@ -187,7 +187,7 @@ Template name: capacitacion
                                 if ( $loop1->have_posts() ) :
                                     while ( $loop1->have_posts() ) : $loop1->the_post(); ?>
                         <!-- indicators -->
-                        <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
                                 </li>
@@ -288,7 +288,7 @@ Template name: capacitacion
                                 if ( $loop1->have_posts() ) :
                                     while ( $loop1->have_posts() ) : $loop1->the_post(); ?>
                         <!-- indicators -->
-                        <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
                                 </li>
