@@ -73,7 +73,7 @@ Template Name: testeo home
             <div class="col-md-6">
                 <div class="">
                 <?php if ( get_field( 'imagen') ) { ?>
-                    <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"/>
+                    <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" style="height: 281px; width: 500px;"/>
                 <?php } ?>
                     <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid"> -->
                 </div>
