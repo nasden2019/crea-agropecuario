@@ -181,7 +181,7 @@ Template Name: incubacion
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?> 
                 <!-- indicators -->
-                <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
                         </li>
