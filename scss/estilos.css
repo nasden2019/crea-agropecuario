@@ -337,7 +337,7 @@ textarea {
 }
 
 .imgsQuienessomos {
-  max-width: 110%;
+  max-width: 70%;
 }
 
 .modalCajasBlancas {
@@ -393,7 +393,8 @@ textarea {
   .botones {
     width: 100% !important;
     height: auto;
-    font-size: 0.85rem;
+    font-size: 1.1rem;
+    font-weight: 900;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -66,7 +66,7 @@ textarea {
 
 // PONERLE 100% al WIDTH para q no se rompa en mobile: Y SEA RESPONSIVE
 .imgsQuienessomos {
-	max-width: 110%;
+	max-width: 70%;
 }
 
 // MODAL FOTOS
@@ -108,26 +108,32 @@ textarea {
 		}
 	}
 }
+
 .col-video {
 	iframe {
-		width: 360px!important;
-		height: 315px!important;
+		width: 360px !important;
+		height: 315px !important;
 	}
 }
+
 @media (max-width: 600px) {
 	.col-video {
 		text-align: center;
+
 		iframe {
-			width: 315px!important;
-			height: 315px!important;
+			width: 315px !important;
+			height: 315px !important;
 		}
 	}
+
 	.botones {
-		width: 100%!important;
+		width: 100% !important;
 		height: auto;
-		font-size: 0.85rem;
+		font-size: 1.1rem;
+		font-weight: 900;
 	}
 }
+
 // @media (max-width: 576px) {
 // 	.imgsQuienessomos {
 // 		width: 10rem;
