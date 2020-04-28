@@ -33,7 +33,7 @@ Template Name: capacitacion home
                         <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
                         <?php } ?>
                         <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid d-none d-md-block" /> -->
-                        <p class="text-center titulos-fotos-inicio d-none d-md-block">
+                        <p class="text-center titulos-fotos-inicio d-md-block">
                             <a href="#"><?php the_field( 'titulo' ); ?></a>
                         </p>
                         <p class="text-center p-convocatorias" style="font-size: 20px;">
