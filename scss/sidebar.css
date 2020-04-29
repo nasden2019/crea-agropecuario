@@ -116,7 +116,8 @@ a.article:hover {
     margin-left: 0;
   }
   #sidebarCollapse span {
-    display: none;
+    color: white;
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=sidebar.css.map */
