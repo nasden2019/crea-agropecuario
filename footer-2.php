@@ -182,5 +182,13 @@
           return path.split('/').reverse()[0];
       }
     </script>
+    <script type="text/javascript">
+    //prueba ancho de iframe
+    $(document).ready(function () {
+        console.log("cambios iframe");
+        $("iframe").css('width' '100%');
+        // $("iframe").height(526);
+    });
+    </script>
 </body>
 </html>
