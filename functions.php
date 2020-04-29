@@ -161,14 +161,14 @@ if ( function_exists( 'add_theme_support' ) ) {
  if (comments_open() || get_comments_number())  : comments_template();
 endif; 
 //Popup 
-// add_action( 'wp_footer', 'mycustom_wp_footer' );
-// function mycustom_wp_footer() {
-// ?//>
-      //     <script type="text/javascript"> 
-//          document.addEventListener( 'wpcf7mailsent', function( event ) {
-//          if ( '34' == event.detail.contactFormId ) { // Change 123 to the ID of the form 
-//          jQuery('#myModal2').modal('show'); //this is the bootstrap modal popup id
-//        }
-//         }, false );
-//          </script>
-//        <?php  } ?//>
+add_action( 'wp_footer', 'mycustom_wp_footer' );
+function mycustom_wp_footer() {
+?>
+     <script type="text/javascript">
+         document.addEventListener( 'wpcf7mailsent', function( event ) {
+         if ( '34' == event.detail.contactFormId ) { // Change 123 to the ID of the form 
+         jQuery('#myModal2').modal('show'); //this is the bootstrap modal popup id
+       }
+        }, false );
+         </script>
+       <?php  } ?>
