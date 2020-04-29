@@ -140,9 +140,6 @@ textarea {
 		font-weight: 900;
 	}
 }
-
-// @media (max-width: 576px) {
-// 	.imgsQuienessomos {
-// 		width: 10rem;
-// 	}
-// }
+#warningBox, #calendarTitle {
+	display: none;
+}
