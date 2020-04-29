@@ -290,10 +290,10 @@ a.article:hover {
   #sidebar.active {
     margin-left: 0;
   }
-  #sidebarCollapse span {
-    /* display: none; */
+  /* #sidebarCollapse span {
+    /* display: none;
     
-  }
+  } */
 }
 
 #sidebar {

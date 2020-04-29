@@ -118,5 +118,8 @@ a.article:hover {
   #sidebarCollapse span {
     color: white;
   }
+  .cambio iframe {
+    width: 100% !important;
+  }
 }
 /*# sourceMappingURL=sidebar.css.map */
