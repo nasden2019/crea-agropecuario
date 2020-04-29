@@ -171,14 +171,14 @@ Template name: prospectiva
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe> -->
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" style="width: 600px">
                         <?php the_field( 'video2' ); ?>
                             <!-- <iframe id="" width="550" height="450" src="https://www.youtube.com/embed/vlDzYIIOYmM"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe> -->
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" style="width: 600px">
                         <?php the_field( 'video3' ); ?>
                             <!-- <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
                                 frameborder="0"
