@@ -62,7 +62,7 @@
             ( jQuery(".wpcf7-response-output").html()); 
             //ALERTS THE OUTPUT 
                 $('.prueba-fede').on('blur', function() { 
-                    if( $(this) == '' ){
+                    if( $(this).val() == '' ){
                         $(this).addClass("is-invalid");
                     }
                  })
