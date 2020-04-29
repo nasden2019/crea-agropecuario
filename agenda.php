@@ -34,6 +34,30 @@ Template name: agenda
                   </button> -->
 
                     <!-- MODAL -->
+                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-label
+                        ledby="exampleModalLabel " aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel ">
+                                        EVENTOS CREA
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                <?php echo do_shortcode('[contact-form-7 id="484" title="agenda"]'); ?>
+                                </div>
+                                <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-cerrar" data-dismiss="modal">
+                                        Cerrar
+                                    </button>
+                                    <input type="submit" value="Enviar" class="wpcf7-form-control wpcf7-submit btn btn-contacto">
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-label
                         ledby="exampleModalLabel " aria-hidden="true">
                         <div class="modal-dialog" role="document">
