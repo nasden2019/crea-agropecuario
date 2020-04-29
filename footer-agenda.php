@@ -65,6 +65,7 @@
                     if( $(this).val() == '' ){
                         $(this).addClass("is-invalid");
                     }
+                    console.log("funca");
                  })
             }); });
     </script>
