@@ -70,7 +70,7 @@ Template name: agenda
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                <!-- <?php echo do_shortcode('[contact-form-7 id="484" title="agenda"]'); ?> -->
+                                    <?php echo do_shortcode('[contact-form-7 id="484" title="agenda"]'); ?>
                                 </div>
                                 <!-- <div class="modal-footer">
                                 <button type="button" class="btn btn-cerrar" data-dismiss="modal">
