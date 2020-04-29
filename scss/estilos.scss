@@ -11,6 +11,9 @@
 // * {
 //   overflow-x: hidden;
 // }
+iframe {
+	width: 100%!important;
+}
 
 #sidebar {
 	background: $colorTurqueson;

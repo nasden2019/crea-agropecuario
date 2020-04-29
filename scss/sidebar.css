@@ -118,5 +118,9 @@ a.article:hover {
   #sidebarCollapse span {
     color: white;
   }
+  .cambio iframe, #cambio {
+    width: 100% !important;
+    height: 100% !important;
+  }
 }
 /*# sourceMappingURL=sidebar.css.map */

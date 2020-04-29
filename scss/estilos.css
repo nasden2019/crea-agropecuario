@@ -291,9 +291,15 @@ a.article:hover {
     margin-left: 0;
   }
   #sidebarCollapse span {
-    /* display: none; */
-    
+    color: white;
   }
+  .cambio iframe, #cambio {
+    width: 100% !important;
+  }
+}
+
+iframe {
+  width: 100% !important;
 }
 
 #sidebar {

@@ -175,12 +175,22 @@
             // categoria = categoria.substring(0, categoria.lastIndexOf('/'));
             // coment = basename(coment);
             console.log("asd 2" + coment);
+            console.log("cambios iframe");
+            $("iframe").css('width' '100');
             $("#seccion").val( coment );
             $("input[name=email-262]").val( $("#email-registro").val());
      });
      function basename(path) {
           return path.split('/').reverse()[0];
       }
+    </script>
+    <script type="text/javascript">
+    //prueba ancho de iframe
+    $(document).ready(function () {
+        console.log("cambios iframe");
+        // $("iframe").css('width' '100%');
+        // $("iframe").height(526);
+    });
     </script>
 </body>
 </html>
