@@ -30,7 +30,7 @@ Template Name: convocatorias
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
                     <div class="col-md-6  mb-1 my-3 text-center">
                         <?php if ( get_field( 'imagen') ) { ?>
-                        <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid d-none d-md-block" />
+                        <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid d-md-block" />
                         <?php } ?>
                         <!-- <img src="?php echo get_stylesheet_directory_uri(); ?>/images/img_1.jpg" class="img-fluid d-none d-md-block" /> -->
                         <p class="text-center titulos-fotos-inicio d-none d-md-block">
