@@ -176,7 +176,7 @@
             // coment = basename(coment);
             console.log("asd 2" + coment);
             console.log("cambios iframe");
-            $("iframe").css('width' '100%');
+            $("iframe").css('width' '100');
             $("#seccion").val( coment );
             $("input[name=email-262]").val( $("#email-registro").val());
      });
@@ -188,7 +188,7 @@
     //prueba ancho de iframe
     $(document).ready(function () {
         console.log("cambios iframe");
-        $("iframe").css('width' '100%');
+        // $("iframe").css('width' '100%');
         // $("iframe").height(526);
     });
     </script>
