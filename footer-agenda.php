@@ -55,19 +55,20 @@
         });
     </script>
     <script>
-        jQuery(".wpcf7-submit").click(function(event) {
-            //IF THE SUBMIT IS PRESSED jQuery
-            (document ).ajaxComplete(function() {
-            //AJAX RESPONSES alert
-            ( jQuery(".wpcf7-response-output").html()); 
-            //ALERTS THE OUTPUT 
-                $('.prueba-fede').on('blur', function() { 
+        // jQuery(".wpcf7-submit").click(function(event) {
+        //     //IF THE SUBMIT IS PRESSED jQuery
+        //     (document ).ajaxComplete(function() {
+        //     //AJAX RESPONSES alert
+        //     ( jQuery(".wpcf7-response-output").html()); 
+        //     //ALERTS THE OUTPUT 
+                
+        //     }); });
+        $('.prueba-fede').on('blur', function() { 
                     if( $(this).val() == '' ){
                         $(this).addClass("is-invalid");
                     }
                     console.log("funca");
                  })
-            }); });
     </script>
 
 
