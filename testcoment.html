@@ -161,6 +161,13 @@
                 var maxLength = maxCaracteres - $(this).val().length;
                 $("#numeros").text(maxLength);
             });
+
+            // error si no completa uno de los campos
+            if (nombre == '') {
+                nombre.css({
+                    'border': 'red solid 3px'
+                });
+            }
         });
     </script>
 
