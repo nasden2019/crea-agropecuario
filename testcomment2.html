@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CREA</title>
+    <!-- FAVICON -->
+    <!-- <link rel="shortcut icon" type="image/png" href="images/favicon.png"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/estilos.css">
+
+    <style>
+        .formulario {
+            display: none;
+        }
+
+        .campoObligatorio,
+        .campoNumerico {
+            display: none;
+        }
+
+        .border {
+            border: red 2px solid;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <section class="section">
+        <div class="container">
+            <button class="comentar my-md-5 btn btn-contacto">Dejar<br>comentario</button>
+            <div class="row">
+                <div class="col-md-12 order-2">
+                    <form action="#" method="post" class="formulario">
+                        <div class="row">
+                            <div class="col-md-2 form-group campo">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" class="form-control" />
+                                <span class="campoObligatorio">Este campo debe ser rellenado</span>
+                            </div>
+                            <div class="col-md-2 form-group campo">
+                                <label for="phone">Teléfono</label>
+                                <input type="text" id="tel" class="form-control" />
+                                <span class="campoNumerico">Ingrese un número</span>
+                            </div>
+                            <div class="col-md-2 form-group campo">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" />
+                                <span class="campoObligatorio">Este campo debe ser rellenado</span>
+                            </div>
+                            <div class="col-md-2 form-group campo">
+                                <label for="email">Profesión</label>
+                                <input type="text" id="profesion" class="form-control" />
+                                <span class="campoObligatorio">Este campo debe ser rellenado</span>
+                            </div>
+                            <div class="col-md-6 form-group campo">
+                                <label for="message">Comentarios</label>
+                                <textarea name="message" id="mensaje" class="form-control" cols="14" rows="3"
+                                    maxLength="140"></textarea>
+                                Quedan <span id="numeros">140</span> caracteres
+                                <span class="campoObligatorio">Este campo debe ser rellenado</span>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <input type="submit" value="Enviar" class="boton btn btn-contacto px-3 mt-5" />
+                            </div>
+                        </div>
+
+                        <!-- feedback usuario-->
+                        <div class="saludo"></div>
+                        <div class="row my-4">
+                            <div class="col-md-2 form-group">
+                                <span class="span1"></span>
+                            </div>
+                            <div class="col-md-2 form-group">
+                                <span class="span2"></span>
+                            </div>
+                            <div class="col-md-2 form-group">
+                                <span class="span3"></span>
+                            </div>
+                            <div class="col-md-2 form-group">
+                                <span class="span4"></span>
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <span class="span5"></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // para q se abra el form
+            $(".comentar").click(function (e) {
+                e.preventDefault();
+                $(".formulario").toggle();
+
+            });
+
+            // para q imprima datos en pantalla
+            var boton = $(".boton");
+            var nombre = $("#nombre");
+            var tel = $("#tel");
+            var email = $("#email");
+            var comentarios = $("#mensaje");
+            var profesion = $("#profesion");
+
+            boton.on("click", function (e) {
+                e.preventDefault();
+                var saludo = $("<h2>Gracias por contactarnos!</h2>").append(".saludo");
+                $(".span1").html(nombre.val());
+                $(".span2").html(tel.val());
+                $(".span3").html(email.val());
+                $(".span4").html(profesion.val());
+                $(".span5").html(comentarios.val());
+            });
+
+            // limitar caracteres en comentario
+            var maxCaracteres = 140;
+            $("#mensaje").keyup(function () {
+                var maxLength = maxCaracteres - $(this).val().length;
+                $("#numeros").text(maxLength);
+            });
+
+            // error si no completa uno de los campos
+            if (nombre == '') {
+                nombre.addClass('.border')
+            }
+
+            // tel solo numeros
+            $(tel).on('input', function () {
+                this.value = this.value.replace(/[^0-9]/g, '');
+            });
+
+            // desactivar boton si inputs estan vacios
+            $('.campo input').keyup(function () {
+
+                var vacio = false;
+                $('.campo input').each(function () {
+                    if ($(this).val() == '') {
+                        vacio = true;
+                    }
+                });
+
+                if (vacio) {
+                    $(boton).attr('disabled', true);
+                } else {
+                    $(boton).attr('disabled', false);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
