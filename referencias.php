@@ -94,7 +94,7 @@ Template Name: referencias
       </div>
 
 
-      <div class="d-md-block mt-5 insta-feed order-4">
+      <div class="col-md-12 mt-5 insta-feed order-4">
         <h2 class="mb-sm-5 text-center">A quién seguir?</h2>
         <div class="row">
           <?php $args = array('post_type' => 'refer_aquien_seguir'); ?>
@@ -102,7 +102,7 @@ Template Name: referencias
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-          <div class="col-md-6">
+          <div class="col-md-6 text-center mb-3">
           <?php if ( get_field( 'imagen') ) { ?>
                 <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
             <?php } ?>
@@ -110,7 +110,7 @@ Template Name: referencias
                             <div class="elfsight-app-0f5adf44-5d5c-4cc2-a1fd-eb8a3ff910d9" style="width: 100%;"></div> -->
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 text-center">
           <?php if ( get_field( 'imagen') ) { ?>
                 <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"/>
             <?php } ?>
