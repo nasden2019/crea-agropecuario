@@ -109,9 +109,9 @@ a.article:hover {
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
+    // #sidebar {
+    //     margin-left: -250px;
+    // }
 
     #sidebar.active {
         margin-left: 0;
