@@ -80,7 +80,7 @@
     </script>
     <script>
         // desactivar boton si inputs estan vacios
-        $('.campo input').keyup(function () {
+        $('.prueba-fede').keyup(function () {
             var vacio = false;
             $('.prueba-fede').each(function () {
                 if ($(this).val() == '') {
