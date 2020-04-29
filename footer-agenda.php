@@ -54,6 +54,16 @@
             $("input[name=email-904]").val( $("#email-registro").val());
         });
     </script>
+    <script>
+        jQuery(".wpcf7-submit").click(function(event) {
+            //IF THE SUBMIT IS PRESSED jQuery
+            (document ).ajaxComplete(function() {
+            //AJAX RESPONSES alert
+            ( jQuery(".wpcf7-response-output").html()); 
+            //ALERTS THE OUTPUT 
+                console.log("funciona");
+            }); });
+    </script>
 
 
 </body>
