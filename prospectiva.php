@@ -164,21 +164,21 @@ Template name: prospectiva
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner justify-content-center">
-                        <div class="carousel-item active" style="width: 600px">
+                        <div class="carousel-item active" style="width: 80%">
                         <?php the_field( 'video1' ); ?>
                             <!-- <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe> -->
                         </div>
-                        <div class="carousel-item" style="width: 600px">
+                        <div class="carousel-item" style="width: 80%">
                         <?php the_field( 'video2' ); ?>
                             <!-- <iframe id="" width="550" height="450" src="https://www.youtube.com/embed/vlDzYIIOYmM"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe> -->
                         </div>
-                        <div class="carousel-item" style="width: 600px">
+                        <div class="carousel-item" style="width: 80%">
                         <?php the_field( 'video3' ); ?>
                             <!-- <iframe width="550" height="450" src="https://www.youtube.com/embed/T4O4wGfqFqQ"
                                 frameborder="0"
