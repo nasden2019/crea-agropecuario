@@ -158,13 +158,13 @@ Template Name: capacitacion home
                                             </div>
                                     </div>
                                     <!-- fin inputs productor -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-cerrar" data-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-contacto">Enviar</button>
+                                    </div>
 
                                     </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-cerrar" data-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-contacto">Enviar</button>
-                                </div>
+                                </div>                                
                             </div>
                         </div>
                     </div>
