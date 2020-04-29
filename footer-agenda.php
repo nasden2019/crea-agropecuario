@@ -61,7 +61,11 @@
             //AJAX RESPONSES alert
             ( jQuery(".wpcf7-response-output").html()); 
             //ALERTS THE OUTPUT 
-                console.log("funciona");
+                $('.prueba-fede').on('blur', function() { 
+                    if( $(this) == '' ){
+                        $(this).addClass("is-invalid");
+                    }
+                 })
             }); });
     </script>
 
