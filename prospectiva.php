@@ -199,10 +199,6 @@ Template name: prospectiva
         <?php get_footer('comentarios'); ?>
     </section>
 
-
-    <?php get_footer(); ?>
-
-    
     <script>
         $(document).ready(function () {
             // para q se abra el form
@@ -290,3 +286,9 @@ Template name: prospectiva
             });
         });
     </script>
+
+
+    <?php get_footer(); ?>
+
+    
+    
