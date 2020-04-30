@@ -172,7 +172,8 @@
             // para q se abra el form
             $(".comentar").click(function (e) {
                 e.preventDefault();
-                $("#wpcf7-f469-o1").toggle();
+                $(".formulario").toggle();
+
             });
 
             // para q imprima datos en pantalla
@@ -181,14 +182,16 @@
             var tel = $("#tel");
             var email = $("#email");
             var comentarios = $("#mensaje");
+            var profesion = $("#profesion");
 
             boton.on("click", function (e) {
                 e.preventDefault();
-                var saludo = $("<h2>Gracias!</h2>").append(".saludo");
+                var saludo = $("<h2>Gracias por contactarnos!</h2>").append(".saludo");
                 $(".span1").html(nombre.val());
                 $(".span2").html(tel.val());
                 $(".span3").html(email.val());
-                $(".span4").html(comentarios.val());
+                $(".span4").html(profesion.val());
+                $(".span5").html(comentarios.val());
             });
 
             // limitar caracteres en comentario
@@ -196,6 +199,58 @@
             $("#mensaje").keyup(function () {
                 var maxLength = maxCaracteres - $(this).val().length;
                 $("#numeros").text(maxLength);
+            });
+
+            // mostrar border class si no completa uno de los campos
+            $('.boton').on('click', function (e) {
+                e.preventDefault();
+                if (validarCampo()) {
+                    $('#formularioContacto').submit();
+                } else {
+                    $('.campoObligatorio').show();
+                }
+            })
+
+            // desactivar boton si inputs estan vacios
+            $('.campo').change(function () {
+
+                if ($(this).val() == '') {
+                    $(this).css("border", "2px solid red");
+                    $('.campoObligatorio').show();
+                } else {
+                    $('.campoObligatorio').hide();
+                    $(this).css("border", "1px solid green");
+                }
+            })
+
+            function validarCampo() {
+                let nombreFuncion = nombre.val();
+                let emailFuncion = email.val();
+                let comentariosFuncion = comentarios.val();
+
+                if (
+                    nombreFuncion.trim() != '' &&
+                    emailFuncion.trim() != '' &&
+                    comentariosFuncion.trim() != ''
+                ) {
+                    return true;
+                } else {
+                    $('.campo').each(function () {
+                        if (
+                            $(this).val() == ''
+                        ) {
+                            $(this).css('border', 'red 3px solid')
+                        } else {
+                            $(this).css('border', 'green 3px solid')
+                        }
+                    })
+                    return false;
+                }
+            }
+
+            // tel solo numeros
+            tel.on('input', function () {
+                this.value = this.value.replace(/[^0-9]/g, '');
             });
         });
     </script>
