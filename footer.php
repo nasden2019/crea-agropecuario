@@ -278,9 +278,9 @@
 
         })
         // desactivar boton si inputs estan vacios
-        $('.campo').keyup(function () {
+        $('.campo1').keyup(function () {
             var vacio = false;
-            $('.campo').each(function () {
+            $('.campo1').each(function () {
                 if ($(this).val() == '') {
                     vacio = true;
                 }
