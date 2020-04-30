@@ -158,17 +158,21 @@ if ( function_exists( 'add_theme_support' ) ) {
 //  }
 
 //  add_action( 'admin_menu', 'frontpage_admin_menu' );
- if (comments_open() || get_comments_number())  : comments_template();
-endif; 
-//Popup 
+
+
+//popup
 add_action( 'wp_footer', 'mycustom_wp_footer' );
 function mycustom_wp_footer() {
 ?>
-     <script type="text/javascript">
-         document.addEventListener( 'wpcf7mailsent', function( event ) {
-         if ( '484' == event.detail.contactFormId ) { // Change 123 to the ID of the form 
-         jQuery('#myModal2').modal('show'); //this is the bootstrap modal popup id
-       }
-        }, false );
-         </script>
-       <?php  } ?>
+<script type="text/javascript">
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+    if ( '484' == event.detail.contactFormId ) { // Change 123 to the ID of the form 
+        
+       SPU.show( 497 ); // change 143 to the ID of the popup
+       SPU.hide( 120 ); // hide another popup 
+       SPU.track( 497, false );//track an impression , if you set to true you track a conversion
+    }
+}, false );
+</script>
+<?php
+}
