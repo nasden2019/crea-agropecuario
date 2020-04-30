@@ -69,6 +69,11 @@
         //     //ALERTS THE OUTPUT 
                 
         //     }); });
+        $('body').on('wpcf7mailsent', function(){ 
+            SPU.show( 143 ); 
+            SPU.hide( 120 );
+            SPU.track( 143, false ); 
+        });
     </script>
     <script>        
         $('.prueba-fede').on('blur', function() { 
