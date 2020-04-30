@@ -43,8 +43,7 @@ Template Name: trabajos
                                     the_field( "titulo" ); 
                                     echo '</a>
                                     </p>
-                                    <button type="button" class="btn px-3 py-2 btn-contacto ml-3 ml-md-5" data-toggle="modal"
-                            data-target="#exampleModal" data-whatever="@getbootstrap">Inscribirme</button>
+                           
                                     <!-- MODAL -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-label
                                         ledby="exampleModalLabel " aria-hidden="true">
