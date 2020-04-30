@@ -1,0 +1,41 @@
+[email* email-262 id:email-crea class:d-none]
+[text seccion id:seccion class:d-none]
+<div class="row">
+    <div class="col-md-2 form-group">
+        <label for="nombre">Nombre</label>
+        [text* text-669 id:nombre class:form-control]
+    </div>
+    <div class="col-md-2 form-group">
+        <label for="phone">Teléfono</label>
+        [text* text-668 id:tel class:form-control]
+    </div>
+    <div class="col-md-2 form-group">
+        <label for="email">Email</label>
+        [email* email-263 id:email class:form-control]
+    </div>
+    <div class="col-md-6 form-group">
+        <label for="message">Comentarios</label>
+        [textarea* textarea-476 id:mensaje class:form-control maxlength:140]
+        <p>Quedan <span id="numeros">140</span> caracteres</p>
+    </div>
+    <div class="col-md-4 form-group">
+        [submit class:btn class:btn-contacto class:px-3]
+    </div>
+    <!-- feedback usuario-->
+    <span class="saludo"></span>
+    <div class="row my-4">
+        <div class="col-md-2 form-group">
+            <span class="span1"></span>
+        </div>
+        <div class="col-md-2 form-group">
+            <span class="span2"></span>
+        </div>
+        <div class="col-md-2 form-group">
+            <span class="span3"></span>
+        </div>
+
+        <div class="col-md-6 form-group">
+            <span class="span4"></span>
+        </div>
+    </div>
+</div>
