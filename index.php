@@ -106,7 +106,7 @@
                         </div>
                         <div class="col-6">
                             <div class="btn botones mx-auto ml-md-auto mx-md-0 my-2 d-flex align-items-center justify-content-center">
-                                <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>trabajaConNosotros">
+                                <a class="text-white" href="<?php echo esc_url( home_url('/') ); ?>trabaja-con-nosotros">
                                     Trabajar con <br>nosotros
                                 </a>
                             </div>
