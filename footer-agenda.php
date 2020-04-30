@@ -51,9 +51,10 @@
     </script>
     <script>
         $(document).ready(function(){
+            //Enviar email admin 
             $("input[name=email-904]").val( $("#email-registro").val());
-            if ( $( ".wpcf7-mail-sent-ok" ).length ) {
- 
+            //Popup success message
+            if ( $( ".wpcf7-mail-sent-ok" ).length ) { 
                 $( "#myModal2" ).show();
                 $('#myModal2').modal('show');
 
@@ -61,25 +62,10 @@
 
         });
     </script>
-    <script>
-        // jQuery(".wpcf7-submit").click(function(event) {
-        //     //IF THE SUBMIT IS PRESSED jQuery
-        //     (document ).ajaxComplete(function() {
-        //     //AJAX RESPONSES alert
-        //     ( jQuery(".wpcf7-response-output").html()); 
-        //     //ALERTS THE OUTPUT 
-                
-        //     }); });
-        $('body').on('wpcf7mailsent', function(){ 
-            SPU.show( 143 ); 
-            SPU.hide( 120 );
-            SPU.track( 143, false ); 
-            console.log("prueba");
-        });
-    </script>
-    <script>        
-        $('.prueba-fede').on('blur', function() { 
-                    if( $(this).val() == '' ){
+    <script> 
+        //Script validacion instantanea       
+        $('.prueba-fede').on('blur', function() { //Cambiar prueba-fede por clase general en los inputs
+                    if( $(this).val() == '' ){ //remplazar por validacion o condicional
                         $(this).addClass("is-invalid");
                         $(this).removeClass("valid");
                     }

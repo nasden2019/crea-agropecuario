@@ -211,17 +211,17 @@
                 }
             })
 
-            // desactivar boton si inputs estan vacios
-            $('.campo').change(function () {
+            // // desactivar boton si inputs estan vacios
+            // $('.campo').change(function () {
 
-                if ($(this).val() == '') {
-                    $(this).css("border", "2px solid red");
-                    $('.campoObligatorio').show();
-                } else {
-                    $('.campoObligatorio').hide();
-                    $(this).css("border", "1px solid green");
-                }
-            })
+            //     if ($(this).val() == '') {
+            //         $(this).css("border", "2px solid red");
+            //         $('.campoObligatorio').show();
+            //     } else {
+            //         $('.campoObligatorio').hide();
+            //         $(this).css("border", "1px solid green");
+            //     }
+            // })
 
             function validarCampo() {
                 let nombreFuncion = nombre.val();
@@ -253,6 +253,23 @@
                 this.value = this.value.replace(/[^0-9]/g, '');
             });
         });
+    </script>
+    <script>
+        //Script validacion instantanea       
+        $('.campo').on('blur', function() { //Cambiar prueba-fede por clase general en los inputs
+            if ($(this).val() == '') { //remplazar por validacion o condicional
+                $(this).addClass("is-invalid");
+                $(this).removeClass("valid");
+                $('.campoObligatorio').show();
+            }
+            else {
+                $(this).addClass("is-valid");
+                $(this).removeClass("is-invalid");
+                $('.campoObligatorio').hide();
+
+            }
+            console.log("funca");
+        })
     </script>
 
 
