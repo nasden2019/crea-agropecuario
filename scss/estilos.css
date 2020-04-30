@@ -408,4 +408,8 @@ textarea {
     font-weight: 900;
   }
 }
+
+#warningBox, #calendarTitle {
+  display: none;
+}
 /*# sourceMappingURL=estilos.css.map */
