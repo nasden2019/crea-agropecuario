@@ -272,6 +272,23 @@
         })
     </script>
 
+<script>
+        // desactivar boton si inputs estan vacios
+        $('.campo').keyup(function () {
+            var vacio = false;
+            $('.campo').each(function () {
+                if ($(this).val() == '') {
+                    vacio = true;
+                }
+            });
+
+            if (vacio) {
+                $('.btn-contacto').attr('disabled', true);
+            } else {
+                $('.btn-contacto').attr('disabled', false);
+            }
+        });
+    </script>
 
 </body>
 
