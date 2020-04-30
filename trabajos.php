@@ -43,7 +43,8 @@ Template Name: trabajos
                                     the_field( "titulo" ); 
                                     echo '</a>
                                     </p>
-
+                                    <button type="button" class="btn px-3 py-2 btn-contacto ml-3 ml-md-5" data-toggle="modal"
+                            data-target="#exampleModal" data-whatever="@getbootstrap">Inscribirme</button>
                                     <!-- MODAL -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-label
                                         ledby="exampleModalLabel " aria-hidden="true">
@@ -233,9 +234,12 @@ Template Name: trabajos
                                     echo '</a>
                                     </p>
 
+                                    
+
                                     <!-- MODAL -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-label
                                         ledby="exampleModalLabel " aria-hidden="true">
+
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content modales">
                                                 <div class="modal-header">
@@ -321,3 +325,45 @@ Template Name: trabajos
     </section>
 
     <?php get_footer(); ?>
+
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.2.1.min.js"></script>
+<script>
+     $(document).ready(function () {
+      $("#asesorSi").click(function (e) {
+        e.preventDefault();
+        $("#asesorSiInputs").toggle();
+        // $("#asesorNoInputs").hide();
+      });
+
+      $("#asesorNo").click(function (e) {
+        e.preventDefault();
+        $("#asesorNoInputs").toggle();
+        // $("#asesorSiInputs").hide();
+      });
+
+      $('#productorSi').click(function (e) {
+        e.preventDefault();
+        $('#productorSiInputs').toggle();
+      })
+
+      $('#productorNo').click(function (e) {
+        e.preventDefault();
+        $('#productorNoInputs').toggle();
+      })
+
+      var boton = $(".boton");
+        var nombre = $("#nombre");
+        var tel = $("#tel");
+        var email = $("#email");
+        var comentarios = $("#mensaje");
+
+        boton.on("click", function (e) {
+          e.preventDefault();
+          $("<h2>Gracias por tu mensaje!</h2>").appendTo(".saludo");
+          $(".span1").html(nombre.val());
+          $(".span2").html(tel.val());
+          $(".span3").html(email.val());
+          $(".span4").html(comentarios.val());
+        });
+    });
+</script>
