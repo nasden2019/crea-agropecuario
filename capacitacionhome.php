@@ -158,7 +158,7 @@ Template Name: capacitacion home
                                             </div>
                                     </div>
                                     <!-- fin inputs productor -->
-                                    <div class="modal-footer">
+                                    <div class="modal-footer d-flex justify-content-center">
                                         <button type="button" class="btn btn-cerrar" data-dismiss="modal">Cerrar</button>
                                         <button type="button" class="btn btn-contacto">Enviar</button>
                                     </div>
