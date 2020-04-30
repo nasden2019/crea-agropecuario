@@ -60,6 +60,7 @@
             if ( $( ".wpcf7-mail-sent-ok" ).length ) {
  
                 $( "#myModal2" ).show();
+                $('#myModal2').modal('show');
 
             }
 
