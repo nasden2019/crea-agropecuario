@@ -38,8 +38,8 @@ Template name: agenda
                         ledby="exampleModalLabel " aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
-                                <div class="modal-body alert alert-primary" role="alert">
-                                    <div>
+                                <div class="modal-body alert alert-success m-0 p-5 text-center" role="alert">
+                                    <div style="font-size: 18px;">
                                         Gracias por tu mensaje. Ha sido enviado. 
                                     </div>
                                 </div>
