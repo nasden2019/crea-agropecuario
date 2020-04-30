@@ -274,7 +274,7 @@
 
 <script>
         $(document).ready(function(){
-            $('.btn-contacto').attr('disabled', true);
+            $('.boton').attr('disabled', true);
 
         })
         // desactivar boton si inputs estan vacios
@@ -287,9 +287,9 @@
             });
 
             if (vacio) {
-                $('.btn-contacto').attr('disabled', true);
+                $('.boton').attr('disabled', true);
             } else {
-                $('.btn-contacto').attr('disabled', false);
+                $('.boton').attr('disabled', false);
             }
         });
     </script>
