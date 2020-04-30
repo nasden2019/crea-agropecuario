@@ -20,7 +20,7 @@ Template Name: trabaja con nosotros
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-12 d-sm-block">
-        <form action="#" method="post">
+        <form action="#" method="post" class="d-none d-md-block">
           <div class="form-group">
             <label for="text" class="ml-2">Nombre</label>
             <input type="text" id="name" class="form-control" />
@@ -71,7 +71,7 @@ Template Name: trabaja con nosotros
       <?php $loop = new WP_Query($args);
                     if ( $loop->have_posts() ) :
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
-      <div class="col-md-5 d-none d-sm-block text-center ml-md-4">
+      <div class="col-md-5 d-sm-block text-center ml-md-4">
         <?php the_field( 'video' ); ?>
         <!-- <iframe width="560" height="560" src="https://www.youtube.com/embed/ULPpT-tix5M" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
@@ -87,7 +87,7 @@ Template Name: trabaja con nosotros
 </section>
 
 
-<section class="section">
+<!-- <section class="section">
         <div class="container">
             <button class="comentar my-md-5 btn btn-contacto">Dejar<br>comentario</button>
             <div class="row">
@@ -116,7 +116,7 @@ Template Name: trabaja con nosotros
                             </div>
                         </div>
 
-                        <!-- feedback usuario-->
+                        
                         <span class="saludo"></span>
                         <div class="row my-4">
                             <div class="col-md-2 form-group">
@@ -137,7 +137,7 @@ Template Name: trabaja con nosotros
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="section">
         <?php get_footer('comentarios'); ?>
