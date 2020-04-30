@@ -5,26 +5,26 @@ Template Name: trabajos
 ?>
 
 <?php get_header(); ?>
-  
 
-    <div class="top-shadow"></div>
 
-    <section class="mt-sm-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <h3 class="mainTitular mb-4">| Publicaciones</h3>
-                </div>
+<div class="top-shadow"></div>
+
+<section class="mt-sm-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3 class="mainTitular mb-4">| Publicaciones</h3>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <?php $args = array('post_type' => 'trabajos_home'); ?>
-                <?php $loop = new WP_Query($args); ?>
-                <? $i=1;
+<section>
+    <div class="container">
+        <div class="row">
+            <?php $args = array('post_type' => 'trabajos_home'); ?>
+            <?php $loop = new WP_Query($args); ?>
+            <? $i=1;
                 if ( $loop->have_posts() ) :
                     while ( $loop->have_posts() ) : $loop->the_post(); 
                     if ($i == 1) :                      
@@ -32,18 +32,18 @@ Template Name: trabajos
                             <div class="row">';
                     endif; ?>
 
-                                <?php if($i <= 2 ) :
+            <?php if($i <= 2 ) :
                                     echo '<div class="col-sm-6">';
                                     if ( get_field( "imagen") ) { ?>
-                                        <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid"  />
-                                    <?php }; 
+            <img src="<?php the_field( 'imagen' ); ?>" class="img-fluid" />
+            <?php }; 
                                     echo'<p class="text-center titulos-fotos-inicio" data-toggle="modal" data-target="#exampleModal"
                                         data-whatever="@getbootstrap">
                                         <a>'; 
                                     the_field( "titulo" ); 
                                     echo '</a>
                                     </p>
-
+                           
                                     <!-- MODAL -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-label
                                         ledby="exampleModalLabel " aria-hidden="true">
@@ -58,53 +58,107 @@ Template Name: trabajos
                                                     </button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <form>
-                                                        <div class="form-group">
-                                                            <label for="recipient-name"
-                                                                class="col-form-label ml-md-3 ml-2">Nombre</label>
-                                                            <input type="text" class="form-control" id="recipient-name" />
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="recipient-name"
-                                                                class="col-form-label ml-md-3 ml-2">Apellido</label>
-                                                            <input type="text" class="form-control" id="recipient-name" />
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="recipient-name"
-                                                                class="col-form-label ml-md-3 ml-2">E-Mail</label>
-                                                            <input type="text" class="form-control" id="recipient-name" />
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="recipient-name"
-                                                                class="col-form-label ml-md-3 ml-2">Teléfono</label>
-                                                            <input type="text" class="form-control" id="recipient-name" />
-                                                        </div>
-                                                        <div class="form-group text-center">
-                                                            <label for="recipient-name" class="col-form-label">Es asesor de
-                                                                Crea?</label>
-                                                            <div>
-                                                                <button class="btn" style="width: 50px">
-                                                                    SI
-                                                                </button>
-                                                                <button class="btn" style="width: 50px">
-                                                                    NO
-                                                                </button>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label ml-md-3 ml-2">Nombre</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label ml-md-3 ml-2">Apellido</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label ml-md-3 ml-2">E-Mail</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label ml-md-3 ml-2">Teléfono</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+        
+                                                    <div class="form-group text-center">
+                                                        <label for="recipient-name" class="col-form-label">Es asesor de
+                                                            Crea?</label>
+        
+                                                        <!--inputs -->
+                                                        <div class="text-center mb-md-2">
+                                                            <button class="btn" name="asesorSi" id="asesorSi"
+                                                                style="width: 50px;">
+                                                                SI
+                                                            </button>
+        
+                                                            <div id="asesorSiInputs" class="text-center">
+                                                                Crea: <input type="text" name="asesorSiInputs" id="" />
+                                                                <br>
+                                                                Zona:
+                                                                <input type="text" name="asesorSiInputs" id="" />
                                                             </div>
                                                         </div>
-                                                        <div class="form-group text-center">
-                                                            <label for="recipient-name" class="col-form-label ">Es
-                                                                Productor?</label>
-                                                            <div>
-                                                                <button class="btn" style="width: 50px">
-                                                                    SI
-                                                                </button>
-                                                                <button class="btn" style="width: 50px">
-                                                                    NO
-                                                                </button>
+        
+                                                        <div class="text-center">
+                                                            <button class="btn" style="width: 50px;" name="asesorNo"
+                                                                id="asesorNo">
+                                                                NO
+                                                            </button>
+        
+                                                            <div id="asesorNoInputs" class="text-center">
+                                                                Estudiante:
+                                                                <input type="text" name="" id="" class="text-center" />
+                                                                <br>
+                                                                Asesor:
+                                                                <input type=" text" name="" id="" />
+                                                                <br>
+                                                                Productor:
+                                                                <input type="text" name="" id="" />
                                                             </div>
                                                         </div>
-                                                    </form>
-                                                </div>
+        
+                                                    </div>
+                                                    <!-- fin inputs asesor-->
+        
+                                                    <!-- inputs productor -->
+                                                    <div class="form-group text-center">
+                                                        <label for="recipient-name" class="col-form-label">Es productor de
+                                                            Crea?</label>
+        
+                                                        <!--inputs -->
+                                                        <div class="text-center mb-md-2">
+                                                            <button class="btn" name="asesorSi" id="productorSi"
+                                                                style="width: 50px;">
+                                                                SI
+                                                            </button>
+        
+                                                            <div id="productorSiInputs" class="text-center">
+                                                                Crea: <input type="text" name="productorSiInputs" id="" />
+                                                                <br>
+                                                                Zona:
+                                                                <input type="text" name="productorSiInputs" id="" />
+                                                            </div>
+                                                        </div>
+        
+                                                        <div class="text-center">
+                                                            <button class="btn" style="width: 50px;" name="" id="productorNo">
+                                                                NO
+                                                            </button>
+        
+                                                            <div id="productorNoInputs" class="text-center">
+                                                                Estudiante:
+                                                                <input type="text" name="" id="productorNoInputs" class="" />
+                                                                <br>
+                                                                Asesor:
+                                                                <input type=" text" name="" id="productorNoInputs" />
+                                                                <br>
+                                                                Productor:
+                                                                <input type="text" name="" id="productorNoInputs" />
+                                                            </div>
+                                                        </div>
+        
+                                                    </div>
+                                            </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-cerrar" data-dismiss="modal">
                                                         Cerrar
@@ -131,8 +185,8 @@ Template Name: trabajos
                                 if ( $i < 5 && $i > 2 ) :
                                     echo '<div class="col-6">';
                                     if ( get_field( "imagen") ) { ?>
-                                        <img src="<?php the_field( "imagen" ); ?>" class="img-fluid" />
-                                    <?php };
+            <img src="<?php the_field( "imagen" ); ?>" class="img-fluid" />
+            <?php };
                                     echo '<p class="text-center titulos-fotos-inicio" data-toggle="modal" data-target="#exampleModal"
                                         data-whatever="@getbootstrap">
                                         <a>';
@@ -224,8 +278,8 @@ Template Name: trabajos
                                 if ($i < 7 && $i > 4) :
                                 echo '<div class="col-6 mt-md-1">';
                                 if ( get_field( "imagen") ) { ?>
-                                        <img src="<?php the_field( "imagen" ); ?>" class="img-fluid"   />
-                                    <?php }; 
+            <img src="<?php the_field( "imagen" ); ?>" class="img-fluid" />
+            <?php }; 
                                     echo'<p class="text-center titulos-fotos-inicio" data-toggle="modal" data-target="#exampleModal"
                                         data-whatever="@getbootstrap">
                                         <a>';
@@ -233,9 +287,12 @@ Template Name: trabajos
                                     echo '</a>
                                     </p>
 
+                                    
+
                                     <!-- MODAL -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-label
                                         ledby="exampleModalLabel " aria-hidden="true">
+
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content modales">
                                                 <div class="modal-header">
@@ -312,12 +369,39 @@ Template Name: trabajos
                             echo '</div>
                         </div>';
                                 endif; ?>
-                    <?php $i++; endwhile;?>                                        
-                <?php endif;?>
-                <?php wp_reset_postdata();?>                    
-                </div>
-            </div>
+            <?php $i++; endwhile;?>
+            <?php endif;?>
+            <?php wp_reset_postdata();?>
         </div>
-    </section>
+    </div>
+    </div>
+</section>
 
-    <?php get_footer(); ?>
+<?php get_footer(); ?>
+
+<script src="?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.2.1.min.js"></script>
+<script>
+     $(document).ready(function () {
+      $("#asesorSi").click(function (e) {
+        e.preventDefault();
+        $("#asesorSiInputs").toggle();
+        // $("#asesorNoInputs").hide();
+      });
+
+      $("#asesorNo").click(function (e) {
+        e.preventDefault();
+        $("#asesorNoInputs").toggle();
+        // $("#asesorSiInputs").hide();
+      });
+
+      $('#productorSi').click(function (e) {
+        e.preventDefault();
+        $('#productorSiInputs').toggle();
+      })
+
+      $('#productorNo').click(function (e) {
+        e.preventDefault();
+        $('#productorNoInputs').toggle();
+      })
+    });
+</script>
