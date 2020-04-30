@@ -19,9 +19,7 @@ Template name: agenda
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
                     <div class="col-md-11 mb-5 text-center">
                         <h2>Calendario Crea</h2>
-                        <iframe
-                            src="https://calendar.google.com/calendar/embed?src=gnp4oirdq97es7ibh252asalc0%40group.calendar.google.com&ctz=Europe%2FMadrid"
-                            style="border: 0" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
+                        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;src=Z25wNG9pcmRxOTdlczdpYmgyNTJhc2FsYzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23C0CA33&amp;hl=es" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                     </div>
 
                     <div class="col-md-1 my-5 text-center my-auto">
