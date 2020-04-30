@@ -192,5 +192,45 @@ es
         // $("iframe").height(526);
     });
     </script>
+
+<script>
+        //Script validacion instantanea       
+        $('.campo').on('blur', function() { //Cambiar prueba-fede por clase general en los inputs
+            if ($(this).val() == '') { //remplazar por validacion o condicional
+                $(this).addClass("is-invalid");
+                $(this).removeClass("valid");
+                $('.campoObligatorio').show();
+            }
+            else {
+                $(this).addClass("is-valid");
+                $(this).removeClass("is-invalid");
+                $('.campoObligatorio').hide();
+
+            }
+            console.log("funca");
+        })
+    </script>
+
+<script>
+        $(document).ready(function(){
+            $('.wpcf7-submit').attr('disabled', true);
+
+        })
+        // desactivar boton si inputs estan vacios
+        $('.campo1').keyup(function () {
+            var vacio = false;
+            $('.campo1').each(function () {
+                if ($(this).val() == '') {
+                    vacio = true;
+                }
+            });
+
+            if (vacio) {
+                $('.wpcf7-submit').attr('disabled', true);
+            } else {
+                $('.wpcf7-submit').attr('disabled', false);
+            }
+        });
+    </script>
 </body>
 </html>
