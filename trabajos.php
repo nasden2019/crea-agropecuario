@@ -350,20 +350,5 @@ Template Name: trabajos
         e.preventDefault();
         $('#productorNoInputs').toggle();
       })
-
-      var boton = $(".boton");
-        var nombre = $("#nombre");
-        var tel = $("#tel");
-        var email = $("#email");
-        var comentarios = $("#mensaje");
-
-        boton.on("click", function (e) {
-          e.preventDefault();
-          $("<h2>Gracias por tu mensaje!</h2>").appendTo(".saludo");
-          $(".span1").html(nombre.val());
-          $(".span2").html(tel.val());
-          $(".span3").html(email.val());
-          $(".span4").html(comentarios.val());
-        });
     });
 </script>
