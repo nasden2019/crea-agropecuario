@@ -58,45 +58,48 @@ Template Name: trabajos
                                                     </button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <form>
-                                                        <div class="form-group">
-                                                            <label for="recipient-name"
-                                                                class="col-form-label ml-md-3 ml-2">Nombre</label>
-                                                            <input type="text" class="form-control" id="recipient-name" />
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="recipient-name"
-                                                                class="col-form-label ml-md-3 ml-2">Apellido</label>
-                                                            <input type="text" class="form-control" id="recipient-name" />
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="recipient-name"
-                                                                class="col-form-label ml-md-3 ml-2">E-Mail</label>
-                                                            <input type="text" class="form-control" id="recipient-name" />
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="recipient-name"
-                                                                class="col-form-label ml-md-3 ml-2">Teléfono</label>
-                                                            <input type="text" class="form-control" id="recipient-name" />
-                                                        </div>
-                                                        <div class="form-group text-center">
-                                                            <label for="recipient-name" class="col-form-label">Es asesor de
-                                                                Crea?</label>
-                                                            <div class="text-center mb-md-2">
-                                                                <button class="btn" name="asesorSi" id="asesorSi" style="width: 50px">
-                                                                    SI
-                                                                </button>
-                                                                <button class="btn" style="width: 50px">
-                                                                    NO
-                                                                </button>
-                                                                <div id="asesorSiInputs" class="text-center">
-                                                                    Crea: <input type="text" name="asesorSiInputs" id="" />
-                                                                    <br>
-                                                                    Zona:
-                                                                    <input type="text" name="asesorSiInputs" id="" />
-                                                                </div>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label ml-md-3 ml-2">Nombre</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label ml-md-3 ml-2">Apellido</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label ml-md-3 ml-2">E-Mail</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label ml-md-3 ml-2">Teléfono</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+        
+                                                    <div class="form-group text-center">
+                                                        <label for="recipient-name" class="col-form-label">Es asesor de
+                                                            Crea?</label>
+        
+                                                        <!--inputs -->
+                                                        <div class="text-center mb-md-2">
+                                                            <button class="btn" name="asesorSi" id="asesorSi"
+                                                                style="width: 50px;">
+                                                                SI
+                                                            </button>
+        
+                                                            <div id="asesorSiInputs" class="text-center">
+                                                                Crea: <input type="text" name="asesorSiInputs" id="" />
+                                                                <br>
+                                                                Zona:
+                                                                <input type="text" name="asesorSiInputs" id="" />
                                                             </div>
-                                                            <div class="text-center">
+                                                        </div>
+        
+                                                        <div class="text-center">
                                                             <button class="btn" style="width: 50px;" name="asesorNo"
                                                                 id="asesorNo">
                                                                 NO
@@ -113,23 +116,49 @@ Template Name: trabajos
                                                                 <input type="text" name="" id="" />
                                                             </div>
                                                         </div>
-
-
-                                                        </div>
-                                                        <div class="form-group text-center">
-                                                            <label for="recipient-name" class="col-form-label ">Es
-                                                                Productor?</label>
-                                                            <div>
-                                                                <button class="btn" style="width: 50px">
-                                                                    SI
-                                                                </button>
-                                                                <button class="btn" style="width: 50px">
-                                                                    NO
-                                                                </button>
+        
+                                                    </div>
+                                                    <!-- fin inputs asesor-->
+        
+                                                    <!-- inputs productor -->
+                                                    <div class="form-group text-center">
+                                                        <label for="recipient-name" class="col-form-label">Es productor de
+                                                            Crea?</label>
+        
+                                                        <!--inputs -->
+                                                        <div class="text-center mb-md-2">
+                                                            <button class="btn" name="asesorSi" id="productorSi"
+                                                                style="width: 50px;">
+                                                                SI
+                                                            </button>
+        
+                                                            <div id="productorSiInputs" class="text-center">
+                                                                Crea: <input type="text" name="productorSiInputs" id="" />
+                                                                <br>
+                                                                Zona:
+                                                                <input type="text" name="productorSiInputs" id="" />
                                                             </div>
                                                         </div>
-                                                    </form>
-                                                </div>
+        
+                                                        <div class="text-center">
+                                                            <button class="btn" style="width: 50px;" name="" id="productorNo">
+                                                                NO
+                                                            </button>
+        
+                                                            <div id="productorNoInputs" class="text-center">
+                                                                Estudiante:
+                                                                <input type="text" name="" id="productorNoInputs" class="" />
+                                                                <br>
+                                                                Asesor:
+                                                                <input type=" text" name="" id="productorNoInputs" />
+                                                                <br>
+                                                                Productor:
+                                                                <input type="text" name="" id="productorNoInputs" />
+                                                            </div>
+                                                        </div>
+        
+                                                    </div>
+                                            </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-cerrar" data-dismiss="modal">
                                                         Cerrar
