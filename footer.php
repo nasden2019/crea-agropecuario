@@ -172,7 +172,7 @@
             // para q se abra el form
             $(".comentar").click(function (e) {
                 e.preventDefault();
-                $(".formulario").toggle();
+                $(".wpcf7").toggle();
 
             });
 
