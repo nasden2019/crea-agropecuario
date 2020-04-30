@@ -412,4 +412,8 @@ textarea {
 #warningBox, #calendarTitle {
   display: none;
 }
+
+#myModal2 {
+  top: 35%;
+}
 /*# sourceMappingURL=estilos.css.map */
