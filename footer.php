@@ -274,7 +274,7 @@
 
 <script>
         $(document).ready(function(){
-            $('.boton').attr('disabled', true);
+            $('.wpcf7-submit').attr('disabled', true);
 
         })
         // desactivar boton si inputs estan vacios
@@ -287,9 +287,9 @@
             });
 
             if (vacio) {
-                $('.boton').attr('disabled', true);
+                $('.wpcf7-submit').attr('disabled', true);
             } else {
-                $('.boton').attr('disabled', false);
+                $('.wpcf7-submit').attr('disabled', false);
             }
         });
     </script>
