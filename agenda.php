@@ -38,15 +38,10 @@ Template name: agenda
                         ledby="exampleModalLabel " aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel ">
-                                        EVENTOS CREA
-                                    </h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
                                 <div class="modal-body">
+                                    <div class="alert alert-primary" role="alert">
+                                        Gracias por tu mensaje. Ha sido enviado. 
+                                    </div>
                                 </div>
                                 <!-- <div class="modal-footer">
                                 <button type="button" class="btn btn-cerrar" data-dismiss="modal">

@@ -52,11 +52,6 @@
     <script>
         $(document).ready(function(){
             $("input[name=email-904]").val( $("#email-registro").val());
-            $('body').on('wpcf7mailsent', function(){ 
-                SPU.show( 143 ); 
-                SPU.hide( 120 );
-                SPU.track( 143, false ); 
-            });
             if ( $( ".wpcf7-mail-sent-ok" ).length ) {
  
                 $( "#myModal2" ).show();
