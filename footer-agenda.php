@@ -57,6 +57,11 @@
                 SPU.hide( 120 );
                 SPU.track( 143, false ); 
             });
+            if ( $( ".wpcf7-mail-sent-ok" ).length ) {
+ 
+                $( "#myModal2" ).show();
+
+            }
 
         });
     </script>
