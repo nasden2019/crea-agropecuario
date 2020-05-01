@@ -20,7 +20,7 @@ Template Name: trabaja con nosotros
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-12 d-sm-block">
-        <form action="#" method="post" class="d-none d-md-block">
+        <form action="#" method="post" class="d-md-block">
           <div class="form-group">
             <label for="text" class="ml-2">Nombre</label>
             <input type="text" id="name" class="form-control" />
@@ -53,7 +53,7 @@ Template Name: trabaja con nosotros
             Enviar
           </button> -->
         </div>
-        <div class="d-none d-md-block">
+        <div class="d-md-block">
           <p class="my-md-4 p-trabajaconnosotros">
             CONTANOS EN 1 MINUTO POR QUÉ QUERÉS TRABAJAR CON NOSOTROS
           </p>
@@ -139,9 +139,9 @@ Template Name: trabaja con nosotros
         </div>
     </section> -->
 
-    <section class="section">
-        <?php get_footer('comentarios'); ?>
-    </section>
+    <!-- <section class="section">
+        ?php get_footer('comentarios'); ?>
+    </section> -->
 <?php get_footer(); ?>
 
 
