@@ -164,35 +164,4 @@ Template Name: proyectos
 <?php get_footer('2'); ?>
 
 
-    <!-- solucion cierre collapse -->
-    <script>
-      $(document).ready(function () {
-        $(".collapseExample").each(function(i,e){
-          $(e).on('click', function(){
-            var idElemento = $(e).attr("id");
-            var numCollapse = idElemento.split("-").pop();
-            $('#collapse'+ numCollapse ).toggle();
-          })
-        })
-      });
-    </script>
-
-<script>
-        //Script validacion instantanea       
-        $('.campo').on('blur', function() { //Cambiar prueba-fede por clase general en los inputs
-            if ($(this).val() == '') { //remplazar por validacion o condicional
-                $(this).addClass("is-invalid");
-                $(this).removeClass("valid");
-                $('.campoObligatorio').show();
-            }
-            else {
-                $(this).addClass("is-valid");
-                $(this).removeClass("is-invalid");
-                $('.campoObligatorio').hide();
-
-            }
-            console.log("funca");
-        })
-    </script>
-
 
