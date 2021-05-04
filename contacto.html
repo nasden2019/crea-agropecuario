@@ -70,8 +70,6 @@
                             <a class="nav-link" href="contacto.html">Contactanos</a>
                         </li>
                     </ul>
-
-
                 </div>
             </div>
         </nav>
@@ -136,34 +134,34 @@
                         </div>
                     </div>
                     <!-- d-none d-sm-block para q no se vea en mobile -->
-                    <div class="col-md-6 mb-5 d-none d-sm-block">
+                    <div class="col-md-6 mb-5 d-block d-sm-block">
                         <form action="#" method="post">
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <label for="name" class="sr-only">Nombre y Apellido</label>
                                     <input type="text" id="name" class="form-control" placeholder="Nombre y Apellido">
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <label for="phone" class="sr-only">Teléfono</label>
                                     <input type="text" id="phone" class="form-control" placeholder="Teléfono">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12 form-group">
-                                    <label for="email" class="sr-only">Email</label>
                                     <input type="email" id="email" class="form-control" placeholder="Email">
+                                    <span class="errorMail ml-sm-1 mt-sm-2"></span>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12 form-group">
-                                    <label for="message" class="sr-only">Mensaje</label>
                                     <textarea name="message" id="message" class="form-control " cols="30" rows="8"
                                         placeholder="Mensaje"></textarea>
-                                </div>
+                                        <span class="errorMensaje ml-sm-2 mt-sm-2"></span>
+                                    </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 offset-md-3 form-group text-center">
-                                    <input type="submit" value="Enviar" class="btn px-3 py-2 btn-contacto">
+                                    <button type="submit" value="Enviar" class="botonForm btn px-3 py-2 btn-contacto">
+                                         Enviar
+                                    </button>
                                 </div>
                             </div>
                         </form>
@@ -189,7 +187,7 @@
     </section>
 
 
-
+<!-- 
     <section class="section">
         <div class="container">
             <button class="comentar my-md-5 btn btn-contacto">Dejar<br>comentario</button>
@@ -225,11 +223,11 @@
                                 <span class="campoObligatorio">Este campo debe ser rellenado</span>
                             </div>
                             <div class="col-md-4 form-group">
-                                <input type="submit" value="Enviar" class="boton btn btn-contacto px-3 mt-5" />
+                                <button type="submit" value="Enviar" class="boton btn btn-contacto px-3 mt-5" />
                             </div>
                         </div>
 
-                        <!-- feedback usuario-->
+                       
                         <div class="saludo"></div>
                         <div class="row my-4">
                             <div class="col-md-2 form-group">
@@ -253,7 +251,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 
@@ -293,6 +291,7 @@
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
                 stroke="#f4b214" /></svg></div> -->
 
+                <script src="js/contacto.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -301,7 +300,6 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
 
-    <script src="js/main.js"></script>
 
     <script>
         $(".owl-carousel").owlCarousel({
@@ -333,7 +331,7 @@
         });
     </script>
 
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             // para q se abra el form
             $(".comentar").click(function (e) {
@@ -419,7 +417,7 @@
                 this.value = this.value.replace(/[^0-9]/g, '');
             });
         });
-    </script>
+    </script> -->
 
 </body>
 
